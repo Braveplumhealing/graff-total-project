@@ -15,6 +15,8 @@ layout: base.njk
 <p>Pick a slot that suits you — the calendar updates in real time.</p>
 <div class="calendly-inline-widget" data-url="{{ site.calendly_url }}" style="min-width:320px;height:680px"></div>
 <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<noscript><p><a href="{{ site.calendly_url }}" class="btn-p">Open the scheduler &rarr;</a></p></noscript>
+<p style="margin-top:1rem;font-size:.88rem;color:var(--muted)">Calendar not loading? <a href="{{ site.calendly_url }}" target="_blank" rel="noopener">Open the scheduler in a new tab &rarr;</a></p>
 {% endif %}
 
 {% set paid %}{% for item in offerings.payable %}{% if item.payment_url %}<a class="btn-p" style="margin:.3rem .5rem .3rem 0" href="{{ item.payment_url }}">{{ item.name }}{% if item.price %} — {{ item.price }}{% endif %} &rarr;</a>{% endif %}{% endfor %}{% endset %}
