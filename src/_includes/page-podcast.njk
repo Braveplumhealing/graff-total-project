@@ -1,0 +1,21 @@
+---
+layout: base.njk
+---
+<div class="ph">
+<div class="petals"></div>
+<p class="ph-ey">{{ eyebrow }}</p>
+<h1>{{ heading }}</h1>
+<p class="ph-l">{{ lead | safe }}</p>
+</div>
+<section class="c"><div class="ci">
+<p>{{ intro | safe }}</p>
+<h2>Recent Episodes</h2>
+{% for e in episodes %}
+<div class="ep"><div class="ep-n">{{ e.number }}</div><div><h3>{{ e.title | safe }}</h3><p>{{ e.body | safe }}</p></div><div class="ep-d">{{ e.length }}</div></div>
+{% endfor %}
+<h2>Listen &amp; Subscribe</h2>
+<p>{{ listen_text | safe }}</p>
+<a href="{{ listen_url }}" class="btn-p">Listen on Main Site &rarr;</a>
+<h2 style="margin-top:2rem">Want to Be a Guest?</h2>
+<p>{{ guest_text | safe }}</p>
+</div></section>

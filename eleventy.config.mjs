@@ -19,17 +19,6 @@ export default function (eleventyConfig) {
     api.getFilteredByGlob('content/posts/*.md').filter((p) => !p.data.draft).reverse()
   );
 
-  // Not-yet-migrated pages stay byte-for-byte identical until converted in a reviewed PR.
-  eleventyConfig.addPassthroughCopy({
-    'legacy-pages/about.html': 'about.html',
-    'legacy-pages/work-with-me.html': 'work-with-me.html',
-    'legacy-pages/speaking.html': 'speaking.html',
-    'legacy-pages/podcast.html': 'podcast.html',
-    'legacy-pages/videos.html': 'videos.html',
-    'legacy-pages/book.html': 'book.html',
-    'legacy-pages/contact.html': 'contact.html',
-  });
-
   return {
     dir: {
       input: 'content',

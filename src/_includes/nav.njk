@@ -1,6 +1,10 @@
 <nav><div class="ni">
 <a href="index.html" class="logo">Brave Plum Healing<span>with Johnny</span></a>
-<ul class="nav-links"><li><a href="about.html">About</a></li><li><a href="work-with-me.html">Work With Me</a></li><li><a href="speaking.html">Speaking</a></li><li><a href="podcast.html">Podcast</a></li>
+<ul class="nav-links">
+<li><a href="about.html"{% if page.fileSlug == 'about' %} class="active"{% endif %}>About</a></li>
+<li><a href="work-with-me.html"{% if page.fileSlug == 'work-with-me' %} class="active"{% endif %}>Work With Me</a></li>
+<li><a href="speaking.html"{% if page.fileSlug == 'speaking' %} class="active"{% endif %}>Speaking</a></li>
+<li><a href="podcast.html"{% if page.fileSlug == 'podcast' %} class="active"{% endif %}>Podcast</a></li>
 <li><a href="contact.html" class="nav-cta">Book a Call</a></li>
 </ul>
 </div></nav>

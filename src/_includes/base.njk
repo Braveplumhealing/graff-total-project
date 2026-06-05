@@ -14,7 +14,7 @@
 <script>
 (function(){
 const B='<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><g transform="translate(40,40)"><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#F2B8C6" opacity=".85" transform="rotate(0)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#EDA5BA" opacity=".85" transform="rotate(72)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#F2B8C6" opacity=".85" transform="rotate(144)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#EDA5BA" opacity=".85" transform="rotate(216)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#F2B8C6" opacity=".85" transform="rotate(288)"/><circle r="5" fill="#FDE8EE"/><circle cx="0" cy="-3" r="1.5" fill="#C49A3A" opacity=".9"/><circle cx="3" cy="1.5" r="1.2" fill="#C49A3A" opacity=".9"/><circle cx="-3" cy="1.5" r="1.2" fill="#C49A3A" opacity=".9"/></g></svg>';
-['petals','petals2'].forEach(id=>{const el=document.getElementById(id);if(!el)return;for(let i=0;i<8;i++){const d=document.createElement('div');d.className='p';d.innerHTML=B;el.appendChild(d);}});
+document.querySelectorAll('.petals').forEach(el=>{if(el.children.length)return;for(let i=0;i<8;i++){const d=document.createElement('div');d.className='p';d.innerHTML=B;el.appendChild(d);}});
 ['cb1','cb2','cb3','cb4','cb5','cb6'].forEach(id=>{const el=document.getElementById(id);if(el)el.innerHTML=B;});
 const nav=document.querySelector('nav');
 if(nav)window.addEventListener('scroll',()=>nav.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(61,26,61,.35)':'',{passive:true});

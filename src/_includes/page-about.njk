@@ -1,0 +1,20 @@
+---
+layout: base.njk
+---
+<div class="page-hero">
+<div class="petals"></div>
+<p class="ph-ey">{{ eyebrow }}</p>
+<h1>{{ heading }}</h1>
+<p class="ph-lead">{{ lead | safe }}</p>
+</div>
+<section class="content"><div class="ci">
+{% for p in intro %}<p>{{ p | safe }}</p>{% endfor %}
+<h2>His Story</h2>
+<p>{{ story | safe }}</p>
+<h2>What Johnny Offers</h2>
+<ul>{% for item in offers %}<li>{{ item | safe }}</li>{% endfor %}</ul>
+<h2>Credentials &amp; Training</h2>
+<ul>{% for item in credentials %}<li>{{ item | safe }}</li>{% endfor %}</ul>
+<blockquote>{{ quote | safe }}</blockquote>
+<p><a href="contact.html">{{ cta_text | safe }}</a></p>
+</div></section>
