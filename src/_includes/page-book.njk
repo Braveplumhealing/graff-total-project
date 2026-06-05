@@ -8,6 +8,18 @@ layout: base.njk
 <p class="ph-l">{{ lead | safe }}</p>
 </div>
 <section class="c"><div class="ci">
+{% if site.contact_phone %}<p style="background:var(--petal);border:1px solid rgba(194,99,126,.15);border-radius:12px;padding:1.1rem 1.4rem">📞 Prefer to talk? Call or text <strong>Rachel</strong> at <a href="tel:{{ site.contact_phone_tel }}">{{ site.contact_phone }}</a> to book some time with Johnny.</p>{% endif %}
+
+{% if site.calendly_url %}
+<h2>Book a Time</h2>
+<p>Pick a slot that suits you — the calendar updates in real time.</p>
+<div class="calendly-inline-widget" data-url="{{ site.calendly_url }}" style="min-width:320px;height:680px"></div>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+{% endif %}
+
+{% set paid %}{% for grp in [offerings.sessions, offerings.retreats, offerings.digital_products, offerings.giving] %}{% if grp %}{% for item in grp %}{% if item.payment_url %}<a class="btn-p" style="margin:.3rem .5rem .3rem 0" href="{{ item.payment_url }}">{{ item.name }}{% if item.price %} — {{ item.price }}{% endif %} &rarr;</a>{% endif %}{% endfor %}{% endif %}{% endfor %}{% endset %}
+{% if paid | trim %}<h2>Reserve &amp; Pay</h2><div>{{ paid | safe }}</div>{% endif %}
+
 <h2>How It Works</h2>
 <div class="steps">
 {% for s in steps %}<div class="step"><div class="step-n">{{ s.n }}</div><h3>{{ s.title | safe }}</h3><p>{{ s.body | safe }}</p></div>{% endfor %}
