@@ -17,8 +17,8 @@ layout: base.njk
 <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 {% endif %}
 
-{% set paid %}{% for grp in [offerings.sessions, offerings.retreats, offerings.digital_products, offerings.giving] %}{% if grp %}{% for item in grp %}{% if item.payment_url %}<a class="btn-p" style="margin:.3rem .5rem .3rem 0" href="{{ item.payment_url }}">{{ item.name }}{% if item.price %} — {{ item.price }}{% endif %} &rarr;</a>{% endif %}{% endfor %}{% endif %}{% endfor %}{% endset %}
-{% if paid | trim %}<h2>Reserve &amp; Pay</h2><div>{{ paid | safe }}</div>{% endif %}
+{% set paid %}{% for item in offerings.payable %}{% if item.payment_url %}<a class="btn-p" style="margin:.3rem .5rem .3rem 0" href="{{ item.payment_url }}">{{ item.name }}{% if item.price %} — {{ item.price }}{% endif %} &rarr;</a>{% endif %}{% endfor %}{% endset %}
+{% if paid | trim %}<h2>Reserve &amp; Pay</h2>{% if offerings.rate_note %}<p>{{ offerings.rate_note }}</p>{% endif %}<div>{{ paid | safe }}</div>{% endif %}
 
 <h2>How It Works</h2>
 <div class="steps">

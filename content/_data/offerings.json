@@ -1,18 +1,25 @@
 {
-  "_comment": "Offerings + payment/booking links. Fill payment_url with Stripe Payment Links you create in the Stripe dashboard, and booking_url with your Calendly event link. Pages reference this data so prices/links live in ONE place. Collection only — disbursing the charitable fund is a human-authorized action.",
-  "sessions": [
-    { "name": "Discovery Call", "length": "30 min", "price": "Free", "booking_url": "", "payment_url": "" },
-    { "name": "Reiki Session", "length": "60 min", "price": "", "booking_url": "", "payment_url": "" },
-    { "name": "1:1 Coaching (single)", "length": "60 min", "price": "", "booking_url": "", "payment_url": "" }
-  ],
-  "retreats": [
-    { "name": "Weekend Healing Retreat", "deposit": "", "payment_url": "" }
-  ],
-  "digital_products": [
-    { "name": "Guided Meditation Bundle", "price": "", "payment_url": "" }
-  ],
-  "giving": [
-    { "name": "Gratitude / Pay-what-you-want", "payment_url": "" },
-    { "name": "Charitable Gift Fund (passed to partner orgs)", "payment_url": "", "note": "Collection only; disbursement to other orgs is authorized manually by a human." }
+  "_comment": "Payable items. amount_cents drives Stripe Payment Link creation (scripts/stripe-links.mjs). payment_url is filled in by that script. custom_amount=true creates a customer-chooses-amount link (used for T&E). Collection only — disbursing funds is human-authorized.",
+  "currency": "usd",
+  "rate_note": "All services are $228 per hour or $5,000 per day, plus travel & expenses (T&E).",
+  "payable": [
+    {
+      "name": "Session — per hour",
+      "amount_cents": 22800,
+      "price": "$228 / hour",
+      "payment_url": "https://buy.stripe.com/test_6oUdRabepa4P62S0wV6wE00"
+    },
+    {
+      "name": "Full day",
+      "amount_cents": 500000,
+      "price": "$5,000 / day",
+      "payment_url": "https://buy.stripe.com/test_fZu28scitel54YOgvT6wE01"
+    },
+    {
+      "name": "Travel & Expenses (T&E)",
+      "custom_amount": true,
+      "price": "billed at cost",
+      "payment_url": "https://buy.stripe.com/test_bJe9AU6Y96SDgHw93r6wE02"
+    }
   ]
 }
