@@ -32,7 +32,11 @@ function loadEnv() {
 }
 loadEnv();
 
-const { WP_SITE, WP_USER, WP_APP_PASSWORD } = process.env;
+// Trim stray whitespace/newlines (CI secrets pasted via the web UI often gain a trailing \n)
+// and drop any trailing slash on the site URL so request URLs are always valid.
+const WP_SITE = (process.env.WP_SITE || '').trim().replace(/\/+$/, '');
+const WP_USER = (process.env.WP_USER || '').trim();
+const WP_APP_PASSWORD = (process.env.WP_APP_PASSWORD || '').trim();
 if (!WP_SITE || !WP_USER || !WP_APP_PASSWORD) {
   console.error('Missing WP_SITE / WP_USER / WP_APP_PASSWORD. Set them in .claude/wordpress.env or CI secrets.');
   process.exit(1);
