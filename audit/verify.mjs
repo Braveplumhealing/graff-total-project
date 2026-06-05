@@ -16,6 +16,7 @@ if (!existsSync(LOG)) {
 
 const lines = readFileSync(LOG, 'utf8').trim().split('\n').filter(Boolean);
 let prev = 'GENESIS';
+let prevSeq = null;
 let ok = true;
 
 lines.forEach((line, idx) => {
@@ -40,6 +41,12 @@ lines.forEach((line, idx) => {
     console.error(`✗ line ${idx + 1}: tampered (hash mismatch)`);
     ok = false;
   }
+  // Versioned entries (v2+) must increase by exactly 1 — catches deletions/reorders.
+  if (Number.isFinite(entry.seq) && Number.isFinite(prevSeq) && entry.seq !== prevSeq + 1) {
+    console.error(`✗ line ${idx + 1}: seq gap (expected ${prevSeq + 1}, got ${entry.seq})`);
+    ok = false;
+  }
+  if (Number.isFinite(entry.seq)) prevSeq = entry.seq;
   prev = hash;
 });
 

@@ -9,6 +9,14 @@ content. GitHub is master; everything is version-controlled and reviewed via Pul
 - **Booking & payments:** Calendly + Stripe (Stripe-hosted links/checkout, embedded as buttons).
 - **Content help:** Claude + Marblism agents — all output flows through the PR review/rework gate.
 
+## Governance: AIGovOps-HIBT + Cloud-Mary (read these)
+- **System rules:** `docs/AIGOVOPS-HIBT.md` — every step logs user/date/model/prompt/result,
+  is versioned (`seq`) and git-traceable, append-only and hash-chained. CI verifies it.
+- **Agent team:** `docs/CLOUD-MARY.md` — **ai-bob** orchestrates **ai-content, ai-marblism,
+  ai-github, ai-wordpress, ai-stripe, ai-audit** (`agents/ai-*.md`). Ask ai-bob for any task.
+- **Skill:** `cloud-mary-orchestrate` ties it together.
+- **Tests:** `node --test tests/unit.test.mjs` · `node tests/chaos.mjs` · `node tests/scale.mjs`.
+
 ## Golden rules (do not violate)
 1. **Content lives in `content/`** (Markdown + front matter). **Design lives in `src/`** (11ty layouts/includes).
    Edit content without touching design; edit design deliberately and review the visual diff.

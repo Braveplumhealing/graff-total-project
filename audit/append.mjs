@@ -1,23 +1,25 @@
 #!/usr/bin/env node
-// Append a tamper-evident entry to the immutable audit log (the "beacon" pattern).
+// AIGovOps-HIBT ledger — append a tamper-evident, versioned entry.
+// HIBT = "Human-In-the-loop By Transparency": every AI/agent step is recorded with
+// WHO (user + actor agent), WHEN (date), WHICH MODEL, the PROMPT, and the RESULT — and
+// chained by hash so the full history is immutable and each step is independently visible.
 //
-// Every AI/agent action that changes anything should be recorded here. Entries are
-// append-only and hash-chained: each entry's `hash` is sha256 over its own content
-// plus the previous entry's hash, so any later edit to an earlier line is detectable.
+// Each entry carries a monotonic `seq` (version number) and the current `git_commit`, so
+// you can trace each step to the exact code state that produced it.
 //
 // Usage:
-//   node audit/append.mjs --actor "bph-business-agent" --model "claude-opus-4-8" \
-//     --action "content.edit" --target "content/pages/about.md" \
-//     --tier 1 --approver "pending-pr" \
-//     --prompt "make the about page warmer" --input ./before.md --output ./after.md
+//   node audit/append.mjs --actor ai-bob --user jonnygraf --model claude-opus-4-8 \
+//     --action content.edit --target content/pages/about.md --tier 1 \
+//     --approver pending-pr --prompt "make about warmer" --result "rewrote intro" \
+//     --output ./after.md
 //
-// --prompt/--input/--output may be inline strings or @file paths; we store only their
-// sha256 hashes (never raw secrets/content) plus a short human note.
+// --prompt/--result store readable text AND a hash. --input/--output hash a literal or @file.
 
 import { createHash } from 'node:crypto';
 import { readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { execSync } from 'node:child_process';
 
 const LOG = join(dirname(fileURLToPath(import.meta.url)), 'log.jsonl');
 
@@ -25,8 +27,6 @@ function arg(name, def = '') {
   const i = process.argv.indexOf(`--${name}`);
   return i !== -1 && process.argv[i + 1] ? process.argv[i + 1] : def;
 }
-
-// Hash a value that may be a literal string or an @path reference to a file.
 function hashOf(val) {
   if (!val) return null;
   let data = val;
@@ -36,34 +36,44 @@ function hashOf(val) {
   }
   return 'sha256:' + createHash('sha256').update(data).digest('hex');
 }
-
-function lastHash() {
-  if (!existsSync(LOG)) return 'GENESIS';
+function lastEntry() {
+  if (!existsSync(LOG)) return null;
   const lines = readFileSync(LOG, 'utf8').trim().split('\n').filter(Boolean);
-  if (lines.length === 0) return 'GENESIS';
-  return JSON.parse(lines[lines.length - 1]).hash;
+  return lines.length ? JSON.parse(lines[lines.length - 1]) : null;
+}
+function gitCommit() {
+  try { return execSync('git rev-parse --short HEAD', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim(); }
+  catch { return 'no-git'; }
+}
+function whoami() {
+  if (arg('user')) return arg('user');
+  if (process.env.AIGOVOPS_USER) return process.env.AIGOVOPS_USER;
+  try { return execSync('git config user.name', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim() || process.env.USER || 'unknown'; }
+  catch { return process.env.USER || 'unknown'; }
 }
 
-const prev_hash = lastHash();
+const prev = lastEntry();
 const entry = {
+  v: 2,
+  seq: prev && Number.isFinite(prev.seq) ? prev.seq + 1 : (prev ? 1 : 0),
   ts: new Date().toISOString(),
+  user: whoami(),
   actor: arg('actor', 'unknown'),
   model: arg('model', ''),
   action: arg('action', 'unspecified'),
   target: arg('target', ''),
   tier: Number(arg('tier', '1')),
+  prompt: arg('prompt', ''),
+  result: arg('result', ''),
   note: arg('note', ''),
   prompt_hash: hashOf(arg('prompt')),
   input_hash: hashOf(arg('input')),
   output_hash: hashOf(arg('output')),
   approver: arg('approver', ''),
-  prev_hash,
+  git_commit: gitCommit(),
+  prev_hash: prev ? prev.hash : 'GENESIS',
 };
-
-// The entry's own hash seals all fields above + the previous hash.
-entry.hash =
-  'sha256:' +
-  createHash('sha256').update(JSON.stringify(entry)).digest('hex');
+entry.hash = 'sha256:' + createHash('sha256').update(JSON.stringify(entry)).digest('hex');
 
 appendFileSync(LOG, JSON.stringify(entry) + '\n');
-console.log('Logged:', entry.action, '→', entry.target || '(none)', '|', entry.hash.slice(0, 18) + '…');
+console.log(`HIBT #${entry.seq} ${entry.action} → ${entry.target || '(none)'} | ${entry.user}/${entry.actor} | ${entry.hash.slice(0, 18)}…`);
