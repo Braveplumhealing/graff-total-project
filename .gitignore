@@ -1,0 +1,15 @@
+# Secrets — never commit
+.claude/*.env
+.env
+*.key
+
+# Build output
+_site/
+node_modules/
+
+# OS / editor cruft
+.DS_Store
+*.log
+
+# Raw transfer archive (kept locally, not published)
+brave-plum-transfer-complete.zip

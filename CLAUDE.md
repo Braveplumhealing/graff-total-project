@@ -1,0 +1,48 @@
+# Brave Plum Healing — Operating Guide for Claude
+
+This repo is the **single source of truth** for Brave Plum Healing's web presence and business
+content. GitHub is master; everything is version-controlled and reviewed via Pull Requests.
+
+## What this project is
+- **Public site:** GitHub Pages (built from this repo with Eleventy) — the canonical mirror.
+- **Live WordPress:** `braveplumhealing.org` (WordPress.com hosted) — kept in sync from this repo via the WP REST API.
+- **Booking & payments:** Calendly + Stripe (Stripe-hosted links/checkout, embedded as buttons).
+- **Content help:** Claude + Marblism agents — all output flows through the PR review/rework gate.
+
+## Golden rules (do not violate)
+1. **Content lives in `content/`** (Markdown + front matter). **Design lives in `src/`** (11ty layouts/includes).
+   Edit content without touching design; edit design deliberately and review the visual diff.
+2. **Every change that ships goes through a PR** (the human review/rework gate) — except Tier-0 items below.
+3. **Log every agent action** to the immutable audit log: `node audit/append.mjs …`. Never hand-edit `audit/log.jsonl`.
+4. **Secrets never get committed.** They live in `.claude/*.env` (gitignored): `wordpress.env`, `stripe.env`.
+
+## Risk tiers (autonomy: auto-publish low-risk, PR the rest)
+- **Tier 0 — may act automatically:** typo/grammar fixes, alt-text, SEO metadata, rebuilding Pages,
+  re-syncing *already-approved* content to WordPress.
+- **Tier 1 — requires a PR:** any new or edited page/post, images, outbound copy.
+- **Tier 2 — human only, the agent must refuse:** moving money / disbursing donations to other orgs,
+  changing permissions or sharing, deleting data, exposing secrets, creating accounts, accepting terms.
+
+## Common commands
+```bash
+export PATH="$HOME/.local/bin:$PATH"      # user-local node/npm/gh live here
+npx @11ty/eleventy                         # build content/ + src/ → _site/
+npx @11ty/eleventy --serve                 # local preview
+node audit/verify.mjs                      # check audit-log integrity
+node audit/append.mjs --actor … --action … --target … --tier N   # record an action
+```
+
+## WordPress sync
+- Auth: `.claude/wordpress.env` (`WP_SITE`, `WP_USER`, `WP_APP_PASSWORD` — an Application Password).
+- Page IDs (REST): home 154, contact 38, videos 37, podcast 36, speaking 35, … (see `content/data/wp-map.yml`).
+- Sync is one-way (repo → WP) and only for approved content.
+
+## Layout
+```
+content/   Markdown content (pages, posts, data) — safe for the agent to edit
+src/       Eleventy layouts & includes (the design) — change deliberately
+audit/     append.mjs / verify.mjs / log.jsonl — the immutable beacon log
+agents/    bph-business-agent.md — the scoped, least-privilege business agent
+.claude/   skills/, settings.json, *.env (secrets, gitignored)
+.github/   CI workflows: build+deploy Pages, sync WP, verify mirror, verify audit log
+```

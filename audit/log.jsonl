@@ -1,0 +1,1 @@
+{"ts":"2026-06-05T18:53:23.536Z","actor":"claude-code","model":"claude-opus-4-8","action":"system.init","target":"audit/log.jsonl","tier":0,"note":"Genesis: durable platform foundation initialized","prompt_hash":null,"input_hash":null,"output_hash":null,"approver":"jonnygraf","prev_hash":"GENESIS","hash":"sha256:9aa471642d8e718a11559e2ff955236cd779758619d4fc4868c9efb5ac9715e4"}
