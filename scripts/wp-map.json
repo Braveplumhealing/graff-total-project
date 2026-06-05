@@ -1,0 +1,10 @@
+{
+  "_comment": "Maps built _site files to WordPress page IDs (from the REST API). Used by sync-wp.mjs. IDs verified 2026-06: home 154, contact 38, videos 37, podcast 36, speaking 35.",
+  "pages": [
+    { "file": "index.html",        "wp_id": 154, "slug": "home" },
+    { "file": "contact.html",      "wp_id": 38,  "slug": "contact" },
+    { "file": "videos.html",       "wp_id": 37,  "slug": "videos" },
+    { "file": "podcast.html",      "wp_id": 36,  "slug": "podcast" },
+    { "file": "speaking.html",     "wp_id": 35,  "slug": "speaking" }
+  ]
+}

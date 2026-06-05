@@ -1,0 +1,23 @@
+name: Tests (unit · chaos · scale)
+
+# End-to-end automated testing for the Brave Plum platform + AIGovOps-HIBT governance.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci || npm install
+      - name: Unit tests
+        run: node --test tests/unit.test.mjs
+      - name: Chaos monkey (ledger tamper-resistance)
+        run: node tests/chaos.mjs
+      - name: Scale test (bulk build)
+        run: node tests/scale.mjs 300

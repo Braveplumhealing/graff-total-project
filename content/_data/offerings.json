@@ -1,0 +1,18 @@
+{
+  "_comment": "Offerings + payment/booking links. Fill payment_url with Stripe Payment Links you create in the Stripe dashboard, and booking_url with your Calendly event link. Pages reference this data so prices/links live in ONE place. Collection only — disbursing the charitable fund is a human-authorized action.",
+  "sessions": [
+    { "name": "Discovery Call", "length": "30 min", "price": "Free", "booking_url": "", "payment_url": "" },
+    { "name": "Reiki Session", "length": "60 min", "price": "", "booking_url": "", "payment_url": "" },
+    { "name": "1:1 Coaching (single)", "length": "60 min", "price": "", "booking_url": "", "payment_url": "" }
+  ],
+  "retreats": [
+    { "name": "Weekend Healing Retreat", "deposit": "", "payment_url": "" }
+  ],
+  "digital_products": [
+    { "name": "Guided Meditation Bundle", "price": "", "payment_url": "" }
+  ],
+  "giving": [
+    { "name": "Gratitude / Pay-what-you-want", "payment_url": "" },
+    { "name": "Charitable Gift Fund (passed to partner orgs)", "payment_url": "", "note": "Collection only; disbursement to other orgs is authorized manually by a human." }
+  ]
+}

@@ -1,0 +1,9 @@
+name = "bph-cms-auth"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# Deploy:  cd cloudflare-worker && npx wrangler deploy
+# Secrets: npx wrangler secret put GITHUB_CLIENT_ID
+#          npx wrangler secret put GITHUB_CLIENT_SECRET
+# Your worker URL (e.g. https://bph-cms-auth.<your-subdomain>.workers.dev) goes into
+# admin/config.yml -> backend.base_url

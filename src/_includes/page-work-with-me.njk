@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+<div class="page-hero">
+<div class="petals"></div>
+<p class="ph-ey">{{ eyebrow }}</p>
+<h1>{{ heading }}</h1>
+<p class="ph-lead">{{ lead | safe }}</p>
+</div>
+<section class="content"><div class="ci">
+{% for s in services %}
+<div class="service-block">
+<h2>{{ s.title | safe }}</h2>
+<p>{{ s.body | safe }}</p>
+<ul>{% for t in s.tags %}<li>{{ t | safe }}</li>{% endfor %}</ul>
+</div>
+{% endfor %}
+<div class="cta-box">
+<h2>{{ cta_heading | safe }}</h2>
+<p>{{ cta_body | safe }}</p>
+<a href="contact.html" class="btn">{{ cta_button | safe }}</a>
+</div>
+</div></section>

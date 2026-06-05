@@ -1,0 +1,6 @@
+{
+  "_comment": "Site-wide settings. contact_endpoint: paste your form endpoint to make the contact form deliver real messages (Formspree https://formspree.io/f/XXXX, or Web3Forms access key — see docs/CONTACT-FORM-SETUP.md). Leave empty to keep the demo behaviour. calendly_url: your Calendly link for booking.",
+  "contact_endpoint": "",
+  "contact_provider": "formspree",
+  "calendly_url": ""
+}

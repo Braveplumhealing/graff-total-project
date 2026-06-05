@@ -1,0 +1,172 @@
+# Sveltia CMS configuration for Brave Plum Healing.
+# Edits are saved as DRAFTS in a branch; clicking "Publish" merges to main and goes live.
+
+backend:
+  name: github
+  repo: Braveplumhealing/graff-total-project
+  branch: main
+  # Two ways to sign in from anywhere (see docs/ADMIN-SETUP.md):
+  #  1. EASIEST — "Sign In Using Access Token" with a GitHub fine-grained PAT. No extra setup.
+  #  2. NICER  — "Sign In with GitHub" button. Uncomment base_url after deploying the
+  #     free Cloudflare Worker OAuth relay (sveltia-cms-auth).
+  # base_url: https://REPLACE-WITH-YOUR-WORKER.workers.dev
+
+# Draft → In review → Ready → Publish. This is what makes editing "private until you post".
+publish_mode: editorial_workflow
+
+# Uploaded images land in the design assets folder and are served from /assets/uploads.
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+# Run locally with `npx @sveltia/cms-proxy-server` + open /admin to edit without OAuth.
+# local_backend: true
+
+collections:
+  - name: posts
+    label: "Posts"
+    label_singular: "Post"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "posts/{{slug}}/"
+    fields:
+      - { name: title, label: "Title", widget: string }
+      - { name: date, label: "Date", widget: datetime }
+      - { name: description, label: "Short description", widget: string, required: false }
+      - { name: image, label: "Cover image", widget: image, required: false }
+      - { name: draft, label: "Keep as draft (hidden from site)", widget: boolean, default: true }
+      - { name: body, label: "Body", widget: markdown }
+
+  - name: pages
+    label: "Site Pages"
+    label_singular: "Page"
+    # Each page's editable content lives in its front matter; the design is in src/_includes,
+    # so editing here can never break the layout. Format is YAML front matter on .njk files.
+    format: yaml-frontmatter
+    extension: njk
+    files:
+      - name: about
+        label: "About"
+        file: "content/pages/about.njk"
+        fields:
+          - { name: title, label: "Browser title", widget: string }
+          - { name: description, label: "Meta description", widget: string, required: false }
+          - { name: eyebrow, label: "Eyebrow", widget: string }
+          - { name: heading, label: "Heading", widget: string }
+          - { name: lead, label: "Lead", widget: text }
+          - { name: intro, label: "Intro paragraphs", widget: list }
+          - { name: story, label: "His Story", widget: text }
+          - { name: offers, label: "What Johnny Offers", widget: list }
+          - { name: credentials, label: "Credentials & Training", widget: list }
+          - { name: quote, label: "Pull quote", widget: text }
+          - { name: cta_text, label: "Closing CTA text", widget: string }
+      - name: work-with-me
+        label: "Work With Me"
+        file: "content/pages/work-with-me.njk"
+        fields:
+          - { name: title, widget: string }
+          - { name: description, widget: string, required: false }
+          - { name: eyebrow, widget: string }
+          - { name: heading, widget: string }
+          - { name: lead, widget: text }
+          - name: services
+            label: "Services"
+            widget: list
+            fields:
+              - { name: title, widget: string }
+              - { name: body, widget: text }
+              - { name: tags, widget: list }
+          - { name: cta_heading, widget: string }
+          - { name: cta_body, widget: text }
+          - { name: cta_button, widget: string }
+      - name: speaking
+        label: "Speaking"
+        file: "content/pages/speaking.njk"
+        fields:
+          - { name: title, widget: string }
+          - { name: description, widget: string, required: false }
+          - { name: eyebrow, widget: string }
+          - { name: heading, widget: string }
+          - { name: lead, widget: text }
+          - { name: intro, widget: text }
+          - name: topics
+            label: "Keynote Topics"
+            widget: list
+            fields:
+              - { name: title, widget: string }
+              - { name: body, widget: text }
+          - { name: formats, label: "Formats & Audiences", widget: list }
+          - { name: quote, widget: text }
+          - { name: book_text, label: "Booking text", widget: text }
+      - name: podcast
+        label: "Podcast"
+        file: "content/pages/podcast.njk"
+        fields:
+          - { name: title, widget: string }
+          - { name: description, widget: string, required: false }
+          - { name: eyebrow, widget: string }
+          - { name: heading, widget: string }
+          - { name: lead, widget: text }
+          - { name: intro, widget: text }
+          - name: episodes
+            label: "Episodes"
+            widget: list
+            fields:
+              - { name: number, widget: string }
+              - { name: title, widget: string }
+              - { name: body, widget: text }
+              - { name: length, widget: string }
+          - { name: listen_text, widget: text }
+          - { name: listen_url, widget: string }
+          - { name: guest_text, widget: text }
+      - name: videos
+        label: "Videos"
+        file: "content/pages/videos.njk"
+        fields:
+          - { name: title, widget: string }
+          - { name: description, widget: string, required: false }
+          - { name: eyebrow, widget: string }
+          - { name: heading, widget: string }
+          - { name: lead, widget: text }
+          - { name: intro, widget: text }
+          - name: categories
+            label: "Categories"
+            widget: list
+            fields:
+              - { name: icon, widget: string }
+              - { name: title, widget: string }
+              - { name: body, widget: text }
+          - { name: outro, widget: text }
+          - { name: library_url, widget: string }
+      - name: book
+        label: "Book a Session"
+        file: "content/pages/book.njk"
+        fields:
+          - { name: title, widget: string }
+          - { name: description, widget: string, required: false }
+          - { name: eyebrow, widget: string }
+          - { name: heading, widget: string }
+          - { name: lead, widget: text }
+          - name: steps
+            label: "How It Works steps"
+            widget: list
+            fields:
+              - { name: n, widget: string }
+              - { name: title, widget: string }
+              - { name: body, widget: text }
+          - { name: offerings, label: "Current Offerings", widget: list }
+          - { name: quote, widget: text }
+          - { name: cta_text, widget: string }
+          - { name: confidential, widget: text }
+      - name: contact
+        label: "Contact"
+        file: "content/pages/contact.njk"
+        fields:
+          - { name: title, widget: string }
+          - { name: description, widget: string, required: false }
+          - { name: eyebrow, widget: string }
+          - { name: heading, widget: string }
+          - { name: lead, widget: text }
+          - { name: intro, widget: text }
+          - { name: next_steps, label: "What Happens Next", widget: list }
+          - { name: confidential, widget: text }

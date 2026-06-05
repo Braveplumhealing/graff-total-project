@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+<div class="ph">
+<div class="petals"></div>
+<p class="ph-ey">{{ eyebrow }}</p>
+<h1>{{ heading }}</h1>
+<p class="ph-l">{{ lead | safe }}</p>
+</div>
+<section class="c"><div class="ci">
+<p>{{ intro | safe }}</p>
+<h2>Content Categories</h2>
+<div class="vg">
+{% for c in categories %}<div class="vc"><div class="vi">{{ c.icon }}</div><h3>{{ c.title | safe }}</h3><p>{{ c.body | safe }}</p></div>{% endfor %}
+</div>
+<p>{{ outro | safe }}</p>
+<a href="{{ library_url }}" class="btn-p">View Full Library &rarr;</a>
+</div></section>

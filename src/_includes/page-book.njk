@@ -1,0 +1,20 @@
+---
+layout: base.njk
+---
+<div class="ph">
+<div class="petals"></div>
+<p class="ph-ey">{{ eyebrow }}</p>
+<h1>{{ heading }}</h1>
+<p class="ph-l">{{ lead | safe }}</p>
+</div>
+<section class="c"><div class="ci">
+<h2>How It Works</h2>
+<div class="steps">
+{% for s in steps %}<div class="step"><div class="step-n">{{ s.n }}</div><h3>{{ s.title | safe }}</h3><p>{{ s.body | safe }}</p></div>{% endfor %}
+</div>
+<h2>Current Offerings</h2>
+<ul>{% for o in offerings %}<li>{{ o | safe }}</li>{% endfor %}</ul>
+<blockquote>{{ quote | safe }}</blockquote>
+<p><a href="contact.html">{{ cta_text | safe }}</a></p>
+<p style="margin-top:1rem;font-size:.9rem;font-style:italic;color:var(--muted)">{{ confidential | safe }}</p>
+</div></section>
