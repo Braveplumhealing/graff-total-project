@@ -26,7 +26,8 @@ jobs:
         with:
           node-version: '22'
       - run: npm ci || npm install
-      - run: npx @11ty/eleventy
+      # GitHub Pages serves this project under /graff-total-project/, so build with that prefix.
+      - run: npx @11ty/eleventy --pathprefix=/graff-total-project/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
