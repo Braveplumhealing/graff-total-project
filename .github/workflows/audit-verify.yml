@@ -1,0 +1,19 @@
+name: Verify audit log integrity
+
+# The immutable "beacon" log must never be silently altered. This runs on every push
+# and PR and fails if the hash chain is broken (tampering, reorder, or deletion).
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify hash-chained audit log
+        run: node audit/verify.mjs

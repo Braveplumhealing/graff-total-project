@@ -1,0 +1,29 @@
+name: Sync content to WordPress (manual)
+
+# One-way repo → WordPress sync. Manual trigger only, and dry-run unless you explicitly
+# choose apply=true. Requires repo secrets: WP_SITE, WP_USER, WP_APP_PASSWORD.
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: 'Actually write to WordPress? (false = dry run)'
+        type: boolean
+        default: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci || npm install
+      - run: npx @11ty/eleventy
+      - name: Sync to WordPress
+        env:
+          WP_SITE: ${{ secrets.WP_SITE }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: node scripts/sync-wp.mjs ${{ inputs.apply && '--apply' || '' }}
