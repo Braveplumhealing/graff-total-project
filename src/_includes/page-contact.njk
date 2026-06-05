@@ -29,16 +29,22 @@ layout: base.njk
   if(!f) return;
   const endpoint = {{ site.contact_endpoint | dump | safe }};
   const provider = {{ site.contact_provider | dump | safe }};
+  const email = {{ site.contact_email | dump | safe }};
   f.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (f.botcheck && f.botcheck.checked) return; // honeypot tripped
     const btn = f.querySelector('.form-submit');
 
-    // No endpoint configured yet → graceful demo confirmation.
+    // No endpoint configured yet → open the visitor's email app, pre-filled (works today).
     if (!endpoint) {
-      btn.textContent = 'Sent ✓'; btn.disabled = true;
+      const fd = new FormData(f);
+      const subject = encodeURIComponent('Website enquiry — ' + (fd.get('topic') || 'General'));
+      const body = encodeURIComponent(
+        'Name: ' + (fd.get('name') || '') + '\nEmail: ' + (fd.get('email') || '') +
+        '\nInterest: ' + (fd.get('topic') || '') + '\n\n' + (fd.get('message') || ''));
+      window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
       status.style.color = '#7A3070';
-      status.textContent = 'Thank you! (Demo mode — add a form endpoint to receive messages.)';
+      status.textContent = 'Opening your email app to send to ' + email + '…';
       return;
     }
 

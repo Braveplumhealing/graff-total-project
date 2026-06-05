@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+<div class="ph">
+<div class="petals"></div>
+<p class="ph-ey">{{ eyebrow }}</p>
+<h1>{{ heading }}</h1>
+<p class="ph-l">{{ lead | safe }}</p>
+</div>
+<section class="c"><div class="ci">
+{% for s in sections %}
+<h2>{{ s.h | safe }}</h2>
+{% for p in s.body %}<p>{{ p | safe }}</p>{% endfor %}
+{% endfor %}
+<p style="margin-top:2rem;font-size:.85rem;color:var(--muted)">Last updated: {{ updated }}</p>
+</div></section>

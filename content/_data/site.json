@@ -1,5 +1,7 @@
 {
-  "_comment": "Site-wide settings. contact_endpoint: paste your form endpoint to make the contact form deliver real messages (Formspree https://formspree.io/f/XXXX, or Web3Forms access key — see docs/CONTACT-FORM-SETUP.md). Leave empty to keep the demo behaviour. calendly_url: your Calendly link for booking.",
+  "_comment": "Site-wide settings. contact_endpoint: paste your form endpoint (Formspree https://formspree.io/f/XXXX, or Web3Forms access key — see docs/CONTACT-FORM-SETUP.md). Empty = the form falls back to opening the visitor's email app to contact_email. calendly_url: your Calendly booking link. url: canonical site URL (used by sitemap/robots).",
+  "url": "https://braveplumhealing.github.io/graff-total-project",
+  "contact_email": "braveplumhealing@outlook.com",
   "contact_endpoint": "",
   "contact_provider": "formspree",
   "calendly_url": ""
