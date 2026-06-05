@@ -6,6 +6,19 @@ export default function (eleventyConfig) {
   // Shared design assets (CSS, images) → /assets
   eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets' });
 
+  // Private Sveltia CMS editor → /admin (copied verbatim, not templated).
+  eleventyConfig.addPassthroughCopy({ admin: 'admin' });
+
+  // Friendly date formatting for posts, e.g. "5 June 2026".
+  eleventyConfig.addFilter('postDate', (d) =>
+    d ? new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }) : ''
+  );
+
+  // Published posts, newest first.
+  eleventyConfig.addCollection('posts', (api) =>
+    api.getFilteredByGlob('content/posts/*.md').filter((p) => !p.data.draft).reverse()
+  );
+
   // Not-yet-migrated pages stay byte-for-byte identical until converted in a reviewed PR.
   eleventyConfig.addPassthroughCopy({
     'legacy-pages/about.html': 'about.html',

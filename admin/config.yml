@@ -1,0 +1,49 @@
+# Sveltia CMS configuration for Brave Plum Healing.
+# Edits are saved as DRAFTS in a branch; clicking "Publish" merges to main and goes live.
+
+backend:
+  name: github
+  repo: Braveplumhealing/graff-total-project
+  branch: main
+  # Two ways to sign in from anywhere (see docs/ADMIN-SETUP.md):
+  #  1. EASIEST — "Sign In Using Access Token" with a GitHub fine-grained PAT. No extra setup.
+  #  2. NICER  — "Sign In with GitHub" button. Uncomment base_url after deploying the
+  #     free Cloudflare Worker OAuth relay (sveltia-cms-auth).
+  # base_url: https://REPLACE-WITH-YOUR-WORKER.workers.dev
+
+# Draft → In review → Ready → Publish. This is what makes editing "private until you post".
+publish_mode: editorial_workflow
+
+# Uploaded images land in the design assets folder and are served from /assets/uploads.
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+# Run locally with `npx @sveltia/cms-proxy-server` + open /admin to edit without OAuth.
+# local_backend: true
+
+collections:
+  - name: posts
+    label: "Posts"
+    label_singular: "Post"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "posts/{{slug}}/"
+    fields:
+      - { name: title, label: "Title", widget: string }
+      - { name: date, label: "Date", widget: datetime }
+      - { name: description, label: "Short description", widget: string, required: false }
+      - { name: image, label: "Cover image", widget: image, required: false }
+      - { name: draft, label: "Keep as draft (hidden from site)", widget: boolean, default: true }
+      - { name: body, label: "Body", widget: markdown }
+
+  - name: pages
+    label: "Site Pages"
+    label_singular: "Page"
+    # Simple editable text blocks for pages as they get migrated into content/.
+    folder: "content/pages"
+    create: false
+    fields:
+      - { name: title, label: "Browser title", widget: string }
+      - { name: description, label: "Meta description", widget: string, required: false }
+      - { name: body, label: "Content", widget: markdown }
