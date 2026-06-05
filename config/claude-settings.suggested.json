@@ -1,0 +1,21 @@
+{
+  "_README": "SUGGESTED Claude Code settings for this project. Review, then (if you approve) copy to .claude/settings.json yourself — agents are intentionally blocked from editing their own startup config. The hook installs the Tier-2 guard (blocks money-movement, deletions, secret exfiltration); the deny rules add belt-and-suspenders protection.",
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "deny": [
+      "Bash(node scripts/sync-wp.mjs --apply:*)",
+      "Bash(rm -rf:*)",
+      "Read(.claude/*.env)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/tier-guard.sh" }
+        ]
+      }
+    ]
+  }
+}
