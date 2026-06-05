@@ -32,5 +32,6 @@ node audit/verify.mjs            # governance ledger integrity
 See **`docs/TODO.md`** — accounts/credentials/payments only the owner can set up.
 
 ## Docs
+**Start here:** `docs/RUNBOOK.md` (master overview + ops + lessons). Then:
 `docs/SETUP.md` · `docs/ADMIN-SETUP.md` · `docs/CONTACT-FORM-SETUP.md` ·
-`docs/SIGN-IN-WITH-GITHUB.md` · `docs/AIGOVOPS-HIBT.md` · `docs/CLOUD-MARY.md`
+`docs/SIGN-IN-WITH-GITHUB.md` · `docs/AIGOVOPS-HIBT.md` · `docs/CLOUD-MARY.md` · `docs/TODO.md`
