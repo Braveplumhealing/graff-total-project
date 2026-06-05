@@ -7,19 +7,19 @@
       "name": "Session — per hour",
       "amount_cents": 22800,
       "price": "$228 / hour",
-      "payment_url": "https://buy.stripe.com/test_6oUdRabepa4P62S0wV6wE00"
+      "payment_url": "https://buy.stripe.com/dRm3cx8ZLbb3egS6qP4wM00"
     },
     {
       "name": "Full day",
       "amount_cents": 500000,
       "price": "$5,000 / day",
-      "payment_url": "https://buy.stripe.com/test_fZu28scitel54YOgvT6wE01"
+      "payment_url": "https://buy.stripe.com/14AcN7fo992V3Ce4iH4wM01"
     },
     {
       "name": "Travel & Expenses (T&E)",
       "custom_amount": true,
       "price": "billed at cost",
-      "payment_url": "https://buy.stripe.com/test_bJe9AU6Y96SDgHw93r6wE02"
+      "payment_url": "https://buy.stripe.com/cNi3cxa3Pa6Zb4G02r4wM02"
     }
   ]
 }
