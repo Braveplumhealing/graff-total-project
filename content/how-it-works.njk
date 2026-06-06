@@ -1,0 +1,155 @@
+---
+permalink: /how-it-works.html
+eleventyExcludeFromCollections: true
+---
+{% raw %}<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>How Brave Plum Healing Works — a tour with Mary 🌸</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#3D1A3D;--rose:#C4637E;--blush:#F2B8C6;--petal:#FDE8EE;--cream:#FDF5F0;--sage:#6B8F6B;--gold:#C49A3A;--muted:#8A6570}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Jost',sans-serif;background:var(--plum);color:var(--petal);min-height:100vh;overflow-x:hidden}
+.wrap{max-width:1000px;margin:0 auto;padding:2rem 1.5rem 6rem;position:relative;z-index:2}
+.glow{position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse 70% 60% at 55% 25%,rgba(196,99,126,.30),transparent 60%),radial-gradient(ellipse 50% 50% at 15% 80%,rgba(122,48,112,.45),transparent 55%)}
+.petals{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.pt{position:absolute;top:-40px;opacity:0}
+@keyframes fall{0%{transform:translateY(0) rotate(0);opacity:0}8%{opacity:.7}100%{transform:translateY(110vh) rotate(360deg);opacity:0}}
+h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,5vw,3.2rem);text-align:center;line-height:1.1}
+h1 em{font-style:italic;color:var(--blush)}
+.tagline{text-align:center;color:rgba(253,232,238,.7);font-weight:300;margin:.6rem 0 1.6rem}
+/* Stage */
+.stage{position:relative;background:rgba(253,232,238,.06);border:1px solid rgba(242,184,198,.18);border-radius:24px;padding:2rem;min-height:430px;backdrop-filter:blur(6px);overflow:hidden}
+.scene{position:absolute;inset:2rem;opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;pointer-events:none;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1rem;justify-content:center}
+.scene.on{opacity:1;transform:none;pointer-events:auto}
+.scene h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(1.5rem,3.5vw,2.3rem);color:var(--petal)}
+.scene h2 em{font-style:italic;color:var(--blush)}
+.bubble{background:var(--petal);color:var(--plum);border-radius:18px 18px 18px 4px;padding:1rem 1.3rem;max-width:620px;font-size:1.02rem;font-weight:300;line-height:1.6;position:relative;box-shadow:0 10px 30px rgba(61,26,61,.35)}
+.bubble strong{color:var(--rose);font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}
+.chip{background:rgba(196,99,126,.18);border:1px solid rgba(242,184,198,.3);border-radius:100px;padding:.3rem .9rem;font-size:.8rem;color:var(--petal)}
+/* Avatar Mary */
+.mary{width:120px;height:120px;flex-shrink:0;animation:bob 3s ease-in-out infinite;filter:drop-shadow(0 8px 18px rgba(0,0,0,.3))}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}
+.mary.small{width:74px;height:74px}
+/* Flow diagram */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;width:100%;max-width:680px}
+.node{background:rgba(253,232,238,.1);border:1px solid rgba(242,184,198,.25);border-radius:14px;padding:.8rem .6rem;font-size:.82rem;text-align:center;animation:pop .5s both}
+.node .ico{font-size:1.5rem;display:block;margin-bottom:.2rem}
+.node b{display:block;font-weight:500;color:var(--blush);font-size:.86rem}
+.node small{color:rgba(253,232,238,.6);font-size:.72rem}
+@keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:scale(1)}}
+.arrowrow{text-align:center;color:var(--blush);font-size:1.3rem;letter-spacing:.4em;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+/* Controls */
+.controls{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:1.4rem}
+.btn{background:var(--rose);color:#fff;border:none;border-radius:100px;padding:.6rem 1.4rem;font-family:'Jost';font-size:.85rem;cursor:pointer;transition:transform .15s,background .2s}
+.btn:hover{transform:translateY(-2px);background:#e8849a}
+.btn.ghost{background:transparent;border:1px solid rgba(242,184,198,.4);color:var(--petal)}
+.dots{display:flex;gap:.4rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.dot{width:9px;height:9px;border-radius:50%;background:rgba(242,184,198,.3);cursor:pointer;transition:.2s}
+.dot.on{background:var(--rose);transform:scale(1.3)}
+.bar{height:3px;background:rgba(242,184,198,.15);border-radius:3px;margin-top:1rem;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blush),var(--rose))}
+.bar i.run{animation:grow var(--dur,7s) linear forwards}
+@keyframes grow{from{width:0}to{width:100%}}
+/* explore grid */
+.explore{margin-top:3rem;text-align:center}
+.explore h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:1.6rem;margin-bottom:1rem;color:var(--blush)}
+.egrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;max-width:760px;margin:0 auto}
+.ecard{background:rgba(253,232,238,.07);border:1px solid rgba(242,184,198,.2);border-radius:12px;padding:.9rem;color:var(--petal);text-decoration:none;transition:.25s;font-size:.9rem}
+.ecard:hover{background:rgba(242,184,198,.16);transform:translateY(-3px)}
+.ecard .ico{font-size:1.4rem;display:block;margin-bottom:.3rem}
+.home-link{display:inline-block;margin-top:2rem;color:var(--blush);text-decoration:underline;font-size:.9rem}
+@media(max-width:600px){.scene{inset:1rem}.flow{grid-template-columns:1fr 1fr}.mary{width:90px;height:90px}}
+</style>
+</head>
+<body>
+<div class="glow"></div><div class="petals" id="petals"></div>
+<div class="wrap">
+<h1>How it all works, <em>with Mary</em> 🌸</h1>
+<p class="tagline">A little self-running tour of the Brave Plum Healing machine — press play and enjoy.</p>
+
+<div class="stage" id="stage">
+  <!-- scenes injected by JS -->
+</div>
+
+<div class="bar"><i id="bar"></i></div>
+<div class="controls">
+  <button class="btn ghost" id="prev">‹ Back</button>
+  <button class="btn" id="play">⏸ Pause</button>
+  <button class="btn ghost" id="next">Next ›</button>
+</div>
+<div class="dots" id="dots"></div>
+
+<div class="explore">
+  <h3>Explore every screen yourself</h3>
+  <div class="egrid">
+    <a class="ecard" href="index.html"><span class="ico">🏡</span>Home</a>
+    <a class="ecard" href="about.html"><span class="ico">🌿</span>About Johnny</a>
+    <a class="ecard" href="work-with-me.html"><span class="ico">🌷</span>Work With Me</a>
+    <a class="ecard" href="speaking.html"><span class="ico">🎤</span>Speaking</a>
+    <a class="ecard" href="podcast.html"><span class="ico">🎧</span>Podcast</a>
+    <a class="ecard" href="videos.html"><span class="ico">🎬</span>Videos</a>
+    <a class="ecard" href="book.html"><span class="ico">🗓️</span>Book &amp; Pay</a>
+    <a class="ecard" href="contact.html"><span class="ico">💌</span>Contact</a>
+    <a class="ecard" href="posts/welcome/"><span class="ico">📖</span>Journal Post</a>
+    <a class="ecard" href="admin/"><span class="ico">✍️</span>Private Editor</a>
+  </div>
+  <a class="home-link" href="index.html">← Back to the site</a>
+</div>
+</div>
+
+<script>
+// ---- Mary the plum-blossom avatar (SVG) ----
+function mary(cls){return `<svg class="mary ${cls||''}" viewBox="0 0 120 120"><g transform="translate(60,60)">
+${[0,72,144,216,288].map(r=>`<ellipse cx="0" cy="-26" rx="13" ry="22" fill="${r%144===0?'#F2B8C6':'#EDA5BA'}" transform="rotate(${r})"/>`).join('')}
+<circle r="20" fill="#FDE8EE"/>
+<circle cx="-7" cy="-3" r="3.2" fill="#3D1A3D"/><circle cx="7" cy="-3" r="3.2" fill="#3D1A3D"/>
+<circle cx="-6" cy="-4" r="1" fill="#fff"/><circle cx="8" cy="-4" r="1" fill="#fff"/>
+<path d="M-7 6 Q0 13 7 6" stroke="#C4637E" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+<circle cx="-12" cy="4" r="3" fill="#F2B8C6" opacity=".7"/><circle cx="12" cy="4" r="3" fill="#F2B8C6" opacity=".7"/>
+<circle cx="0" cy="-2" r="2" fill="#C49A3A"/></g></svg>`;}
+
+// ---- Scenes ----
+const flow=(nodes)=>`<div class="flow">${nodes.map(n=>`<div class="node"><span class="ico">${n[0]}</span><b>${n[1]}</b><small>${n[2]}</small></div>`).join('')}</div>`;
+const scenes=[
+ {h:'Hi, I’m <em>Mary</em>!',v:mary(),b:`I’m your plum-blossom guide 🌸. In about a minute I’ll show you how Johnny’s whole website runs itself — the design, the data, the agents, and the magic. <strong>Sit back!</strong>`},
+ {h:'One <em>source of truth</em>',v:mary('small')+flow([['🗂️','GitHub repo','content + design'],['📝','content/','words you edit'],['🎨','src/','the plum design']]),b:`Everything lives in <strong>one GitHub repo</strong>. Your <strong>words</strong> live in <code>content/</code>, the <strong>design</strong> lives in <code>src/</code> — so editing text can never break the pretty layout.`},
+ {h:'Two <em>front doors</em>',v:flow([['🗂️','GitHub','source'],['➡️','builds to','Eleventy'],['🌐','GitHub Pages','the designed site']])+`<div class="arrowrow">↓ &nbsp; also syncs &nbsp; ↓</div>`+flow([['📰','WordPress','content mirror'],['','',''],['','','']]),b:`When you publish, it builds to <strong>GitHub Pages</strong> (your beautiful site) and one-way-syncs the content to <strong>WordPress</strong>. Two doors, one truth.`},
+ {h:'Write &amp; <em>publish</em>',v:mary('small')+flow([['✍️','/admin','private editor'],['🔀','draft → PR','review gate'],['🚀','Publish','goes live']]),b:`Pop into <strong>/admin</strong> from any device, write a post, hit <strong>Publish</strong>. It saves a private draft, then ships to the live site in seconds. No code needed!`},
+ {h:'Booking &amp; <em>money</em>',v:flow([['🗓️','Calendly','pick a time'],['💳','Stripe','$228/hr · $5k/day'],['📞','Rachel','call/text']]),b:`Clients book a slot on <strong>Calendly</strong>, pay securely via <strong>Stripe</strong> payment links, or just <strong>call Rachel</strong>. Real money, safely handled — Stripe does the heavy lifting.`},
+ {h:'A note lands <em>safely</em>',v:flow([['💌','Contact form','visitor writes'],['➡️','Web3Forms','no server!'],['📥','Inbox','Johnny replies']]),b:`The contact form sends straight to Johnny’s inbox through <strong>Web3Forms</strong> — no servers, no spam, no fuss.`},
+ {h:'The <em>Cloud-Mary</em> team',v:mary('small')+flow([['🧠','ai-bob','orchestrator'],['✍️','ai-content','on-brand words'],['🐙','ai-github','PRs & deploy'],['📰','ai-wordpress','sync'],['💳','ai-stripe','links only'],['📜','ai-audit','the conscience']]),b:`Behind the scenes, a team of tiny specialist agents — led by <strong>ai-bob</strong> — each do <strong>only their job</strong>. That’s me and my friends! 🌸`},
+ {h:'Every step is <em>remembered</em>',v:flow([['📜','AIGovOps-HIBT','the ledger'],['🔗','hash-chained','tamper-proof'],['👤','who·when·what','model·prompt']]),b:`Every action is written to an <strong>immutable ledger</strong> — who did it, when, which model, the prompt, the result — all hash-chained so nothing can be secretly changed.`},
+ {h:'Safe by <em>design</em>',v:flow([['🟢','Tier 0','auto (typos)'],['🟡','Tier 1','needs a PR'],['🔴','Tier 2','humans only']]),b:`Agents can fix typos on their own, but <strong>money, deletions, and secrets</strong> are off-limits — a guard blocks them. Humans stay in control of the big stuff.`},
+ {h:'Always <em>tested</em>',v:flow([['🧪','Unit','7 checks'],['🐒','Chaos monkey','tamper tests'],['📈','Scale','100s of posts']]),b:`Robots test the robots! Every change runs <strong>unit, chaos, and scale</strong> tests before it ships. The chaos monkey even tries to corrupt the ledger — and always gets caught. 🐒`},
+ {h:'That’s the whole <em>garden</em> 🌸',v:mary(),b:`From your words to a live, governed, money-making website — all version-controlled and backed up. <strong>Thanks for touring with me!</strong> Tap a card below to explore any screen yourself.`}
+];
+
+// ---- Player ----
+const stage=document.getElementById('stage'), dotsEl=document.getElementById('dots'), bar=document.getElementById('bar');
+scenes.forEach((s,i)=>{const d=document.createElement('div');d.className='scene';d.id='sc'+i;
+  d.innerHTML=`<div>${s.v}</div><h2>${s.h}</h2><div class="bubble">${s.b}</div>`;stage.appendChild(d);
+  const dot=document.createElement('div');dot.className='dot';dot.onclick=()=>go(i);dotsEl.appendChild(dot);});
+let idx=0,playing=true,timer=null;const DUR=7000;
+function render(){document.querySelectorAll('.scene').forEach((s,i)=>s.classList.toggle('on',i===idx));
+  document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('on',i===idx));
+  bar.classList.remove('run');void bar.offsetWidth;bar.style.setProperty('--dur',DUR+'ms');if(playing)bar.classList.add('run');}
+function go(i){idx=(i+scenes.length)%scenes.length;render();if(playing)schedule();}
+function schedule(){clearTimeout(timer);timer=setTimeout(()=>go(idx+1),DUR);}
+function setPlay(p){playing=p;document.getElementById('play').textContent=p?'⏸ Pause':'▶ Play';if(p){schedule();bar.classList.add('run');}else{clearTimeout(timer);bar.classList.remove('run');}}
+document.getElementById('next').onclick=()=>go(idx+1);
+document.getElementById('prev').onclick=()=>go(idx-1);
+document.getElementById('play').onclick=()=>setPlay(!playing);
+go(0);
+
+// petals
+const P='<svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="5" ry="9" fill="#F2B8C6" opacity=".7"/></svg>';
+for(let i=0;i<14;i++){const d=document.createElement('div');d.className='pt';d.style.left=Math.random()*100+'%';d.style.width=(10+Math.random()*14)+'px';d.innerHTML=P;d.style.animation=`fall ${6+Math.random()*6}s ${Math.random()*6}s linear infinite`;document.getElementById('petals').appendChild(d);}
+</script>
+</body>
+</html>{% endraw %}
