@@ -1,0 +1,9 @@
+# Mr Rogers Telegram bridge — Cloudflare Worker config.
+# Deploy:  npx wrangler deploy   (from this folder)
+# Secrets: npx wrangler secret put TELEGRAM_BOT_TOKEN
+#          npx wrangler secret put TELEGRAM_ALLOWED_CHAT
+#          npx wrangler secret put TELEGRAM_WEBHOOK_SECRET
+#          npx wrangler secret put GITHUB_TOKEN
+name = "mr-rogers-bridge"
+main = "worker.js"
+compatibility_date = "2026-06-01"

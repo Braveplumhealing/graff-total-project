@@ -1,34 +1,39 @@
 # Brave Plum Healing — Human To-Do Checklist
 
-The things only **you** can do (accounts, credentials, money, approvals). The agent handles
+The things only **you** can do (accounts, credentials, money, approvals). The agents handle
 everything else. Detailed steps are in the linked docs.
 
-## 🟢 First: merge & turn on the basics
-- [ ] **Merge** [PR #1](https://github.com/Braveplumhealing/graff-total-project/pull/1) — makes the site + tools live.
-- [ ] **Enable the safety guard:** `cp config/claude-settings.suggested.json .claude/settings.json` — see `docs/SETUP.md`.
-- [ ] **Add GitHub Actions secrets** `WP_SITE`, `WP_USER`, `WP_APP_PASSWORD` — see `docs/SETUP.md`.
+## ✅ Done (kept for the record)
+- [x] Merge PR #1 — platform live
+- [x] Contact form (Web3Forms) — LIVE, tested
+- [x] Calendly booking event (`/30min`) — LIVE
+- [x] Stripe account + LIVE Payment Links (session / day / T&E)
+- [x] WordPress restored to originals; auto-sync retired (2026-06-07)
 
-## ✍️ Use the private editor (`/admin`)
-- [ ] **Create a GitHub fine-grained token** (Contents: read/write) and sign in at `/admin` — see `docs/ADMIN-SETUP.md`.
-- [ ] *(Optional)* **"Sign In with GitHub" button:** create OAuth App + deploy the worker — see `docs/SIGN-IN-WITH-GITHUB.md`.
+## 🏡 New: the Mr Rogers layer
+- [ ] **Merge the Mr Rogers PR** (agents/skill/dashboard/docs/bridge) — then `/neighborhood` is live.
+- [ ] **Protect `main`:** GitHub → Settings → Branches → add rule for `main` → require pull
+  requests, block force pushes. *(This one switch makes the PR gate and ledger binding.)*
+- [ ] **Enable the safety guard** (if not yet): `cp config/claude-settings.suggested.json .claude/settings.json`.
 
-## 📨 Contact form
-- [ ] **Get a form endpoint** (Web3Forms key or Formspree URL) → paste into `content/_data/site.json` — see `docs/CONTACT-FORM-SETUP.md`.
+## 📱 Telegram (run it from your phone) — `docs/TELEGRAM-SETUP.md`
+- [ ] Create the bot with @BotFather; note the token + your chat id.
+- [ ] Create the fine-grained GitHub token (this repo only: Actions rw · Issues rw · Contents ro).
+- [ ] `wrangler deploy` the bridge + set the four secrets; register the webhook.
+- [ ] *(Optional)* Add `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` repo secrets for deploy pings.
+- [ ] Bookmark `/neighborhood` on your phone (Share → Add to Home Screen).
 
-## 💳 Payments & booking
-- [ ] **Stripe:** create account; make Payment Links (sessions, retreats, products, donations, charitable fund).
-- [ ] **Calendly:** create account + booking event; copy the link.
-- [ ] Paste links into `content/_data/offerings.json` and `content/_data/site.json` (`calendly_url`).
-- [ ] ⚠️ Any **payout/transfer of the charitable fund to other orgs** — you do it manually in Stripe. The agent never moves money.
+## 🌐 The one open architecture decision
+- [ ] **Pick the canonical home for braveplumhealing.org:** point the domain at GitHub Pages
+  (one site, the plum design — `docs/SETUP.md` option 1) **or** keep WordPress as the public
+  face and treat Pages as the workshop. Until decided, the two sites will drift.
 
-## 🤖 Content engine
-- [ ] **Marblism:** confirm login (`braveplumhealing@outlook.com`); set its agents to drop drafts into `content/_inbox/`.
+## ✍️ Ongoing
+- [ ] Marblism: confirm login (`braveplumhealing@outlook.com`); drafts land in `content/_inbox/`.
+- [ ] Confirm the public listings are current: phone (Rachel), rates ($228/hr · $5,000/day),
+  and the coaching/Reiki/retreats positioning.
 
 ## 🔐 Standing reminders (yours alone)
-- [ ] Never paste passwords / card / bank details to the agent.
-- [ ] Approve/merge PRs (your review gate).
-- [ ] *(If needed)* confirm your WordPress.com plan tier for deeper WP embedding.
-
----
-**Fastest path to live + useful:** merge → token → contact endpoint. Payments and the GitHub
-button can follow anytime. Governance: see `docs/AIGOVOPS-HIBT.md`; the agent team: `docs/CLOUD-MARY.md`.
+- [ ] Never paste passwords / card / bank details to any agent or bot — including Telegram.
+- [ ] Approve/merge PRs (your review gate). `/neighborhood` shows what's waiting.
+- [ ] Any payout/transfer of the charitable fund: you, manually, in Stripe. Agents never move money.
