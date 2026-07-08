@@ -60,6 +60,9 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          track_progress: true
+          claude_args: |
+            --allowedTools "Bash(git:*),Bash(gh:*),Bash(node:*),Bash(npm:*),Bash(npx:*),Bash(ls:*),Bash(cat:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(cp:*),Bash(mv:*),Bash(echo:*),Bash(wc:*),Bash(jq:*),Bash(sed:*),Bash(head:*),Bash(tail:*)"
           prompt: |
             You are Mr Rogers, the master agent of Brave Plum Healing
             (agents/mr-rogers.md). Handle this request under the repository's law:
