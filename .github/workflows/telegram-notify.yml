@@ -1,0 +1,29 @@
+name: Notify Telegram on deploy
+
+# Optional: messages Johnny's Telegram when the Pages deploy finishes, closing the loop
+# for /publish sent from a phone. Requires repo secrets TELEGRAM_BOT_TOKEN and
+# TELEGRAM_CHAT_ID (see docs/TELEGRAM-SETUP.md). Skips silently if they're absent.
+
+on:
+  workflow_run:
+    workflows: ["Build & deploy site to GitHub Pages"]
+    types: [completed]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send result to Telegram
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RESULT: ${{ github.event.workflow_run.conclusion }}
+        run: |
+          [ -z "$TOKEN" ] || [ -z "$CHAT" ] && echo "Telegram secrets not set; skipping." && exit 0
+          if [ "$RESULT" = "success" ]; then
+            MSG="🌸 The site is live and looking lovely. https://braveplumhealing.github.io/graff-total-project/"
+          else
+            MSG="❌ The deploy finished with: $RESULT — /status for details."
+          fi
+          curl -s "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+            -d chat_id="${CHAT}" -d text="${MSG}" > /dev/null

@@ -1,0 +1,241 @@
+---
+permalink: neighborhood/index.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>The Neighborhood — Brave Plum Operations</title>
+<meta name="description" content="Live operations watchtower for Brave Plum Healing: site health, the agent team, recent activity, and the self-verifying governance ledger.">
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#3D1A3D;--plum2:#4A2149;--rose:#C4637E;--blush:#F2B8C6;--petal:#FDE8EE;--cream:#FDF5F0;--sage:#7FA97F;--gold:#C49A3A;--ink:rgba(253,232,238,.72);--faint:rgba(253,232,238,.38);--line:rgba(242,184,198,.16);--card:rgba(253,232,238,.055);--ease:cubic-bezier(.16,1,.3,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--plum);color:var(--ink);font-family:'Jost',sans-serif;font-size:15px;line-height:1.6;min-height:100vh}
+a{color:var(--blush);text-decoration:none}a:hover{color:var(--petal)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.4rem}
+/* header */
+header{position:relative;overflow:hidden;padding:3.2rem 0 2.2rem;background:radial-gradient(ellipse 75% 90% at 50% -20%,rgba(196,99,126,.30) 0%,transparent 62%)}
+.crest{display:flex;align-items:center;gap:1rem}
+.crest svg{width:52px;height:52px;flex-shrink:0}
+.ey{font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;color:var(--blush);opacity:.8}
+h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,4.5vw,3rem);color:var(--petal);line-height:1.08}
+h1 em{font-style:italic;color:var(--blush)}
+.tag{margin-top:.5rem;font-weight:300;color:var(--faint);max-width:56ch}
+.homelink{position:absolute;top:1.2rem;right:1.4rem;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+/* sections */
+section{padding:1.6rem 0}
+h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:1.45rem;color:var(--petal);margin-bottom:.2rem}
+.sub{font-size:.8rem;color:var(--faint);margin-bottom:1.1rem}
+/* status lanterns */
+.lanterns{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem}
+.lantern{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.05rem 1.15rem;transition:transform .3s var(--ease)}
+.lantern:hover{transform:translateY(-3px)}
+.ll{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
+.lv{display:flex;align-items:center;gap:.55rem;font-family:'Cormorant Garamond',serif;font-size:1.28rem;color:var(--petal)}
+.lamp{width:11px;height:11px;border-radius:50%;background:var(--faint);flex-shrink:0;box-shadow:0 0 0 0 transparent;transition:all .4s}
+.lamp.ok{background:var(--sage);box-shadow:0 0 12px rgba(127,169,127,.65)}
+.lamp.bad{background:#D06A6A;box-shadow:0 0 12px rgba(208,106,106,.6)}
+.lamp.wait{background:var(--gold);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.45}}
+.ln{font-size:.72rem;color:var(--faint);margin-top:.3rem;min-height:1.1em}
+/* the street */
+.rogers{background:linear-gradient(135deg,rgba(196,99,126,.16),rgba(122,48,112,.22));border:1px solid rgba(242,184,198,.3);border-radius:16px;padding:1.5rem 1.6rem;display:flex;gap:1.3rem;align-items:flex-start;margin-bottom:1rem}
+.rogers svg{width:56px;height:56px;flex-shrink:0}
+.rname{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--petal)}
+.rrole{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blush);opacity:.75;margin-bottom:.4rem}
+.rsay{font-weight:300;color:var(--ink);max-width:62ch}
+.street{display:grid;grid-template-columns:repeat(7,1fr);gap:.7rem}
+.house{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--rose);border-radius:12px;padding:.85rem .8rem;transition:transform .3s var(--ease),background .25s}
+.house:hover{transform:translateY(-4px);background:rgba(253,232,238,.1)}
+.hn{font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--petal)}
+.hr{font-size:.68rem;font-weight:300;color:var(--faint);line-height:1.45;margin-top:.25rem}
+/* two-column */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;align-items:start}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.3rem 1.4rem}
+.feed li{display:flex;gap:.75rem;padding:.55rem 0;border-bottom:1px solid rgba(242,184,198,.08);font-size:.83rem;list-style:none}
+.feed li:last-child{border-bottom:none}
+.dot{width:8px;height:8px;border-radius:50%;margin-top:.42rem;flex-shrink:0;background:var(--rose)}
+.dot.run-ok{background:var(--sage)}.dot.run-bad{background:#D06A6A}.dot.run-wait{background:var(--gold)}
+.fm{color:var(--ink)}.ft{font-size:.68rem;color:var(--faint)}
+/* ledger */
+.seal{display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--line);border-radius:100px;padding:.45rem 1.05rem;font-size:.76rem;margin-bottom:1rem;background:rgba(61,26,61,.35)}
+.seal .lamp{width:9px;height:9px}
+.entry{font-family:'IBM Plex Mono',monospace;font-size:.72rem;padding:.55rem 0;border-bottom:1px solid rgba(242,184,198,.08);color:var(--ink)}
+.entry:last-child{border-bottom:none}
+.entry .who{color:var(--blush)}
+.entry .hash{color:var(--faint);font-size:.64rem;word-break:break-all}
+.chip{display:inline-block;border-radius:100px;padding:.05rem .55rem;font-size:.6rem;letter-spacing:.08em;margin-left:.4rem;border:1px solid var(--line)}
+.t0{color:var(--sage)}.t1{color:var(--gold)}.t2{color:#D06A6A}
+/* covenant + doors */
+.covenant{border:1px dashed rgba(242,184,198,.28);border-radius:14px;padding:1.1rem 1.3rem;font-size:.83rem;font-weight:300;color:var(--faint)}
+.covenant strong{color:var(--blush);font-weight:400}
+.doors{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem}
+.door{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem;font-size:.8rem}
+.door b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.05rem;color:var(--petal);margin-bottom:.25rem}
+footer{padding:2.2rem 0 2.6rem;font-size:.7rem;color:rgba(253,232,238,.25)}
+.err{color:#E09A9A;font-size:.78rem}
+@media(max-width:880px){.lanterns{grid-template-columns:1fr 1fr}.street{grid-template-columns:repeat(3,1fr)}.cols{grid-template-columns:1fr}.doors{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <a class="homelink" href="../index.html">← braveplumhealing</a>
+  <div class="wrap">
+    <div class="crest">
+      <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g transform="translate(40,40)"><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#F2B8C6" opacity=".85"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#EDA5BA" opacity=".85" transform="rotate(72)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#F2B8C6" opacity=".85" transform="rotate(144)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#EDA5BA" opacity=".85" transform="rotate(216)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#F2B8C6" opacity=".85" transform="rotate(288)"/><circle r="5" fill="#FDE8EE"/><circle cx="0" cy="-3" r="1.5" fill="#C49A3A"/><circle cx="3" cy="1.5" r="1.2" fill="#C49A3A"/><circle cx="-3" cy="1.5" r="1.2" fill="#C49A3A"/></g></svg>
+      <div>
+        <div class="ey">Brave Plum Operations</div>
+        <h1>The <em>Neighborhood</em></h1>
+      </div>
+    </div>
+    <p class="tag">Everything the agents do, in the open — site health, the crew, recent work, and a governance ledger that proves itself every time you look at it.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section aria-label="Status">
+  <div class="lanterns">
+    <div class="lantern"><div class="ll">Live site</div><div class="lv"><span class="lamp wait" id="lamp-site"></span><span id="v-site">checking…</span></div><div class="ln" id="n-site"></div></div>
+    <div class="lantern"><div class="ll">Last deploy</div><div class="lv"><span class="lamp wait" id="lamp-deploy"></span><span id="v-deploy">…</span></div><div class="ln" id="n-deploy"></div></div>
+    <div class="lantern"><div class="ll">Tests</div><div class="lv"><span class="lamp wait" id="lamp-tests"></span><span id="v-tests">…</span></div><div class="ln" id="n-tests"></div></div>
+    <div class="lantern"><div class="ll">Awaiting Johnny</div><div class="lv"><span class="lamp wait" id="lamp-gate"></span><span id="v-gate">…</span></div><div class="ln" id="n-gate"></div></div>
+  </div>
+</section>
+
+<section aria-label="The agent team">
+  <h2>Who's home</h2>
+  <p class="sub">One master agent at the front door; a foreman and six specialists behind it. Least privilege, one conscience.</p>
+  <div class="rogers">
+    <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="18" y="34" width="44" height="30" rx="3" fill="rgba(253,232,238,.12)" stroke="#F2B8C6" stroke-opacity=".5"/><path d="M14 36 L40 16 L66 36" fill="none" stroke="#C4637E" stroke-width="2.5" stroke-linecap="round"/><rect x="35" y="46" width="10" height="18" rx="1.5" fill="#C4637E" opacity=".85"/><circle cx="40" cy="30" r="4" fill="#FDE8EE" opacity=".9"/></svg>
+    <div>
+      <div class="rrole">Master agent · your front door</div>
+      <div class="rname">Mr Rogers</div>
+      <p class="rsay">Ask in plain words — here, in Claude Code, or from your phone. He translates, classifies the risk, sends the crew, logs every step, and brings anything that ships back to you as a pull request. <span id="rogers-note"></span></p>
+    </div>
+  </div>
+  <div class="street" role="list">
+    <div class="house" role="listitem"><div class="hn">ai-bob</div><div class="hr">operations foreman — plans &amp; dispatches</div></div>
+    <div class="house" role="listitem"><div class="hn">ai-content</div><div class="hr">on-brand copy &amp; posts → PRs</div></div>
+    <div class="house" role="listitem"><div class="hn">ai-marblism</div><div class="hr">inbox drafts → the PR gate</div></div>
+    <div class="house" role="listitem"><div class="hn">ai-github</div><div class="hr">branches, CI, Pages deploys</div></div>
+    <div class="house" role="listitem"><div class="hn">ai-wordpress</div><div class="hr">WP care (sync retired)</div></div>
+    <div class="house" role="listitem"><div class="hn">ai-stripe</div><div class="hr">payment links only — never money</div></div>
+    <div class="house" role="listitem"><div class="hn">ai-audit</div><div class="hr">the conscience — keeps the ledger</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="cols">
+    <div class="panel" aria-label="Recent activity">
+      <h2>Recent work</h2>
+      <p class="sub">Latest commits and automation runs, straight from GitHub.</p>
+      <ul class="feed" id="feed"><li><span class="dot run-wait"></span><div class="fm">Fetching…</div></li></ul>
+    </div>
+    <div class="panel" aria-label="Governance ledger">
+      <h2>The ledger</h2>
+      <p class="sub">Every agent action, hash-chained. Your browser just re-verified the entire chain itself — no one's word taken for it.</p>
+      <div class="seal"><span class="lamp wait" id="lamp-chain"></span><span id="v-chain">Verifying the chain in your browser…</span></div>
+      <div id="ledger"></div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="How to reach Mr Rogers">
+  <h2>Three doors</h2>
+  <p class="sub">All of them lead to the same governed neighborhood.</p>
+  <div class="doors">
+    <div class="door"><b>Say it</b>In Claude Code: “Mr Rogers, draft a post about…” — Tier-1 work returns as a PR for your approval.</div>
+    <div class="door"><b>Text it</b>From Telegram: /status · /audit · /publish · /task &lt;anything&gt;. Setup: docs/TELEGRAM-SETUP.md.</div>
+    <div class="door"><b>Write it</b>The private <a href="../admin/index.html">/admin editor</a> — drafts stay private until you press Publish.</div>
+  </div>
+</section>
+
+<section>
+  <div class="covenant"><strong>The covenant:</strong> agents never move money, disburse funds, delete data, change permissions, touch secrets, create accounts, or accept terms. Those doors open only to Johnny. Everything else is logged, reviewed, and reversible.</div>
+</section>
+
+</main>
+<footer><div class="wrap">Brave Plum Healing · The Neighborhood watchtower · data refreshes on each visit · <span id="stamp"></span></div></footer>
+
+<script>
+(async function(){
+const REPO='Braveplumhealing/graff-total-project';
+const API='https://api.github.com/repos/'+REPO;
+const RAW='https://raw.githubusercontent.com/'+REPO+'/main';
+const $=id=>document.getElementById(id);
+const lamp=(id,state)=>{const el=$( 'lamp-'+id);el.className='lamp '+state;};
+const ago=iso=>{const s=(Date.now()-new Date(iso))/1e3;if(s<90)return 'just now';const m=s/60;if(m<90)return Math.round(m)+' min ago';const h=m/60;if(h<36)return Math.round(h)+' hr ago';return Math.round(h/24)+' days ago';};
+$('stamp').textContent='rendered '+new Date().toLocaleString();
+
+// --- live site check (same-origin fetch of the homepage) ---
+try{
+  const r=await fetch('../index.html',{cache:'no-store'});
+  lamp('site',r.ok?'ok':'bad');$('v-site').textContent=r.ok?'Up':'HTTP '+r.status;
+}catch(e){lamp('site','bad');$('v-site').textContent='Unreachable';}
+
+// --- GitHub: workflow runs, commits, open PRs/tasks ---
+const gh=p=>fetch(API+p,{headers:{Accept:'application/vnd.github+json'}}).then(r=>r.ok?r.json():Promise.reject(r.status));
+try{
+  const runs=(await gh('/actions/runs?per_page=15')).workflow_runs||[];
+  const pick=n=>runs.find(r=>r.name===n);
+  const show=(key,run)=>{ if(!run){lamp(key,'bad');$('v-'+key).textContent='no runs';return;}
+    const ok=run.conclusion==='success', pend=!run.conclusion;
+    lamp(key,pend?'wait':ok?'ok':'bad');
+    $('v-'+key).textContent=pend?'running…':ok?'Healthy':run.conclusion;
+    $('n-'+key).textContent=ago(run.updated_at);};
+  show('deploy',pick('Build & deploy site to GitHub Pages'));
+  show('tests',pick('Tests (unit · chaos · scale)'));
+
+  const [prs,tasks]=await Promise.all([gh('/pulls?state=open'),gh('/issues?labels=mr-rogers&state=open')]);
+  const waiting=prs.length+tasks.filter(t=>!t.pull_request).length;
+  lamp('gate',waiting?'wait':'ok');
+  $('v-gate').textContent=waiting? (waiting+' item'+(waiting>1?'s':'')) :'All clear';
+  $('n-gate').textContent=waiting?(prs.length+' PR · '+tasks.filter(t=>!t.pull_request).length+' task'):'nothing needs your review';
+  $('rogers-note').textContent=waiting?('Right now '+waiting+' item'+(waiting>1?'s are':' is')+' waiting for your eyes.'):'Nothing is waiting on you right now.';
+
+  const commits=await gh('/commits?per_page=5');
+  const feed=[];
+  commits.forEach(c=>feed.push({t:c.commit.author.date,dot:'',html:'<div class="fm">'+esc(c.commit.message.split('\n')[0])+'</div><div class="ft">commit · '+ago(c.commit.author.date)+'</div>'}));
+  runs.slice(0,5).forEach(r=>feed.push({t:r.updated_at,dot:r.conclusion==='success'?'run-ok':r.conclusion?'run-bad':'run-wait',html:'<div class="fm">'+esc(r.name)+'</div><div class="ft">'+(r.conclusion||r.status)+' · '+ago(r.updated_at)+'</div>'}));
+  feed.sort((a,b)=>new Date(b.t)-new Date(a.t));
+  $('feed').innerHTML=feed.slice(0,8).map(f=>'<li><span class="dot '+f.dot+'"></span><div>'+f.html+'</div></li>').join('');
+}catch(e){
+  $('feed').innerHTML='<li><span class="dot run-bad"></span><div class="fm err">GitHub data unavailable right now ('+esc(String(e))+'). It refreshes on your next visit.</div></li>';
+  ['deploy','tests','gate'].forEach(k=>{lamp(k,'bad');$('v-'+k).textContent='—';});
+}
+
+// --- the signature: verify the HIBT hash chain right here in the browser ---
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+async function sha256(str){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(str));return 'sha256:'+[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');}
+try{
+  const txt=await (await fetch(RAW+'/audit/log.jsonl',{cache:'no-store'})).text();
+  const lines=txt.trim().split('\n').filter(Boolean);
+  let prev='GENESIS',ok=true,prevSeq=null;
+  for(const line of lines){
+    const e=JSON.parse(line);
+    const sealed={...e};delete sealed.hash;
+    if(e.prev_hash!==prev)ok=false;
+    if(await sha256(JSON.stringify(sealed))!==e.hash)ok=false;
+    if(Number.isFinite(e.seq)&&Number.isFinite(prevSeq)&&e.seq!==prevSeq+1)ok=false;
+    if(Number.isFinite(e.seq))prevSeq=e.seq;
+    prev=e.hash;
+  }
+  lamp('chain',ok?'ok':'bad');
+  $('v-chain').textContent=ok?('Chain intact — '+lines.length+' entries, verified in your browser just now'):'INTEGRITY FAILURE — the record has been altered';
+  $('ledger').innerHTML=lines.slice(-6).reverse().map(l=>{const e=JSON.parse(l);
+    return '<div class="entry"><span class="who">'+esc(e.actor||'?')+'</span> → '+esc(e.action||'')+
+    '<span class="chip t'+(e.tier??1)+'">tier '+(e.tier??'?')+'</span><br>'+esc(e.target||'')+
+    '<br><span class="hash">'+esc(String(e.hash||'').slice(0,34))+'… · '+esc(String(e.ts||'').slice(0,10))+'</span></div>';}).join('');
+}catch(e){
+  lamp('chain','bad');$('v-chain').textContent='Ledger unreachable right now';
+  $('ledger').innerHTML='<div class="err">Could not load audit/log.jsonl ('+esc(String(e))+').</div>';
+}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+name: Mr Rogers autopilot
+
+# Wakes Mr Rogers in GitHub's cloud — no laptop involved — when:
+#   • an issue is opened/labeled with `mr-rogers` (the Telegram bridge creates these), or
+#   • Johnny mentions @claude in an issue or PR comment.
+#
+# SAFETY GUARDS (do not remove):
+#   1. OWNER-only: this is a public repo; only the repository owner's issues/comments
+#      may trigger work. Strangers' issues are ignored by the `if:` conditions.
+#   2. Loop prevention: never triggered by bots (claude[bot], actions, dependabot).
+#   3. The agent CANNOT merge: branch protection + no merge permission = every change
+#      still lands as a PR for Johnny's tap.
+#   4. Governance rides along automatically: the action reads CLAUDE.md (tiers, ledger,
+#      golden rules) and the mr-rogers skill — same law as local sessions.
+#
+# Requires (one-time, docs/AUTOPILOT-SETUP.md): the Claude GitHub App installed on this
+# repo + repository secret ANTHROPIC_API_KEY.
+
+on:
+  issues:
+    types: [opened, labeled]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+  actions: read
+
+jobs:
+  rogers:
+    runs-on: ubuntu-latest
+    if: >-
+      github.actor != 'claude[bot]' &&
+      github.actor != 'github-actions[bot]' &&
+      github.actor != 'dependabot[bot]' &&
+      (
+        (
+          github.event_name == 'issues' &&
+          github.event.issue.author_association == 'OWNER' &&
+          contains(github.event.issue.labels.*.name, 'mr-rogers')
+        ) ||
+        (
+          github.event_name == 'issue_comment' &&
+          github.event.comment.author_association == 'OWNER' &&
+          contains(github.event.comment.body, '@claude')
+        )
+      )
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci || npm install
+      - name: Run Mr Rogers
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            You are Mr Rogers, the master agent of Brave Plum Healing
+            (agents/mr-rogers.md). Handle this request under the repository's law:
+            CLAUDE.md, docs/AIGOVOPS-HIBT.md, and the mr-rogers skill
+            (.claude/skills/mr-rogers/SKILL.md).
+
+            Non-negotiables for this cloud session:
+            - Classify the tier first. Tier-2 (money, deletions, permissions, secrets,
+              accounts, terms): decline warmly in a comment, prepare exact human steps,
+              and STOP.
+            - Tier-1: implement on a branch, run the tests
+              (node --test tests/unit.test.mjs; node audit/verify.mjs; build with
+              npx @11ty/eleventy), log the step via node audit/append.mjs
+              (actor: mr-rogers, user: jonnygraf, approver: pending-pr), and open a PR
+              whose body includes: one-sentence restatement, tier, rollback, and test
+              evidence. Never merge anything.
+            - Tier-0 (answers, status, read-only): reply as a comment.
+            - Close the loop: comment on the triggering issue with a warm three-line
+              report and the PR link if one was opened.
