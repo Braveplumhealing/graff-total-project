@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Just talk to Mr Rogers
+    url: https://github.com/Braveplumhealing/graff-total-project/issues/new?template=ask-mr-rogers.yml
+    about: The easiest way to ask for anything — one friendly box, no technical words.
