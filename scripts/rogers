@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# rogers — Johnny's one-word control panel. Runbook: docs/ROGERS-CLI.md
+# SAFETY: read-only except "launch" (go-ahead comment) and "merge" (one PR, shown, y/N).
+set -u
+R="Braveplumhealing/graff-total-project"
+G=$'\033[32m'; P=$'\033[35m'; D=$'\033[2m'; N=$'\033[0m'
+hr(){ printf '%s----------------------------------------%s\n' "$D" "$N"; }
+need(){ command -v gh >/dev/null || { echo "gh is missing - run SETUP.sh once."; exit 1; }
+  gh auth status >/dev/null 2>&1 || { echo "run: gh auth login (browser opens, no typing)"; exit 1; }; }
+status(){ hr; echo "${P}Neighborhood status${N}"
+  gh run list -R "$R" --limit 4 --json displayTitle,status,conclusion,workflowName \
+    --template '{{range .}}{{if eq .conclusion "success"}}[ok]{{else if eq .conclusion ""}}[..]{{else}}[!!]{{end}} {{.workflowName}} - {{.displayTitle}}
+{{end}}' 2>/dev/null || echo "  (GitHub is napping; try again shortly)"
+  echo "  PRs waiting for you: $(gh pr list -R "$R" --json number --jq 'length' 2>/dev/null || echo '?')"
+  echo "  Dashboard: https://braveplumhealing.github.io/graff-total-project/neighborhood/"; }
+waiting(){ hr; echo "${P}Waiting on Johnny${N}"; echo "- Pull requests (merge = 4):"
+  gh pr list -R "$R" --json number,title --template '{{range .}}   PR #{{.number}}  {{.title}}
+{{end}}'
+  echo "- Queued work orders (launch = 3):"
+  gh issue list -R "$R" --search 'Work order in:title' --json number,title --template '{{range .}}   #{{.number}}  {{.title}}
+{{end}}'; }
+launch(){ hr; echo "${P}Queued work orders${N}"
+  gh issue list -R "$R" --search 'Work order in:title' --json number,title --template '{{range .}}   #{{.number}}  {{.title}}
+{{end}}'
+  printf 'Issue number to launch (Enter cancels): '; read -r n
+  [ -z "${n:-}" ] && echo "Nothing launched." && return
+  case "$n" in *[!0-9]*) echo "Numbers only, neighbor."; return;; esac
+  gh issue view "$n" -R "$R" --json title --jq '"Launching: " + .title'
+  printf 'Confirm? [y/N] '; read -r ok; [ "$ok" = "y" ] || { echo "Left queued."; return; }
+  gh issue comment "$n" -R "$R" --body "@claude please begin" >/dev/null \
+    && echo "${G}Doorbell rung on #$n - a PR will knock when he is done.${N}"; }
+merge(){ hr; echo "${P}Pull requests waiting${N}"
+  gh pr list -R "$R" --json number,title --template '{{range .}}   PR #{{.number}}  {{.title}}
+{{end}}'
+  printf 'PR number to merge (Enter cancels): '; read -r n
+  [ -z "${n:-}" ] && echo "Nothing merged." && return
+  case "$n" in *[!0-9]*) echo "Numbers only, neighbor."; return;; esac
+  echo; echo "The one-sentence test - what it says it does:"
+  gh pr view "$n" -R "$R" --json title,body --template '  {{.title}}
+{{.body}}' | head -12
+  printf '\nMerge PR #%s? [y/N] ' "$n"; read -r ok; [ "$ok" = "y" ] || { echo "Left for later."; return; }
+  gh pr merge "$n" -R "$R" --merge && echo "${G}Merged. The site rebuilds itself.${N}"; }
+ask(){ hr; echo "${P}Ask Mr Rogers${N}"; echo "Plain sentences - typos fine, he reads intent:"
+  printf '> '; read -r want; [ -z "${want:-}" ] && echo "No request made." && return
+  url=$(gh issue create -R "$R" --title "Ask Mr Rogers: ${want:0:56}" --body "$want"); num=${url##*/}
+  gh issue comment "$num" -R "$R" --body "@claude please begin" >/dev/null
+  echo "${G}Filed and started (#$num). Changes come back as a PR for you.${N}"; }
+need
+while true; do hr
+  echo "${P}Mr Rogers - what would you like, neighbor?${N}"
+  echo "  1) How's the neighborhood?     2) What's waiting on me?"
+  echo "  3) Launch a queued work order  4) Merge a waiting pull request"
+  echo "  5) Ask Mr Rogers something new q) All done"
+  printf 'Choice: '; read -r c
+  case "${c:-}" in 1) status;; 2) waiting;; 3) launch;; 4) merge;; 5) ask;;
+    q|Q) echo "It's such a good feeling. Bye, neighbor."; exit 0;;
+    *) echo "Just the number, friend.";; esac
+done
