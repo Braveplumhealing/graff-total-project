@@ -28,7 +28,8 @@ Johnny ──(chat · Telegram · /admin)──► mr-rogers (master agent, the 
    Booking/pay: Calendly embed + Stripe Payment Links (links in content/_data)
    Mobile: telegram-worker/ bridge — /status /audit /publish /task (Tier-0 by construction)
 ```
-Details: `docs/ARCHITECTURE.md` (the map) · `docs/DURABILITY.md` (longevity) ·
+Details: `docs/ARCHITECTURE.md` (the map) · `docs/HANDS-FREE.md` (voice & taps — the
+Hands Covenant) · `docs/DURABILITY.md` (longevity) ·
 `docs/NEIGHBORHOOD-FLEET.md` (engineering crew) · `docs/MR-ROGERS.md` (front door + commands) · `docs/AIGOVOPS-HIBT.md` ·
 `docs/CLOUD-MARY.md` · `docs/DASHBOARD.md` · `docs/TELEGRAM-SETUP.md` · `CLAUDE.md`.
 

@@ -2,6 +2,15 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07 — The Hands Covenant (accessibility, permanent)
+Typing is physically costly for Johnny (missing a finger). Every agent designs his side
+of every interaction as **voice or one tap**: prefilled notes sendable as-is + one
+follow-up question in-thread; all keyboard/terminal work is the agents'; account steps
+use the concierge pattern (we drive to the last click, he clicks/dictates). Safety tiers
+unchanged — his part of Tier-2 is always a click, a spoken word, or a dictated sentence.
+**Why:** Johnny's ask, 2026-07: "make it so Mr Rogers can do all the stuff I cannot."
+Docs: docs/HANDS-FREE.md · agents/mr-rogers.md (Hands Covenant).
+
 ## 2026-07 — The Neighborhood Fleet (engineering crew, character-named)
 Mr Rogers now leads two crews: Cloud-Mary (business) + the Fleet (engineering best
 practices): McFeely/CI-CD · Officer Clemmons/security · Lady Elaine/chaos · Handyman

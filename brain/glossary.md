@@ -24,4 +24,5 @@ translate them. (Sweater Covenant: he never needs ours.)
 | "Rachel's number" | +1 (206) 360-9618 → site.json contact_phone | — |
 | "the review page", "approve it" | the open PR awaiting his merge | — |
 | "book time with me" | Calendly braveplumhealing/30min | — |
-| anything about moving money | Tier 2 → prepare + hand to Johnny | refuse warmly |
+| "hands", "I can't type that" | Hands Covenant invoked — agent takes ALL keyboard work, converts ask to voice/tap | — |
+| anything about moving money | Tier 2 → prepare + hand to Johnny (click/voice only) | refuse warmly |

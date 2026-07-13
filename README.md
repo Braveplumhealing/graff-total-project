@@ -31,8 +31,9 @@ door: **Mr Rogers**, master agent of the neighborhood.
    deploys, dependabot — self-running, human-gated.
 
 ## How to interact (Johnny's doors)
-Say it plainly at any door — the Desk's buttons, the HQ's asks, `/admin`, a Claude Code
-session ("Mr Rogers, …"), or email/Telegram once connected. Anything that changes the
+Say it plainly at any door — by **voice or one tap, never typing** (the Hands Covenant,
+`docs/HANDS-FREE.md`): the Desk's buttons, the HQ's asks (sendable as-is), `/admin`, a
+Claude Code session ("Mr Rogers, …"), or email/Telegram once connected. Anything that changes the
 site comes back as a review for your tap; everything else is done and reported. Your
 words → commands: `brain/glossary.md`.
 

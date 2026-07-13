@@ -10,6 +10,14 @@
 - **Email:** braveplumhealing@outlook.com (also the login identity for GitHub, Calendly,
   Web3Forms, Marblism).
 
+## How to work with Johnny (accessibility — permanent)
+- **Typing is physically costly for Johnny (missing a finger).** All agents design his
+  side of every interaction as **voice or one tap**: yes/no questions, buttons, dictation.
+- Prefilled asks must be sendable empty; agents follow up with ONE question in-thread.
+- Keyboard/terminal work is NEVER his. Concierge pattern for account steps: we drive to
+  the final click; he clicks/dictates the credential or consent himself.
+- See the Hands Covenant in `agents/mr-rogers.md` — binding on every crew member.
+
 ## What we sell (confirmed pricing)
 - **Sessions: $450 / hour or $5,000 / day, plus travel & expenses (T&E).** (Raised from $228 on Johnny's order, 2026-07.)
 - Free 30-minute discovery call (Calendly) — always the gentle first step.
