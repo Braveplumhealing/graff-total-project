@@ -22,13 +22,13 @@ lockfile + pinned actions). What follows is what keeps it that way for years.
 2. **Domain auto-renew + registrar lock** for braveplumhealing.com (and .org). An expired
    domain is the one failure no backup fixes. Set the card, set a calendar reminder for
    the card's expiry.
-3. **External ledger anchor (already parked in ideas.md):** the Monday digest prints the
-   ledger tip-hash; email/Telegram delivery puts it *outside* the repo — a free integrity
-   witness. One small workflow tweak; say the word.
-4. **Archive snapshots:** submit braveplumhealing.com to the Wayback Machine quarterly
-   (can ride the monthly walk automatically — no account needed).
-5. **Annual restore drill (30 min/year):** clone fresh on any machine → `npm ci` →
-   build → verify. The playbook exists; durability is a rehearsal, not a hope.
+3. ✅ **External ledger anchor** *(done 2026-07-13)*: every Monday digest now prints the
+   ledger entry-count + tip-hash — an integrity witness outside the repo.
+4. ✅ **Archive snapshots** *(done 2026-07-13)*: the monthly Walk requests a Wayback
+   snapshot automatically; first one archived at web.archive.org (timestamp 20260713014543).
+5. ✅ **Restore drill** *(first drill passed 2026-07-13)*: fresh clone from GitHub →
+   `npm ci` → build (18 outputs) → tests 7/7 → chaos 5/5 → ledger valid. The business
+   resurrects from nothing. Repeat annually — the Walk will nudge.
 6. **Second keyholder:** one trusted person (or a sealed note) with: GitHub recovery
    codes' location, registrar name, and "the RUNBOOK explains everything else." Bus
    factor is a kindness to future-you.

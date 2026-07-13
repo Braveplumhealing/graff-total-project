@@ -40,12 +40,14 @@ jobs:
           PRS=$(gh pr list --state open --json number,title --jq 'map("- PR #\(.number): \(.title)") | join("\n")')
           TASKS=$(gh issue list --label mr-rogers --state open --json number,title --jq 'map("- Ask #\(.number): \(.title)") | join("\n")')
           SHIPPED=$(git log --since="7 days ago" --pretty="- %s" | head -12)
+          ANCHOR=$(node -e "const l=require('fs').readFileSync('audit/log.jsonl','utf8').trim().split('\n');const e=JSON.parse(l[l.length-1]);console.log(l.length+' entries · tip '+e.hash)")
           {
             echo "REPORT<<EOF"
             echo "Good morning, Johnny. Here's the week in the neighborhood. 🌸"
             echo ""
             echo "**The site:** ${SITE} — braveplumhealing.com, checked page by page this morning."
             echo "**The ledger:** ${LEDGER}"
+            echo "**Ledger anchor (external witness):** ${ANCHOR} — if this hash ever disagrees with the repo, history was rewritten."
             echo ""
             if [ -n "$SHIPPED" ]; then echo "**What shipped this week:**"; echo "$SHIPPED"; else echo "**What shipped this week:** a quiet week — nothing new, nothing broken."; fi
             echo ""

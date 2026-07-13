@@ -38,6 +38,8 @@ jobs:
           LEDGER=$(node audit/verify.mjs >/dev/null 2>&1 && echo "✅ chain valid" || echo "❌ INTEGRITY — King Friday immediately")
           SITE=$(node scripts/mirror-check.mjs >/dev/null 2>&1 && echo "✅ every page + assets" || echo "❌ down/drifting — Corney & McFeely")
           OUTDATED=$(npm outdated --long 2>/dev/null | tail -n +2 | wc -l | tr -d ' ')
+          SNAP=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 "https://web.archive.org/save/https://braveplumhealing.com/" || echo "skip")
+          [ "$SNAP" = "200" ] || [ "$SNAP" = "302" ] && SNAP="✅ requested" || SNAP="⚠ not confirmed (fine — retries next month)"
           {
             echo "REPORT<<EOF"
             echo "🚋 The Trolley just finished this month's walk. Deterministic results:"
@@ -46,6 +48,7 @@ jobs:
             echo "- **Ledger:** ${LEDGER}"
             echo "- **Live site:** ${SITE}"
             echo "- **Outdated packages:** ${OUTDATED} (Handyman Negri's queue)"
+            echo "- **Wayback snapshot:** ${SNAP}"
             echo ""
             echo "**The Fleet's judgment checklist** (one \`@claude\` tap runs it, or any local session):"
             echo "- [ ] 👮 Officer Clemmons — secrets grep, workflow permissions, token scopes still minimal"

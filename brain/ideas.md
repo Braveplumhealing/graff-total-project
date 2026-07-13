@@ -17,8 +17,8 @@ Format: `- [ ] YYYY-MM idea — why it might matter (source)`
   PR gate (original design, still unwired).
 - [ ] 2026-07 Real Videos library page when Johnny shares his YouTube links.
 - [ ] 2026-07 Retreat landing pages per season — when dates exist.
-- [ ] 2026-07 External ledger-hash anchor (weekly digest could print the tip hash — a
-  free off-repo integrity witness).
+- [x] 2026-07 External ledger-hash anchor — DONE 2026-07-13 (weekly digest prints
+  entry-count + tip hash).
 - [ ] 2026-07 Link-checker + Lighthouse budget in CI (review "Next" items).
 - [ ] 2026-07 WordPress .org long-term role decision (archive vs redirect vs audience) —
   no urgency, Johnny's call when ready.
