@@ -4,10 +4,16 @@ This repo is the **single source of truth** for Brave Plum Healing's web presenc
 content. GitHub is master; everything is version-controlled and reviewed via Pull Requests.
 
 ## What this project is
-- **Public site:** GitHub Pages (built from this repo with Eleventy) — the canonical mirror.
-- **Live WordPress:** `braveplumhealing.org` (WordPress.com hosted) — kept in sync from this repo via the WP REST API.
+- **Public site:** **braveplumhealing.com** — GitHub Pages custom domain (Eleventy build, served at the root). The canonical site.
+- **WordPress:** `braveplumhealing.org` — independent site with its own theme. **Sync retired 2026-06-07** (pushing built HTML stripped its design); `scripts/wp-map.json` is empty on purpose.
 - **Booking & payments:** Calendly + Stripe (Stripe-hosted links/checkout, embedded as buttons).
 - **Content help:** Claude + Marblism agents — all output flows through the PR review/rework gate.
+
+## The brain (read FIRST)
+**`brain/`** is the single source of business knowledge — facts, integrations, decisions,
+plans, playbooks, glossary. Load per `brain/INDEX.md` before acting; if a business fact
+isn't in the brain, ask Johnny instead of assuming. Update it in the same PR as any change
+that alters reality (`rogers-brain` skill).
 
 ## Governance: AIGovOps-HIBT + Cloud-Mary (read these)
 - **System rules:** `docs/AIGOVOPS-HIBT.md` — every step logs user/date/model/prompt/result,
@@ -25,8 +31,7 @@ content. GitHub is master; everything is version-controlled and reviewed via Pul
 4. **Secrets never get committed.** They live in `.claude/*.env` (gitignored): `wordpress.env`, `stripe.env`.
 
 ## Risk tiers (autonomy: auto-publish low-risk, PR the rest)
-- **Tier 0 — may act automatically:** typo/grammar fixes, alt-text, SEO metadata, rebuilding Pages,
-  re-syncing *already-approved* content to WordPress.
+- **Tier 0 — may act automatically:** typo/grammar fixes, alt-text, SEO metadata, rebuilding Pages.
 - **Tier 1 — requires a PR:** any new or edited page/post, images, outbound copy.
 - **Tier 2 — human only, the agent must refuse:** moving money / disbursing donations to other orgs,
   changing permissions or sharing, deleting data, exposing secrets, creating accounts, accepting terms.
@@ -40,10 +45,12 @@ node audit/verify.mjs                      # check audit-log integrity
 node audit/append.mjs --actor … --action … --target … --tier N   # record an action
 ```
 
-## WordPress sync
-- Auth: `.claude/wordpress.env` (`WP_SITE`, `WP_USER`, `WP_APP_PASSWORD` — an Application Password).
-- Page IDs (REST): home 154, contact 38, videos 37, podcast 36, speaking 35, … (see `content/data/wp-map.yml`).
-- Sync is one-way (repo → WP) and only for approved content.
+## WordPress (sync RETIRED — 2026-06-07)
+- braveplumhealing.org stands alone with its own theme; do NOT push built HTML to it.
+- Auth (kept for exceptional, Johnny-approved use): `.claude/wordpress.env` + CI secrets.
+- Known page IDs: home 154, contact 38, videos 37, podcast 36, speaking 35 (documented in
+  `scripts/wp-map.json`'s comment; the map itself is intentionally empty).
+- Emergency rollback of WP pages: `scripts/wp-restore.mjs` (see brain/decisions.md).
 
 ## Layout
 ```

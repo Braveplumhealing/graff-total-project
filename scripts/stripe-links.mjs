@@ -40,21 +40,25 @@ const data = JSON.parse(readFileSync(offPath, 'utf8'));
 const currency = data.currency || 'usd';
 let created = 0;
 
-for (const item of data.payable) {
-  if (item.payment_url) { console.log(`= ${item.name}: already has a link, skipping`); continue; }
-  const product = await stripe('products', { name: `Brave Plum Healing — ${item.name}` });
-  const priceParams = item.custom_amount
-    ? { product: product.id, currency, 'custom_unit_amount[enabled]': 'true' }
-    : { product: product.id, currency, unit_amount: String(item.amount_cents) };
-  const price = await stripe('prices', priceParams);
-  const link = await stripe('payment_links', {
-    'line_items[0][price]': price.id,
-    'line_items[0][quantity]': '1',
-  });
-  item.payment_url = link.url;
-  created++;
-  console.log(`✓ ${item.name} → ${link.url}`);
+// Persist in a finally so a mid-loop API failure never orphans already-created links
+// (an unsaved link would be recreated on retry — duplicate products in Stripe).
+try {
+  for (const item of data.payable) {
+    if (item.payment_url) { console.log(`= ${item.name}: already has a link, skipping`); continue; }
+    const product = await stripe('products', { name: `Brave Plum Healing — ${item.name}` });
+    const priceParams = item.custom_amount
+      ? { product: product.id, currency, 'custom_unit_amount[enabled]': 'true' }
+      : { product: product.id, currency, unit_amount: String(item.amount_cents) };
+    const price = await stripe('prices', priceParams);
+    const link = await stripe('payment_links', {
+      'line_items[0][price]': price.id,
+      'line_items[0][quantity]': '1',
+    });
+    item.payment_url = link.url;
+    created++;
+    console.log(`✓ ${item.name} → ${link.url}`);
+  }
+} finally {
+  writeFileSync(offPath, JSON.stringify(data, null, 2) + '\n');
+  console.log(`\n${mode}: ${created} link(s) created and saved to offerings.json.`);
 }
-
-writeFileSync(offPath, JSON.stringify(data, null, 2) + '\n');
-console.log(`\nDone (${mode}). ${created} link(s) created, written to offerings.json.`);

@@ -9,8 +9,10 @@ import { dirname, join } from 'node:path';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const r = (p) => join(root, p);
 
-test('every .mjs file parses', () => {
-  for (const f of ['audit/append.mjs', 'audit/verify.mjs', 'scripts/sync-wp.mjs', 'scripts/mirror-check.mjs', 'cloudflare-worker/worker.js']) {
+test('every script parses', () => {
+  for (const f of ['audit/append.mjs', 'audit/verify.mjs', 'scripts/sync-wp.mjs', 'scripts/mirror-check.mjs',
+    'scripts/stripe-links.mjs', 'scripts/wp-restore.mjs', 'scripts/wire-config.mjs',
+    'cloudflare-worker/worker.js', 'telegram-worker/worker.js', 'tests/chaos.mjs', 'tests/scale.mjs']) {
     execFileSync('node', ['--check', r(f)]);
   }
 });

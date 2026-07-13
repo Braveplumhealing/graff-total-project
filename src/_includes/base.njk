@@ -3,22 +3,45 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <base href="{{ '/' | url }}">
-<title>{{ title }}</title>
-<meta name="description" content="{{ description }}">
+{% set pageTitle = title or "Brave Plum Healing — Life Coaching, Reiki & Retreats with Johnny" %}
+{% set pageDesc = description or "A warm, gentle sanctuary for healing and growth. Life coaching, Reiki, retreats and workshops with Johnny." %}
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDesc }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta name="theme-color" content="#3D1A3D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Brave Plum Healing">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ pageDesc }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Brave Plum Healing",
+"url":"{{ site.url }}","telephone":"{{ site.contact_phone_tel }}","email":"{{ site.contact_email }}",
+"founder":{"@type":"Person","name":"Johnny Graf"},
+"description":"Life coaching, Reiki, healing workshops, weekend retreats, speaking, and mediation."}
+</script>
 </head>
 <body>
+<a class="skip-link" href="{{ page.url }}#main">Skip to content</a>
 {% include "nav.njk" %}
+<main id="main">
 {{ content | safe }}
+</main>
 {% include "footer.njk" %}
 <script>
 (function(){
 const B='<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><g transform="translate(40,40)"><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#F2B8C6" opacity=".85" transform="rotate(0)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#EDA5BA" opacity=".85" transform="rotate(72)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#F2B8C6" opacity=".85" transform="rotate(144)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#EDA5BA" opacity=".85" transform="rotate(216)"/><ellipse cx="0" cy="-17" rx="7.5" ry="13" fill="#F2B8C6" opacity=".85" transform="rotate(288)"/><circle r="5" fill="#FDE8EE"/><circle cx="0" cy="-3" r="1.5" fill="#C49A3A" opacity=".9"/><circle cx="3" cy="1.5" r="1.2" fill="#C49A3A" opacity=".9"/><circle cx="-3" cy="1.5" r="1.2" fill="#C49A3A" opacity=".9"/></g></svg>';
-document.querySelectorAll('.petals').forEach(el=>{if(el.children.length)return;for(let i=0;i<8;i++){const d=document.createElement('div');d.className='p';d.innerHTML=B;el.appendChild(d);}});
+document.querySelectorAll('.petals').forEach(el=>{el.setAttribute('aria-hidden','true');if(el.children.length)return;for(let i=0;i<8;i++){const d=document.createElement('div');d.className='p';d.innerHTML=B;el.appendChild(d);}});
 const nav=document.querySelector('nav');
 if(nav)window.addEventListener('scroll',()=>nav.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(61,26,61,.35)':'',{passive:true});
+const tg=document.querySelector('.nav-toggle'),links=document.querySelector('.nav-links');
+if(tg&&links)tg.addEventListener('click',()=>{const open=links.classList.toggle('open');tg.setAttribute('aria-expanded',open?'true':'false');});
 })();
 </script>
 </body>

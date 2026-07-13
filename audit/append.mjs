@@ -16,12 +16,24 @@
 // --prompt/--result store readable text AND a hash. --input/--output hash a literal or @file.
 
 import { createHash } from 'node:crypto';
-import { readFileSync, existsSync, appendFileSync } from 'node:fs';
+import { readFileSync, existsSync, appendFileSync, mkdirSync, rmdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { execSync } from 'node:child_process';
 
-const LOG = join(dirname(fileURLToPath(import.meta.url)), 'log.jsonl');
+const LOG = process.env.AUDIT_LOG || join(dirname(fileURLToPath(import.meta.url)), 'log.jsonl');
+const LOCK = LOG + '.lock';
+
+// Serialize appends: concurrent writers reading the same tail would fork the hash chain
+// (duplicate seq/prev_hash). mkdir is atomic, so it doubles as a cross-process mutex.
+function acquireLock(tries = 50) {
+  for (let i = 0; i < tries; i++) {
+    try { mkdirSync(LOCK); return true; } catch { /* held by another writer */ }
+    const waitUntil = Date.now() + 100;
+    while (Date.now() < waitUntil) { /* brief spin — appends take milliseconds */ }
+  }
+  return false;
+}
 
 function arg(name, def = '') {
   const i = process.argv.indexOf(`--${name}`);
@@ -32,7 +44,11 @@ function hashOf(val) {
   let data = val;
   if (val.startsWith('@')) {
     const p = val.slice(1);
-    data = existsSync(p) ? readFileSync(p, 'utf8') : '';
+    if (!existsSync(p)) {
+      console.error(`✗ ${p} does not exist — refusing to hash a missing @file (a silent empty-hash would corrupt the record's meaning).`);
+      process.exit(1);
+    }
+    data = readFileSync(p, 'utf8');
   }
   return 'sha256:' + createHash('sha256').update(data).digest('hex');
 }
@@ -50,6 +66,11 @@ function whoami() {
   if (process.env.AIGOVOPS_USER) return process.env.AIGOVOPS_USER;
   try { return execSync('git config user.name', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim() || process.env.USER || 'unknown'; }
   catch { return process.env.USER || 'unknown'; }
+}
+
+if (!acquireLock()) {
+  console.error('✗ could not acquire ledger lock (audit/log.jsonl.lock) — another append may be stuck; remove the lock dir if so.');
+  process.exit(1);
 }
 
 const prev = lastEntry();
@@ -75,5 +96,9 @@ const entry = {
 };
 entry.hash = 'sha256:' + createHash('sha256').update(JSON.stringify(entry)).digest('hex');
 
-appendFileSync(LOG, JSON.stringify(entry) + '\n');
+try {
+  appendFileSync(LOG, JSON.stringify(entry) + '\n');
+} finally {
+  try { rmdirSync(LOCK); } catch { /* already released */ }
+}
 console.log(`HIBT #${entry.seq} ${entry.action} → ${entry.target || '(none)'} | ${entry.user}/${entry.actor} | ${entry.hash.slice(0, 18)}…`);

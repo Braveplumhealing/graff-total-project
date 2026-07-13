@@ -21,7 +21,7 @@ jobs:
         run: |
           [ -z "$TOKEN" ] || [ -z "$CHAT" ] && echo "Telegram secrets not set; skipping." && exit 0
           if [ "$RESULT" = "success" ]; then
-            MSG="🌸 The site is live and looking lovely. https://braveplumhealing.github.io/graff-total-project/"
+            MSG="🌸 The site is live and looking lovely. https://braveplumhealing.com"
           else
             MSG="❌ The deploy finished with: $RESULT — /status for details."
           fi

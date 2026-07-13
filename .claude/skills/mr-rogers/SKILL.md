@@ -7,6 +7,9 @@ description: Run any Brave Plum Healing request through the Mr Rogers master-age
 
 This skill is the routing table between Johnny's plain language and the Cloud-Mary crew.
 Rules of the road: `docs/MR-ROGERS.md` · `docs/AIGOVOPS-HIBT.md` · `CLAUDE.md`.
+**Knowledge:** load the brain first (`brain/INDEX.md` order; `rogers-brain` skill) — the
+glossary there maps Johnny's exact phrases to these commands, and no business fact may be
+assumed that the brain can't cite.
 
 ## Command registry (all commands are runbooks in docs/MR-ROGERS.md)
 

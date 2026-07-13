@@ -1,4 +1,8 @@
 # Brave Plum Healing — Domain Portfolio Plan & Proposal
+
+> **SUPERSEDED (2026-07).** Reality shipped the OTHER way round: **braveplumhealing.com**
+> is the Pages custom domain (canonical, designed site) and braveplumhealing.org stays
+> WordPress, independent. Kept for history — do not execute this plan. See brain/decisions.md.
 *2026-07-08 · addendum to docs/PR-PLAN.md (folds into PR 5, Cloudflare consolidation)*
 
 ## What the scouting found

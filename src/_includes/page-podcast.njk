@@ -15,7 +15,7 @@ layout: base.njk
 {% endfor %}
 <h2>Listen &amp; Subscribe</h2>
 <p>{{ listen_text | safe }}</p>
-<a href="{{ listen_url }}" class="btn-p">Listen on Main Site &rarr;</a>
+{% if listen_url %}<a href="{{ listen_url }}" class="btn-p">Listen &amp; Subscribe &rarr;</a>{% endif %}
 <h2 style="margin-top:2rem">Want to Be a Guest?</h2>
 <p>{{ guest_text | safe }}</p>
 </div></section>

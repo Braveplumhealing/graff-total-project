@@ -7,7 +7,10 @@ import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
-const LOG = join(dirname(fileURLToPath(import.meta.url)), 'log.jsonl');
+// AUDIT_LOG override lets tests (e.g. the chaos monkey) verify scratch copies without
+// ever touching the real ledger. Note: chain verification alone cannot detect tail
+// truncation — CI's append-only git check (audit-verify.yml) covers that.
+const LOG = process.env.AUDIT_LOG || join(dirname(fileURLToPath(import.meta.url)), 'log.jsonl');
 
 if (!existsSync(LOG)) {
   console.log('No audit log yet — nothing to verify.');

@@ -14,5 +14,5 @@ layout: base.njk
 {% for c in categories %}<div class="vc"><div class="vi">{{ c.icon }}</div><h3>{{ c.title | safe }}</h3><p>{{ c.body | safe }}</p></div>{% endfor %}
 </div>
 <p>{{ outro | safe }}</p>
-<a href="{{ library_url }}" class="btn-p">View Full Library &rarr;</a>
+{% if library_url %}<a href="{{ library_url }}" class="btn-p">View Full Library &rarr;</a>{% endif %}
 </div></section>

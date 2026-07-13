@@ -16,16 +16,17 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
         with:
           node-version: '22'
+          cache: npm
       - id: check
         run: node scripts/mirror-check.mjs | tee mirror-report.txt
         continue-on-error: true
       - name: Open issue on drift
         if: steps.check.outcome == 'failure'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const body = require('fs').readFileSync('mirror-report.txt', 'utf8');

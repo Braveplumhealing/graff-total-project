@@ -1,24 +1,28 @@
 ---
 name: bph-publish
-description: Publish/sync approved Brave Plum Healing content — build the Eleventy site and run the one-way repo→WordPress sync. Use after content is approved/merged, or when asked to push approved changes live.
+description: Publish approved Brave Plum Healing content — build the Eleventy site and ship it to braveplumhealing.com via the gated deploy-pages workflow. Use after content is approved/merged, or when asked to push approved changes live. (WordPress sync is RETIRED — do not push built HTML to braveplumhealing.org.)
 ---
 
-# bph-publish — ship approved content
+# bph-publish — ship approved content to braveplumhealing.com
 
-Sync **already-approved** content to the public surfaces. GitHub Pages deploys
-automatically on merge to main (via the deploy-pages workflow); this skill covers building
-locally and the WordPress sync.
+Publishing = deploying **already-approved** main to GitHub Pages (custom domain, root).
+The deploy is gated: tests + chaos + ledger verification run inside `deploy-pages.yml`
+before anything ships.
 
 ## Steps
-1. `export PATH="$HOME/.local/bin:$PATH"`
-2. **Build:** `npx @11ty/eleventy` → check `_site/`.
-3. **WordPress dry run (safe):** `node scripts/sync-wp.mjs` — review what would change.
-4. **Only with explicit approval, apply:** `node scripts/sync-wp.mjs --apply`.
-   - sync-wp.mjs logs each applied page to the audit trail automatically.
-5. **Verify mirror:** `node scripts/mirror-check.mjs`.
+1. `export PATH="$HOME/.local/bin:$HOME/bin:$PATH"`
+2. **Build locally first:** `npx @11ty/eleventy` → sanity-check `_site/`.
+3. **Ship:** merging to `main` deploys automatically; to redeploy without a change:
+   `gh workflow run deploy-pages.yml`, then watch `gh run list --workflow deploy-pages.yml --limit 1`.
+4. **Verify live:** `node scripts/mirror-check.mjs` (sitemap-driven; fails loudly if the
+   site or its assets are down).
 
-## Rules (Tier boundaries)
-- Re-syncing approved content = Tier 0 (fine).
-- Pushing brand-new/unreviewed content = Tier 1 (must have been merged via PR first).
-- Never `--apply` to WordPress without a clear human go-ahead — it overwrites live page content.
-- Never delete WP pages, change their status to private, or touch anything outside wp-map.json.
+## WordPress — retired (2026-06-07)
+Pushing built HTML into braveplumhealing.org stripped its design; the originals were
+restored and `scripts/wp-map.json` was emptied on purpose. The .org site stands alone.
+Exceptional single-page pushes require Johnny's explicit approval AND re-adding that page
+to `wp-map.json` first — see `brain/decisions.md` and `scripts/wp-restore.mjs` for rollback.
+
+## Rules
+- Publishing unreviewed content is Tier 1 — it must have passed the PR gate first.
+- If the live site looks unstyled: RUNBOOK lesson 13 (Pages `build_type` flipped to legacy).

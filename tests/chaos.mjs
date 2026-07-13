@@ -1,25 +1,26 @@
 #!/usr/bin/env node
 // Chaos monkey for the AIGovOps-HIBT ledger. Simulates tampering attacks and asserts the
-// verifier CATCHES every one — then restores the original and confirms it's clean again.
-// Always restores the real log (try/finally). Run: node tests/chaos.mjs
+// verifier CATCHES every one. Operates ENTIRELY on a scratch copy (via the AUDIT_LOG env
+// override) — the real audit/log.jsonl is never touched, so an interrupt mid-run cannot
+// corrupt production state. Run: node tests/chaos.mjs
 
-import { readFileSync, writeFileSync, copyFileSync, unlinkSync } from 'node:fs';
+import { readFileSync, writeFileSync, copyFileSync, rmSync, mkdtempSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { tmpdir } from 'node:os';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const LOG = join(root, 'audit/log.jsonl');
-const BAK = join(root, 'audit/.log.chaos.bak');
+const REAL = join(root, 'audit/log.jsonl');
 const VERIFY = join(root, 'audit/verify.mjs');
+const dir = mkdtempSync(join(tmpdir(), 'bph-chaos-'));
+const SCRATCH = join(dir, 'log.jsonl');
 
-function verifyFails() {
-  try { execFileSync('node', [VERIFY], { stdio: 'ignore' }); return false; }
-  catch { return true; }
-}
-function verifyPasses() {
-  try { execFileSync('node', [VERIFY], { stdio: 'ignore' }); return true; }
-  catch { return false; }
+function verifies(logPath) {
+  try {
+    execFileSync('node', [VERIFY], { stdio: 'ignore', env: { ...process.env, AUDIT_LOG: logPath } });
+    return true;
+  } catch { return false; }
 }
 
 const attacks = [
@@ -34,23 +35,22 @@ const attacks = [
   }],
 ];
 
-copyFileSync(LOG, BAK);
 let passed = 0, failed = 0;
 try {
-  if (!verifyPasses()) { console.error('✗ baseline: ledger should verify clean before chaos'); process.exit(1); }
-  console.log('✓ baseline clean');
+  copyFileSync(REAL, SCRATCH);
+  if (!verifies(SCRATCH)) { console.error('✗ baseline: scratch copy of the ledger should verify clean'); process.exit(1); }
+  console.log('✓ baseline clean (scratch copy — real ledger untouched)');
 
+  const pristine = readFileSync(SCRATCH, 'utf8').trim().split('\n').filter(Boolean);
   for (const [name, attack] of attacks) {
-    const lines = readFileSync(BAK, 'utf8').trim().split('\n').filter(Boolean);
-    writeFileSync(LOG, attack([...lines]).join('\n') + '\n');
-    if (verifyFails()) { console.log(`✓ caught: ${name}`); passed++; }
+    writeFileSync(SCRATCH, attack([...pristine]).join('\n') + '\n');
+    if (!verifies(SCRATCH)) { console.log(`✓ caught: ${name}`); passed++; }
     else { console.error(`✗ MISSED: ${name} — tampering went undetected!`); failed++; }
   }
 } finally {
-  copyFileSync(BAK, LOG);
-  unlinkSync(BAK);
+  rmSync(dir, { recursive: true, force: true });
 }
 
-if (!verifyPasses()) { console.error('✗ restore failed: ledger not clean after chaos'); process.exit(1); }
-console.log(`✓ restored clean | chaos: ${passed} caught, ${failed} missed`);
+if (!verifies(REAL)) { console.error('✗ real ledger is not clean — investigate immediately'); process.exit(1); }
+console.log(`✓ real ledger clean | chaos: ${passed} caught, ${failed} missed`);
 process.exit(failed === 0 ? 0 : 1);

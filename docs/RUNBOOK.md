@@ -32,12 +32,17 @@ Details: `docs/MR-ROGERS.md` (front door + command runbooks) · `docs/AIGOVOPS-H
 `docs/CLOUD-MARY.md` · `docs/DASHBOARD.md` · `docs/TELEGRAM-SETUP.md` · `CLAUDE.md`.
 
 ## Inventory
+**Brain** (`brain/`): INDEX (load order) · business · integrations · decisions · plans ·
+playbooks · glossary — the single source of business knowledge; maintained via the
+`rogers-brain` skill, same-PR rule.
 **Agents** (`agents/`): `mr-rogers` (master) · `ai-bob` (foreman) · `ai-content` ·
 `ai-marblism` · `ai-github` · `ai-wordpress` · `ai-stripe` · `ai-audit` (+ legacy `bph-business-agent`).
-**Skills** (`.claude/skills/`): `mr-rogers`, `cloud-mary-orchestrate`, `bph-brand-voice`,
-`bph-content`, `bph-publish`, `bph-mirror-check`, `bph-audit`.
-**Workflows** (`.github/workflows/`): `deploy-pages`, `wp-sync` (manual; map empty by design),
-`mirror-verify` (weekly), `audit-verify`, `tests`, `telegram-notify` (optional).
+**Skills** (`.claude/skills/`): `mr-rogers`, `rogers-brain`, the 12 `rogers-*` operations
+skills, `cloud-mary-orchestrate`, `bph-brand-voice`, `bph-content`, `bph-publish`,
+`bph-mirror-check`, `bph-audit`.
+**Workflows** (`.github/workflows/`): `deploy-pages` (test-gated), `rogers-autopilot`,
+`wp-sync` (manual; map empty by design), `mirror-verify` (weekly), `audit-verify`
+(append-only enforced), `tests`, `telegram-notify` (optional). Plus `dependabot.yml` + `CODEOWNERS`.
 **Scripts** (`scripts/`, `audit/`): `sync-wp.mjs`, `wp-restore.mjs`, `mirror-check.mjs`,
 `stripe-links.mjs`, `wire-config.mjs`, `audit/append.mjs`, `audit/verify.mjs`.
 **Mobile bridge** (`telegram-worker/`): Cloudflare Worker — Johnny-only chat, Tier-0 surface.
@@ -77,8 +82,8 @@ Always first: `export PATH="$HOME/.local/bin:$HOME/bin:$PATH"` (node/npm/gh are 
    strip trailing slashes on base URLs.
 3. **WordPress sync is retired (2026-06-07).** Pushing built HTML into WP stripped its design;
    originals were restored and `wp-map.json` emptied. GitHub Pages is the canonical designed
-   site; WordPress stands alone. The open decision: point `braveplumhealing.org` DNS at Pages
-   (custom domain) so there is ONE public site — see `docs/SETUP.md` option 1.
+   site; WordPress stands alone. RESOLVED 2026-07: the designed site got its own domain —
+   **braveplumhealing.com** (Pages custom domain); the .org stays WordPress, independent.
 4. **Calendly inline embeds need a specific event URL** (`/30min`) + a plain fallback link.
 5. **Stripe: the key prefix is the source of truth.** `sk_test_` vs `sk_live_`; live keys
    require an activated account. Agents create LINKS only — never charges or transfers.
