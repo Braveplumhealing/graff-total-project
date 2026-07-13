@@ -11,6 +11,9 @@
 | **Phone (Rachel)** | LIVE | `site.json` → `contact_phone*` | — | — |
 | **WordPress** (.org) | independent | WP admin; REST app-password "Claude Code" | `.claude/wordpress.env` + CI secrets `WP_*` | `scripts/mirror-check.mjs` (reachability only) |
 | **WP sync** | **RETIRED** | `scripts/wp-map.json` = empty **on purpose** | — | do not re-enable without Johnny (brain/decisions.md) |
+| **Email bridge** (rogers@braveplumhealing.com) | built, awaiting Johnny's 10-min connect | `email-worker/` | Wrangler secret GH_TOKEN (issues-only PAT) | `docs/EMAIL-SETUP.md` |
+| **Weekly digest** | AUTOMATIC (Mondays) | `.github/workflows/rogers-weekly.yml` | — | `digest`-labeled issues |
+| **Rogers HQ dashboard** | LIVE, no login | `content/neighborhood.njk` → /neighborhood | — | open it |
 | **Telegram bridge** | built, awaiting Johnny's bot token | `telegram-worker/` | Wrangler secrets (Cloudflare) | `docs/TELEGRAM-SETUP.md` |
 | **Rogers autopilot** | workflow present | `.github/workflows/rogers-autopilot.yml` + issues labeled `mr-rogers` | `ANTHROPIC_API_KEY` in repo secrets (if enabled) | Actions tab |
 | **Marblism** ($39/mo, owned) | NOT wired yet | drafts should land in `content/_inbox/` | Johnny's login (outlook email) | — |

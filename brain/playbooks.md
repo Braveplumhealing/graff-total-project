@@ -25,7 +25,7 @@ sees the warm three-line report.
    deactivate old link **in the dashboard, Johnny's click**). 3. PR → merge → ledger.
 **Done when:** site shows new price everywhere; PR notes any Johnny-side dashboard step.
 
-## PLAY: Weekly neighborhood review (Rogers, ~5 min, Tier 0)
+## PLAY: Weekly neighborhood review (AUTOMATED — rogers-weekly.yml files the digest every Monday; this is the manual fallback)
 1. `/status`: deploys green? `mirror-check` (reachability)? ledger `verify` clean?
 2. Any open PRs waiting on Johnny > 3 days → one gentle nudge line.
 3. Any ⚠ VERIFY items in the brain still unconfirmed → one line.

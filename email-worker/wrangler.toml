@@ -1,0 +1,12 @@
+name = "rogers-email-bridge"
+main = "worker.js"
+compatibility_date = "2026-06-01"
+
+# Deploy:  cd email-worker && npx wrangler deploy
+# Secret:  npx wrangler secret put GH_TOKEN     (fine-grained PAT: THIS repo, Issues RW only)
+# Then: Cloudflare dashboard → Email → Email Routing → route rogers@braveplumhealing.com
+# to this worker. Full steps: docs/EMAIL-SETUP.md
+
+[vars]
+REPO = "Braveplumhealing/graff-total-project"
+ALLOWED_SENDERS = "braveplumhealing@outlook.com,johnny@4humangoodinc.com"

@@ -41,6 +41,7 @@ playbooks · glossary — the single source of business knowledge; maintained vi
 skills, `cloud-mary-orchestrate`, `bph-brand-voice`, `bph-content`, `bph-publish`,
 `bph-mirror-check`, `bph-audit`.
 **Workflows** (`.github/workflows/`): `deploy-pages` (test-gated), `rogers-autopilot`,
+`rogers-weekly` (automatic Monday digest),
 `wp-sync` (manual; map empty by design), `mirror-verify` (weekly), `audit-verify`
 (append-only enforced), `tests`, `telegram-notify` (optional). Plus `dependabot.yml` + `CODEOWNERS`.
 **Scripts** (`scripts/`, `audit/`): `sync-wp.mjs`, `wp-restore.mjs`, `mirror-check.mjs`,
@@ -71,6 +72,8 @@ Always first: `export PATH="$HOME/.local/bin:$HOME/bin:$PATH"` (node/npm/gh are 
 | Stripe | LIVE Payment Links in `content/_data/offerings.json` | LIVE — real payments |
 | Phone | `site.json` → Rachel +1 (206) 360-9618 | LIVE |
 | Telegram bridge | `telegram-worker/` on Cloudflare | after `docs/TELEGRAM-SETUP.md` |
+| Email bridge | `email-worker/` on Cloudflare | after `docs/EMAIL-SETUP.md` |
+| Weekly digest | `rogers-weekly.yml` | AUTOMATIC (Mondays) |
 | Secrets | `.claude/wordpress.env`, `.claude/stripe.env` (gitignored) + Wrangler secrets | local + CI |
 
 ## Best practices & hard-won lessons

@@ -43,9 +43,12 @@ Every "Now" item has a first move Johnny can trigger with one plain sentence to 
   social pipeline through the `_inbox` PR gate.
 
 ## 6. Mr Rogers & the agent neighborhood
-- **Are:** front door, crew, dashboard, brain (this!), Telegram bridge built-not-connected.
-- **Now:** Johnny connects Telegram (`docs/TELEGRAM-SETUP.md`, ~10 min) → business-from-phone.
-- **Next:** weekly `/status` digest habit; autopilot on a schedule if Johnny wants it.
+- **Are:** front door, crew, brain, **Rogers HQ dashboard** (/neighborhood: what he's doing,
+  what he can do, one-tap asks, waiting-on-you), **automatic Monday digest**, Telegram +
+  **email bridges built** (each one ~10-min Johnny connect).
+- **Now:** Johnny connects email (`docs/EMAIL-SETUP.md`) and/or Telegram (`docs/TELEGRAM-SETUP.md`);
+  enable autopilot (`docs/AUTOPILOT-SETUP.md`) so HQ asks answer themselves.
+- **Next:** digest habit is automatic now; tune its cadence/content as Johnny likes.
 - **Later:** Marblism intake automation; monthly self-review workflow that files brain updates.
 
 ## 7. Governance & engineering

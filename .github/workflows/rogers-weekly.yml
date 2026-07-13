@@ -1,0 +1,78 @@
+name: Weekly neighborhood digest
+
+# AUTOMATIC: every Monday morning, Mr Rogers checks the whole neighborhood and files one
+# warm digest issue — site health, ledger integrity, what shipped, what's waiting on
+# Johnny. No prompt needed. Also pings Telegram if those secrets exist.
+# (Labeled `digest`, NOT `mr-rogers`, and filed by the Actions bot — so it can never
+# trigger the autopilot loop.)
+
+on:
+  schedule:
+    - cron: '0 16 * * 1'   # Mondays 16:00 UTC ≈ 9am Pacific
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: rogers-weekly
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Gather the neighborhood news
+        id: gather
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          SITE=$(node scripts/mirror-check.mjs >/tmp/mirror.txt 2>&1 && echo "healthy" || echo "NEEDS ATTENTION")
+          LEDGER=$(node audit/verify.mjs >/tmp/ledger.txt 2>&1 && tail -1 /tmp/ledger.txt || echo "INTEGRITY PROBLEM — look immediately")
+          PRS=$(gh pr list --state open --json number,title --jq 'map("- PR #\(.number): \(.title)") | join("\n")')
+          TASKS=$(gh issue list --label mr-rogers --state open --json number,title --jq 'map("- Ask #\(.number): \(.title)") | join("\n")')
+          SHIPPED=$(git log --since="7 days ago" --pretty="- %s" | head -12)
+          {
+            echo "REPORT<<EOF"
+            echo "Good morning, Johnny. Here's the week in the neighborhood. 🌸"
+            echo ""
+            echo "**The site:** ${SITE} — braveplumhealing.com, checked page by page this morning."
+            echo "**The ledger:** ${LEDGER}"
+            echo ""
+            if [ -n "$SHIPPED" ]; then echo "**What shipped this week:**"; echo "$SHIPPED"; else echo "**What shipped this week:** a quiet week — nothing new, nothing broken."; fi
+            echo ""
+            if [ -n "$PRS$TASKS" ]; then
+              echo "**Waiting on you:**"; [ -n "$PRS" ] && echo "$PRS"; [ -n "$TASKS" ] && echo "$TASKS"
+            else
+              echo "**Waiting on you:** nothing at all. Enjoy the week."
+            fi
+            echo ""
+            echo "_Your HQ: https://braveplumhealing.com/neighborhood/ · filed automatically every Monday._"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+      - name: File the digest
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPORT: ${{ steps.gather.outputs.REPORT }}
+        run: |
+          gh issue create \
+            --title "🌸 Weekly digest — $(date -u +%Y-%m-%d)" \
+            --label digest \
+            --body "$REPORT"
+      - name: Telegram ping (optional)
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          [ -z "$TOKEN" ] || [ -z "$CHAT" ] && echo "Telegram not configured; skipping." && exit 0
+          curl -s "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+            -d chat_id="${CHAT}" \
+            -d text="🌸 Your weekly neighborhood digest is ready: https://github.com/${{ github.repository }}/issues" > /dev/null
