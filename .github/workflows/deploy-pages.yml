@@ -26,8 +26,9 @@ jobs:
         with:
           node-version: '22'
       - run: npm ci || npm install
-      # GitHub Pages serves this project under /graff-total-project/, so build with that prefix.
-      - run: npx @11ty/eleventy --pathprefix=/graff-total-project/
+      # Custom domain braveplumhealing.com serves the site at the ROOT, so build with no
+      # path prefix. (Before the domain, this needed --pathprefix=/graff-total-project/.)
+      - run: npx @11ty/eleventy
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

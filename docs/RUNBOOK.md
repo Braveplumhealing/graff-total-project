@@ -6,7 +6,7 @@ Mr Rogers master-agent layer, /neighborhood dashboard, Telegram bridge.)*
 
 ## What this project is
 A durable, version-controlled, AI-governed web platform. **GitHub is the source of truth.**
-- **Public site (designed, canonical):** GitHub Pages — `https://braveplumhealing.github.io/graff-total-project/`
+- **Public site (designed, canonical):** GitHub Pages at **`https://braveplumhealing.com`** (custom domain; the old `braveplumhealing.github.io/graff-total-project/` URL redirects here)
 - **WordPress:** `braveplumhealing.org` — independent, its own theme; automatic sync **retired** (see lesson 3)
 - **Watchtower:** `/neighborhood` — live dashboard: status, agents, activity, self-verifying ledger
 - **Private editor:** `/admin` (Sveltia CMS) — write & publish from anywhere
@@ -69,8 +69,10 @@ Always first: `export PATH="$HOME/.local/bin:$HOME/bin:$PATH"` (node/npm/gh are 
 | Secrets | `.claude/wordpress.env`, `.claude/stripe.env` (gitignored) + Wrangler secrets | local + CI |
 
 ## Best practices & hard-won lessons
-1. **GitHub Pages project subpath needs a base path.** Pages serves under `/graff-total-project/`;
-   absolute `/assets/...` 404s. Fix: `<base href="{{ '/' | url }}">` + `--pathprefix=/graff-total-project/`.
+1. **Path prefix must match where Pages serves the site.** Before the custom domain, the
+   project served under `/graff-total-project/` and needed `--pathprefix=/graff-total-project/`.
+   With **braveplumhealing.com** the site serves at the ROOT, so the build uses NO prefix.
+   If assets ever 404 sitewide, this mismatch is the first thing to check.
 2. **CI secrets pasted in the web UI gain a trailing newline.** Always `.trim()` env values;
    strip trailing slashes on base URLs.
 3. **WordPress sync is retired (2026-06-07).** Pushing built HTML into WP stripped its design;
@@ -94,6 +96,11 @@ Always first: `export PATH="$HOME/.local/bin:$HOME/bin:$PATH"` (node/npm/gh are 
     specialist, script, or workflow does the thing — plain language in, PR out.
 12. **Keep docs honest.** Stale claims ("kept in sync") in a transparency-first project
     undermine the whole brand. When reality changes, the runbook changes in the same PR.
+13. **Setting a custom domain in the Pages UI silently flips build_type back to `legacy`.**
+    Legacy = GitHub's Jekyll mangles our Eleventy source into unstyled fragments (this broke
+    braveplumhealing.com on 2026-07). After ANY Pages-settings change, verify and restore:
+    `gh api repos/Braveplumhealing/graff-total-project/pages --method PUT -f build_type=workflow`,
+    then re-run the deploy-pages workflow.
 
 ## Sync status (verified at last review, 2026-07-08)
 - Audit ledger: **intact, 20 entries, chain valid** (verified independently + in-browser algorithm).

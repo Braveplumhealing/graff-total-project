@@ -3,7 +3,7 @@
 The durable, version-controlled, AI-governed web platform for **Brave Plum Healing** —
 life coaching, Reiki, retreats, speaking, and the Brave Plum journal.
 
-- **Live site (designed, canonical mirror):** https://braveplumhealing.github.io/graff-total-project/
+- **Live site (designed, canonical):** https://braveplumhealing.com *(GitHub Pages custom domain; the old github.io URL redirects here)*
 - **WordPress:** https://braveplumhealing.org — independent site with its own theme.
   *(Automatic sync was retired 2026-06-07: pushing static HTML stripped WP's design.
   The originals were restored; `scripts/wp-map.json` is intentionally empty.)*
