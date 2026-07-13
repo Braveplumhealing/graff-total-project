@@ -38,6 +38,9 @@ sees the warm three-line report.
    (Pages flipped to legacy): restore `build_type=workflow`, re-dispatch deploy-pages.
 2. Styled but wrong content → check last merged PR; revert via PR (never force-push).
 3. Assets 404 → path-prefix mismatch (lesson 1/13).
+3b. www cert stuck "pending" long after DNS is right → re-save the domain via API
+   (`gh api …/pages -X PUT -f cname=braveplumhealing.com`) to re-trigger issuance —
+   the API path does NOT flip build_type (the UI does). Verified 2026-07-13.
 4. Always: ledger entry + one honest line to Johnny about cause and fix.
 
 ## PLAY: Incoming Marblism draft
