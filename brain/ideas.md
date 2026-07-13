@@ -20,6 +20,12 @@ Format: `- [ ] YYYY-MM idea — why it might matter (source)`
 - [x] 2026-07 External ledger-hash anchor — DONE 2026-07-13 (weekly digest prints
   entry-count + tip hash).
 - [ ] 2026-07 Link-checker + Lighthouse budget in CI (review "Next" items).
+- [ ] 2026-07 HEALER NETWORK groundwork (Stage A, zero-risk, docs/SCALING-THE-NETWORK.md):
+  content/healers/ collection (reuse posts pattern) + Johnny as healer #1; reusable
+  booking/pay widget living per-healer; draft healer covenant + vetting rubric + payout
+  runbook (do NOT send); consent/photo safety-net test. Build only on Johnny's go.
+- [ ] 2026-07 ai-onboard-healer agent (Stage B) — builds a healer profile from THEIR real
+  words+photo, refuses to invent bio/testimonial, opens a PR for Johnny's approval.
 - [ ] 2026-07 WordPress .org long-term role decision (archive vs redirect vs audience) —
   no urgency, Johnny's call when ready.
 

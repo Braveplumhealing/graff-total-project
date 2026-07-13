@@ -2,6 +2,16 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07 — NORTH STAR: grow a healer network under the brand (vision, not yet built)
+Johnny: "Right now I am the show. Down the road I want to grow the healer network that
+sits under my brand." Direction accepted and planned (`docs/SCALING-THE-NETWORK.md`,
+brain/plans.md #8): a CURATED neighborhood of personally-vouched, named healers — never a
+cold marketplace; warmth + trust + human-only money preserved. Staged A/B/C, never skip.
+**The 6 hard choices remain OPEN — Johnny's alone, undecided** (money topology, one-door,
+fee model, named-vs-brand, Johnny's placement, approver). Agents must NOT treat the crew's
+recommendations as decisions. **Why:** Johnny's stated growth vision; captured now so it's
+never lost, per the Deposit Rule.
+
 ## 2026-07-13 — www fully live (combined cert)
 The apex-only cert wouldn't auto-expand to www. Fix that worked: Johnny removed + re-added
 the custom domain in Pages settings (voice-walk, three taps) → GitHub issued ONE cert

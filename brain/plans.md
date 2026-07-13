@@ -59,7 +59,25 @@ Every "Now" item has a first move Johnny can trigger with one plain sentence to 
   registrar lock, archive snapshots, restore drill).
 - **Later:** staging preview URLs for PRs (Pages preview or Netlify).
 
-## 8. WordPress (.org)
+## 8. The healer network (NORTH STAR — "start thinking", 2026-07)
+- **Are:** Johnny is the whole show (solo). Vision: grow a curated NETWORK of healers under
+  the Brave Plum brand without losing warmth/trust. Full staged plan: `docs/SCALING-THE-NETWORK.md`.
+- **Now (zero-risk groundwork the crew can lay under today's model):** make Johnny healer #1
+  (`content/healers/johnny.md`, reusing the posts pattern), move his booking/pay links to live
+  *with him*, draft (not send) the healer covenant + vetting rubric + payout runbook, add a
+  future safety-net test that rejects any healer profile missing real consent/photo. Nothing
+  public ships; nothing touches money.
+- **Next (Stage B):** 1–3 personally-vetted healers → `ai-onboard-healer` agent builds each
+  profile from THEIR real words/photo (refuses to invent), warm "Our Healers" section, each
+  healer keeps their OWN Calendly + Stripe; Rachel stays the one warm door.
+- **Later (Stage C):** 10→50+, per-healer permissions, monthly "healer health" check, maybe
+  Stripe Connect (only on real volume, with an accountant/lawyer). Johnny stays the host +
+  the money/access gate (or names a second keyholder in continuity).
+- **The 6 hard choices are OPEN (Johnny's alone):** money topology · one door vs many ·
+  fee model · named humans vs brand voice · Johnny's placement · who approves new healers.
+  See docs/SCALING-THE-NETWORK.md for each either/or + the crew's recommendation.
+
+## 9. WordPress (.org)
 - **Are:** independent, warm, restored. Sync retired on purpose.
 - **Now:** nothing. Leave it be.
 - **Next:** decide its long-term role (archive? redirect to .com? separate audience?).
