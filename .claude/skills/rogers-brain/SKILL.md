@@ -14,6 +14,12 @@ Start with `brain/INDEX.md`, then load in its order. If an action depends on a f
 is NOT in the brain — a price, a date, a handle, a stat — do not infer it. Ask Johnny one
 plain question, then write the answer into the brain in the same PR as the change.
 
+## THE DEPOSIT RULE (why this skill exists)
+Every session ends with a deposit: content → pages/posts, ideas → `ideas.md`, decisions →
+`decisions.md`, lessons → `learnings.md`, plan moves → `plans.md`. Same commit as the work.
+If a session truly produced nothing brain-worthy, say so explicitly in the report — that's
+the only acceptable empty deposit.
+
 ## Writing (whenever reality changes)
 1. Edit the smallest relevant brain file. Decisions are **append-only** (newest first,
    dated, with the why). Unconfirmed facts get the `⚠ VERIFY` mark.

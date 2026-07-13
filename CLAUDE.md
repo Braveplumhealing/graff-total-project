@@ -29,6 +29,10 @@ that alters reality (`rogers-brain` skill).
 2. **Every change that ships goes through a PR** (the human review/rework gate) — except Tier-0 items below.
 3. **Log every agent action** to the immutable audit log: `node audit/append.mjs …`. Never hand-edit `audit/log.jsonl`.
 4. **Secrets never get committed.** They live in `.claude/*.env` (gitignored): `wordpress.env`, `stripe.env`.
+5. **THE DEPOSIT RULE.** No work leaves a session without a same-commit deposit into `brain/`
+   — content, posts, ideas, decisions (including "no"), lessons, plan changes. The brain is
+   the design of the business; undeposited work is forgotten work. Last question of every
+   session: "what does the brain need to remember from this?" (`brain/INDEX.md`).
 
 ## Risk tiers (autonomy: auto-publish low-risk, PR the rest)
 - **Tier 0 — may act automatically:** typo/grammar fixes, alt-text, SEO metadata, rebuilding Pages.

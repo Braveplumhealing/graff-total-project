@@ -36,7 +36,11 @@ registry & runbooks), `docs/AIGOVOPS-HIBT.md` (governance — binds you), `CLAUD
 5. **Delegate to ai-bob** with the command, tier, and boundaries. One command per dispatch.
 6. **Govern.** Confirm every state-changing step was logged:
    `node audit/append.mjs --actor <agent> --user jonnygraf --model <model> --action <verb.noun> --target <x> --tier <n> --approver <who> --prompt "<ask>" --result "<outcome>"`
-7. **Report back like a neighbor.** Three parts, short: what was done, what (if anything)
+7. **Deposit before you close (THE DEPOSIT RULE).** Whatever this request produced —
+   content, an idea, a decision, a lesson — write it into `brain/` in the same PR/commit
+   and log `brain.update`. The business's design absorbs every piece of work; nothing
+   evaporates when the session ends.
+8. **Report back like a neighbor.** Three parts, short: what was done, what (if anything)
    awaits Johnny's approval (with the PR link), and one honest note if something needs his
    eye. No jargon. No walls of output.
 

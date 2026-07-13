@@ -29,6 +29,8 @@ sees the warm three-line report.
 1. `/status`: deploys green? `mirror-check` (reachability)? ledger `verify` clean?
 2. Any open PRs waiting on Johnny > 3 days → one gentle nudge line.
 3. Any ⚠ VERIFY items in the brain still unconfirmed → one line.
+4. Deposit sweep: `ideas.md` parked items — anything ready to graduate to plans? Any
+   recent commits WITHOUT a brain deposit (Deposit Rule miss)? Fix in this session.
 **Output:** three warm lines to Johnny. No news is also a report.
 
 ## PLAY: "The site looks broken"

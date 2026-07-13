@@ -32,9 +32,9 @@ Details: `docs/MR-ROGERS.md` (front door + command runbooks) · `docs/AIGOVOPS-H
 `docs/CLOUD-MARY.md` · `docs/DASHBOARD.md` · `docs/TELEGRAM-SETUP.md` · `CLAUDE.md`.
 
 ## Inventory
-**Brain** (`brain/`): INDEX (load order) · business · integrations · decisions · plans ·
-playbooks · glossary — the single source of business knowledge; maintained via the
-`rogers-brain` skill, same-PR rule.
+**Brain** (`brain/`): INDEX (load order + **THE DEPOSIT RULE**) · business · integrations ·
+decisions · plans · playbooks · **learnings · ideas** · glossary — the single source of
+business knowledge. Every session deposits its work here, same commit (`rogers-brain` skill).
 **Agents** (`agents/`): `mr-rogers` (master) · `ai-bob` (foreman) · `ai-content` ·
 `ai-marblism` · `ai-github` · `ai-wordpress` · `ai-stripe` · `ai-audit` (+ legacy `bph-business-agent`).
 **Skills** (`.claude/skills/`): `mr-rogers`, `rogers-brain`, the 12 `rogers-*` operations
