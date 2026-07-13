@@ -1,39 +1,33 @@
-# Brave Plum Healing — Human To-Do Checklist
+# Johnny's list — everything left, voice-or-tap only
 
-The things only **you** can do (accounts, credentials, money, approvals). The agents handle
-everything else. Detailed steps are in the linked docs.
+Refreshed by X the Owl on the 2026-07 night shift. Everything below honors the Hands
+Covenant: your part is clicks and dictation, never typing. Say **"walk me"** to Mr Rogers
+on any item and he narrates one click at a time.
 
-## ✅ Done (kept for the record)
-- [x] Merge PR #1 — platform live
-- [x] Contact form (Web3Forms) — LIVE, tested
-- [x] Calendly booking event (`/30min`) — LIVE
-- [x] Stripe account + LIVE Payment Links (session / day / T&E)
-- [x] WordPress restored to originals; auto-sync retired (2026-06-07)
+## Done and live (for the record) ✅
+Site on braveplumhealing.com (HTTPS enforced, www DNS added by your first voice-walk) ·
+/admin editor · contact form (Web3Forms, tested) · Calendly · LIVE Stripe links ($450/hr ·
+$5,000/day · T&E) · Rachel's line · the Desk & HQ · brain + Deposit Rule · Fleet + Walk ·
+weekly digest · branch protection · backups + restore drill + Wayback + ledger anchor.
 
-## 🏡 New: the Mr Rogers layer
-- [ ] **Merge the Mr Rogers PR** (agents/skill/dashboard/docs/bridge) — then `/neighborhood` is live.
-- [ ] **Protect `main`:** GitHub → Settings → Branches → add rule for `main` → require pull
-  requests, block force pushes. *(This one switch makes the PR gate and ledger binding.)*
-- [ ] **Enable the safety guard** (if not yet): `cp config/claude-settings.suggested.json .claude/settings.json`.
+## Open — each is one walk or one tap
+- [ ] **Deactivate the old $228 Stripe link** — Stripe app → Payment Links → the old
+  "Session" link → Deactivate. (Money surface = your tap; 1 minute; the $450 link is live.)
+- [ ] **GoatCounter code** (analytics are wired, waiting) — HQ card sends the ask as-is;
+  Rogers walks the free signup; you dictate the code.
+- [ ] **Confirm homepage numbers** (500+ · 8+ · 40+) — HQ card; answer yes/no by voice.
+- [ ] **Telegram door** (~10 min walk) — `docs/TELEGRAM-SETUP.md`; then the business is in
+  your pocket.
+- [ ] **Email door** (~10 min walk; prereq already met — DNS is on Cloudflare) —
+  `docs/EMAIL-SETUP.md`; then dictated emails run the business.
+- [ ] **Autopilot key** (lets HQ asks answer themselves in the cloud) —
+  `docs/AUTOPILOT-SETUP.md`; one secret paste (⌘V), Rogers walks it.
+- [ ] **Durability armor** (`docs/DURABILITY.md` #1–2, #6–7): passkeys (fingerprint
+  beats typing!), registrar auto-renew + lock, a second keyholder note, yearly key rotation.
+- [ ] **Marblism** — log in once and say "ready"; drafts start flowing through the PR gate.
+- [ ] **A warm portrait of Johnny** — send any photo; it drops into the homepage's
+  gradient ring (`site.json → portrait`).
 
-## 📱 Telegram (run it from your phone) — `docs/TELEGRAM-SETUP.md`
-- [ ] Create the bot with @BotFather; note the token + your chat id.
-- [ ] Create the fine-grained GitHub token (this repo only: Actions rw · Issues rw · Contents ro).
-- [ ] `wrangler deploy` the bridge + set the four secrets; register the webhook.
-- [ ] *(Optional)* Add `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` repo secrets for deploy pings.
-- [ ] Bookmark `/neighborhood` on your phone (Share → Add to Home Screen).
-
-## 🌐 The one open architecture decision
-- [ ] **Pick the canonical home for braveplumhealing.org:** point the domain at GitHub Pages
-  (one site, the plum design — `docs/SETUP.md` option 1) **or** keep WordPress as the public
-  face and treat Pages as the workshop. Until decided, the two sites will drift.
-
-## ✍️ Ongoing
-- [ ] Marblism: confirm login (`braveplumhealing@outlook.com`); drafts land in `content/_inbox/`.
-- [ ] Confirm the public listings are current: phone (Rachel), rates ($228/hr · $5,000/day),
-  and the coaching/Reiki/retreats positioning.
-
-## 🔐 Standing reminders (yours alone)
-- [ ] Never paste passwords / card / bank details to any agent or bot — including Telegram.
-- [ ] Approve/merge PRs (your review gate). `/neighborhood` shows what's waiting.
-- [ ] Any payout/transfer of the charitable fund: you, manually, in Stripe. Agents never move money.
+## Decided — parked on purpose (won't be re-pitched)
+No podcast (removed) · no newsletter · no refund-policy page · no testimonials until real
+permissioned ones exist. (`brain/decisions.md`)

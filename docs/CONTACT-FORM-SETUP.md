@@ -1,5 +1,8 @@
 # Make the contact form deliver real messages
 
+> ✅ **LIVE since 2026-06-05** (Web3Forms, tested end-to-end; key in `content/_data/site.json`).
+> Keep this page only as the reference for switching providers someday.
+
 The form already submits properly — it just needs an endpoint to deliver to. Pick **one**
 option, then paste the value into `content/_data/site.json` → `contact_endpoint`.
 

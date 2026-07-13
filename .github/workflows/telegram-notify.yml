@@ -4,6 +4,8 @@ name: Notify Telegram on deploy
 # for /publish sent from a phone. Requires repo secrets TELEGRAM_BOT_TOKEN and
 # TELEGRAM_CHAT_ID (see docs/TELEGRAM-SETUP.md). Skips silently if they're absent.
 
+permissions: {}   # needs no repo access — only the Telegram secrets
+
 on:
   workflow_run:
     workflows: ["Build & deploy site to GitHub Pages"]

@@ -12,7 +12,7 @@ const r = (p) => join(root, p);
 test('every script parses', () => {
   for (const f of ['audit/append.mjs', 'audit/verify.mjs', 'scripts/sync-wp.mjs', 'scripts/mirror-check.mjs',
     'scripts/stripe-links.mjs', 'scripts/wp-restore.mjs', 'scripts/wire-config.mjs',
-    'cloudflare-worker/worker.js', 'telegram-worker/worker.js', 'email-worker/worker.js', 'tests/chaos.mjs', 'tests/scale.mjs']) {
+    'cloudflare-worker/worker.js', 'telegram-worker/worker.js', 'email-worker/worker.js', 'tests/chaos.mjs', 'tests/scale.mjs', 'tests/links-check.mjs', 'tests/a11y-check.mjs']) {
     execFileSync('node', ['--check', r(f)]);
   }
 });

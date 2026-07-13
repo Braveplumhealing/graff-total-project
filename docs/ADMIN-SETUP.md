@@ -31,7 +31,9 @@ Ask me and I'll build the worker and walk you through the account steps.
 ## What you can edit today
 - **Posts** — create/edit journal posts (they render at `/posts/<slug>/`). New posts default to
   **draft** (hidden) until you publish.
-- **Site Pages** — editable as pages get migrated into `content/` (the homepage is already migrated).
+- **Site Pages** — About, Work With Me, Speaking, Videos, Book, Contact (friendly fields).
+  The homepage and Privacy page aren't in /admin yet — ask Mr Rogers for those edits
+  (or the Desk's Edit links), same one-tap review either way.
 
 ## How "private then post" works under the hood
 Saving in `/admin` commits to a draft branch (editorial workflow) — invisible on the live site.

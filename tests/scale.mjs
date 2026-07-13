@@ -34,5 +34,7 @@ try {
   console.log('✓ scale test passed');
 } finally {
   cleanup();
+  // Eleventy never deletes stale outputs — wipe _site so ghost scale pages can't linger.
+  rmSync(join(root, '_site'), { recursive: true, force: true });
   execSync('npx @11ty/eleventy', { cwd: root, stdio: 'ignore' }); // rebuild clean site
 }

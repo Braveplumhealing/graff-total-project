@@ -30,3 +30,9 @@ jobs:
         run: node tests/chaos.mjs
       - name: Scale test (bulk build)
         run: node tests/scale.mjs 300
+      - name: Build for static checks
+        run: npx @11ty/eleventy
+      - name: Internal link check (Negri's rot patrol)
+        run: node tests/links-check.mjs
+      - name: Gentleness check (Daniel Tiger's a11y pass)
+        run: node tests/a11y-check.mjs

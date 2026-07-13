@@ -33,6 +33,11 @@ const attacks = [
   ['flip a byte in a hash', (lines) => {
     const o = JSON.parse(lines[lines.length - 1]); o.hash = o.hash.slice(0, -1) + (o.hash.slice(-1) === '0' ? '1' : '0'); lines[lines.length - 1] = JSON.stringify(o); return lines;
   }],
+  // Lady Elaine, 2026-07 Walk: replay attack — duplicate a legitimate entry verbatim.
+  // Both copies carry valid self-hashes; the chain must still refuse the echo.
+  ['replay (duplicate) the last legitimate entry', (lines) => {
+    lines.push(lines[lines.length - 1]); return lines;
+  }],
 ];
 
 let passed = 0, failed = 0;
