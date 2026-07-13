@@ -38,9 +38,13 @@ sees the warm three-line report.
    (Pages flipped to legacy): restore `build_type=workflow`, re-dispatch deploy-pages.
 2. Styled but wrong content → check last merged PR; revert via PR (never force-push).
 3. Assets 404 → path-prefix mismatch (lesson 1/13).
-3b. www cert stuck "pending" long after DNS is right → re-save the domain via API
-   (`gh api …/pages -X PUT -f cname=braveplumhealing.com`) to re-trigger issuance —
-   the API path does NOT flip build_type (the UI does). Verified 2026-07-13.
+3b. www cert stuck long after DNS is right → diagnose first:
+   `gh api …/pages --jq .https_certificate` — if `domains` lacks www, the cert simply
+   doesn't cover it yet. Same-value cname re-save does NOT expand it (verified
+   2026-07-13). GitHub's periodic DNS re-scan usually adds www within ~24h; meanwhile
+   http://www 301s to the apex, so only strict https://www is affected. The strong fix
+   (remove + re-add the custom domain) briefly wobbles the WORKING apex — Johnny-awake
+   only, never unattended.
 4. Always: ledger entry + one honest line to Johnny about cause and fix.
 
 ## PLAY: Incoming Marblism draft
