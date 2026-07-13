@@ -5,11 +5,9 @@ still arrive as PRs for your tap). The bridge is **built** (`email-worker/`); it
 ~10-minute connection that only you can do (accounts + a token).
 
 ## Prerequisite (honest note)
-Cloudflare **Email Routing** requires braveplumhealing.com's DNS to be ON Cloudflare.
-- If your DNS is already at Cloudflare → proceed, ~10 minutes.
-- If not → either move DNS to Cloudflare (free, one-time, ~30 min including re-adding the
-  four GitHub Pages A records + CNAME), or skip email and use the HQ dashboard's
-  **Ask Mr Rogers** button — same result, zero setup.
+✅ **CONFIRMED 2026-07-13: braveplumhealing.com's DNS is already on Cloudflare**
+(account: Braveplumhealing@outlook.com). Nothing to move — proceed straight to the steps,
+~10 minutes total, all clicks + one paste (Hands Covenant applies: Rogers types, you click).
 
 ## Steps
 1. **Token:** GitHub → Settings → Developer settings → Fine-grained tokens → New.

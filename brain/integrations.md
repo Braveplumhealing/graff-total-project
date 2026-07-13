@@ -3,7 +3,7 @@
 | System | Status | Configured in | Secret lives in | Health check |
 |---|---|---|---|---|
 | **GitHub Pages** (braveplumhealing.com) | LIVE | `CNAME`, Pages settings (`build_type: workflow`!), `deploy-pages.yml` | — | `curl -sI https://braveplumhealing.com` + Actions tab |
-| **Custom domain** | LIVE at ROOT; apex DNS ✅ (4 GH IPs); **HTTPS enforced 2026-07-13**; ⚠ www record MISSING (registrar, Johnny) | DNS at Johnny's registrar + Pages settings | — | RUNBOOK lesson 13 if unstyled |
+| **Custom domain** | LIVE at ROOT; apex DNS ✅ (4 GH IPs); **HTTPS enforced 2026-07-13**; www CNAME ✅ (Johnny, by voice-walk, 2026-07-13; GitHub auto-cert follows) | DNS at Johnny's registrar + Pages settings | — | RUNBOOK lesson 13 if unstyled |
 | **/admin editor** (Sveltia) | LIVE | `admin/config.yml` | Johnny's GitHub fine-grained PAT (his keychain) | open /admin, sign in |
 | **Contact form** (Web3Forms) | LIVE, tested | `content/_data/site.json` → `contact_endpoint` (public-by-design key) | Web3Forms account = outlook email | submit form, check inbox |
 | **Calendly** | LIVE | `site.json` → `calendly_url` = calendly.com/braveplumhealing/30min | Johnny's Calendly login (Microsoft SSO) | open Book page, widget + fallback link |
@@ -11,7 +11,7 @@
 | **Phone (Rachel)** | LIVE | `site.json` → `contact_phone*` | — | — |
 | **WordPress** (.org) | independent | WP admin; REST app-password "Claude Code" | `.claude/wordpress.env` + CI secrets `WP_*` | `scripts/mirror-check.mjs` (reachability only) |
 | **WP sync** | **RETIRED** | `scripts/wp-map.json` = empty **on purpose** | — | do not re-enable without Johnny (brain/decisions.md) |
-| **Email bridge** (rogers@braveplumhealing.com) | built, awaiting Johnny's 10-min connect | `email-worker/` | Wrangler secret GH_TOKEN (issues-only PAT) | `docs/EMAIL-SETUP.md` |
+| **Email bridge** (rogers@braveplumhealing.com) | built; **prereq CONFIRMED: DNS is on Cloudflare** — just the 10-min connect | `email-worker/` | Wrangler secret GH_TOKEN (issues-only PAT) | `docs/EMAIL-SETUP.md` |
 | **Weekly digest** | AUTOMATIC (Mondays) | `.github/workflows/rogers-weekly.yml` | — | `digest`-labeled issues |
 | **Rogers HQ dashboard** | LIVE, no login | `content/neighborhood.njk` → /neighborhood | — | open it |
 | **The Desk** (manage) | LIVE, no login | `content/rogers.njk` → /rogers | GitHub session for Edit taps | open it |
