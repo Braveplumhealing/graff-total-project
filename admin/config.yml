@@ -98,27 +98,6 @@ collections:
           - { name: formats, label: "Formats & Audiences", widget: list }
           - { name: quote, widget: text }
           - { name: book_text, label: "Booking text", widget: text }
-      - name: podcast
-        label: "Podcast"
-        file: "content/pages/podcast.njk"
-        fields:
-          - { name: title, widget: string }
-          - { name: description, widget: string, required: false }
-          - { name: eyebrow, widget: string }
-          - { name: heading, widget: string }
-          - { name: lead, widget: text }
-          - { name: intro, widget: text }
-          - name: episodes
-            label: "Episodes"
-            widget: list
-            fields:
-              - { name: number, widget: string }
-              - { name: title, widget: string }
-              - { name: body, widget: text }
-              - { name: length, widget: string }
-          - { name: listen_text, widget: text }
-          - { name: listen_url, widget: string }
-          - { name: guest_text, widget: text }
       - name: videos
         label: "Videos"
         file: "content/pages/videos.njk"
@@ -154,7 +133,7 @@ collections:
               - { name: n, widget: string }
               - { name: title, widget: string }
               - { name: body, widget: text }
-          - { name: offerings, label: "Current Offerings", widget: list }
+          - { name: session_options, label: "Current Offerings", widget: list }
           - { name: quote, widget: text }
           - { name: cta_text, widget: string }
           - { name: confidential, widget: text }

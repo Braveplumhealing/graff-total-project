@@ -1,13 +1,13 @@
 {
   "_comment": "Payable items. amount_cents drives Stripe Payment Link creation (scripts/stripe-links.mjs). payment_url is filled in by that script. custom_amount=true creates a customer-chooses-amount link (used for T&E). Collection only — disbursing funds is human-authorized.",
   "currency": "usd",
-  "rate_note": "All services are $228 per hour or $5,000 per day, plus travel & expenses (T&E).",
+  "rate_note": "Sessions are $450 per hour or $5,000 per day, plus travel & expenses (T&E).",
   "payable": [
     {
       "name": "Session — per hour",
-      "amount_cents": 22800,
-      "price": "$228 / hour",
-      "payment_url": "https://buy.stripe.com/dRm3cx8ZLbb3egS6qP4wM00"
+      "amount_cents": 45000,
+      "price": "$450 / hour",
+      "payment_url": "https://buy.stripe.com/9B614p3Fr5QJ3Ce6qP4wM03"
     },
     {
       "name": "Full day",

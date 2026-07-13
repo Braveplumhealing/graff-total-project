@@ -2,6 +2,17 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07 — Johnny's five directives (explicit)
+1. **Podcast removed** from the site entirely (page → redirect to home; nav/footer/tags/
+   stat/CMS entry gone). If it returns someday, only with real episodes.
+2. **Sessions repriced: $450/hour** (was $228). New LIVE Stripe link; the old $228 link
+   should be deactivated by Johnny in the Stripe dashboard (agents can't).
+3. **No refund policy page** — draft deleted; do not publish terms unless Johnny asks.
+4. **No newsletter** — all copy promises scrubbed; don't rebuild without his ask.
+5. **No testimonials** — the anonymous speaking-page quote was removed as made-up.
+   Only real, permissioned quotes ever. Analytics: YES — GoatCounter, free (see
+   docs/ANALYTICS-PLAN.md); wired, awaiting his site code.
+
 ## 2026-07 — braveplumhealing.com points at GitHub Pages (root)
 The .com custom domain serves the designed Eleventy site. Build has **no path prefix**.
 The github.io URL redirects. **Why:** one beautiful canonical site on a real domain.

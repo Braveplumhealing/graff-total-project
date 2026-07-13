@@ -19,28 +19,25 @@ Every "Now" item has a first move Johnny can trigger with one plain sentence to 
 - **Next:** waitlist automation (Web3Forms → tagged inbox), post-event follow-up play.
 - **Later:** cohort pages with testimonials from past participants (real ones only).
 
-## 3. Podcast
-- **Are:** page live but episodes are placeholders (trust risk on a trust-first brand).
-- **Now:** swap in real episode list + real platform links (Spotify/Apple/YouTube).
-- **Next:** each new episode → journal post + episode row (one `/draft` per episode).
-- **Later:** transcript pages (SEO + accessibility win).
+## 3. Podcast — REMOVED (2026-07, Johnny's call)
+- Page redirects home; all references gone. Revisit only if Johnny brings real episodes.
 
 ## 4. Payments & money ops
-- **Are:** LIVE Stripe links ($228/hr · $5k/day · T&E) + Calendly + Rachel.
+- **Are:** LIVE Stripe links ($450/hr · $5k/day · T&E) + Calendly + Rachel. No refund-policy page (Johnny). 
 - **Now:** Johnny verifies one real checkout end-to-end; finish Stripe branding
-  (kit on Desktop); add a refunds/cancellation note to the Book page (trust + Stripe policy).
+  (kit on Desktop); refund policy declined by Johnny (2026-07).
 - **Next:** per-workshop deposit links; simple monthly money rhythm (Johnny in Stripe,
   agents prepare the summary from links data — never the dashboard).
 - **Later:** packages/bundles if demand shows (6-week, 12-week already described).
 
 ## 5. Marketing & audience
-- **Are:** no newsletter capture, no social links, no analytics — invisible growth.
-- **Now:** newsletter capture (Buttondown/ConvertKit — Johnny creates account, we embed);
-  add real social links to footer when Johnny shares handles.
-- **Next:** privacy-friendly analytics (Plausible/GoatCounter account → one script tag);
-  schema.org Person/LocalBusiness JSON-LD; share cards (OG images).
-- **Later:** gentle SEO content plan around "reiki + coaching <city>" topics; Marblism
-  social pipeline through the `_inbox` PR gate.
+- **Are:** JSON-LD + OG shipped; newsletter DECLINED (2026-07); testimonials DECLINED
+  until real ones exist; **analytics implemented** (GoatCounter, free, cookie-less —
+  docs/ANALYTICS-PLAN.md) awaiting Johnny's site code.
+- **Now:** Johnny grabs the free GoatCounter code (HQ one-tap) → funnel lights up.
+- **Next:** digest gains a weekly "who came by" line (GoatCounter API); social links
+  in the footer when Johnny shares real handles.
+- **Later:** gentle SEO topics; Marblism pipeline through the `_inbox` PR gate.
 
 ## 6. Mr Rogers & the agent neighborhood
 - **Are:** front door, crew, brain, **Rogers HQ dashboard** (/neighborhood: what he's doing,

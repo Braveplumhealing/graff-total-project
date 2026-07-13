@@ -44,5 +44,19 @@ const tg=document.querySelector('.nav-toggle'),links=document.querySelector('.na
 if(tg&&links)tg.addEventListener('click',()=>{const open=links.classList.toggle('open');tg.setAttribute('aria-expanded',open?'true':'false');});
 })();
 </script>
+{% if site.goatcounter %}
+<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+// Booking-funnel events: count clicks OUT to Stripe / Calendly / the phone line.
+// No cookies, no personal data — just "someone took a booking step".
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href]');if(!a||!window.goatcounter||!window.goatcounter.count)return;
+  var h=a.href;
+  if(/buy\.stripe\.com/.test(h))window.goatcounter.count({path:'event-pay-click',title:'Stripe link clicked',event:true});
+  else if(/calendly\.com/.test(h))window.goatcounter.count({path:'event-book-click',title:'Calendly clicked',event:true});
+  else if(h.indexOf('tel:')===0)window.goatcounter.count({path:'event-phone-click',title:'Phone tapped',event:true});
+});
+</script>
+{% endif %}
 </body>
 </html>

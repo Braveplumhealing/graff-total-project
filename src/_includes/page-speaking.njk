@@ -15,7 +15,7 @@ layout: base.njk
 </div>
 <h2>Formats &amp; Audiences</h2>
 <ul>{% for f in formats %}<li>{{ f | safe }}</li>{% endfor %}</ul>
-<blockquote>{{ quote | safe }}</blockquote>
+{% if quote %}<blockquote>{{ quote | safe }}</blockquote>{% endif %}
 <h2>Book Johnny to Speak</h2>
 <p>{{ book_text | safe }}</p>
 <a href="contact.html" class="btn-p">Get in Touch &rarr;</a>

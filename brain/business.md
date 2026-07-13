@@ -2,7 +2,8 @@
 
 ## Who
 - **Business:** Brave Plum Healing — life coaching, Reiki, healing workshops, weekend
-  retreats, speaking/keynotes, mediation & facilitation.
+  retreats, speaking/keynotes, mediation & facilitation. (Podcast REMOVED from the site
+  2026-07 per Johnny.)
 - **Founder & practitioner:** Johnny Graf ("Johnny"). GitHub: `Braveplumhealing`.
 - **Bookings by phone:** **Rachel** answers +1 (206) 360-9618 (call/text) and books time
   with Johnny.
@@ -10,13 +11,14 @@
   Web3Forms, Marblism).
 
 ## What we sell (confirmed pricing)
-- **All services: $228 / hour or $5,000 / day, plus travel & expenses (T&E).**
+- **Sessions: $450 / hour or $5,000 / day, plus travel & expenses (T&E).** (Raised from $228 on Johnny's order, 2026-07.)
 - Free 30-minute discovery call (Calendly) — always the gentle first step.
 - Offerings & LIVE Stripe payment links: `content/_data/offerings.json` (links only —
   agents NEVER move money; T&E link is customer-enters-amount).
-- ⚠ VERIFY before citing anywhere new: site stats (500+ guided · 8+ years · 40+ retreats ·
-  100+ episodes) and the podcast episode list are from the original mock content — Johnny
-  has not re-confirmed them item-by-item.
+- ⚠ VERIFY: homepage stats (500+ guided · 8+ years · 40+ retreats) remain unconfirmed by
+  Johnny. Podcast content (incl. the 100+ episodes stat) was REMOVED 2026-07. No
+  testimonials on the site — Johnny: existing ones were made up; only real, permissioned
+  quotes may ever appear. No newsletter. No published refund policy (his call).
 
 ## Where we live on the internet
 | Surface | URL | Nature |

@@ -1,5 +1,5 @@
 {
-  "_comment": "Site-wide settings. contact_endpoint: paste your form endpoint (Formspree https://formspree.io/f/XXXX, or Web3Forms access key — see docs/CONTACT-FORM-SETUP.md). Empty = the form falls back to opening the visitor's email app to contact_email. calendly_url: your Calendly booking link. url: canonical site URL (used by sitemap/robots).",
+  "_comment": "Site-wide settings. contact_endpoint: paste your form endpoint (Formspree https://formspree.io/f/XXXX, or Web3Forms access key \u2014 see docs/CONTACT-FORM-SETUP.md). Empty = the form falls back to opening the visitor's email app to contact_email. calendly_url: your Calendly booking link. url: canonical site URL (used by sitemap/robots). goatcounter: your GoatCounter site code (free at goatcounter.com) \u2014 analytics activate the moment it's set.",
   "url": "https://braveplumhealing.com",
   "contact_email": "braveplumhealing@outlook.com",
   "contact_phone": "+1 (206) 360-9618",
@@ -7,5 +7,6 @@
   "contact_endpoint": "73e147b6-d649-42ab-b583-4b17ef3a139f",
   "contact_provider": "web3forms",
   "calendly_url": "https://calendly.com/braveplumhealing/30min",
-  "portrait": ""
+  "portrait": "",
+  "goatcounter": ""
 }
