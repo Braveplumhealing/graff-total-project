@@ -48,13 +48,15 @@ Every "Now" item has a first move Johnny can trigger with one plain sentence to 
 - **Next:** digest habit is automatic now; tune its cadence/content as Johnny likes.
 - **Later:** Marblism intake automation; monthly self-review workflow that files brain updates.
 
-## 7. Governance & engineering
+## 7. Governance & engineering (owned by the Neighborhood Fleet — docs/NEIGHBORHOOD-FLEET.md)
 - **Are:** ledger + tiers + tests + CI green; branch protection pending; CI findings from
   the 2026-07 end-to-end review being applied.
 - **Now:** ✅ DONE 2026-07 — branch protection (no force-push/deletion), gated deploy,
   CI hardening, mobile nav, OG/meta/JSON-LD, a11y pass, ledger lock + append-only CI check.
   See docs/REVIEW-2026-07.md for the full 72-finding register.
-- **Next:** link-checker in CI; Lighthouse budget; external ledger-hash anchor (weekly note).
+- **Next:** fleet cadence beds in (monthly Walk is live); link-checker in CI; Lighthouse
+  budget; external ledger-hash anchor; durability items from docs/DURABILITY.md (2FA,
+  registrar lock, archive snapshots, restore drill).
 - **Later:** staging preview URLs for PRs (Pages preview or Netlify).
 
 ## 8. WordPress (.org)

@@ -28,20 +28,24 @@ Johnny ──(chat · Telegram · /admin)──► mr-rogers (master agent, the 
    Booking/pay: Calendly embed + Stripe Payment Links (links in content/_data)
    Mobile: telegram-worker/ bridge — /status /audit /publish /task (Tier-0 by construction)
 ```
-Details: `docs/MR-ROGERS.md` (front door + command runbooks) · `docs/AIGOVOPS-HIBT.md` ·
+Details: `docs/ARCHITECTURE.md` (the map) · `docs/DURABILITY.md` (longevity) ·
+`docs/NEIGHBORHOOD-FLEET.md` (engineering crew) · `docs/MR-ROGERS.md` (front door + commands) · `docs/AIGOVOPS-HIBT.md` ·
 `docs/CLOUD-MARY.md` · `docs/DASHBOARD.md` · `docs/TELEGRAM-SETUP.md` · `CLAUDE.md`.
 
 ## Inventory
 **Brain** (`brain/`): INDEX (load order + **THE DEPOSIT RULE**) · business · integrations ·
 decisions · plans · playbooks · **learnings · ideas** · glossary — the single source of
 business knowledge. Every session deposits its work here, same commit (`rogers-brain` skill).
-**Agents** (`agents/`): `mr-rogers` (master) · `ai-bob` (foreman) · `ai-content` ·
-`ai-marblism` · `ai-github` · `ai-wordpress` · `ai-stripe` · `ai-audit` (+ legacy `bph-business-agent`).
+**Agents** (`agents/`): `mr-rogers` (master) leading two crews — Cloud-Mary business crew
+(`ai-bob` foreman · ai-content · ai-marblism · ai-github · ai-wordpress · ai-stripe ·
+ai-audit) and the Neighborhood Fleet engineering crew (`mcfeely` · `officer-clemmons` ·
+`lady-elaine` · `handyman-negri` · `x-the-owl` · `daniel-tiger` · `corney` · `king-friday`
+— docs/NEIGHBORHOOD-FLEET.md). (+ legacy `bph-business-agent`.)
 **Skills** (`.claude/skills/`): `mr-rogers`, `rogers-brain`, the 12 `rogers-*` operations
 skills, `cloud-mary-orchestrate`, `bph-brand-voice`, `bph-content`, `bph-publish`,
 `bph-mirror-check`, `bph-audit`.
 **Workflows** (`.github/workflows/`): `deploy-pages` (test-gated), `rogers-autopilot`,
-`rogers-weekly` (automatic Monday digest),
+`rogers-weekly` (automatic Monday digest), `rogers-monthly` (automatic Neighborhood Walk),
 `wp-sync` (manual; map empty by design), `mirror-verify` (weekly), `audit-verify`
 (append-only enforced), `tests`, `telegram-notify` (optional). Plus `dependabot.yml` + `CODEOWNERS`.
 **Scripts** (`scripts/`, `audit/`): `sync-wp.mjs`, `wp-restore.mjs`, `mirror-check.mjs`,

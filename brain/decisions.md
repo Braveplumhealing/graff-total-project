@@ -2,6 +2,14 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07 — The Neighborhood Fleet (engineering crew, character-named)
+Mr Rogers now leads two crews: Cloud-Mary (business) + the Fleet (engineering best
+practices): McFeely/CI-CD · Officer Clemmons/security · Lady Elaine/chaos · Handyman
+Negri/maintenance · X the Owl/docs-honesty · Daniel Tiger/gentleness-QA · Corney/build ·
+King Friday/governance. Cadence: every-ship · weekly digest · monthly Neighborhood Walk
+(automatic, rogers-monthly.yml). **Why:** Johnny asked that everything keep running under
+Mr Rogers with best-practice owners, named for the neighborhood.
+
 ## 2026-07 — Johnny's five directives (explicit)
 1. **Podcast removed** from the site entirely (page → redirect to home; nav/footer/tags/
    stat/CMS entry gone). If it returns someday, only with real episodes.

@@ -1,46 +1,59 @@
-# Brave Plum Healing
+# Brave Plum Healing 🌸
 
-The durable, version-controlled, AI-governed web platform for **Brave Plum Healing** —
-life coaching, Reiki, retreats, speaking, and the Brave Plum journal.
+The durable, AI-governed platform for **Brave Plum Healing** — life coaching, Reiki,
+healing workshops, retreats, and speaking, run in plain language through one warm front
+door: **Mr Rogers**, master agent of the neighborhood.
 
-- **Live site (designed, canonical):** https://braveplumhealing.com *(GitHub Pages custom domain; the old github.io URL redirects here)*
-- **WordPress:** https://braveplumhealing.org — independent site with its own theme.
-  *(Automatic sync was retired 2026-06-07: pushing static HTML stripped WP's design.
-  The originals were restored; `scripts/wp-map.json` is intentionally empty.)*
-- **Watchtower:** `/neighborhood` — the live operations dashboard (see `docs/DASHBOARD.md`)
-- **Private editor:** `/admin` (write & publish; see `docs/ADMIN-SETUP.md`)
+- **The site (canonical):** https://braveplumhealing.com — GitHub Pages custom domain
+- **The Desk (manage):** https://braveplumhealing.com/rogers — the brain, quick actions, the pulse
+- **The HQ (watch + ask):** https://braveplumhealing.com/neighborhood — health, crew, one-tap asks
+- **The editor (write):** https://braveplumhealing.com/admin — private drafts → Publish
+- **WordPress:** https://braveplumhealing.org — independent neighbor, its own theme (sync retired)
 
-## How it works
-- **GitHub is the source of truth.** Content in `content/` (Markdown + front matter), design in
-  `src/` (Eleventy layouts). Build → GitHub Pages on every merge.
-- **Mr Rogers is the front door.** One master agent Johnny talks to in plain language —
-  by chat, `/admin`, or **Telegram** (`docs/TELEGRAM-SETUP.md`). He translates asks into
-  registered commands and delegates to **ai-bob**, the operations foreman. See `docs/MR-ROGERS.md`.
-- **Cloud-Mary agent crew:** `ai-bob` dispatches `ai-content`, `ai-marblism`, `ai-github`,
-  `ai-wordpress`, `ai-stripe`, `ai-audit`. See `docs/CLOUD-MARY.md`.
-- **AIGovOps-HIBT governance:** every AI step is logged (user/date/model/prompt/result),
-  versioned, hash-chained, and CI-verified — and re-verified in your browser on the
-  `/neighborhood` dashboard. See `docs/AIGOVOPS-HIBT.md`.
-- **Safety tiers:** Tier-0 auto · Tier-1 PR · Tier-2 forbidden to agents (money, deletions,
-  permissions, secrets, accounts). Enforced by `.claude/hooks/tier-guard.sh` — and, more
-  fundamentally, by never giving agents credentials capable of Tier-2 actions.
+## The approach
+1. **GitHub is the source of truth.** Content (`content/`), design (`src/`), knowledge
+   (`brain/`), law (`CLAUDE.md`, `docs/`) — all plain text, all versioned, all reviewable.
+2. **The brain is the design of the business.** Facts, decisions, plans, playbooks,
+   learnings, ideas — read first by every agent, fed by every session (**THE DEPOSIT
+   RULE:** no work leaves a session without a same-commit deposit).
+3. **One front door, plain language.** Johnny never needs a technical word (the Sweater
+   Covenant). Mr Rogers translates, classifies risk, dispatches, and reports in three
+   warm lines.
+4. **Two crews under one leader.** The **Cloud-Mary crew** (`ai-*`) runs the business;
+   the **Neighborhood Fleet** (McFeely, Officer Clemmons, Lady Elaine, Handyman Negri,
+   X the Owl, Daniel Tiger, Corney, King Friday XIII) keeps the engineering excellent —
+   one best practice per neighbor. `docs/NEIGHBORHOOD-FLEET.md`.
+5. **Trust is enforced, not promised.** Risk tiers (T0 auto · T1 PR · T2 Johnny-only), a
+   hash-chained append-only ledger that visitors' own browsers re-verify, a gated deploy
+   Trolley (test → build → deploy), branch protection, and agents that structurally
+   cannot touch money, secrets, or deletions.
+6. **Automatic is the magic word.** Weekly digests, monthly Neighborhood Walks, gated
+   deploys, dependabot — self-running, human-gated.
+
+## How to interact (Johnny's doors)
+Say it plainly at any door — the Desk's buttons, the HQ's asks, `/admin`, a Claude Code
+session ("Mr Rogers, …"), or email/Telegram once connected. Anything that changes the
+site comes back as a review for your tap; everything else is done and reported. Your
+words → commands: `brain/glossary.md`.
+
+## Architecture, operations, durability
+- **`docs/ARCHITECTURE.md`** — the whole neighborhood on one page (the map)
+- **`docs/RUNBOOK.md`** — operations + the hard-won lessons (start here to work on this)
+- **`docs/DURABILITY.md`** — how this outlives any tool, account, or bad day
+- **`docs/NEIGHBORHOOD-FLEET.md`** · **`docs/CLOUD-MARY.md`** · **`docs/MR-ROGERS.md`** ·
+  **`docs/AIGOVOPS-HIBT.md`** — the crews and the law
 
 ## Develop
 ```bash
-export PATH="$HOME/.local/bin:$PATH"
-npm install
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+npm ci
 npx @11ty/eleventy --serve        # local preview
 node --test tests/unit.test.mjs   # unit tests
-node tests/chaos.mjs              # ledger tamper-resistance
-node tests/scale.mjs              # bulk-build performance
+node tests/chaos.mjs              # ledger tamper drill (scratch copies)
 node audit/verify.mjs             # governance ledger integrity
+node scripts/mirror-check.mjs     # live-site health (sitemap-driven)
 ```
 
-## What's left for a human
-See **`docs/TODO.md`** — accounts/credentials/payments only the owner can set up.
-
-## Docs
-**Start here:** `docs/RUNBOOK.md` (master overview + ops + lessons). Then:
-`docs/MR-ROGERS.md` · `docs/DASHBOARD.md` · `docs/TELEGRAM-SETUP.md` · `docs/SETUP.md` ·
-`docs/ADMIN-SETUP.md` · `docs/CONTACT-FORM-SETUP.md` · `docs/SIGN-IN-WITH-GITHUB.md` ·
-`docs/AIGOVOPS-HIBT.md` · `docs/CLOUD-MARY.md` · `docs/TODO.md`
+## What only Johnny does
+Money movement, secrets, accounts, domains, merges. Everything else, the neighborhood
+handles — and deposits what it learned into the brain on the way out. 🌷

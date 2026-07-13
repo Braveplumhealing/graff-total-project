@@ -174,3 +174,12 @@ preparation is complete, and the last step is Johnny's alone.
 `agents/mr-rogers.md` (the agent) · `.claude/skills/mr-rogers/SKILL.md` (routing skill) ·
 `content/neighborhood.njk` (dashboard) · `telegram-worker/` (mobile bridge) ·
 `docs/AIGOVOPS-HIBT.md` (law) · `docs/CLOUD-MARY.md` (the crew).
+
+
+## The two crews
+Mr Rogers dispatches the **Cloud-Mary crew** (business: content, publishing, links,
+inbox — `docs/CLOUD-MARY.md`) and the **Neighborhood Fleet** (engineering best practices:
+McFeely/CI-CD, Officer Clemmons/security, Lady Elaine/chaos, Handyman Negri/maintenance,
+X the Owl/docs-honesty, Daniel Tiger/gentleness-QA, Corney/build, King Friday/governance —
+`docs/NEIGHBORHOOD-FLEET.md`). Cadence: every-ship checks, weekly digest, monthly
+Neighborhood Walk (`rogers-monthly.yml`).

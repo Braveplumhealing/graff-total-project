@@ -1,4 +1,8 @@
-# Cloud-Mary — the Brave Plum agent team
+# Cloud-Mary — the Brave Plum BUSINESS crew
+
+*(Sibling crew: the **Neighborhood Fleet** — engineering best practices, one Mister
+Rogers' Neighborhood character per beat — `docs/NEIGHBORHOOD-FLEET.md`. Mr Rogers leads
+both.)*
 
 **Cloud-Mary** is the multi-agent system that runs Brave Plum Healing's web + business
 operations, under the **AIGovOps-HIBT** governance rules (`docs/AIGOVOPS-HIBT.md`). One lead

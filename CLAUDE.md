@@ -18,8 +18,10 @@ that alters reality (`rogers-brain` skill).
 ## Governance: AIGovOps-HIBT + Cloud-Mary (read these)
 - **System rules:** `docs/AIGOVOPS-HIBT.md` — every step logs user/date/model/prompt/result,
   is versioned (`seq`) and git-traceable, append-only and hash-chained. CI verifies it.
-- **Agent team:** `docs/CLOUD-MARY.md` — **ai-bob** orchestrates **ai-content, ai-marblism,
-  ai-github, ai-wordpress, ai-stripe, ai-audit** (`agents/ai-*.md`). Ask ai-bob for any task.
+- **Agent teams:** Mr Rogers leads both — the **Cloud-Mary crew** for business
+  (`docs/CLOUD-MARY.md`: ai-bob foreman + ai-*) and the **Neighborhood Fleet** for
+  engineering best practices (`docs/NEIGHBORHOOD-FLEET.md`: mcfeely, officer-clemmons,
+  lady-elaine, handyman-negri, x-the-owl, daniel-tiger, corney, king-friday).
 - **Skill:** `cloud-mary-orchestrate` ties it together.
 - **Tests:** `node --test tests/unit.test.mjs` · `node tests/chaos.mjs` · `node tests/scale.mjs`.
 

@@ -1,0 +1,72 @@
+name: Monthly Neighborhood Walk
+
+# AUTOMATIC: first Monday-ish of each month, the Fleet walks the whole neighborhood —
+# the deterministic checks run right here (tests, ledger, live site, outdated deps) and
+# the results are filed as a walk issue carrying each neighbor's checklist for the
+# judgment parts (one @claude tap, or any local session, executes those).
+
+on:
+  schedule:
+    - cron: '0 17 1 * *'   # 1st of the month, 17:00 UTC ≈ 10am Pacific
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: rogers-monthly
+  cancel-in-progress: false
+
+jobs:
+  walk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Deterministic sweep
+        id: sweep
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          TESTS=$(node --test tests/unit.test.mjs >/dev/null 2>&1 && node tests/chaos.mjs >/dev/null 2>&1 && echo "✅ green" || echo "❌ FAILING — McFeely first")
+          LEDGER=$(node audit/verify.mjs >/dev/null 2>&1 && echo "✅ chain valid" || echo "❌ INTEGRITY — King Friday immediately")
+          SITE=$(node scripts/mirror-check.mjs >/dev/null 2>&1 && echo "✅ every page + assets" || echo "❌ down/drifting — Corney & McFeely")
+          OUTDATED=$(npm outdated --long 2>/dev/null | tail -n +2 | wc -l | tr -d ' ')
+          {
+            echo "REPORT<<EOF"
+            echo "🚋 The Trolley just finished this month's walk. Deterministic results:"
+            echo ""
+            echo "- **Tests & chaos:** ${TESTS}"
+            echo "- **Ledger:** ${LEDGER}"
+            echo "- **Live site:** ${SITE}"
+            echo "- **Outdated packages:** ${OUTDATED} (Handyman Negri's queue)"
+            echo ""
+            echo "**The Fleet's judgment checklist** (one \`@claude\` tap runs it, or any local session):"
+            echo "- [ ] 👮 Officer Clemmons — secrets grep, workflow permissions, token scopes still minimal"
+            echo "- [ ] 🎪 Lady Elaine — one new chaos attack idea; refute one 'known-good' assumption"
+            echo "- [ ] 🔧 Handyman Negri — triage the dependabot/outdated queue above"
+            echo "- [ ] 🦉 X the Owl — Deposit Rule sweep; ⚠ VERIFY hygiene; docs vs reality"
+            echo "- [ ] 🐯 Daniel Tiger — contrast/mobile/reduced-motion pass on the live pages"
+            echo "- [ ] 🏭 Corney — build time & output spot-check; data-name collision watch"
+            echo "- [ ] 👑 King Friday — branch protection intact; autopilot law's four clauses present"
+            echo "- [ ] 🧠 ideas.md — anything parked ready to graduate to plans?"
+            echo ""
+            echo "_Filed automatically by the Neighborhood Walk · docs/NEIGHBORHOOD-FLEET.md_"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+      - name: File the walk issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPORT: ${{ steps.sweep.outputs.REPORT }}
+        run: |
+          gh label create neighborhood-walk --color 7FA97F --description "Monthly fleet sweep" 2>/dev/null || true
+          gh issue create \
+            --title "🚋 Neighborhood Walk — $(date -u +%Y-%m)" \
+            --label neighborhood-walk \
+            --body "$REPORT"
