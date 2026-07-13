@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-13 — www fully live (combined cert)
+The apex-only cert wouldn't auto-expand to www. Fix that worked: Johnny removed + re-added
+the custom domain in Pages settings (voice-walk, three taps) → GitHub issued ONE cert
+covering braveplumhealing.com + www.braveplumhealing.com. Both 200, HTTPS enforced.
+**Lesson:** remove/re-add is the reliable expansion path; same-value cname re-save is not
+(playbook 3b). Requires Johnny-awake (apex blinks briefly).
+
 ## 2026-07 — The Hands Covenant (accessibility, permanent)
 Typing is physically costly for Johnny (missing a finger). Every agent designs his side
 of every interaction as **voice or one tap**: prefilled notes sendable as-is + one

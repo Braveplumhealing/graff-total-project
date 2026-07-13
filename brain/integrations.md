@@ -3,7 +3,7 @@
 | System | Status | Configured in | Secret lives in | Health check |
 |---|---|---|---|---|
 | **GitHub Pages** (braveplumhealing.com) | LIVE | `CNAME`, Pages settings (`build_type: workflow`!), `deploy-pages.yml` | — | `curl -sI https://braveplumhealing.com` + Actions tab |
-| **Custom domain** | LIVE at ROOT; apex DNS ✅ (4 GH IPs); **HTTPS enforced 2026-07-13**; www CNAME ✅ (Johnny, by voice-walk, 2026-07-13; GitHub auto-cert follows) | DNS at Johnny's registrar + Pages settings | — | RUNBOOK lesson 13 if unstyled |
+| **Custom domain** | LIVE at ROOT; apex DNS ✅ (4 GH IPs); **HTTPS enforced 2026-07-13**; apex + www BOTH ✅ (Johnny voice-walk 2026-07-13; combined cert covers braveplumhealing.com + www; HTTPS enforced) | DNS at Johnny's registrar + Pages settings | — | RUNBOOK lesson 13 if unstyled |
 | **/admin editor** (Sveltia) | LIVE | `admin/config.yml` | Johnny's GitHub fine-grained PAT (his keychain) | open /admin, sign in |
 | **Contact form** (Web3Forms) | LIVE, tested | `content/_data/site.json` → `contact_endpoint` (public-by-design key) | Web3Forms account = outlook email | submit form, check inbox |
 | **Calendly** | LIVE | `site.json` → `calendly_url` = calendly.com/braveplumhealing/30min | Johnny's Calendly login (Microsoft SSO) | open Book page, widget + fallback link |
