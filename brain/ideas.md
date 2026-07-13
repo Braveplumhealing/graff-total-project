@@ -23,6 +23,10 @@ Format: `- [ ] YYYY-MM idea — why it might matter (source)`
 - [ ] 2026-07 WordPress .org long-term role decision (archive vs redirect vs audience) —
   no urgency, Johnny's call when ready.
 
+- [ ] 2026-07 Edit brain files inside /admin (Sveltia collection) — friendlier than the
+  GitHub editor, but Sveltia may wrap plain .md in front matter; needs a safe test first
+  (parked from the Desk build; GitHub Edit links cover it meanwhile).
+
 ## Decided "not now" (don't re-pitch without new facts)
 - 2026-07 Newsletter — Johnny: no. (decisions.md #4)
 - 2026-07 Refund-policy page — Johnny: no published terms. (decisions.md #3)

@@ -16,6 +16,7 @@ translate them. (Sweater Covenant: he never needs ours.)
 | "new way to pay for…", "payment link" | Stripe LINK via offerings.json (never money movement) | `/links` |
 | "my editor", "where I write" | /admin (Sveltia) | — |
 | "the dashboard", "the neighborhood" | /neighborhood Watchtower | — |
+| "the desk", "the admin page" | /rogers — manage the brain, quick actions, pulse | — |
 | "the ledger", "the record" | audit/log.jsonl (HIBT) | — |
 | "Rachel's number" | +1 (206) 360-9618 → site.json contact_phone | — |
 | "the review page", "approve it" | the open PR awaiting his merge | — |

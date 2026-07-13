@@ -1,0 +1,166 @@
+---
+permalink: rogers/index.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>The Desk — Johnny & Mr Rogers</title>
+<meta name="description" content="The management desk for Brave Plum Healing: the brain, quick actions, and the deposit pulse.">
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#3D1A3D;--rose:#C4637E;--blush:#F2B8C6;--petal:#FDE8EE;--cream:#FDF5F0;--sage:#7FA97F;--gold:#C49A3A;--ink:rgba(253,232,238,.72);--faint:rgba(253,232,238,.38);--line:rgba(242,184,198,.16);--card:rgba(253,232,238,.055);--ease:cubic-bezier(.16,1,.3,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--plum);color:var(--ink);font-family:'Jost',sans-serif;font-size:15px;line-height:1.6;min-height:100vh}
+a{color:var(--blush);text-decoration:none}a:hover{color:var(--petal)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.4rem}
+header{position:relative;overflow:hidden;padding:3rem 0 1.8rem;background:radial-gradient(ellipse 75% 90% at 50% -20%,rgba(196,99,126,.30) 0%,transparent 62%)}
+.ey{font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;color:var(--blush);opacity:.8}
+h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,4.5vw,3rem);color:var(--petal);line-height:1.08}
+h1 em{font-style:italic;color:var(--blush)}
+.tag{margin-top:.5rem;font-weight:300;color:var(--faint);max-width:60ch}
+.trio{display:flex;gap:.6rem;margin-top:1.1rem;flex-wrap:wrap}
+.trio a{border:1px solid var(--line);border-radius:100px;padding:.4rem 1rem;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;background:rgba(61,26,61,.35)}
+.trio a.here{background:var(--rose);color:#fff;border-color:var(--rose)}
+section{padding:1.5rem 0}
+h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:1.45rem;color:var(--petal);margin-bottom:.2rem}
+.sub{font-size:.8rem;color:var(--faint);margin-bottom:1rem}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.act{background:linear-gradient(135deg,rgba(196,99,126,.14),rgba(122,48,112,.18));border:1px solid rgba(242,184,198,.28);border-radius:14px;padding:1rem 1.1rem;transition:transform .3s var(--ease)}
+.act:hover{transform:translateY(-3px)}
+.act b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.08rem;color:var(--petal);margin-bottom:.2rem}
+.act span{font-size:.76rem;color:var(--faint)}
+.braingrid{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+.bcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:.95rem 1rem;display:flex;flex-direction:column;gap:.3rem;transition:transform .3s var(--ease)}
+.bcard:hover{transform:translateY(-3px)}
+.bcard .bt{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.05rem;color:var(--petal)}
+.bcard .bs{font-size:.72rem;color:var(--faint);min-height:2.1em}
+.bcard .bl{margin-top:auto;display:flex;gap:.9rem;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.2rem 1.3rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;align-items:start}
+.entry{font-family:'IBM Plex Mono',monospace;font-size:.72rem;padding:.5rem 0;border-bottom:1px solid rgba(242,184,198,.08)}
+.entry:last-child{border-bottom:none}
+.entry .who{color:var(--blush)}
+.entry.dep{border-left:3px solid var(--sage);padding-left:.6rem;background:rgba(127,169,127,.06)}
+.want{display:flex;gap:.7rem;align-items:flex-start;padding:.5rem 0;border-bottom:1px solid rgba(242,184,198,.08);font-size:.82rem}
+.want:last-child{border-bottom:none}
+.want a{margin-left:auto;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;padding-left:.8rem}
+.covenant{border:1px dashed rgba(242,184,198,.28);border-radius:14px;padding:1rem 1.2rem;font-size:.82rem;font-weight:300;color:var(--faint)}
+.covenant strong{color:var(--blush);font-weight:400}
+footer{padding:2rem 0 2.4rem;font-size:.7rem;color:rgba(253,232,238,.25)}
+.err{color:#E09A9A;font-size:.76rem}
+@media(max-width:880px){.actions{grid-template-columns:1fr}.braingrid{grid-template-columns:1fr 1fr}.cols{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="ey">Brave Plum Operations</div>
+  <h1>The <em>Desk</em></h1>
+  <p class="tag">Where Johnny and Mr Rogers run the business together. The brain lives here — every plan, idea, decision, and lesson, two taps from edited.</p>
+  <nav class="trio" aria-label="Surfaces">
+    <a href="../admin/index.html">✍️ Write — /admin</a>
+    <a href="../neighborhood/index.html">🏮 Watch — /neighborhood</a>
+    <a class="here" href="#" aria-current="page">🗂️ Manage — the desk</a>
+    <a href="../index.html">← the site</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+
+<section aria-label="Quick actions">
+  <h2>Quick actions</h2>
+  <p class="sub">One tap each. GitHub asks you to confirm in your own account — that's your signature, not a login we hold.</p>
+  <div class="actions">
+    <a class="act" data-ask="A request" data-body="Mr Rogers — "><b>🌸 Ask Mr Rogers</b><span>Anything, in plain words — he routes, does, reports.</span></a>
+    <a class="act" href="https://github.com/Braveplumhealing/graff-total-project/actions/workflows/deploy-pages.yml"><b>🚀 Publish the site</b><span>Run workflow → the gated deploy ships approved main.</span></a>
+    <a class="act" href="https://github.com/Braveplumhealing/graff-total-project/actions/workflows/rogers-weekly.yml"><b>📬 Run the digest now</b><span>Don't wait for Monday — file this week's report.</span></a>
+    <a class="act" href="https://github.com/Braveplumhealing/graff-total-project/issues?q=label%3Adigest"><b>🗞️ Read past digests</b><span>Every Monday note, archived.</span></a>
+    <a class="act" href="https://github.com/Braveplumhealing/graff-total-project/pulls"><b>🔍 The review queue</b><span>Everything waiting for your tap.</span></a>
+    <a class="act" href="https://github.com/Braveplumhealing/graff-total-project/blob/main/audit/log.jsonl"><b>📜 The full ledger</b><span>Every step ever taken, hash-chained.</span></a>
+  </div>
+</section>
+
+<section aria-label="The brain">
+  <h2>The brain 🧠</h2>
+  <p class="sub">The design of the business itself. <b style="color:var(--blush)">View</b> reads it pretty; <b style="color:var(--blush)">Edit</b> opens it in your GitHub editor — save, and the neighborhood absorbs it (Mr Rogers reads the brain at the start of every session).</p>
+  <div class="braingrid" id="braingrid"></div>
+</section>
+
+<section>
+  <div class="cols">
+    <div class="panel" aria-label="Deposit pulse">
+      <h2>The deposit pulse</h2>
+      <p class="sub">Recent ledger entries — <span style="color:var(--sage)">green-edged</span> ones are brain deposits (the Deposit Rule at work).</p>
+      <div id="pulse"><div class="entry">Loading the ledger…</div></div>
+    </div>
+    <div class="panel" aria-label="Waiting on Johnny">
+      <h2>Waiting on Johnny</h2>
+      <p class="sub">Live from GitHub — reviews and open asks.</p>
+      <div id="queue"><div class="want"><div>Checking…</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="covenant"><strong>The Deposit Rule:</strong> no work leaves a session without being written into this brain — content, ideas, decisions, lessons. Undeposited work is forgotten work. And as always: agents never move money, delete, or touch secrets — those doors open only to Johnny.</div>
+</section>
+
+</main>
+<footer><div class="wrap">Brave Plum Healing · The Desk · <span id="stamp"></span></div></footer>
+
+<script>
+(async function(){
+const REPO='Braveplumhealing/graff-total-project';
+const RAW='https://raw.githubusercontent.com/'+REPO+'/main';
+const GH='https://github.com/'+REPO;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ago=iso=>{const s=(Date.now()-new Date(iso))/1e3;if(s<90)return 'just now';const m=s/60;if(m<90)return Math.round(m)+' min ago';const h=m/60;if(h<36)return Math.round(h)+' hr ago';return Math.round(h/24)+' days ago';};
+$('stamp').textContent='rendered '+new Date().toLocaleString();
+
+// one-tap asks
+document.querySelectorAll('[data-ask]').forEach(a=>{a.href=GH+'/issues/new?labels=mr-rogers&title='+encodeURIComponent(a.dataset.ask)+'&body='+encodeURIComponent(a.dataset.body||'');});
+
+// --- the brain cards, with live stats read from the files themselves ---
+const FILES=[
+ {f:'business.md',   e:'🏡', t:'Business',    stat:t=>{const m=t.match(/\*\*Sessions: ([^*]+)\*\*/);return m?m[1].trim():'ground truth';}},
+ {f:'plans.md',      e:'🗺️', t:'Plans',       stat:t=>((t.match(/^## /gm)||[]).length)+' elements · '+((t.match(/✅/g)||[]).length)+' done-marks'},
+ {f:'ideas.md',      e:'💡', t:'Ideas',       stat:t=>((t.match(/- \[ \]/g)||[]).length)+' parked · nothing ever lost'},
+ {f:'decisions.md',  e:'⚖️', t:'Decisions',   stat:t=>{const m=t.match(/^## (.+)$/m);return m?('latest: '+m[1].replace(/^\d{4}-\d{2} — /,'').slice(0,44)):'the whys';}},
+ {f:'learnings.md',  e:'🌱', t:'Learnings',   stat:t=>((t.match(/^\d+\. /gm)||[]).length)+' lessons earned'},
+ {f:'playbooks.md',  e:'📖', t:'Playbooks',   stat:t=>((t.match(/^## PLAY/gm)||[]).length)+' plays, step by step'},
+ {f:'integrations.md',e:'🔌',t:'Integrations',stat:t=>((t.match(/^\| \*\*/gm)||[]).length)+' systems mapped'},
+ {f:'glossary.md',   e:'🗣️', t:'Glossary',    stat:t=>'Johnny\'s words → commands'},
+];
+$('braingrid').innerHTML=FILES.map(x=>'<div class="bcard" id="bc-'+x.f.replace('.md','')+'"><div class="bt">'+x.e+' '+x.t+'</div><div class="bs">…</div><div class="bl"><a href="'+GH+'/blob/main/brain/'+x.f+'">View</a><a href="'+GH+'/edit/main/brain/'+x.f+'">Edit</a></div></div>').join('');
+FILES.forEach(async x=>{
+  try{const t=await(await fetch(RAW+'/brain/'+x.f,{cache:'no-store'})).text();
+    document.querySelector('#bc-'+x.f.replace('.md','')+' .bs').textContent=x.stat(t);
+  }catch(e){document.querySelector('#bc-'+x.f.replace('.md','')+' .bs').textContent='(unreachable right now)';}
+});
+
+// --- deposit pulse from the ledger ---
+try{
+  const txt=await(await fetch(RAW+'/audit/log.jsonl',{cache:'no-store'})).text();
+  const lines=txt.trim().split('\n').filter(Boolean).slice(-10).reverse();
+  $('pulse').innerHTML=lines.map(l=>{const e=JSON.parse(l);const dep=/brain\./.test(e.action||'');
+    return '<div class="entry'+(dep?' dep':'')+'"><span class="who">'+esc(e.actor||'?')+'</span> → '+esc(e.action||'')+'<br><span style="color:var(--faint)">'+esc(String(e.ts||'').slice(0,10))+' · '+esc((e.result||e.note||'').slice(0,70))+'</span></div>';}).join('');
+}catch(e){$('pulse').innerHTML='<div class="err">Ledger unreachable right now.</div>';}
+
+// --- waiting on Johnny ---
+try{
+  const gh=p=>fetch('https://api.github.com/repos/'+REPO+p,{headers:{Accept:'application/vnd.github+json'}}).then(r=>r.ok?r.json():Promise.reject(r.status));
+  const [prs,issues]=await Promise.all([gh('/pulls?state=open'),gh('/issues?labels=mr-rogers&state=open')]);
+  const asks=issues.filter(i=>!i.pull_request);
+  const rows=[];
+  prs.forEach(p=>rows.push('<div class="want"><div>🔍 <b>'+esc(p.title)+'</b> <span style="color:var(--faint)">'+ago(p.created_at)+'</span></div><a href="'+esc(p.html_url)+'">Review →</a></div>'));
+  asks.forEach(t=>rows.push('<div class="want"><div>🌸 <b>'+esc(t.title)+'</b> <span style="color:var(--faint)">'+ago(t.created_at)+'</span></div><a href="'+esc(t.html_url)+'">Open →</a></div>'));
+  $('queue').innerHTML=rows.length?rows.join(''):'<div class="want"><div>✨ Nothing at all — the neighborhood is caught up.</div></div>';
+}catch(e){$('queue').innerHTML='<div class="err">GitHub data unreachable right now.</div>';}
+})();
+</script>
+</body>
+</html>

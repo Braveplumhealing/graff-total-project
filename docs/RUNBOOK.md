@@ -58,6 +58,7 @@ Always first: `export PATH="$HOME/.local/bin:$HOME/bin:$PATH"` (node/npm/gh are 
 | Build locally | `npx @11ty/eleventy` (preview: `--serve`) |
 | Deploy | merge to `main` → `deploy-pages` runs automatically (or Telegram `/publish`) |
 | Check on everything | open `/neighborhood`, or Telegram `/status` |
+| Manage the brain / quick actions | open `/rogers` (the Desk) — view/edit every brain file, publish, digest |
 | Mirror health | `node scripts/mirror-check.mjs` |
 | Regenerate Stripe links | clear `payment_url`s in `content/_data/offerings.json` → `node scripts/stripe-links.mjs` |
 | Update Calendly | edit `calendly_url` in `content/_data/site.json` (use a specific event URL) |
