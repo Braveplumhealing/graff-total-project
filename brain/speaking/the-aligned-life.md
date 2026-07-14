@@ -2,9 +2,9 @@
 
 *Status: v2, 2026-07-13. Rebuilt around Johnny's own sacred triad — **sacred exhaustion →
 sacred interruption → rising mercy** (feather, feather, rock, truck) — in his verbatim words
-(see [[voice]]). Notice·Name·Nudge retired as the spine. The eagle/coop image is offered once,
-marked [Johnny to confirm]. v1 remains in git history. Built via a 10-agent reweave
-(3 architectures → judged for sacred-fidelity → synthesized → red-teamed). Every
+(see [[voice]]). Notice·Name·Nudge retired to a small toolkit. The eagle/coop image was **cut
+at Johnny's request (2026-07-13)** — the two open hands (the gap) carry the whole visual arc.
+v1 remains in git history. Built via a 10-agent reweave + a focused eagle-removal edit; every
 `[Johnny to fill: …]` is a real specific only Johnny can supply — nothing invented.*
 
 ---
@@ -12,7 +12,7 @@ marked [Johnny to confirm]. v1 remains in git history. Built via a 10-agent rewe
 # The Aligned Life
 ### How to stop performing your life and start actually living it. A journey from external achievement to internal fulfilment.
 
-*Working script v2 for a ~45-minute keynote. Warm, grounded, fireside — a wise coach by the fire, never a sales floor. Built on Johnny's own sacred triad as the spine, in his exact words. Every `[Johnny to fill: …]` is a real specific only Johnny can supply — nothing about him is invented. The eagle/coop image is offered once and marked `[Johnny to confirm]`; if he declines, the two open hands carry the whole visual load. Read the **30-minute cut** and **60-minute expansion** notes near the end before you set your timing.*
+*Working script v2 for a ~45-minute keynote. Warm, grounded, fireside — a wise coach by the fire, never a sales floor. Built on Johnny's own sacred triad as the spine, in his exact words. Every `[Johnny to fill: …]` is a real specific only Johnny can supply — nothing about him is invented. Read the **30-minute cut** and **60-minute expansion** notes near the end before you set your timing.*
 
 ---
 
@@ -45,7 +45,7 @@ The theological heart to protect: **the mercy is *in* the escalation** — grace
 
 ---
 
-## Section 1 — Cold open: the two versions of you (and the coop)
+## Section 1 — Cold open: the two versions of you
 **Target: 5 min**
 
 - Walk to center. Don't reach for the mic. Let two full seconds of real stillness land before the first word — the silence is the first move.
@@ -54,9 +54,8 @@ The theological heart to protect: **the mercy is *in* the escalation** — grace
 - **RETIRE the old signature line "I call it the alignment gap."** Name the distance sacredly, without yet defining the mechanism: *"I want to talk about the distance between those two — the you the world sees, and the truth you carry. That distance is not a flaw in you. It's the most honest thing about you."*
 - Plant the payoff line early: *"The whole of the next forty-five minutes is really one gentle idea: **you were never meant to perform your life. You were meant to live it.**"*
 - Only now, in one unhurried breath, land who you are — by what you do, never numbers: a life coach, Reiki master, author, mediator, and retreat facilitator who guides people through the pivotal turns of their lives.
-- **OPTIONAL eagle seed `[Johnny to confirm]`:** *"I wrote a book once about a soul like an eagle — a bird built for the open sky that somehow ended up living small in a coop, and forgot the sky was ever its home. Hold that image loosely. We'll come back to it."* Offer it; do not explain its meaning.
 
-*Speaker note: Make-or-break five minutes — warmth is your credential here, not authority. Resist reassuring the room too fast; the quiet discomfort of that opening question is the doorway, so let it stay open. Do NOT preview a framework or a list of steps — let the shape stay felt, not diagrammed. Never cite client counts, years, or any metric, anywhere in this talk. The eagle seed is optional and marked `[Johnny to confirm]` — plant it as an image you'll return to, never assert "this is what it means." If Johnny declines the eagle, cut this beat; the two open hands carry the visual load alone. Breathe — the room needs to feel you were actually there.*
+*Speaker note: Make-or-break five minutes — warmth is your credential here, not authority. Resist reassuring the room too fast; the quiet discomfort of that opening question is the doorway, so let it stay open. Do NOT preview a framework or a list of steps — let the shape stay felt, not diagrammed. Never cite client counts, years, or any metric, anywhere in this talk. Breathe — the room needs to feel you were actually there.*
 
 ---
 
@@ -69,7 +68,6 @@ The theological heart to protect: **the mercy is *in* the escalation** — grace
 - The load-bearing nuance, in your own warm words: *"This kind of tired doesn't come from doing too much. It comes from carrying a distance. It is your soul carrying the distance between the life you show and the truth you hold. That's why sleep doesn't touch it."*
 - Hold both truths at once: you can have real, outward success **and** feel this exhaustion. Both are true at the same time — that's the whole confusion, and it's exactly why it gets misnamed for years.
 - Widen past careers so more of the room sees themselves: the relationship you keep the shape of, the version of yourself you present, the yeses you don't mean. Each one is a little more distance.
-- **EAGLE callback `[Johnny to confirm]`, light:** *"This is the weight of the coop — a life built smaller than the wingspan inside it."*
 - **→ Audience Moment 1 (silent, optional):** *"I'm going to ask you something, and no one will ever see your answer. Just let it land. Where in your life, right now, are you performing… instead of living?"* Hold 20–30 seconds of real silence. Then, softly: *"You don't have to do anything with that yet. Just notice — that tired place you just found? That's not you failing. That's the distance, being honest with you."*
 
 *Speaker note: This is the "name the ache and give it dignity" movement — re-baptize the exhaustion the room walked in with, from "something is wrong with me" to "my soul is telling the truth." Widen from "me" to "us" with "maybe," "perhaps," "if this is you" — never "you all feel." Make it SAFE before you make it personal; that safety earns the first silence. Deliver the sacred-exhaustion definition verbatim and let it sit — do not paraphrase or soften "sacred" into "burnout" / "stress" / "fatigue." Absolutely no invented statistics about burnout or unhappiness; a plain human observation beats a number. If you ever want data for a corporate room, source it yourself and mark it `[verify]`. Protect the silence — do not rescue the room from it.*
@@ -103,7 +101,6 @@ Then Johnny's verbatim rising-mercy payoff, delivered slowly:
 
 **Hold two full seconds before moving on.**
 
-- **OPTIONAL eagle stitch `[Johnny to confirm]`:** *"The feather was the first crack of daylight through the slats of the coop — the sky, knocking on a door the eagle had forgotten was there."*
 - **BEAT 3 — the discovery (rising mercy completing its turn):** what the mercy was carrying you toward — that fulfilment was never going to come from a bigger outside; it comes from alignment, when the outer life finally matches the inner truth. Land your real line, slowly: *"That discovery changed everything."*
 - Bridge to now in one humble breath: this became the work — sitting with people through the pivotal turns of their lives, with warmth and presence. No client counts, no numbers, no stories but your own.
 
@@ -119,7 +116,7 @@ Then Johnny's verbatim rising-mercy payoff, delivered slowly:
 - State the reframe that reorganizes the whole talk, and let it sit: *"The goal was never a bigger outer life. A bigger outer life just moves this hand further away. The goal is to let these two come home to each other."*
 - Redefine success generously, not cynically: achievement isn't the enemy — the distance is. You keep what's truly yours and set down what was only ever for show.
 - Callback to the cold open: *"This is what it means to stop performing your life and start actually living it — not two hands held apart, performing for each other. Two hands that finally rest together."*
-- Set up the practice as cooperation, not more effort: *"So the question the rest of us are left with is a very practical one — how do I answer the interruption while it's still a feather, instead of waiting for the truck? That's the next few minutes."*
+- Set up the practice as partnership, not more effort: *"So the question the rest of us are left with is a very practical one — how do I answer the interruption while it's still a feather, instead of waiting for the truck? That's the next few minutes."*
 
 *Speaker note: This is the "head" section — clarity over emotion, plain language; if a phrase sounds like a seminar, cut it. The two-open-hands gesture is your master visual anchor for the whole keynote: introduce it cleanly here, keep the hands slightly apart through Section 5, and let them finally rest together only in Section 6. Per Johnny's words, the gap is now explicitly the SOURCE of the sacred exhaustion, not merely a map. Johnny's law is one direction only — "the further the gap, the greater the exhaustion." Keep the narrowing as an invitation ("the soul has less distance to carry"), never as a promised outcome or a guaranteed lifting of the weight — that inverse is a meaning Johnny hasn't stated, so let his verbatim direction lead. Do NOT reintroduce a labeled "alignment gap" as the signature — the hands and "sacred exhaustion" carry the meaning now. Keep the energy deliberately lower here; it's the exhale between the peak and the give.*
 
@@ -128,7 +125,7 @@ Then Johnny's verbatim rising-mercy payoff, delivered slowly:
 ## Section 5 — Answering the feather: a small practice *(RISING MERCY, made Monday-usable)*
 **Target: 9 min** · *(Audience Moment 2 lands inside "Name")*
 
-- Frame the whole section as cooperating with rising mercy, not managing yourself — and keep Notice · Name · Nudge clearly subordinate: *"The triad describes what your soul is already doing. Mercy is already rising for you; you don't have to manufacture it. The only real question is whether we keep dismissing it — or start to answer it while it's still gentle, while it's still a feather. Here are three small ways to answer the feather."*
+- Frame the whole section as working with rising mercy, not managing yourself — and keep Notice · Name · Nudge clearly subordinate: *"The triad describes what your soul is already doing. Mercy is already rising for you; you don't have to manufacture it. The only real question is whether we keep dismissing it — or start to answer it while it's still gentle, while it's still a feather. Here are three small ways to answer the feather."*
 - **NOTICE (catch the feather):** the interruption almost always speaks in the body before it speaks in words — a tightness before something you dread, a flatness after a "win," the small sigh behind a yes you didn't mean. Noticing is attention, not analysis; it is choosing not to play it down. `[Johnny to fill: one small, un-dramatic "notice" moment from your own life — the quiet tell that something was off.]` *"The feather isn't the enemy. It's the mercy, arriving softly, hoping soft will be enough."* Bring the hands a little closer.
 - **NAME (tell the truth under it):** the interruption stays buried as long as it stays unspoken. Naming is saying the quiet true thing out loud, first just to yourself — *"This isn't mine." "I've outgrown this." "I want something I've been afraid to want."* *"A feather you've named doesn't have to become a rock."* Honor how hard this is; naming can cost something, and pretending it's easy would be dishonest — warmth here is staying beside them in the difficulty. Bring the hands closer still.
 - **→ Audience Moment 2 (private write, optional pair-share):** *"Take out anything to write on. In one sentence, just for you, finish this: The feather I've been dismissing is ______."* Give 60–90 seconds. Then, softly: *"If you'd like — and only if you'd like — turn to one person near you and share just as much as feels safe. If you'd rather keep it, keep it. Either is completely right."* Bridge back: *"You just did something most people spend years avoiding. You stopped dismissing it. You let the feather be a feather."*
@@ -146,11 +143,11 @@ Then Johnny's verbatim rising-mercy payoff, delivered slowly:
 - The exhale after the practice — warm, spacious, hopeful. Paint the aligned life honestly and modestly: not a fixed, finished, perfect life, but a life that feels like *yours*, where the outside and inside are no longer at war. **Bring the two hands together at last** and let them rest there — arrived home, not a task finished. *"This is what the mercy was for. Not to fix you. To bring you home."*
 - Name what rising mercy was always doing, in Johnny's verbatim thread: *"Every feather, every rock — even the truck — was never life turning against you. It was grace that refused to give up on you. It brings us out of the performance and returns us to our inner self, our essence. The mercy was in the persistence."*
 - Set a true expectation, not a guarantee: alignment isn't a place you arrive once — it's a homecoming you return to. Some days the hands drift apart again; that's not failure — it's just the mercy, inviting you home again. Now you know the tiredness for what it is, and you know how to answer the feather. *(No promised outcomes.)*
-- **OPTIONAL eagle bookend `[Johnny to confirm]` — offer, do not assert:** *"There's that image I asked you to hold — an eagle that's lived so long in a small coop it forgot the sky was ever its home."* **`[Johnny to confirm the meaning — placeholder, not finished copy: what the eagle, the coop, and the forgotten sky mean is yours to say. If you want to close the image, add your own words here; the script deliberately stops at presenting it, and never tells the room what it means.]`** Then let the image go — don't over-explain it. *(From Johnny's book title, "Soulnapped: The Eagle in the Coop." Present the image; let Johnny own its meaning. If Johnny hasn't confirmed, or wasn't seeded in Section 1, cut this beat entirely — the two hands carry the close alone.)*
+- **Let the master image land the close — the two open hands, home at last.** Keep the hands resting together in plain view a breath longer, and let that be the single picture the whole talk leaves in the room: the outer life and the inner truth, no longer held apart, no longer performing for each other — finally at rest. Say nothing over it; the image is the meaning.
 - Callback to the cold open's two versions of you: *"The performed self was never the enemy. It was just tired of carrying a life that wasn't quite true. You can set it down now."*
 - Reprise the payoff line so the room feels it arrive: *"Stop performing your life. Start actually living it."*
 
-*Speaker note: This is rising mercy completing its work — keep every promise true and human; the honesty about the hands drifting apart again is exactly what makes the hope believable. Avoid any language of arrival, mastery, or "crushing it." Deliver the hands-together moment without ceremony — let the gesture do the work. Keep all body-awareness language to noticing and relaxation only — no medical or Reiki healing claims, ever. The eagle bookend is `[Johnny to confirm]` and OPTIONAL — present ONLY the image (the eagle, the coop, the forgotten sky) and never say "this is what it means" or tell the room what the eagle forgot or was built for; that interpretation is Johnny's to state or leave blank. Present it and hand it to Johnny, or cut it.*
+*Speaker note: This is rising mercy completing its work — keep every promise true and human; the honesty about the hands drifting apart again is exactly what makes the hope believable. Avoid any language of arrival, mastery, or "crushing it." Deliver the hands-together moment without ceremony — let the gesture do the work. Keep all body-awareness language to noticing and relaxation only — no medical or Reiki healing claims, ever.*
 
 ---
 
@@ -186,12 +183,12 @@ Then Johnny's verbatim rising-mercy payoff, delivered slowly:
 ## The 30-minute cut
 
 Protect the two load-bearing sections in full: **Section 3 (your story + the feather → feather → rock → truck build)** and **Section 5 (answering the feather)**. Trim everywhere else; never trim the peak's silences.
-- **Section 1 → ~3.5 min:** keep the two-versions open, the payoff line, the one-breath intro. Cut the shape preview. (Eagle seed optional — keep only if you're using the eagle.)
+- **Section 1 → ~3.5 min:** keep the two-versions open, the payoff line, the one-breath intro. Cut the shape preview.
 - **Section 2 → ~4 min:** keep the sacred-exhaustion reframe (verbatim) and Audience Moment 1 at ~15 sec silence; drop the extended performed-life description.
 - **Section 3 → ~7–8 min:** keep all three beats and the full feather build; trim only around the edges.
 - **Section 4 → ~3.5 min:** keep the two-hands picture and "the exhaustion is the size of the distance"; cut the success redefinition.
 - **Section 5 → ~7 min:** keep Notice / Name / Nudge and Audience Moment 2 (fully private, ~30 sec — drop the pair-share); trim the compounding elaboration.
-- **Section 6 → ~2 min:** keep the hands-together moment and the payoff reprise; cut the eagle bookend and the extended painting.
+- **Section 6 → ~2 min:** keep the hands-together moment and the payoff reprise; cut the extended painting.
 - **Section 7 → ~2.5 min:** keep Audience Moment 3, the soft bridge (once), and the closing charge intact.
 
 ## The 60-minute expansion
@@ -202,7 +199,7 @@ Deepen honesty and stillness; never inflate drama or add hype.
 - **Section 3:** add **one** more small, true detail to Beat 2 only — deepen honesty, never heighten drama.
 - **Section 4:** add a warm aside on *why* the hands drifting apart feels safe (the outside earned us approval) and why coming home is still worth it.
 - **Section 5:** give Notice, Name, and Nudge each a short true illustration and a second beat of guided stillness; for a workshop room, add a brief pair-share after "Name."
-- **Section 6:** add a gentle guided image of their aligned life one year on, and — if confirmed — let the eagle image breathe.
+- **Section 6:** add a gentle guided image of their aligned life one year on.
 - **Section 7:** add a short, calm Q&A or a moment of shared silence before the final line.
 
 ---
@@ -222,9 +219,8 @@ The architecture is stage-ready, and the sacred triad now leads in your exact wo
 3. **Your own feather → feather → rock → truck (optional but powerful):** a real escalation from your life to seat the signature moment in Section 3 — the small early signals you dismissed, and the larger one that finally turned you around. If there isn't a true one, the universal "you" carries it. Invent none.
 4. **Beat 3 / first nudge:** the first small, ordinary-looking aligned step you actually took.
 5. **Notice example:** one small, un-dramatic "notice" moment from your own life — the quiet tell that something was off.
-6. **The eagle `[Johnny to confirm]`:** may we OFFER "Soulnapped: The Eagle in the Coop" as the optional carrying image (seeded in Section 1, stitched in Section 3, bookended in Section 6), presented as an image and never asserted as "what it means"? The image is offered only, never elevated to the talk's own subtitle or headline — the plain subtitle carries the title. If you ever want the eagle in the title itself, it would carry the same `[Johnny to confirm]` mark. And in the Section 6 bookend, the meaning is left blank for you to state. Keep it, or cut it entirely — if cut, the two open hands carry the whole visual load, and every eagle beat is simply removed.
-7. **The optional closing echo:** are you happy with *"Even the truck was mercy — the same love as the first feather, refusing to give up on you"* as a light callback in the charge — or cut it and let your verbatim payoff stand alone? (It's worded to honor the escalation — the truck stays a truck, not collapsed back into a feather.)
-8. **Format call on Audience Moment 2:** pair-share or fully private, by venue (likely private for a corporate room, pair-share for a retreat/festival).
-9. **Slides decision:** zero slides works beautifully (two open hands is the only visual you need). If you use slides, keep to three — a black open, one two-hands-with-a-gap image, and nothing that spells the triad out as a list (the sacred terms should be *heard*, not read); if the eagle is confirmed, one eagle image may replace the third.
-10. **Voice + sacred-language gut-check:** a read-through to confirm every line sounds like you talking to one person — calm, warm, grounded, zero hype, no guarantees, no clinical/Reiki claims — and that the three sacred definitions land in your exact words, never softened.
-11. **`[verify]`** The script asserts zero statistics on purpose. If you ever want one (e.g., workplace disengagement for a corporate room), source it yourself and mark it verified before it goes on stage.
+6. **The optional closing echo:** are you happy with *"Even the truck was mercy — the same love as the first feather, refusing to give up on you"* as a light callback in the charge — or cut it and let your verbatim payoff stand alone? (It's worded to honor the escalation — the truck stays a truck, not collapsed back into a feather.)
+7. **Format call on Audience Moment 2:** pair-share or fully private, by venue (likely private for a corporate room, pair-share for a retreat/festival).
+8. **Slides decision:** zero slides works beautifully (two open hands is the only visual you need). If you use slides, keep to three — a black open, one two-hands-with-a-gap image, and nothing that spells the triad out as a list (the sacred terms should be *heard*, not read).
+9. **Voice + sacred-language gut-check:** a read-through to confirm every line sounds like you talking to one person — calm, warm, grounded, zero hype, no guarantees, no clinical/Reiki claims — and that the three sacred definitions land in your exact words, never softened.
+10. **`[verify]`** The script asserts zero statistics on purpose. If you ever want one (e.g., workplace disengagement for a corporate room), source it yourself and mark it verified before it goes on stage.
