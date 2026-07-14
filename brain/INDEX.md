@@ -49,8 +49,11 @@ every future surface equally.
   spine of all four talks. Read before writing ANY copy in his voice; never invent his
   concepts' meanings.
 - `speaking/` — Johnny's keynote/talk outlines, built here from his real story & voice.
-  - `speaking/the-aligned-life.md` — draft v1 (2026-07-13). Framework: **The Alignment Gap —
-    Notice · Name · Nudge**. A private Artifact page exists for Johnny to read. The four talks
+  - `speaking/the-aligned-life.md` — **v2, 2026-07-13.** Spine = Johnny's sacred triad
+    (**sacred exhaustion → sacred interruption → rising mercy**, his verbatim words; feather-
+    feather-rock-truck is the signature moment). Notice·Name·Nudge retired to a small toolkit.
+    Eagle/coop image offered once, marked [Johnny to confirm]. Private Artifact page for Johnny;
+    v1 in git history. The four talks
     are: The Aligned Life ✅v1 · Leading from the Inside Out · The Courage to Change ·
     Conflict as a Catalyst. **Voice-tuning pass pending Johnny's book** *Soulnapped: The Eagle
     in the Coop* (couldn't be pulled through the OneDrive share; awaiting the `.docx` on his Desktop).
