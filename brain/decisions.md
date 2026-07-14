@@ -2,6 +2,16 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-12 — Johnny is the sole operator (web designer handed over the reins)
+Johnny's web designer handed off on the evening of 2026-07-12; Johnny now runs everything
+himself. **There is no technical intermediary anymore** — the agent neighborhood (Mr Rogers +
+crews) owns 100% of the keyboard/technical/design work, and Johnny interacts purely in plain
+language, voice/one-tap, direction-not-detail. **Why it matters:** the Hands + Sweater
+Covenants are now the entire operating interface, not an accommodation; durability, the
+plain-language management surfaces (/admin · /neighborhood · /rogers), and the concierge
+pattern for account steps carry more weight, since no human designer backstops the tech.
+Johnny confirmed this is how he'll interact going forward. See brain/business.md.
+
 ## 2026-07-13 — Johnny's real portrait is live (About + homepage)
 Johnny provided a black-and-white portrait; it now anchors the About page (editorial frame
 beside his opening lines, stacks to top on mobile) and fills the homepage circle

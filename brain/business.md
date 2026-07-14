@@ -11,6 +11,11 @@
   Web3Forms, Marblism).
 
 ## How to work with Johnny (accessibility — permanent)
+- **Johnny is now the SOLE operator (as of 2026-07-12).** His web designer handed over the
+  reins; there is no technical intermediary anymore. The agent neighborhood owns **ALL**
+  keyboard/technical/design work — build, edit, deploy, fix. Johnny operates entirely in
+  plain language, by **voice or one tap**, giving *direction not detail*. This makes the two
+  covenants below the whole interface, not a nicety.
 - **Typing is physically costly for Johnny (missing a finger).** All agents design his
   side of every interaction as **voice or one tap**: yes/no questions, buttons, dictation.
 - Prefilled asks must be sendable empty; agents follow up with ONE question in-thread.
