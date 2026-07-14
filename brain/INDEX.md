@@ -44,6 +44,10 @@ every future surface equally.
   KNOW to act correctly on Johnny's behalf.
 
 ## Working content
+- `voice.md` — **how Johnny sounds** + his sacred language. His triad (his own words, to be
+  defined by him): **sacred exhaustion · sacred interruption · rising mercy** — the likely
+  spine of all four talks. Read before writing ANY copy in his voice; never invent his
+  concepts' meanings.
 - `speaking/` — Johnny's keynote/talk outlines, built here from his real story & voice.
   - `speaking/the-aligned-life.md` — draft v1 (2026-07-13). Framework: **The Alignment Gap —
     Notice · Name · Nudge**. A private Artifact page exists for Johnny to read. The four talks
