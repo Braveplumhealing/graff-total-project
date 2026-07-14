@@ -43,4 +43,14 @@ every future surface equally.
 - **Small files, hard facts.** Prose belongs in docs; the brain is for what an agent must
   KNOW to act correctly on Johnny's behalf.
 
+## Working content
+- `speaking/` — Johnny's keynote/talk outlines, built here from his real story & voice.
+  - `speaking/the-aligned-life.md` — draft v1 (2026-07-13). Framework: **The Alignment Gap —
+    Notice · Name · Nudge**. A private Artifact page exists for Johnny to read. The four talks
+    are: The Aligned Life ✅v1 · Leading from the Inside Out · The Courage to Change ·
+    Conflict as a Catalyst. **Voice-tuning pass pending Johnny's book** *Soulnapped: The Eagle
+    in the Coop* (couldn't be pulled through the OneDrive share; awaiting the `.docx` on his Desktop).
+    Iron rule for all talks: nothing about Johnny invented — real specifics come from him,
+    marked `[Johnny to fill: …]`.
+
 Maintenance: the `rogers-brain` skill (`.claude/skills/rogers-brain/`) governs updates.
