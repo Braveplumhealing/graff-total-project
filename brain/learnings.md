@@ -25,6 +25,11 @@ ones as they're earned (see The Deposit Rule, `brain/INDEX.md`).
 7. **His yes is specific.** A "sure" is not authorization for credentials or production
    writes; the explicit sentence is. The safety system enforcing this repeatedly proved
    *right*.
+7b. **Hands-free asset intake works: "it's on my Desktop" is enough.** Johnny can't upload
+    by hand (the Hands Covenant), so for his portrait he just dropped the file on his Desktop
+    and said so; the crew found the newest image, optimized it with `sips`, framed it in the
+    brand ring, and returned a one-tap review. Reusable pattern for the healer-network warm-
+    photo standard — the human's whole job is "drop it and say where."
 
 ## About the machine (how the work stays durable)
 8. **One source of truth, many mirrors — and know which is which.** GitHub is master;

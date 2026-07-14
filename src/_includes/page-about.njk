@@ -8,7 +8,14 @@ layout: base.njk
 <p class="ph-lead">{{ lead | safe }}</p>
 </div>
 <section class="content"><div class="ci">
+<div class="about-lede">
+<div class="about-lede-text">
 {% for p in intro %}<p>{{ p | safe }}</p>{% endfor %}
+</div>
+<figure class="about-portrait">
+<img src="/assets/johnny.jpg" width="747" height="1100" loading="lazy" decoding="async" alt="Johnny, transformational life coach and founder of Brave Plum Healing">
+</figure>
+</div>
 <h2>His Story</h2>
 <p>{{ story | safe }}</p>
 <h2>What Johnny Offers</h2>

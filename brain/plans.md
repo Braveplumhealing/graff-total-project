@@ -6,8 +6,8 @@ Every "Now" item has a first move Johnny can trigger with one plain sentence to 
 ## 1. Site & content
 - **Are:** designed site live on braveplumhealing.com; 8 pages + journal; /admin editing works.
 - **Now:** replace ⚠ mock content — real podcast episodes, true stats, real video links.
-  Johnny: *"here are my real episodes/stats"* → `/edit`. Add Johnny's portrait
-  (`site.json → portrait`). 
+  Johnny: *"here are my real episodes/stats"* → `/edit`. Portrait ✅ added 2026-07-13 —
+  About page (editorial frame) + homepage ring; `site.json → portrait` = /assets/johnny.jpg.
 - **Next:** 2 journal posts/month (repurpose podcast notes); a real Videos library page.
 - **Later:** seasonal retreat landing pages; a gentle resources/library section.
 

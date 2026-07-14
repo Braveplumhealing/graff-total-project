@@ -2,6 +2,15 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-13 — Johnny's real portrait is live (About + homepage)
+Johnny provided a black-and-white portrait; it now anchors the About page (editorial frame
+beside his opening lines, stacks to top on mobile) and fills the homepage circle
+(`site.json → portrait` = /assets/johnny.jpg, `object-position:center 28%` for the face).
+He approved by voice ("publish it… I love it"). **Why:** a real face is the warmest thing an
+About page can hold, and the warm-photo standard the healer network will one day require
+(`docs/SCALING-THE-NETWORK.md`) starts with Johnny's own. Intake was hands-free (Desktop
+drop → the crew fetched, optimized, framed — see learnings 7b).
+
 ## 2026-07 — NORTH STAR: grow a healer network under the brand (vision, not yet built)
 Johnny: "Right now I am the show. Down the road I want to grow the healer network that
 sits under my brand." Direction accepted and planned (`docs/SCALING-THE-NETWORK.md`,
