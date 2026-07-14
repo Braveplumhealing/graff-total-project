@@ -12,8 +12,8 @@ sacred language on a page or a stage.
 ## The sacred triad (Johnny named these, 2026-07-13)
 Johnny asked us to center three components. They are a natural arc — quite possibly **THE
 spine of his work**. Johnny is defining them in his own words below; anything still marked
-`[Johnny to define]` is unconfirmed and must never be guessed. **Status: 2 of 3 defined
-(2026-07-13); awaiting *rising mercy*.**
+`[Johnny to define]` is unconfirmed and must never be guessed. **Status: all three defined in
+Johnny's own words (2026-07-13). ✅**
 
 1. **Sacred exhaustion** — *Johnny's words, 2026-07-13:* it is **caused by the gap between the
    outer life and the inner truth. The further the gap, the greater the exhaustion.**
@@ -22,8 +22,25 @@ spine of his work**. Johnny is defining them in his own words below; anything st
 2. **Sacred interruption** — *Johnny's words, 2026-07-13:* it **comes along when the sacred
    exhaustion can't hold itself up anymore** — the moment the performed life can no longer bear
    its own weight, and something breaks in. → This is "the turn" (talk Section 3).
-3. **Rising mercy** — `[Johnny to define]` — *awaiting Johnny's words (asked 2026-07-13). Likely
-   what rises after the interruption has done its work — but do not guess; this is his to name.*
+3. **Rising mercy** — *Johnny's words, 2026-07-13:* he calls it **"feather, feather, rock,
+   truck."** We tend to **play down and dismiss** the sacred interruption — and **the more we
+   dismiss it, the more aggressive the interruption becomes: first a feather, then another
+   feather, then a rock, and then a truck.** Rising mercy is **what brings us out of the
+   performance and returns us to our inner self, our essence.**
+   → The mercy is *in* the escalation: grace keeps rising because it refuses to give up on us.
+
+## The complete arc (Johnny's mechanism, in his own logic — 2026-07-13)
+1. A **gap** opens between the outer life and the inner truth.
+2. The gap generates **sacred exhaustion** — and the wider the gap, the heavier it grows.
+3. When the exhaustion can no longer hold itself up, a **sacred interruption** breaks in.
+4. We tend to play it down and dismiss it. The more we dismiss it, the more insistent it grows:
+   **a feather → another feather → a rock → a truck.**
+5. That rising insistence is **rising mercy** — grace that keeps escalating precisely because it
+   refuses to give up on us, until it brings us **out of the performance and home to our
+   essence.** The mercy is *in* the persistence.
+
+*Eagle image (from his book title, **to confirm with Johnny — do not assert**): the soul as an
+eagle living small in a coop, having forgotten the sky; rising mercy returns it to flight.*
 
 ## How to use them
 - Candidate spine for **all four talks**, beginning with *The Aligned Life*:
