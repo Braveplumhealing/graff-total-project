@@ -74,9 +74,20 @@ every future surface equally.
     (four panes, one blind; opens only from the outside) [Johnny to confirm]. Signature
     beat: the four-pane build + portal reveal. Optional orchard callback [confirm].
     Branded Artifact page (🪟): claude.ai/code/artifact/6a035b3d-fd65-4fce-9b4b-b6618eb97165;
-    HTML source in speaking/artifacts/. 7 fill/confirm items at end of file. The four talks
+    HTML source in speaking/artifacts/. 7 fill/confirm items at end of file. JOHARI RULE (Johnny,
+    2026-07-15): all four quadrants NAMED once (known self · blind spot · hidden self ·
+    unknown self) for context; the clinical dive is parked in ideas.md for another day.
+  - `speaking/conflict-as-catalyst.md` — **v1, 2026-07-15.** ⚠ **CENTER SEAT EMPTY ON
+    PURPOSE:** Johnny's conflict teaching is [Johnny to define] — placeholders are clearly
+    unattributed scaffolding and the talk must NOT be delivered until he speaks/blesses the
+    core. Spine = The Knock → The Threshold → The Opening (site's own gifts: growth,
+    understanding, deeper connection). Master image = **THE DOORWAY** [confirm]. HARD RULE:
+    mediation-table stories are confidential and never appear, even anonymized — only
+    Johnny's own story. Branded Artifact page (🚪):
+    claude.ai/code/artifact/e9950744-916a-4b7a-9e3f-3a98251144ac; source in
+    speaking/artifacts/. 7 fill/confirm items at end. The four talks
     are: The Aligned Life ✅v2 · Leading from the Inside Out ✅v1 · The Courage to Change ✅v1 ·
-    Conflict as a Catalyst. **Voice-tuning pass pending Johnny's book** *Soulnapped: The Eagle
+    Conflict as Catalyst ✅v1-architecture (core awaiting Johnny). **Voice-tuning pass pending Johnny's book** *Soulnapped: The Eagle
     in the Coop* (couldn't be pulled through the OneDrive share; awaiting the `.docx` on his Desktop).
     Iron rule for all talks: nothing about Johnny invented — real specifics come from him,
     marked `[Johnny to fill: …]`.
