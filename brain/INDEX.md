@@ -58,8 +58,14 @@ every future surface equally.
     (**sacred exhaustion → sacred interruption → rising mercy**, his verbatim words; feather-
     feather-rock-truck is the signature moment). Notice·Name·Nudge retired to a small toolkit.
     Eagle/coop image offered once, marked [Johnny to confirm]. Private Artifact page for Johnny;
-    v1 in git history. The four talks
-    are: The Aligned Life ✅v1 · Leading from the Inside Out · The Courage to Change ·
+    v1 in git history.
+  - `speaking/leading-from-the-inside-out.md` — **v1, 2026-07-15.** Spine = the talk's own
+    site language (**Energy → Presence → Authentic Courage**), master image = **the torch**
+    (Johnny's own word for his light, same-day self-description; marked [Johnny to confirm]).
+    Signature beat: "you can't light anyone with a torch that isn't lit." Sacred triad
+    cross-referenced ONCE (verbatim), never redefined — it belongs to The Aligned Life.
+    7 [Johnny to fill/confirm] items listed at the end of the file. The four talks
+    are: The Aligned Life ✅v2 · Leading from the Inside Out ✅v1 · The Courage to Change ·
     Conflict as a Catalyst. **Voice-tuning pass pending Johnny's book** *Soulnapped: The Eagle
     in the Coop* (couldn't be pulled through the OneDrive share; awaiting the `.docx` on his Desktop).
     Iron rule for all talks: nothing about Johnny invented — real specifics come from him,
