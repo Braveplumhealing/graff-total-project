@@ -24,7 +24,7 @@
 - See the Hands Covenant in `agents/mr-rogers.md` — binding on every crew member.
 
 ## What we sell (confirmed pricing)
-- **Sessions: 90 minutes at $228; a full day is $2,280, plus travel & expenses (T&E).**
+- **Sessions: 90 minutes only (no 60-minute option), at $228; a full day is $2,280, plus travel & expenses (T&E).**
   (Corrected 2026-07-15 — the $450/hr · $5,000/day figures were the web designer's
   placeholders; these are Johnny's real prices. New LIVE Stripe links minted to match.)
 - Free 30-minute discovery call (Calendly) — always the gentle first step.
