@@ -2,6 +2,17 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-15 — The healers' network is named "The Healers' Grove"
+Johnny's Kittitas County healers network is **The Healers' Grove**, tagline **"Rooted in
+Kittitas. Growing together."** Chosen by Johnny over three alternates (The Blossom Circle,
+Kittitas Healing Collective, Third Thursday Circle). Format decided by Johnny: **Third
+Thursday monthly, 6–8 PM**, rotating host locations, one modality demonstration per
+gathering, 10–15 to start, growth by invitation only. Invitation flier (Brave Plum
+palette + blossom, ⅓-page rack card + 3-up print sheet) lives in `outreach/healers-grove/`.
+**Why the name:** a grove grows one tree at a time — and it echoes the true Brave Plum Farm
+origin story (the transplanted Vermont plum orchard; see `brain/business.md`), which Johnny
+shared this same day.
+
 ## 2026-07-15 — Real session/day pricing (placeholders corrected)
 The web designer's prices were **placeholders**. Johnny's REAL prices: **Reiki & Coaching
 sessions are 90 minutes at $228; the day rate is $2,280 plus T&E.** This **supersedes** the

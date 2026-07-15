@@ -62,6 +62,13 @@ Every "Now" item has a first move Johnny can trigger with one plain sentence to 
 ## 8. The healer network (NORTH STAR — "start thinking", 2026-07)
 - **Are:** Johnny is the whole show (solo). Vision: grow a curated NETWORK of healers under
   the Brave Plum brand without losing warmth/trust. Full staged plan: `docs/SCALING-THE-NETWORK.md`.
+- **🌸 LIVE FIRST STEP — The Healers' Grove (2026-07-15):** Johnny's in-person monthly
+  gathering of Kittitas County healers — Third Thursday, 6–8 PM, rotating locations, one
+  modality demo each month, 10–15 to start, grows by invitation. Tagline: *"Rooted in
+  Kittitas. Growing together."* Flier: `outreach/healers-grove/`. This is the organic,
+  human front porch of the network vision: relationships first, roster later. Possible
+  next moves (only when Johnny asks): a simple Grove page on the site, host-rotation
+  tracker, RSVP flow.
 - **Now (zero-risk groundwork the crew can lay under today's model):** make Johnny healer #1
   (`content/healers/johnny.md`, reusing the posts pattern), move his booking/pay links to live
   *with him*, draft (not send) the healer covenant + vetting rubric + payout runbook, add a

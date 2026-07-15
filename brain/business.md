@@ -10,6 +10,25 @@
 - **Email:** braveplumhealing@outlook.com (also the login identity for GitHub, Calendly,
   Web3Forms, Marblism).
 
+## The name — origin story (told by Johnny, 2026-07-15)
+Johnny bought a small farm from a woman who had moved to Kittitas County from Vermont
+decades ago. She **uprooted her plum orchard in Vermont, carefully packed each tree into
+the back of a U-Haul truck, drove them across the country, and replanted them here**,
+tending them until they became a thriving orchard of Italian Plums. Right after Johnny
+bought the farm from her, she fell ill and passed away. Johnny chose to honor her brave
+work — the orchard thrives to this day. The farm is now **Brave Plum Farm**, and it will
+eventually house the physical healing space of Brave Plum Healing. This story is the heart
+of the brand: *transplanted things, tended with love, take root.* Use it (gently, with
+respect for her memory) wherever the name needs explaining.
+
+## Community — The Healers' Grove (launched 2026-07)
+Johnny's network of healers who live or practice in Kittitas County. Purpose: introduce
+healers to one another, a monthly social gathering, and elevating the craft of healing in
+the county. **Third Thursday monthly, 6:00–8:00 PM**, rotating host locations, one
+healing-modality demonstration each month. Starts at 10–15 people; grows organically —
+each participant may invite others. Tagline: *"Rooted in Kittitas. Growing together."*
+Flier + print files: `outreach/healers-grove/`.
+
 ## How to work with Johnny (accessibility — permanent)
 - **Johnny is now the SOLE operator (as of 2026-07-12).** His web designer handed over the
   reins; there is no technical intermediary anymore. The agent neighborhood owns **ALL**
