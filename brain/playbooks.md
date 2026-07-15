@@ -78,5 +78,6 @@ Leading from the Inside Out. To make the next one:
    the URL in `brain/INDEX.md` beside the talk, archive the HTML source in
    `brain/speaking/artifacts/`.
 Published pages: The Aligned Life → claude.ai/code/artifact/932b15f8-01f2-4b9b-8cd7-6b7ce7e7a650 ·
-Leading from the Inside Out → claude.ai/code/artifact/d9a2c286-79cb-48fe-909f-aaa58dbedbd6
-(both private to Johnny unless he shares).
+Leading from the Inside Out → claude.ai/code/artifact/d9a2c286-79cb-48fe-909f-aaa58dbedbd6 ·
+The Courage to Change (🪟) → claude.ai/code/artifact/6a035b3d-fd65-4fce-9b4b-b6618eb97165
+(all private to Johnny unless he shares).

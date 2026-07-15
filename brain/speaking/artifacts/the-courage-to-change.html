@@ -1,0 +1,241 @@
+<title>The Courage to Change — Keynote Outline</title>
+<style>
+:root{
+  --plum:#3D1A3D; --rose:#C4637E; --blush:#F2B8C6; --petal:#FDE8EE; --cream:#FDF5F0;
+  --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826;
+  --muted:#84677A; --line:rgba(61,26,61,.12); --accent:var(--rose); --heading:#3D1A3D;
+  --hero-ink:#FDE8EE; --hero-sub:#E7B9C8;
+  --serif:"Cormorant Garamond",Palatino,"Palatino Linotype",Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15);
+    --heading:#F2B8C6; --hero-ink:#FDE8EE; --hero-sub:#E3A9BC; }
+}
+:root[data-theme="light"]{ --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826; --muted:#84677A; --line:rgba(61,26,61,.12); --heading:#3D1A3D; }
+:root[data-theme="dark"]{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15); --heading:#F2B8C6; }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
+
+.hero{background:var(--plum);color:var(--hero-ink);padding:64px 24px 60px;position:relative;overflow:hidden;text-align:center}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 30%,rgba(196,99,126,.30),transparent 65%);pointer-events:none}
+.hero-inner{max-width:760px;margin:0 auto;position:relative}
+.hero .bloom{width:58px;height:58px;margin:0 auto 18px;display:block}
+.eyebrow{font-family:var(--sans);font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--blush);opacity:.85;margin:0 0 20px}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.5rem,6.5vw,4.1rem);line-height:1.04;margin:0;color:var(--hero-ink);text-wrap:balance}
+.hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--hero-sub);margin:18px auto 0;max-width:46ch;line-height:1.4;text-wrap:balance}
+.hero .meta{margin-top:26px;display:inline-flex;flex-wrap:wrap;gap:10px 14px;justify-content:center;font-size:.75rem;letter-spacing:.02em}
+.hero .meta span{border:1px solid rgba(253,232,238,.28);border-radius:999px;padding:5px 13px;color:var(--blush)}
+
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,3.6vw,2.15rem);line-height:1.15;color:var(--heading);margin:64px 0 6px;padding-top:22px;border-top:1px solid var(--line);text-wrap:balance}
+h3{font-family:var(--serif);font-weight:500;font-size:1.3rem;color:var(--rose);margin:34px 0 4px}
+p{margin:14px 0;max-width:68ch}
+strong{color:var(--ink);font-weight:700}
+a{color:var(--rose)}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.86em;background:var(--petal);color:#7A3070;padding:1px 6px;border-radius:5px}
+
+ul{list-style:none;margin:14px 0;padding:0;max-width:68ch}
+li{position:relative;padding-left:26px;margin:9px 0;line-height:1.65}
+li::before{content:"\2767";position:absolute;left:0;top:0;color:var(--blush);font-size:.95em}
+
+blockquote{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.35rem,3.2vw,1.75rem);line-height:1.42;color:var(--rose);margin:30px 0;padding:6px 0 6px 26px;border-left:3px solid var(--blush);max-width:60ch;text-wrap:balance}
+
+.callout{background:var(--petal);border-left:4px solid var(--rose);border-radius:0 10px 10px 0;padding:18px 22px;margin:22px 0;max-width:68ch;color:#4A2340}
+:root[data-theme="dark"] .callout{background:rgba(196,99,126,.14);color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .callout{background:rgba(196,99,126,.14);color:var(--ink)}}
+.callout.big{border-left-color:var(--plum)}
+:root[data-theme="dark"] .callout.big{border-left-color:var(--blush)}
+.clabel{display:block;font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin-bottom:6px}
+
+.timing{display:inline-block;background:var(--plum);color:var(--blush);font-family:var(--sans);font-size:.76rem;letter-spacing:.03em;padding:5px 13px;border-radius:999px;margin:12px 0}
+.timing::before{content:"\25F7\00A0";opacity:.9}
+.timing strong{color:var(--petal);font-weight:600}
+
+.mv{display:inline-block;font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7A3070;background:var(--petal);border:1px solid rgba(196,99,126,.25);padding:2px 10px;border-radius:999px;margin-left:8px;vertical-align:middle}
+:root[data-theme="dark"] .mv{background:rgba(196,99,126,.16);color:var(--blush)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .mv{background:rgba(196,99,126,.16);color:var(--blush)}}
+
+.note{display:block;background:transparent;border-left:2px solid var(--blush);color:var(--muted);font-size:.92rem;line-height:1.6;padding:2px 0 2px 18px;margin:16px 0;max-width:66ch;font-style:italic}
+
+.fill{background:linear-gradient(transparent 62%, var(--blush) 62%);padding:0 2px;color:var(--ink);border-radius:2px}
+.fill-tag{display:inline-block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--rose);padding:1px 6px;border-radius:4px;margin-right:6px;vertical-align:middle;transform:translateY(-1px)}
+.done-tag{display:inline-block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:#6B8F6B;padding:1px 6px;border-radius:4px;margin-right:6px;vertical-align:middle;transform:translateY(-1px)}
+
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:3px}
+
+@media (prefers-reduced-motion:no-preference){
+  .wrap>*,.hero-inner>*{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+  .hero-inner>*:nth-child(2){animation-delay:.05s}
+  .hero-inner>*:nth-child(3){animation-delay:.1s}
+  .hero-inner>*:nth-child(4){animation-delay:.15s}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<div class="hero"><div class="hero-inner">
+  <svg class="bloom" viewBox="-40 -40 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Brave Plum Healing blossom"><defs><radialGradient id="bparta" cx="50%" cy="85%" r="85%"><stop offset="0%" stop-color="#FDE8EE"/><stop offset="55%" stop-color="#F2B8C6"/><stop offset="100%" stop-color="#EDA5BA"/></radialGradient><radialGradient id="bpartb" cx="50%" cy="85%" r="85%"><stop offset="0%" stop-color="#FBD9E2"/><stop offset="60%" stop-color="#EDA5BA"/><stop offset="100%" stop-color="#E293AC"/></radialGradient></defs><g transform="rotate(-6)"><g transform="rotate(0)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bparta)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(72)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bpartb)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(144)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bparta)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(216)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bpartb)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(288)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bparta)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><circle r="4.2" fill="#FDE8EE" fill-opacity=".95"/><path d="M0 -3.2Q0.39 -6.57 0 -11.96" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="0" cy="-11.96" r="1.5" fill="#C4637E"/><path d="M2.35 -2.18Q4.01 -3.3 6.92 -6.42" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="6.92" cy="-6.42" r="1.5" fill="#C4637E"/><path d="M3.19 -0.2Q4.83 -0.01 8.77 -0.54" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="8.77" cy="-0.54" r="1.5" fill="#C4637E"/><path d="M2.81 1.54Q5.67 3.57 10.68 5.85" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="10.68" cy="5.85" r="1.5" fill="#C4637E"/><path d="M1.48 2.83Q1.87 4.17 3.85 7.36" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="3.85" cy="7.36" r="1.5" fill="#C4637E"/><path d="M-0.79 3.1Q-1.69 5.28 -2.5 9.76" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-2.5" cy="9.76" r="1.5" fill="#C4637E"/><path d="M-2.84 1.48Q-5.82 2.6 -10.28 5.35" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-10.28" cy="5.35" r="1.5" fill="#C4637E"/><path d="M-3.04 -0.98Q-4 -1.56 -7.43 -2.4" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-7.43" cy="-2.4" r="1.5" fill="#C4637E"/><path d="M-1.85 -2.61Q-3.29 -5.29 -6.55 -9.25" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-6.55" cy="-9.25" r="1.5" fill="#C4637E"/></g></svg>
+  <p class="eyebrow">Keynote &#183; Working draft v1</p>
+  <h1>The Courage to&nbsp;Change</h1>
+  <p class="sub">Practical and soulful tools for navigating uncertainty and transition with grace, resilience, and even joy.</p>
+  <div class="meta"><span>Grounded &#183; The Portal &#183; Depth &amp; Breadth</span><span>~45 min &#183; flexes 30&#8211;60</span><span>The window &#8212; to confirm</span><span>Brave Plum Healing</span></div>
+</div></div>
+
+<main class="wrap">
+<p><em>Working script v1 for a ~45-minute keynote. Warm, grounded, fireside — a wise companion at the crossing, never a hype stage. Built for rooms in transition: career turns, life pivots, organizations mid-change, anyone standing at an unknown. The core teaching is <strong>Johnny's own words, verbatim</strong>. Every <span class="fill"><span class="fill-tag">your turn</span> …</span> is a real specific only Johnny can supply — nothing invented.</em></p>
+
+<div class="callout"><span class="clabel">Throughline</span>The courage to change was never the blind leap we've been sold — it is moving forward into the unknown while grounded in who you are; and since being grounded in who you are requires feedback, the bravest act of any changing life turns out to be the quietest one: asking someone to tell you what they see.</div>
+
+<div class="callout big"><span class="clabel">The one big idea</span>Courage is never blind. What looks like the brave part of change — the leap, the announcement, the burning boat — is not where courage lives. Courage lives earlier and quieter: in being grounded in who you are, which requires feedback, which requires walking up to the one pane of your window you cannot see through and asking someone to open it from their side. <strong>The Blind Spot is the portal to growth</strong> — and the alternative to walking through it is not safety. It is stagnation and rot.</div>
+
+<h2>The spine — three movements, through the window</h2>
+<p>The talk walks one idea through three movements. The window carries the whole visual arc: standing grounded before it (Grounded) &#8594; asking someone to open the blind pane (The Portal) &#8594; stepping through into a larger self (Depth &amp; Breadth).</p>
+
+<p><strong>1. GROUNDED</strong> <em>(Movement I — Sections 1, 2)</em> — what courage actually is.</p>
+<blockquote><em>Johnny, verbatim:</em> "Courage is never blind. Courage is moving forward into the unknown and being grounded in who you are."</blockquote>
+<p>Not fearlessness, not recklessness, not the cliff-jump highlight reel. Courage has its eyes open and its feet on the ground — and the ground is self-knowledge.</p>
+
+<p><strong>2. THE PORTAL</strong> <em>(Movement II — Sections 3, 4)</em> — feedback, the bravest act.</p>
+<blockquote><em>Johnny, verbatim:</em> "Being grounded in who you are requires feedback. And receiving feedback is perhaps the act that requires the most courage. The Blind Spot of Johari's window is the portal to growth. It takes us into vulnerable spaces. It requires us to trust the process of journeying forward."</blockquote>
+<p>The structural heart. The one pane of your life you cannot see through is the one everyone around you is looking through — and it only opens from the outside. Asking is the courage.</p>
+
+<p><strong>3. DEPTH &amp; BREADTH</strong> <em>(Movement III — Sections 5, 6, 7)</em> — the self uncovered.</p>
+<blockquote><em>Johnny, verbatim:</em> "The alternative is stagnation and rot. In this way — courage leads us forward to our own health and allows us to uncover our unknown self and build upon our character, adding both depth and breadth."</blockquote>
+<p>Growth in two directions at once: deeper into who you already are, wider into who you haven't met yet. Health, not heroics.</p>
+
+<p><strong>The arc in one line:</strong> courage is never blind &#8594; it moves into the unknown grounded in who you are &#8594; grounding requires feedback &#8594; the blind pane is the portal, and it opens only from the outside &#8594; walking through is vulnerable and asks for trust in the journey &#8594; the alternative is stagnation and rot &#8594; through the portal the unknown self is uncovered, and character grows in depth and breadth.</p>
+
+<h2>Section 1 — Cold open: the leap that wasn't the brave part <span class="mv">Grounded</span></h2>
+<p class="timing"><strong>Target: 5 min</strong></p>
+<ul>
+<li>Open on the myth, warmly: every story we're told about change stars a leap — the quit-the-job scene, the sold-the-house scene, the dramatic before-and-after. <em>"We've been sold a picture of courage with its eyes squeezed shut. And I want to start by telling you the strangest thing I've learned about change: the leap is almost never the brave part."</em></li>
+<li>Name the counterfeit: blind leaps aren't courage — they're often just fear running in a new direction. <em>"I've watched people leap out of one performed life straight into another one. The scenery changed. The performance didn't."</em></li>
+<li>Deliver Johnny's verbatim ground-note early and plainly: <em>"<strong>Courage is never blind. Courage is moving forward into the unknown — grounded in who you are.</strong>"</em> Let it land as a correction to everything the room has been sold.</li>
+<li>One-breath self-intro, modest: coach, Reiki master, mediator, retreat facilitator — someone whose work is sitting with people at exactly this crossing. <span class="fill"><span class="fill-tag">your turn</span> one line on your own relationship to change — the crossing in your life this talk is built on, named only as far as you're comfortable.</span></li>
+<li>Plant the master image in one sentence, without ceremony: <em>"Tonight I want to show you a window — four panes. Because grounded courage begins at the one pane you cannot see through."</em> <span class="fill"><span class="fill-tag">confirm</span> the window as this talk's signature image — four panes, one blind.</span></li>
+</ul>
+<aside class="note"><em>Speaker note: The open must honor anyone in the room who HAS leapt — the myth is retired with warmth, never mocked. No jump-out-of-planes stories, no "fortune favors the bold." The talk's whole posture: courage with open eyes, at walking pace.</em></aside>
+
+<h2>Section 2 — Grounded: what courage actually stands on <span class="mv">Grounded</span></h2>
+<p class="timing"><strong>Target: 7 min</strong> &#183; <em>(Audience Moment 1 lands here)</em></p>
+<ul>
+<li>Unwrap courage from its costumes, one at a time: courage isn't fearlessness (fear comes along, it just doesn't drive); it isn't certainty (the unknown stays unknown); it isn't speed (some of the bravest changes take years and look like nothing from the outside).</li>
+<li>Then the definition, again, slower — and the hinge inside it: <em>"Moving into the unknown, grounded in who you are. But hold on. Grounded in who you are — how do you actually know who you are?"</em> Let the question sit.</li>
+<li>The honest answer, Johnny's verbatim: <em>"<strong>Being grounded in who you are requires feedback.</strong>"</em> Unpack gently: the self-portrait we paint alone is always painted from the inside of the house. Some of who we are is only visible from the yard.</li>
+<li>Name the resistance with compassion: we say we want to grow, and we arrange our whole lives to avoid being told anything we don't already believe. Nods of agreement feel like friendship; mirrors feel like threats.</li>
+<li>Land the movement's reframe, Johnny's verbatim: <em>"<strong>Receiving feedback is perhaps the act that requires the most courage.</strong>"</em> — <em>"Not the leap. The listening."</em></li>
+<li><strong>&#8594; Audience Moment 1 (silent recognition):</strong> <em>"No hands, just honesty: when is the last time you asked someone — actually asked — to tell you the truth about you? Not fishing for a compliment. The truth."</em> Hold ~15 seconds of real silence. Then, softly: <em>"Whatever came up — even if the answer was 'never' — that's not shame. That's just the map showing you where the courage is."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: This section retires the action-hero definition of courage and installs Johnny's, verbatim, unsoftened. Never turn "requires feedback" into corporate 360-review language — this is soul-level, not HR-level. The silence after Moment 1 is load-bearing; don't rescue the room from it.</em></aside>
+
+<h2>Section 3 — The window: the pane you cannot see through <span class="mv">The Portal</span></h2>
+<p class="timing"><strong>Target: 10 min</strong> <em>(the peak — protect this)</em></p>
+<ul>
+<li>Introduce the window as a picture, not a framework — human first, never academic: <em>"There's an old, simple picture of the self — two psychologists drew it in the 1950s, and it's just a window with four panes."</em> Build it physically, hands framing each pane:</li>
+<li><em>"One pane, everyone can see through — you and the world both. That's the you at the dinner table, the open pane."</em></li>
+<li><em>"One pane only YOU see through — what you keep behind the curtain. Your private rooms. Everyone has them."</em></li>
+<li><em>"One pane NOBODY sees through yet — the unknown self, the rooms even you haven't opened. Hold that one; we're coming back to it."</em></li>
+<li><em>"And one pane&#8230; everyone can see through EXCEPT you."</em> <strong>(pause)</strong> <em>"Think about that. There is a whole pane of your life — your patterns, your effect on people, your gifts you discount, your edges you can't feel — in plain view of everyone who loves you. And you have never seen it once."</em></li>
+<li>Johnny's story — the load-bearing wall: a real piece of feedback he received, hard to hear, that opened a pane he could not have opened alone. <span class="fill"><span class="fill-tag">your turn</span> the feedback that changed you — who said it (named only as you're comfortable), what they saw that you couldn't, what it cost to hear, and what it opened. One true scene. If the truest version is "I avoided hearing it for years," tell THAT — the dismissal is the story.</span></li>
+</ul>
+<h3>&#9733; THE PORTAL MOMENT — the single unforgettable beat</h3>
+<p><em>Build it slowly, at fireside volume, hands still framing the blind pane. Real silence between steps.</em></p>
+<blockquote><em>"Here's the thing about that fourth pane. I spent years treating it like a wall — something to defend, something to keep people away from."</em> <strong>(pause)</strong></blockquote>
+<blockquote><em>"It was never a wall. <strong>The Blind Spot is the portal to growth.</strong> It's the only pane with something behind it that you can't reach any other way. Every other pane, you can work alone. Not that one."</em> <strong>(pause)</strong></blockquote>
+<blockquote><em>"And here's what makes it courage: <strong>that pane only opens from the outside.</strong> You can't see through it — by definition. Someone else has to hand you what they see. Which means the doorway to your own growth&#8230; begins with a question you have to be brave enough to ask."</em> <strong>(hold)</strong></blockquote>
+<p><strong>THE REVEAL — drop the volume:</strong> <em>"So the bravest thing you'll do this year probably won't look like a leap. It will look like sitting across from someone who knows you, and saying: 'What do you see that I don't?' — and then not defending yourself against the answer."</em></p>
+<p><strong>Hold two full seconds before moving on.</strong></p>
+<aside class="note"><em>Speaker note: This is the peak and the talk's feather-rock-truck equivalent — the four-pane build + the portal reveal, built in full exactly once. Keep the Johari attribution light (one clause; it's Joseph Luft and Harrington Ingham, 1955, if anyone asks after). Johnny's verbatim "portal to growth" is the anchor and must land unparaphrased. HARD RULE: only a true feedback story goes here; if a detail can't be told truly, tell less. The person who gave the feedback is honored, never villained — they opened the pane.</em></aside>
+
+<h2>Section 4 — Vulnerable spaces: trusting the journey <span class="mv">The Portal</span></h2>
+<p class="timing"><strong>Target: 6 min</strong></p>
+<ul>
+<li>Honor the cost honestly — this is why the portal stays shut: <em>"Let's not pretend. <strong>It takes us into vulnerable spaces.</strong> When you ask someone what they see, you hand them something sharp. The armor we wear around our blind pane wasn't stupid — it was protection. Somewhere along the way, feedback and criticism got tangled together, and we stopped being able to tell the mirror from the knife."</em></li>
+<li>Untangle them: criticism wants to win; feedback wants you whole. <em>"You can feel the difference in your body. Criticism shrinks you. True feedback — even when it stings — makes you strangely larger."</em></li>
+<li>Johnny's verbatim trust-note, delivered as companionship: <em>"<strong>It requires us to trust the process of journeying forward.</strong> You won't see where the portal leads before you walk through. That's not a design flaw. That's what makes it courage instead of a calculation."</em></li>
+<li>Then the stakes, unflinching and verbatim: <em>"<strong>The alternative is stagnation and rot.</strong> Not staying safe — there is no staying safe. A self that stops receiving stops growing, and a thing that stops growing doesn't hold still. It rots. The pane you defend hardest becomes the room that molds."</em></li>
+<li><em>(Optional orchard callback — <span class="fill"><span class="fill-tag">confirm</span> in or out?</span>):</em> <em>"I live on a plum orchard, so I'll say it the way the trees taught me: a tree never sees its own dead branch. The orchardist does. And the tree that never gets that news doesn't stay the same tree — it starts dying from the branch in. Pruning isn't the opposite of growth. It's how the tree gets to keep growing."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: This is the talk's most tender section — the room's resistance lives here, so it must feel accompanied, not lectured. "Stagnation and rot" is Johnny's phrase and stays verbatim and unhedged; its bluntness is the mercy. If using the orchard callback, it must be told as true (Johnny really lives on the orchard) and stays gentle — no one in the room is called rotten; the warning is about panes, not people.</em></aside>
+
+<h2>Section 5 — The practice: asking bravely <span class="mv">Depth &amp; Breadth</span></h2>
+<p class="timing"><strong>Target: 8 min</strong> &#183; <em>(Audience Moment 2 lands here)</em></p>
+<ul>
+<li>Frame the give: <em>"So how do we actually do this — walk to the pane and ask? Three small practices. None of them require a personality transplant. All of them require a half-inch of nerve."</em></li>
+<li><strong>CHOOSE THE MIRROR:</strong> not everyone earns the question. Choose someone who has seen you over time, wants you whole, and has nothing to win. <em>"The brave question in the wrong hands is just an invitation to be cut. In the right hands, it's the beginning of a bigger life. Choose someone who loves the person you're becoming, not just the person you've been."</em></li>
+<li><strong>THE BRAVE QUESTION:</strong> ask it plainly and small: <em>"'What's one thing you see in me that I might not see in myself?' One thing — not an inventory. You're opening a pane, not scheduling a demolition."</em> <span class="fill"><span class="fill-tag">your turn</span> the brave question as YOU actually ask it — your real wording, if you have one you use or teach.</span></li>
+<li><strong>RECEIVE WITHOUT ARMOR:</strong> the hardest practice in the talk: <em>"When the answer comes — and your chest tightens, and the courtroom in your head calls its first witness — you say the two hardest words in the English language: 'Thank you.' Not 'yes, but.' Not the context they're missing. Thank you. You can decide later what to build with it. Feedback is information, not instruction — you remain the author of your own becoming. But in the moment of receiving, your only job is to let the pane open."</em></li>
+<li><strong>&#8594; Audience Moment 2 (private write):</strong> <em>"Two blanks, just for you: The person I would trust with the brave question is ______. And the thing I'm most afraid they'd say is ______."</em> 60–90 seconds. Then, gently: <em>"Notice — you already know both answers. The pane isn't as blind as it pretends. Somewhere in you, you already feel what's behind it. That feeling is the portal, glowing."</em></li>
+<li>Close the section warm: <em>"One mirror. One question. Two words. That's the whole practice. Courage at walking pace."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: This is "the give" — three moves, no acronym, no framework branding. "Feedback is information, not instruction" protects the room from feedback-as-tyranny — growth through the portal is chosen, never imposed. Every illustration universal or from Johnny's own life; never invented client stories. Keep Moment 2 fully private in every venue — it names real people.</em></aside>
+
+<h2>Section 6 — Depth and breadth: the self uncovered <span class="mv">Depth &amp; Breadth</span></h2>
+<p class="timing"><strong>Target: 4 min</strong></p>
+<ul>
+<li>The exhale. Return to the window — and to the third pane held back in Section 3: <em>"Remember the pane nobody sees through yet — the unknown self? Here's the quiet secret of the window: every time the blind pane opens, that unknown pane shrinks too. What others hand you doesn't just correct you. It UNCOVERS you. Capacities you couldn't see. Rooms you didn't know your house had."</em></li>
+<li>Johnny's verbatim payoff, delivered slowly, as the destination: <em>"<strong>In this way, courage leads us forward to our own health — it allows us to uncover our unknown self and build upon our character, adding both depth and breadth.</strong>"</em></li>
+<li>Paint the two directions honestly and modestly: depth — more truly yourself than before, roots further down; breadth — bigger than you were, rooms open that were sealed. <em>"Not a different self. A larger one. Health, not heroics."</em></li>
+<li>Set a true expectation: the window never finishes. Panes cloud over again; new blind spots grow as you grow. <em>"You don't graduate from the window. You just stop being afraid of it — and start treating every opened pane as what it always was: the portal, doing its work."</em> <em>(No promised outcomes.)</em></li>
+<li>Callback to the cold open: <em>"And notice — no leap anywhere in sight. Just a question, a listening, and a self that's been quietly growing in both directions. That was the courage the whole time."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: This is the destination — keep it spacious and modest; "depth and breadth" is Johnny's verbatim payoff and closes the loop. No transformation-industry language ("best self," "10x," "unstoppable"). The window imagery completes: blind pane open, unknown pane shrinking — say it once and let the hands show the rest.</em></aside>
+
+<h2>Section 7 — One brave question: soft bridge and closing charge <span class="mv">Depth &amp; Breadth</span></h2>
+<p class="timing"><strong>Target: 5 min</strong> &#183; <em>(Audience Moment 3 lands here)</em></p>
+<ul>
+<li>Gather the room to their own single crossing: <em>"Whatever change brought you into this room — a role, a relationship, a season that's ending, a self that's asking to be larger — the window is already standing in front of you. And you already know your mirror's name."</em></li>
+<li><strong>&#8594; Audience Moment 3 (one chosen ask, small and dated):</strong> <em>"Before you leave: choose the conversation. The person you named twenty minutes ago, the brave question, sometime in the next two weeks. Small enough that you already know you can. Now, quietly, name the day."</em> A real beat of silence. <em>"You don't have to be ready for the answer. You just have to be willing to hear it."</em></li>
+<li><strong>The soft bridge (once, gently, then released — Johnny's exact site language):</strong> <em>"If you'd like company at your own window — someone to help you stand grounded while a pane opens — the first step is simply a free thirty-minute discovery call. No pressure, just an honest conversation. But you don't need me for the brave question. You have your mirror. You have your day."</em> Say it once. No prices, no packages, no urgency.</li>
+<li>Close the loop from the open: <em>"We started with the myth — courage with its eyes squeezed shut, mid-leap. Let it go. The real thing has open eyes and a steady voice, and it's asking someone at a kitchen table what they see."</em></li>
+<li><strong>Deliver the closing charge</strong> (below), then stillness. Two full seconds before "thank you."</li>
+</ul>
+<aside class="note"><em>Speaker note: End on THEM, not the offer — bridge before the final loop-close, mentioned once, power handed straight back. Phone booking (Rachel) and paid work stay back-office, never named from stage.</em></aside>
+
+<h2>The closing charge — the single unforgettable line</h2>
+<blockquote><em>"You were never asked to leap with your eyes shut. Courage is never blind — it moves into the unknown grounded in who you are, and who you are is waiting on the far side of a question you've been avoiding.</em></blockquote>
+<blockquote><em>So find your mirror. Ask what they see. And when the answer comes, put down the armor and say thank you — because the pane you cannot see through is the one everyone who loves you is looking through, and it was never a wall.</em></blockquote>
+<blockquote><strong>It's the portal. And the alternative was never safety — it was stagnation and rot.</strong></blockquote>
+<blockquote><em>Walk through grounded. Grow in both directions — deeper into who you are, wider into who you haven't met yet. That's the courage to change. And it's been waiting on one brave question all along."</em></blockquote>
+<p><em>(Step back. Stillness. Two full seconds. Then, quietly: "Thank you.")</em></p>
+
+<h2>The 30-minute cut</h2>
+<p>Protect the two load-bearing sections in full: <strong>Section 3 (the four-pane build + Johnny's story + the portal reveal)</strong> and <strong>Section 5 (the practice + Audience Moment 2)</strong>. Trim everywhere else; never trim the peak's silences.</p>
+<ul>
+<li><strong>Section 1 &#8594; ~3 min:</strong> keep the myth retirement + Johnny's verbatim definition + the window plant.</li>
+<li><strong>Section 2 &#8594; ~4.5 min:</strong> keep the courage un-costuming compressed + "requires feedback" verbatim + Moment 1 at ~10 sec.</li>
+<li><strong>Section 3 &#8594; ~8 min:</strong> keep all four panes and the full portal build; trim only the edges of the story.</li>
+<li><strong>Section 4 &#8594; ~3.5 min:</strong> keep criticism-vs-feedback and "stagnation and rot" verbatim; drop the orchard callback.</li>
+<li><strong>Section 5 &#8594; ~6.5 min:</strong> keep all three practices compressed + Moment 2 at ~45 sec.</li>
+<li><strong>Section 6 &#8594; ~2 min:</strong> keep the unknown-pane reveal + "depth and breadth" verbatim payoff.</li>
+<li><strong>Section 7 &#8594; ~2.5 min:</strong> keep Moment 3, the bridge (once), and the charge intact.</li>
+</ul>
+
+<h2>The 60-minute expansion</h2>
+<p>Deepen honesty and stillness; never inflate drama or add hype.</p>
+<ul>
+<li><strong>Section 1:</strong> add one true observation about the <em>specific</em> room's version of the leap myth (corporate reorg / graduation / retreat / congregation).</li>
+<li><strong>Section 2:</strong> add a second portrait of feedback-avoidance (the pleasant version: surrounding yourself with agreement) so the conflict-avoidant recognize themselves.</li>
+<li><strong>Section 3:</strong> one more small, true detail in the feedback story — deepen honesty, never drama.</li>
+<li><strong>Section 4:</strong> expand the orchard callback (if confirmed) into a full two-minute beat — the dead branch, the orchardist's eye, pruning as love.</li>
+<li><strong>Section 5:</strong> give each practice a short true illustration; add a guided beat of stillness before Moment 2.</li>
+<li><strong>Section 6:</strong> add a gentle guided image — their window, one year of opened panes later.</li>
+<li><strong>Section 7:</strong> short, calm Q&amp;A or shared silence before the charge.</li>
+</ul>
+
+<h2>The bridge to working with Johnny</h2>
+<p>Mentioned <strong>once</strong>, gently, in Section 7, in Johnny's exact site language — <em>"a free 30-minute discovery call — no pressure, just an honest conversation"</em> — then power handed straight back (<em>"you don't need me for the brave question"</em>). A dignified door held open, never a close. No prices, no packages, no repeated CTA. Phone booking (Rachel) and paid work stay back-office. End on THEM.</p>
+
+<h2>What I need from you, Johnny</h2>
+<p>The architecture is stage-ready, and your courage teaching leads in your exact words. The heart lives in a few real specifics only you can supply:</p>
+<ul>
+<li><strong>The window <span class="fill-tag" style="background:#C4637E">confirm</span>:</strong> four panes, one blind, the portal — does it sit right as this talk's signature image (as the torch is for Inside Out and the two hands for The Aligned Life)?</li>
+<li><strong>Section 3 — your feedback story (the load-bearing wall):</strong> the real feedback that opened a pane you couldn't open alone — who (named only as you're comfortable), what they saw, what it cost to hear, what it opened. If the truest version is that you dodged it for years first, tell that.</li>
+<li><strong>Section 1 — your crossing:</strong> one line on the change in your own life this talk stands on.</li>
+<li><strong>Section 5 — the brave question, your wording:</strong> how you actually ask it (or teach clients to).</li>
+<li><strong>The orchard callback <span class="fill-tag" style="background:#C4637E">confirm</span>:</strong> the tree that can't see its own dead branch — in or out? (It's true to your life and quietly ties the talk to Brave Plum Farm.)</li>
+<li><strong>Venue call on Audience Moment 2:</strong> it's written fully-private everywhere (it names real people) — agreed?</li>
+<li><strong>Slides decision:</strong> zero slides works beautifully (your hands frame the four panes). If slides, maximum three — a black open, one simple four-pane window, nothing that turns the practices into bullets.</li>
+</ul>
+</main>
