@@ -51,3 +51,13 @@ eagle living small in a coop, having forgotten the sky; rising mercy returns it 
   term (or we have it from *Soulnapped*).
 - When his definitions land: re-run the talk design so the arc, the cold open, and the closing
   charge all rise through these three movements. Link back to [[the-aligned-life]].
+
+## Johnny's self-description (his exact words, 2026-07-15)
+> **"A healer who has walked his own dark seasons and emerged carrying his light."**
+
+Johnny composed this line himself (modifying our draft) for the homepage About heading. The
+original "walked through his own dark seasons" was true but told only half the story — his
+words: *"it does not recognize me for my light — for the torch that I carry."* Any bio,
+intro, or page about Johnny must **paint the whole cycle: the darkness AND the light.**
+Never describe him by his wounds alone. This pairs with the arc above — the interruption is
+never the destination; carrying the light home is.
