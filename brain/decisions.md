@@ -2,6 +2,29 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-15 — The plum blossom mark redesigned ("no more starfish")
+Johnny received feedback that the five-ellipse blossom looked like a **starfish** and asked
+for something more organic. From three candidates he chose **variant C, "Ink & Petal", at
+80% petal opacity**: rounded overlapping Prunus petals with a soft tip notch, a faint vein
+down each petal, fine stamens with rose anthers, the whole bloom tilted −6°, petals
+translucent so overlaps layer like watercolor. Applied EVERYWHERE the old mark lived: nav
+logo, favicon, homepage (hero card, portrait placeholder, breathe CTA), falling-petal
+script in base.njk, Neighborhood crest, and the Healers' Grove flier (re-rendered PDFs).
+Canonical generator: `scripts/gen-blossom.mjs <idPrefix> [light]` — emits the exact SVG
+fragment (unique gradient ids per instance; `light` = rose center disc for light backgrounds). **Why:** the mark should look grown, not drawn — and never
+like it lives in a tide pool. (His words on picking C@80%: "we have similar taste.")
+
+## 2026-07-15 — The healers' network is named "The Healers' Grove"
+Johnny's Kittitas County healers network is **The Healers' Grove**, tagline **"Rooted in
+Kittitas. Growing together."** Chosen by Johnny over three alternates (The Blossom Circle,
+Kittitas Healing Collective, Third Thursday Circle). Format decided by Johnny: **Third
+Thursday monthly, 6–8 PM**, rotating host locations, one modality demonstration per
+gathering, 10–15 to start, growth by invitation only. Invitation flier (Brave Plum
+palette + blossom, ⅓-page rack card + 3-up print sheet) lives in `outreach/healers-grove/`.
+**Why the name:** a grove grows one tree at a time — and it echoes the true Brave Plum Farm
+origin story (the transplanted Vermont plum orchard; see `brain/business.md`), which Johnny
+shared this same day.
+
 ## 2026-07-15 — Real session/day pricing (placeholders corrected)
 The web designer's prices were **placeholders**. Johnny's REAL prices: **Reiki & Coaching
 sessions are 90 minutes at $228; the day rate is $2,280 plus T&E.** This **supersedes** the
