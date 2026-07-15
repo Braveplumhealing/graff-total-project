@@ -6,13 +6,15 @@ on any item and he narrates one click at a time.
 
 ## Done and live (for the record) ✅
 Site on braveplumhealing.com (HTTPS enforced, www DNS added by your first voice-walk) ·
-/admin editor · contact form (Web3Forms, tested) · Calendly · LIVE Stripe links ($450/hr ·
-$5,000/day · T&E) · Rachel's line · the Desk & HQ · brain + Deposit Rule · Fleet + Walk ·
+/admin editor · contact form (Web3Forms, tested) · Calendly · LIVE Stripe links ($228/90-min
+session · $2,280/day · T&E) · Rachel's line · the Desk & HQ · brain + Deposit Rule · Fleet + Walk ·
 weekly digest · branch protection · backups + restore drill + Wayback + ledger anchor.
 
 ## Open — each is one walk or one tap
-- [ ] **Deactivate the old $228 Stripe link** — Stripe app → Payment Links → the old
-  "Session" link → Deactivate. (Money surface = your tap; 1 minute; the $450 link is live.)
+- [ ] **Deactivate the old placeholder Stripe links** — Stripe app → Payment Links →
+  the old **$450/hr "Session — per hour"** link and the **$5,000/day "Full day"** link →
+  Deactivate each. (Also any stale $228/hr link.) The real links ($228/90-min · $2,280/day)
+  are already live and verified. (Money surface = your tap; ~2 minutes.)
 - [ ] **GoatCounter code** (analytics are wired, waiting) — HQ card sends the ask as-is;
   Rogers walks the free signup; you dictate the code.
 - [ ] **Confirm homepage numbers** (500+ · 8+ · 40+) — HQ card; answer yes/no by voice.

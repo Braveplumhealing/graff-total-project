@@ -32,7 +32,7 @@ one click at a time** (concierge pattern — like the Stripe branding and token 
 | www DNS record | click Add Record; dictate/select the values Rogers reads to you |
 | Passkeys/2FA | click "Add passkey" → touch the sensor (that's the point of passkeys — no typing!) |
 | GoatCounter signup | clicks + one dictated code back to Rogers |
-| Old $228 Stripe link off | Stripe app → Payment Links → tap → Deactivate |
+| Old placeholder Stripe links off ($450/hr, $5,000/day) | Stripe app → Payment Links → tap each → Deactivate |
 | Registrar auto-renew/lock | two toggles |
 | Telegram/email bridges | Rogers types every command locally; you click Allow in the browser and paste-with-one-key (⌘V) anything secret |
 

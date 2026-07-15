@@ -2,6 +2,17 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-15 — Real session/day pricing (placeholders corrected)
+The web designer's prices were **placeholders**. Johnny's REAL prices: **Reiki & Coaching
+sessions are 90 minutes at $228; the day rate is $2,280 plus T&E.** This **supersedes** the
+2026-07 "$450/hour · $5,000/day" figures (see "Johnny's five directives" #2 below — that
+raise was itself placeholder-era). Done: `offerings.json` + the how-it-works chip updated;
+two NEW LIVE Stripe Payment Links minted at $228 (…M04) and $2,280 (…M05) and **verified on
+the Stripe checkout page** (correct amounts, correct names, Brave Plum branding); T&E link
+unchanged. **Johnny's tap (Tier-2, his alone):** deactivate the old placeholder links —
+$450/hr (…M03) and $5,000/day (…M01) — plus any stale $228/hr link, in the Stripe dashboard.
+**Why:** the site must show and charge Johnny's true prices; agents mint links, never move money.
+
 ## 2026-07-12 — Johnny is the sole operator (web designer handed over the reins)
 Johnny's web designer handed off on the evening of 2026-07-12; Johnny now runs everything
 himself. **There is no technical intermediary anymore** — the agent neighborhood (Mr Rogers +

@@ -1,19 +1,19 @@
 {
-  "_comment": "Payable items. amount_cents drives Stripe Payment Link creation (scripts/stripe-links.mjs). payment_url is filled in by that script. custom_amount=true creates a customer-chooses-amount link (used for T&E). Collection only — disbursing funds is human-authorized.",
+  "_comment": "Payable items. amount_cents drives Stripe Payment Link creation (scripts/stripe-links.mjs). payment_url is filled in by that script; clear a payment_url to have a fresh link minted at the current amount_cents. custom_amount=true creates a customer-chooses-amount link (used for T&E). Collection only — disbursing funds is human-authorized.",
   "currency": "usd",
-  "rate_note": "Sessions are $450 per hour or $5,000 per day, plus travel & expenses (T&E).",
+  "rate_note": "Sessions are 90 minutes at $228. A full day is $2,280, plus travel & expenses (T&E).",
   "payable": [
     {
-      "name": "Session — per hour",
-      "amount_cents": 45000,
-      "price": "$450 / hour",
-      "payment_url": "https://buy.stripe.com/9B614p3Fr5QJ3Ce6qP4wM03"
+      "name": "Session — 90 minutes (Reiki or Coaching)",
+      "amount_cents": 22800,
+      "price": "$228 / 90-min session",
+      "payment_url": "https://buy.stripe.com/aFa6oJa3Penf6OqdTh4wM04"
     },
     {
       "name": "Full day",
-      "amount_cents": 500000,
-      "price": "$5,000 / day",
-      "payment_url": "https://buy.stripe.com/14AcN7fo992V3Ce4iH4wM01"
+      "amount_cents": 228000,
+      "price": "$2,280 / day",
+      "payment_url": "https://buy.stripe.com/5kQ4gB2Bn5QJgp0dTh4wM05"
     },
     {
       "name": "Travel & Expenses (T&E)",

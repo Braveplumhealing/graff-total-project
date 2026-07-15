@@ -23,7 +23,7 @@ Every "Now" item has a first move Johnny can trigger with one plain sentence to 
 - Page redirects home; all references gone. Revisit only if Johnny brings real episodes.
 
 ## 4. Payments & money ops
-- **Are:** LIVE Stripe links ($450/hr · $5k/day · T&E) + Calendly + Rachel. No refund-policy page (Johnny). 
+- **Are:** LIVE Stripe links ($228/90-min session · $2,280/day · T&E) + Calendly + Rachel. No refund-policy page (Johnny). 
 - **Now:** Johnny verifies one real checkout end-to-end; finish Stripe branding
   (kit on Desktop); refund policy declined by Johnny (2026-07).
 - **Next:** per-workshop deposit links; simple monthly money rhythm (Johnny in Stripe,
