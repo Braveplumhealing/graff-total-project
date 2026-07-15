@@ -48,6 +48,11 @@ every future surface equally.
   defined by him): **sacred exhaustion · sacred interruption · rising mercy** — the likely
   spine of all four talks. Read before writing ANY copy in his voice; never invent his
   concepts' meanings.
+- `../docs/LAUNCH-PLAN.md` — the **business launch plan** (draft, 2026-07-13): 4 calm phases
+  from the live site to a full, honest calendar (light the room → close funnel dead-ends →
+  sell the workshops the site already describes → steady the rhythm). Every step is a word or
+  a tap for Johnny; the neighborhood builds. Companion to `plans.md`. A private Artifact page
+  exists for Johnny.
 - `speaking/` — Johnny's keynote/talk outlines, built here from his real story & voice.
   - `speaking/the-aligned-life.md` — **v2, 2026-07-13.** Spine = Johnny's sacred triad
     (**sacred exhaustion → sacred interruption → rising mercy**, his verbatim words; feather-
