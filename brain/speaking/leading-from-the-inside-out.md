@@ -4,7 +4,7 @@
 the talk's own site language — **Energy → Presence → Authentic Courage** — three movements
 of one idea: leadership flows from the inside out. Master image: **THE TORCH** — proposed
 from Johnny's own words this same day ("my light — the torch that I carry," see [[voice]],
-self-description 2026-07-15) — marked `[Johnny to confirm]` like every signature image.
+self-description 2026-07-15) — **✅ CONFIRMED by Johnny, 2026-07-15: "the torch is right."**
 The sacred triad belongs to The Aligned Life and is NOT this talk's spine; it appears once,
 briefly, as a named cross-reference (Section 2) and is never redefined. Every
 `[Johnny to fill: …]` is a real specific only Johnny can supply — nothing invented.*
@@ -50,7 +50,7 @@ Most "bold leadership" is fear wearing armor. Authentic courage is quieter: the 
 - Open on a picture every room recognizes — two leaders, same title, same calendar: one walks in and the room subtly braces; the other walks in and the room subtly *settles*. Same authority. Same competence. Completely different weather. *"What's the difference? It isn't the org chart. It isn't the talent. It's where the leadership is coming from."*
 - Name the two directions plainly: **outside-in** (lead from the role: manage impressions, borrow energy, perform certainty) vs **inside-out** (lead from the person: tend the truth first, and let the role be worn lightly over it).
 - One-breath self-intro, modest: coach, Reiki-informed healer, someone who spent years leading from the outside in before life turned him around. `[Johnny to fill: your one-line leadership credential — the seasons you actually led people/teams/rooms, named only as you're comfortable.]`
-- Plant the master image early, in one sentence, without ceremony: *"Every leader carries a torch — it's just a question of whether it's lit. And here's the strange rule of rooms: **you can't light anyone with a torch that isn't lit.**"* `[Johnny to confirm: the torch as this talk's signature image — it's your own word for your light.]`
+- Plant the master image early, in one sentence, without ceremony: *"Every leader carries a torch — it's just a question of whether it's lit. And here's the strange rule of rooms: **you can't light anyone with a torch that isn't lit.**"* *(✅ Torch confirmed by Johnny, 2026-07-15 — his own word for his light.)*
 - Promise the room the shape honestly: where the energy went, why the room can always tell, and the quiet kind of courage that brings both back.
 
 *Speaker note: The two-leaders open must stay compassionate — the braced room's leader is not a villain; that leader is exhausted. The talk never mocks outside-in leadership; it retires it with honor. No business-guru cadence, no "crushing it," no war metaphors.*
@@ -186,7 +186,7 @@ Mentioned **once**, gently, in Section 7, in Johnny's exact site language — *"
 
 The architecture is stage-ready. The heart lives in a few real specifics only you can supply — all marked in the script:
 
-1. **The torch itself `[confirm]`:** it's proposed as this talk's master image because it's *your own word* for your light (2026-07-15). Does it sit right as the signature — tend it, carry it, hold it up? If you'd rather keep the torch private to your story and give this talk a different image, say the word.
+1. ~~**The torch itself:**~~ **✅ ANSWERED (2026-07-15): "the torch is right." Confirmed as the signature image.**
 2. **Section 1 — your leadership credential:** the seasons you actually led people, teams, or rooms — one plain line, named only as far as you're comfortable.
 3. **Section 3 — the story (the load-bearing wall):** the real season of outside-in leading, and the one ordinary moment you realized the room could tell. Where were you, what were you leading, what did you see?
 4. **Section 3 — your first inside-out act:** the first thing you did differently, however small it looked.
