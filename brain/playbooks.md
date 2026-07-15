@@ -61,3 +61,22 @@ the one-minute path, log the refusal + preparation. No exceptions, no matter the
 3. Run the judgment checklist top to bottom (one @claude tap or a local session) —
    each neighbor's beat, findings land as PRs or parked ideas, never silent fixes.
 4. Close the issue with three warm lines; deposits per the Deposit Rule.
+
+## Playbook: the branded talk page (Brave Plum keynote artifacts)
+Every keynote outline gets a **private branded Artifact page** for Johnny — professional,
+in Brave Plum colors and motif. Established with The Aligned Life, repeated 2026-07-15 for
+Leading from the Inside Out. To make the next one:
+1. Write/finish the talk in `brain/speaking/<talk>.md` (iron rule: nothing invented,
+   `[Johnny to fill]` markers).
+2. Clone the page design from `brain/speaking/artifacts/leading-from-the-inside-out.html`
+   (canonical source): plum hero + NEW blossom (`scripts/gen-blossom.mjs`), BPH tokens
+   (plum/rose/blush/petal), serif display (Cormorant→Palatino fallback — artifact CSP
+   blocks webfonts), petal callouts for throughline/big idea, plum timing pills, rose
+   "YOUR TURN" fill tags, green "ANSWERED" tags once Johnny answers, italic speaker-note
+   asides, rose blockquotes for spoken lines, light+dark themes.
+3. Publish via the Artifact tool (favicon: one emoji per talk — 🔥 = Inside Out), record
+   the URL in `brain/INDEX.md` beside the talk, archive the HTML source in
+   `brain/speaking/artifacts/`.
+Published pages: The Aligned Life → claude.ai/code/artifact/932b15f8-01f2-4b9b-8cd7-6b7ce7e7a650 ·
+Leading from the Inside Out → claude.ai/code/artifact/d9a2c286-79cb-48fe-909f-aaa58dbedbd6
+(both private to Johnny unless he shares).

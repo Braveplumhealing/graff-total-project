@@ -62,7 +62,9 @@ every future surface equally.
   - `speaking/leading-from-the-inside-out.md` — **v1, 2026-07-15.** Spine = the talk's own
     site language (**Energy → Presence → Authentic Courage**), master image = **the torch**
     (Johnny's own word for his light, same-day self-description; marked [Johnny to confirm]).
-    Signature beat: "you can't light anyone with a torch that isn't lit." Sacred triad
+    Signature beat: "you can't light anyone with a torch that isn't lit." Branded Artifact
+    page (BPH look, torch favicon): claude.ai/code/artifact/d9a2c286-79cb-48fe-909f-aaa58dbedbd6;
+    HTML source archived in speaking/artifacts/; repeatable pattern in playbooks.md. Sacred triad
     cross-referenced ONCE (verbatim), never redefined — it belongs to The Aligned Life.
     7 [Johnny to fill/confirm] items listed at the end of the file. The four talks
     are: The Aligned Life ✅v2 · Leading from the Inside Out ✅v1 · The Courage to Change ·

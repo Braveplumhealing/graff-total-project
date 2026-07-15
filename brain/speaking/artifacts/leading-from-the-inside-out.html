@@ -1,0 +1,234 @@
+<title>Leading from the Inside Out — Keynote Outline</title>
+<style>
+:root{
+  --plum:#3D1A3D; --rose:#C4637E; --blush:#F2B8C6; --petal:#FDE8EE; --cream:#FDF5F0;
+  --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826;
+  --muted:#84677A; --line:rgba(61,26,61,.12); --accent:var(--rose); --heading:#3D1A3D;
+  --hero-ink:#FDE8EE; --hero-sub:#E7B9C8;
+  --serif:"Cormorant Garamond",Palatino,"Palatino Linotype",Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15);
+    --heading:#F2B8C6; --hero-ink:#FDE8EE; --hero-sub:#E3A9BC; }
+}
+:root[data-theme="light"]{ --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826; --muted:#84677A; --line:rgba(61,26,61,.12); --heading:#3D1A3D; }
+:root[data-theme="dark"]{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15); --heading:#F2B8C6; }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
+
+.hero{background:var(--plum);color:var(--hero-ink);padding:64px 24px 60px;position:relative;overflow:hidden;text-align:center}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 30%,rgba(196,99,126,.30),transparent 65%);pointer-events:none}
+.hero-inner{max-width:760px;margin:0 auto;position:relative}
+.hero .bloom{width:58px;height:58px;margin:0 auto 18px;display:block}
+.eyebrow{font-family:var(--sans);font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--blush);opacity:.85;margin:0 0 20px}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.5rem,6.5vw,4.1rem);line-height:1.04;margin:0;color:var(--hero-ink);text-wrap:balance}
+.hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--hero-sub);margin:18px auto 0;max-width:46ch;line-height:1.4;text-wrap:balance}
+.hero .meta{margin-top:26px;display:inline-flex;flex-wrap:wrap;gap:10px 14px;justify-content:center;font-size:.75rem;letter-spacing:.02em}
+.hero .meta span{border:1px solid rgba(253,232,238,.28);border-radius:999px;padding:5px 13px;color:var(--blush)}
+
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,3.6vw,2.15rem);line-height:1.15;color:var(--heading);margin:64px 0 6px;padding-top:22px;border-top:1px solid var(--line);text-wrap:balance}
+h3{font-family:var(--serif);font-weight:500;font-size:1.3rem;color:var(--rose);margin:34px 0 4px}
+p{margin:14px 0;max-width:68ch}
+strong{color:var(--ink);font-weight:700}
+a{color:var(--rose)}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.86em;background:var(--petal);color:#7A3070;padding:1px 6px;border-radius:5px}
+
+ul{list-style:none;margin:14px 0;padding:0;max-width:68ch}
+li{position:relative;padding-left:26px;margin:9px 0;line-height:1.65}
+li::before{content:"\2767";position:absolute;left:0;top:0;color:var(--blush);font-size:.95em}
+
+blockquote{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.35rem,3.2vw,1.75rem);line-height:1.42;color:var(--rose);margin:30px 0;padding:6px 0 6px 26px;border-left:3px solid var(--blush);max-width:60ch;text-wrap:balance}
+
+.callout{background:var(--petal);border-left:4px solid var(--rose);border-radius:0 10px 10px 0;padding:18px 22px;margin:22px 0;max-width:68ch;color:#4A2340}
+:root[data-theme="dark"] .callout{background:rgba(196,99,126,.14);color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .callout{background:rgba(196,99,126,.14);color:var(--ink)}}
+.callout.big{border-left-color:var(--plum)}
+:root[data-theme="dark"] .callout.big{border-left-color:var(--blush)}
+.clabel{display:block;font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin-bottom:6px}
+
+.timing{display:inline-block;background:var(--plum);color:var(--blush);font-family:var(--sans);font-size:.76rem;letter-spacing:.03em;padding:5px 13px;border-radius:999px;margin:12px 0}
+.timing::before{content:"\25F7\00A0";opacity:.9}
+.timing strong{color:var(--petal);font-weight:600}
+
+.mv{display:inline-block;font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7A3070;background:var(--petal);border:1px solid rgba(196,99,126,.25);padding:2px 10px;border-radius:999px;margin-left:8px;vertical-align:middle}
+:root[data-theme="dark"] .mv{background:rgba(196,99,126,.16);color:var(--blush)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .mv{background:rgba(196,99,126,.16);color:var(--blush)}}
+
+.note{display:block;background:transparent;border-left:2px solid var(--blush);color:var(--muted);font-size:.92rem;line-height:1.6;padding:2px 0 2px 18px;margin:16px 0;max-width:66ch;font-style:italic}
+
+.fill{background:linear-gradient(transparent 62%, var(--blush) 62%);padding:0 2px;color:var(--ink);border-radius:2px}
+.fill-tag{display:inline-block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--rose);padding:1px 6px;border-radius:4px;margin-right:6px;vertical-align:middle;transform:translateY(-1px)}
+.done-tag{display:inline-block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:#6B8F6B;padding:1px 6px;border-radius:4px;margin-right:6px;vertical-align:middle;transform:translateY(-1px)}
+
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:3px}
+
+@media (prefers-reduced-motion:no-preference){
+  .wrap>*,.hero-inner>*{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+  .hero-inner>*:nth-child(2){animation-delay:.05s}
+  .hero-inner>*:nth-child(3){animation-delay:.1s}
+  .hero-inner>*:nth-child(4){animation-delay:.15s}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<div class="hero"><div class="hero-inner">
+  <svg class="bloom" viewBox="-40 -40 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Brave Plum Healing blossom"><defs><radialGradient id="bparta" cx="50%" cy="85%" r="85%"><stop offset="0%" stop-color="#FDE8EE"/><stop offset="55%" stop-color="#F2B8C6"/><stop offset="100%" stop-color="#EDA5BA"/></radialGradient><radialGradient id="bpartb" cx="50%" cy="85%" r="85%"><stop offset="0%" stop-color="#FBD9E2"/><stop offset="60%" stop-color="#EDA5BA"/><stop offset="100%" stop-color="#E293AC"/></radialGradient></defs><g transform="rotate(-6)"><g transform="rotate(0)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bparta)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(72)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bpartb)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(144)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bparta)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(216)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bpartb)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(288)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bparta)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><circle r="4.2" fill="#FDE8EE" fill-opacity=".95"/><path d="M0 -3.2Q0.39 -6.57 0 -11.96" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="0" cy="-11.96" r="1.5" fill="#C4637E"/><path d="M2.35 -2.18Q4.01 -3.3 6.92 -6.42" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="6.92" cy="-6.42" r="1.5" fill="#C4637E"/><path d="M3.19 -0.2Q4.83 -0.01 8.77 -0.54" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="8.77" cy="-0.54" r="1.5" fill="#C4637E"/><path d="M2.81 1.54Q5.67 3.57 10.68 5.85" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="10.68" cy="5.85" r="1.5" fill="#C4637E"/><path d="M1.48 2.83Q1.87 4.17 3.85 7.36" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="3.85" cy="7.36" r="1.5" fill="#C4637E"/><path d="M-0.79 3.1Q-1.69 5.28 -2.5 9.76" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-2.5" cy="9.76" r="1.5" fill="#C4637E"/><path d="M-2.84 1.48Q-5.82 2.6 -10.28 5.35" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-10.28" cy="5.35" r="1.5" fill="#C4637E"/><path d="M-3.04 -0.98Q-4 -1.56 -7.43 -2.4" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-7.43" cy="-2.4" r="1.5" fill="#C4637E"/><path d="M-1.85 -2.61Q-3.29 -5.29 -6.55 -9.25" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-6.55" cy="-9.25" r="1.5" fill="#C4637E"/></g></svg>
+  <p class="eyebrow">Keynote &#183; Working draft v1</p>
+  <h1>Leading from the Inside&nbsp;Out</h1>
+  <p class="sub">The inner work that makes outer leadership truly sustainable. Energy, presence, and authentic courage.</p>
+  <div class="meta"><span>Energy &#183; Presence &#183; Authentic Courage</span><span>~45 min &#183; flexes 30&#8211;60</span><span>The torch &#8212; confirmed</span><span>Brave Plum Healing</span></div>
+</div></div>
+
+<main class="wrap">
+<p><em>Working script v1 for a ~45-minute keynote. Warm, grounded, fireside — a wise coach by the fire, never a leadership-industrial-complex stage. Built for rooms of people who lead anything: companies, teams, classrooms, congregations, families. Every <span class="fill"><span class="fill-tag">your turn</span> …</span> is a real specific only Johnny can supply — nothing invented. Read the <strong>30-minute cut</strong> and <strong>60-minute expansion</strong> near the end before you set your timing.</em></p>
+
+<div class="callout"><span class="clabel">Throughline</span>The exhausting kind of leadership is performed from the outside in — borrowed energy, managed impressions, courage that's really compliance in a nicer coat; the sustainable kind flows from the inside out, and it begins the day the leader stops trying to light the room and finally tends their own torch.</div>
+
+<div class="callout big"><span class="clabel">The one big idea</span>People don't follow what you say. They follow what you <em>are</em> — rooms read the inside of a leader with terrifying accuracy. So the inner work isn't a luxury for after the quarter closes; it IS the leadership work. A leader aligned with their own truth generates energy instead of borrowing it, steadies a room by presence instead of pressure, and acts with courage that doesn't need an audience. <strong>You can't light anyone with a torch that isn't lit.</strong></div>
+
+<h2>The spine — three movements, inside &#8594; out</h2>
+<p>The talk walks one idea through three widening circles. Each movement starts <em>inside</em> the leader and moves <em>outward</em> into the room. The torch carries the whole visual arc: tending it (Energy) &#8594; carrying it into the room (Presence) &#8594; holding it up when the wind blows (Authentic Courage). <em>(The torch is Johnny's own word for his light — confirmed 2026-07-15: "the torch is right.")</em></p>
+
+<p><strong>1. ENERGY</strong> <em>(Movement I — Sections 1, 2)</em> — where a leader's power actually comes from.</p>
+<p>Performed leadership runs on borrowed fuel: adrenaline, approval, fear of being found out. It works — right up until it doesn't. Sustainable energy has exactly one source: alignment between the leader's outer role and inner truth. The gap doesn't just tire <em>you</em>; a leader's gap leaks into everyone downstream of it.</p>
+
+<p><strong>2. PRESENCE</strong> <em>(Movement II — Sections 3, 4)</em> — the room reads your inside.</p>
+<p>Every team is a nervous system, and the leader sets its baseline. People decide what is safe, what is true, and what is possible here by reading what the leader <em>is</em> — not the slide deck. Presence is not charisma. It is congruence you can feel from the back row.</p>
+
+<p><strong>3. AUTHENTIC COURAGE</strong> <em>(Movement III — Sections 5, 6, 7)</em> — action from essence, not performance.</p>
+<p>Most "bold leadership" is fear wearing armor. Authentic courage is quieter: the honest sentence, the aligned no, the visible half-inch taken first. It doesn't need witnesses — which is exactly why rooms trust it.</p>
+
+<p><strong>The arc in one line:</strong> a leader performing from the outside in burns borrowed fuel and the room feels it &#8594; energy returns only through alignment (tend the torch) &#8594; presence carries the inside into the room whether you mean it to or not (carry the torch) &#8594; authentic courage is alignment made visible under wind (hold the torch up) &#8594; and a lit leader gives everyone in the room permission to stop performing too.</p>
+
+<h2>Section 1 — Cold open: the two leaders <span class="mv">Energy</span></h2>
+<p class="timing"><strong>Target: 5 min</strong></p>
+<ul>
+<li>Open on a picture every room recognizes — two leaders, same title, same calendar: one walks in and the room subtly braces; the other walks in and the room subtly <em>settles</em>. Same authority. Same competence. Completely different weather. <em>"What's the difference? It isn't the org chart. It isn't the talent. It's where the leadership is coming from."</em></li>
+<li>Name the two directions plainly: <strong>outside-in</strong> (lead from the role: manage impressions, borrow energy, perform certainty) vs <strong>inside-out</strong> (lead from the person: tend the truth first, and let the role be worn lightly over it).</li>
+<li>One-breath self-intro, modest: coach, Reiki-informed healer, someone who spent years leading from the outside in before life turned him around. <span class="fill"><span class="fill-tag">your turn</span> your one-line leadership credential — the seasons you actually led people/teams/rooms, named only as you're comfortable.</span></li>
+<li>Plant the master image early, in one sentence, without ceremony: <em>"Every leader carries a torch — it's just a question of whether it's lit. And here's the strange rule of rooms: <strong>you can't light anyone with a torch that isn't lit.</strong>"</em></li>
+<li>Promise the room the shape honestly: where the energy went, why the room can always tell, and the quiet kind of courage that brings both back.</li>
+</ul>
+<aside class="note"><em>Speaker note: The two-leaders open must stay compassionate — the braced room's leader is not a villain; that leader is exhausted. The talk never mocks outside-in leadership; it retires it with honor. No business-guru cadence, no "crushing it," no war metaphors.</em></aside>
+
+<h2>Section 2 — Borrowed fuel: the leadership exhaustion nobody names <span class="mv">Energy</span></h2>
+<p class="timing"><strong>Target: 7 min</strong> &#183; <em>(Audience Moment 1 lands here)</em></p>
+<ul>
+<li>Describe outside-in leadership from the inside, with real tenderness: reading every room before you enter it, holding the confident face like a plank position, being the last to leave and the first to answer, success that lands like relief instead of joy — <em>"not because you love the work anymore, but because for one more day, nobody found out how tired you are."</em></li>
+<li>Name the fuel honestly: adrenaline, approval, urgency, the fear of being found out. <em>"Borrowed fuel works. That's the trap. It works for years — it just charges interest."</em></li>
+<li><strong>The cross-reference, once, by name</strong> <em>(a gift to the room, not a spine)</em>: <em>"In another talk I go deep on this — what I call <strong>sacred exhaustion</strong>: the tiredness caused by the gap between the outer life and the inner truth. The further the gap, the greater the exhaustion. Here's what leadership adds to that: <strong>a leader's gap is never private.</strong> Everyone downstream of you pays a tax on it. Teams don't burn out one person at a time — they burn out from the torch down."</em> <em>(Verbatim definition preserved; never expanded further here — the triad lives in The Aligned Life.)</em></li>
+<li><strong>&#8594; Audience Moment 1 (silent recognition):</strong> <em>"You don't have to raise a hand. Just check, privately: when did you last leave a day of leading with MORE energy than you brought to it? If you can't remember — that's not a character flaw. That's just the meter reading on borrowed fuel."</em> Hold ~15 seconds of real silence.</li>
+<li>Close the movement with the reframe: energy is not a resource you manage; it's a <em>reading</em> on alignment. <em>"You don't have an energy problem. You have a distance problem — between who the role requires you to perform and who you actually are. Close the distance, and the energy comes home on its own."</em></li>
+<li>First torch beat: <em>"This is what tending the torch means. Not self-care as another item on the list. Alignment. The flame doesn't need you to fan it harder. It needs you to stop leaving it out in the rain."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: No productivity-hack language, no "energy management" frameworks, no burnout statistics (we cite nothing we can't source). The sacred-exhaustion reference stays inside quotation-length — if it starts growing, cut it back; this talk must stand without the triad. Keep all body language to noticing and rest — no medical, clinical, or Reiki claims on stage, ever.</em></aside>
+
+<h2>Section 3 — The turn: the day the room saw through me <span class="mv">Energy &#8594; Presence</span></h2>
+<p class="timing"><strong>Target: 10 min</strong> <em>(the peak — protect this)</em></p>
+<ul>
+<li>Johnny's own story — the load-bearing wall of the talk. The season of leading from the outside in, told with the same honesty as The Aligned Life's Beat 1–2 but pointed at <em>leadership</em>: the role held well from the outside, the performance maintained, and the moment it stopped working. <span class="fill"><span class="fill-tag">your turn</span> the real season — what you were leading, what the performance cost, and the specific ordinary moment you realized the room could tell. Where were you? What did you see on their faces? One true scene, named only as far as you're comfortable.</span></li>
+</ul>
+<h3>&#9733; THE TORCH MOMENT — the single unforgettable beat</h3>
+<p><em>Land the rule of rooms slowly, in three steps, with real silence between:</em></p>
+<blockquote><em>"Here's what I learned the hard way: <strong>the room always knows.</strong> Not the details — the distance. People can't read your mind, but they can read your congruence, and they do it in seconds, from the back row, every single time."</em> <strong>(pause)</strong></blockquote>
+<blockquote><em>"I thought leadership meant lighting the room — going around lighting everyone's candle with energy I didn't have. And the room kept going dark, and I kept blaming the candles."</em> <strong>(pause)</strong></blockquote>
+<blockquote><em>"Nobody told me the actual job. <strong>You don't light the room. You tend your torch, you carry it in, and the room lights itself off you.</strong> You can't light anyone with a torch that isn't lit."</em> <strong>(hold)</strong></blockquote>
+<ul>
+<li>Let it breathe. This is the talk's feather-feather-rock-truck equivalent: simple, physical, repeatable — the line the room takes home.</li>
+<li>The pivot into hope, honestly: what changed wasn't a technique. <span class="fill"><span class="fill-tag">your turn</span> the first thing you did differently — the first inside-out act of your leadership life, however small and unimpressive it looked.</span></li>
+</ul>
+<aside class="note"><em>Speaker note: The story must never position Johnny as the finished hero — he is the fellow traveler who paid the tuition. If any detail can't be told truly, we tell less, not more; the universal "you" can carry weight the biography can't. The three-step torch build gets the same protection as the Aligned Life peak: slow, silent between steps, no rushing to comfort.</em></aside>
+
+<h2>Section 4 — Presence: the room is reading your inside <span class="mv">Presence</span></h2>
+<p class="timing"><strong>Target: 6 min</strong></p>
+<ul>
+<li>Define presence against its impostor: <em>"Presence isn't charisma. Charisma is a performance skill — it draws eyes. Presence is congruence — it settles nervous systems. You've met quiet people with enormous presence, and dazzling people with none. The difference is that with a congruent person, what you see is what's actually happening inside. The room doesn't have to keep checking."</em></li>
+<li>The team-as-nervous-system picture: the leader is the baseline. A leader who is secretly braced teaches a room to brace. A leader at home in themselves gives a room permission to exhale. <em>"Your inner state is the most contagious thing about you. More than your words. More than your standards. More than your example. What you ARE is what spreads."</em></li>
+<li>Make it concrete and kind — where the reading happens: how you enter, how you receive bad news in the first two seconds, what your face does when someone disagrees with you, whether your calm is real or laminated.</li>
+<li>The practice is not performing calm — it's <em>arriving lit</em>: sixty honest seconds before you walk in. <em>"Not affirmations. A tending. One question at the door: <strong>what's true in me right now?</strong> Name it to yourself — named weather is weather a room can live with. What unsettles a room is weather you're pretending isn't there."</em></li>
+<li>Torch beat: <em>"You carry the torch into every room whether you mean to or not. Presence is just carrying it honestly."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: This section risks making people self-conscious about being read — keep flipping it to agency and relief: congruence is EASIER than performance; the room relaxes when you do. No claims about energy fields or healing effects on others — the mechanism we name is simple human congruence, nothing more.</em></aside>
+
+<h2>Section 5 — Authentic courage: three inside-out moves <span class="mv">Authentic Courage</span></h2>
+<p class="timing"><strong>Target: 8 min</strong> &#183; <em>(Audience Moment 2 lands here)</em></p>
+<ul>
+<li>Reframe courage first: <em>"Most of what we call bold leadership is fear in armor — the dramatic decision, the tough-guy call, made loud so nobody looks too closely. Authentic courage is quieter, and it's harder, because it starts inside: it's alignment, made visible, under wind."</em> Three moves, all small, all real:</li>
+<li><strong>THE HONEST SENTENCE:</strong> the true thing said plainly, without the armor of spin — <em>"I was wrong about this." "I don't know yet." "I'm asking you to do something hard and I know it."</em> <em>"The leaders we trust most aren't the ones who are never uncertain — they're the ones whose sentences we never have to translate."</em> <span class="fill"><span class="fill-tag">your turn</span> one honest sentence you actually said as a leader (or wish you'd said sooner) — one true, small example.</span></li>
+<li><strong>THE ALIGNED NO:</strong> every yes a leader says is spent from the team's account too. The no that protects the mission, the team's evenings, or your own truth is not obstruction — it's stewardship. <em>"An aligned no, said early and warmly, is one of the most generous things a leader can say. It's the torch refusing the wind."</em></li>
+<li><strong>THE VISIBLE HALF-INCH:</strong> leaders go first — that's the whole job description. The first to name the tension in the room, the first to apologize, the first to stop performing. <em>"You don't have to be dramatic. You have to be FIRST. A half-inch of honesty from the person holding the torch gives everyone else a mile of permission."</em></li>
+<li><strong>&#8594; Audience Moment 2 (private write):</strong> <em>"One sentence, just for you: The honest sentence I've been swallowing as a leader is ______."</em> 60–90 seconds. Then, gently: <em>"You don't have to say it this week. Just stop pretending you don't know what it is."</em></li>
+<li>Close the section warm: <em>"None of these require a new personality. They require a lit torch and a half-inch of nerve. That's the whole practice."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: This is "the give" — three moves maximum, no acronym, no framework branding; the moment it smells like a leadership model it dies. Every example must be universal/hypothetical or from Johnny's own life — never invented client stories, never named companies. Keep Audience Moment 2 fully private in corporate rooms (it may name their own bosses); pair-share is possible only in retreat settings, and even there, offer it as fully optional.</em></aside>
+
+<h2>Section 6 — The lit room: what an inside-out leader makes possible <span class="mv">Authentic Courage</span></h2>
+<p class="timing"><strong>Target: 4 min</strong></p>
+<ul>
+<li>The exhale. Paint the downstream honestly, without utopia: a team that doesn't have to decode its leader spends that intelligence on the work. Meetings where the first honest sentence isn't a risk. People who stop performing their jobs and start actually doing them — <em>"because someone finally went first."</em></li>
+<li>The permission cascade, plainly: <em>"Here's the quiet miracle of leading from the inside out — it's contagious in the best direction. One lit torch and the room starts lighting off itself, person to person, long after you've left. Outside-in leadership has to be everywhere at once. Inside-out leadership just has to be REAL once."</em></li>
+<li>Set a true expectation, not a guarantee: the torch will gutter — seasons, storms, ordinary Tuesdays. Going out sometimes isn't failure; leaving it untended is. <em>"You'll drift back into performance — everyone does. The practice isn't never drifting. It's noticing sooner, and coming home faster."</em> <em>(No promised outcomes, no transformation math.)</em></li>
+<li>Callback to the cold open: <em>"Remember the two leaders? The room that braces and the room that settles? Nobody ever chose between them on purpose. They just tended, or didn't. From today, you get to choose on purpose."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: Keep every promise modest and observable — "the room settles," never "your metrics improve." Avoid the word "culture" doing magic-wand work; we describe humans, not initiatives.</em></aside>
+
+<h2>Section 7 — The one honest act: soft bridge and closing charge <span class="mv">Authentic Courage</span></h2>
+<p class="timing"><strong>Target: 5 min</strong> &#183; <em>(Audience Moment 3 lands here)</em></p>
+<ul>
+<li>Gather the room back into their own single leadership — whatever they lead: <em>"Maybe it's a company. Maybe it's a classroom, a crew, a kitchen table. The size of the room changes nothing. The torch works the same."</em></li>
+<li><strong>&#8594; Audience Moment 3 (one chosen act, small and dated):</strong> <em>"Before you leave: choose one. One honest sentence you'll stop swallowing, one aligned no, or one visible half-inch — with the person or the room already in mind. Small enough that you already know you can. Now, quietly, name the day."</em> A real beat of silence. <em>"You don't have to be a different leader by Friday. You have to be a slightly more honest one, once."</em></li>
+<li><strong>The soft bridge (once, gently, then released — Johnny's exact site language):</strong> <em>"If you'd like a hand with the tending — with finding where your own torch went out — the first step is simply a free thirty-minute discovery call. No pressure, just an honest conversation. But you don't need me to go first in your own room. You already know your sentence. You wrote it down twenty minutes ago."</em> Say it once. No prices, no packages, no urgency.</li>
+<li>Close the loop from the open: <em>"That exhaustion you've been leading through — it was never the job. It was the distance. And the room that kept feeling heavy? It wasn't waiting for a better performance. It was waiting for you."</em></li>
+<li><strong>Deliver the closing charge</strong> (below), then stillness. Two full seconds before "thank you."</li>
+</ul>
+<aside class="note"><em>Speaker note: End on THEM, not the offer — same restraint discipline as The Aligned Life: the bridge comes before the final loop-close so the last words belong to the audience. Phone booking (Rachel) and paid work stay entirely back-office, never named from stage.</em></aside>
+
+<h2>The closing charge — the single unforgettable line</h2>
+<blockquote><em>"You were handed a torch the day anyone first followed you — and nobody warned you that the job isn't lighting the room. It's tending the flame. So stop performing energy you don't have. Stop laminating calm over weather you won't name. The room always knew anyway — and the room was never asking you to be impressive. It was asking you to be true.</em></blockquote>
+<blockquote><em>Tend the torch. Carry it in honestly. Hold it up when the wind blows — one honest sentence, one aligned no, one visible half-inch at a time.</em></blockquote>
+<blockquote><strong>Because you can't light anyone with a torch that isn't lit — and a room full of people is waiting to light theirs off yours.</strong></blockquote>
+<blockquote><em>Lead from the inside out. The room will follow. It always does — it always was."</em></blockquote>
+<p><em>(Step back. Stillness. Two full seconds. Then, quietly: "Thank you.")</em></p>
+
+<h2>The 30-minute cut</h2>
+<p>Protect the two load-bearing sections in full: <strong>Section 3 (the story + the torch build)</strong> and <strong>Section 5 (the three moves + Audience Moment 2)</strong>. Trim everywhere else; never trim the peak's silences.</p>
+<ul>
+<li><strong>Section 1 &#8594; ~3 min:</strong> keep the two-leaders open and the torch plant; cut the shape preview.</li>
+<li><strong>Section 2 &#8594; ~4.5 min:</strong> keep borrowed fuel + the sacred-exhaustion cross-reference (verbatim, tight) + Audience Moment 1 at ~10 sec; drop the extended outside-in portrait.</li>
+<li><strong>Section 3 &#8594; ~8 min:</strong> keep the full story and all three torch steps; trim edges only.</li>
+<li><strong>Section 4 &#8594; ~4 min:</strong> keep presence-vs-charisma and "what's true in me right now?"; cut the concrete-readings list to two items.</li>
+<li><strong>Section 5 &#8594; ~6.5 min:</strong> keep all three moves compressed + Audience Moment 2 at ~45 sec.</li>
+<li><strong>Section 6 &#8594; ~1.5 min:</strong> keep the permission cascade and the gutter-honesty only.</li>
+<li><strong>Section 7 &#8594; ~2.5 min:</strong> keep Audience Moment 3, the bridge (once), and the charge intact.</li>
+</ul>
+
+<h2>The 60-minute expansion</h2>
+<p>Deepen honesty and stillness; never inflate drama or add leadership-industry hype.</p>
+<ul>
+<li><strong>Section 1:</strong> add one true observation about the <em>specific</em> room (executives / educators / nonprofit / healthcare) — meet their version of the performance.</li>
+<li><strong>Section 2:</strong> add a second portrait of borrowed fuel (the <em>quiet</em> version: over-preparation, invisibility, perfectionism) so introverted leaders recognize themselves too.</li>
+<li><strong>Section 3:</strong> one more small, true detail in the story — deepen honesty, never drama.</li>
+<li><strong>Section 4:</strong> add the sixty-second doorway tending as a guided practice, live, in the room.</li>
+<li><strong>Section 5:</strong> give each move a short true illustration; in workshop rooms, an optional pair-share after the honest sentence.</li>
+<li><strong>Section 6:</strong> add a gentle guided image — their room, one year of tended-torch Mondays later.</li>
+<li><strong>Section 7:</strong> short, calm Q&amp;A or shared silence before the charge.</li>
+</ul>
+
+<h2>The bridge to working with Johnny</h2>
+<p>Mentioned <strong>once</strong>, gently, in Section 7, in Johnny's exact site language — <em>"a free 30-minute discovery call — no pressure, just an honest conversation"</em> — then power handed straight back (<em>"you don't need me to go first in your own room"</em>). A dignified door held open, never a close. No prices, no packages, no repeated CTA, no slide-of-services. Phone booking (Rachel) and paid work stay back-office. End on THEM.</p>
+
+<h2>What I need from you, Johnny</h2>
+<p>The architecture is stage-ready. The heart lives in a few real specifics only you can supply — all marked in the script:</p>
+<ul>
+<li><span class="done-tag">answered</span> <strong>The torch itself:</strong> confirmed 2026-07-15 — <em>"the torch is right."</em> The signature image stands: tend it, carry it, hold it up.</li>
+<li><strong>Section 1 — your leadership credential:</strong> the seasons you actually led people, teams, or rooms — one plain line, named only as far as you're comfortable.</li>
+<li><strong>Section 3 — the story (the load-bearing wall):</strong> the real season of outside-in leading, and the one ordinary moment you realized the room could tell. Where were you, what were you leading, what did you see?</li>
+<li><strong>Section 3 — your first inside-out act:</strong> the first thing you did differently, however small it looked.</li>
+<li><strong>Section 5 — one honest sentence:</strong> a true one you said as a leader (or wish you'd said sooner).</li>
+<li><strong>Venue call on Audience Moment 2:</strong> fully private everywhere, or pair-share allowed in retreat rooms?</li>
+<li><strong>Slides decision:</strong> zero slides works beautifully (the torch is spoken, not shown). If slides, maximum three — a black open, one torch image, nothing that turns the three moves into a bulleted framework.</li>
+</ul>
+</main>
