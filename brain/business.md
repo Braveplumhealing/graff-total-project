@@ -66,6 +66,10 @@ Flier + print files: `outreach/healers-grove/`.
 
 ## Brand
 - Palette: plum `#3D1A3D` · rose `#C4637E` · blush `#F2B8C6` · petal `#FDE8EE` · cream `#FDF5F0`.
+- **Blossom mark (redesigned 2026-07-15):** organic Prunus blossom — overlapping notched
+  petals at **80% opacity**, petal veins, stamens, tilted −6°. Regenerate any instance with
+  `scripts/gen-blossom.mjs` (see decisions.md "no more starfish"). Never reintroduce the
+  old five-ellipse mark.
 - Logo package lives on WordPress media (`primary-logo*`/`horizontal-logo*` PNGs);
   **dark ("rgb") versions for light backgrounds, pink versions for dark backgrounds.**
   Stripe-ready copies: `~/Desktop/brave-plum-stripe-branding/`.

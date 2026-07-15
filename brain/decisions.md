@@ -2,6 +2,18 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-15 — The plum blossom mark redesigned ("no more starfish")
+Johnny received feedback that the five-ellipse blossom looked like a **starfish** and asked
+for something more organic. From three candidates he chose **variant C, "Ink & Petal", at
+80% petal opacity**: rounded overlapping Prunus petals with a soft tip notch, a faint vein
+down each petal, fine stamens with rose anthers, the whole bloom tilted −6°, petals
+translucent so overlaps layer like watercolor. Applied EVERYWHERE the old mark lived: nav
+logo, favicon, homepage (hero card, portrait placeholder, breathe CTA), falling-petal
+script in base.njk, Neighborhood crest, and the Healers' Grove flier (re-rendered PDFs).
+Canonical generator: `scripts/gen-blossom.mjs <idPrefix> [light]` — emits the exact SVG
+fragment (unique gradient ids per instance; `light` = rose center disc for light backgrounds). **Why:** the mark should look grown, not drawn — and never
+like it lives in a tide pool. (His words on picking C@80%: "we have similar taste.")
+
 ## 2026-07-15 — The healers' network is named "The Healers' Grove"
 Johnny's Kittitas County healers network is **The Healers' Grove**, tagline **"Rooted in
 Kittitas. Growing together."** Chosen by Johnny over three alternates (The Blossom Circle,
