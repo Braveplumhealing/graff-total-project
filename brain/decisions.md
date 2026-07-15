@@ -2,6 +2,18 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-15 — Johari stays a mention, not a dive + away-authorization
+Two directives from Johnny (spoken, same message):
+1. **Johari in The Courage to Change:** a clinical dive "will be for another day," but the
+   talk MUST name all four quadrants once — **known self · blind spot · hidden self ·
+   unknown self** — so the audience has the context. Applied to Section 3 (talk + artifact
+   page). The deep dive is parked in ideas.md.
+2. **Away-authorization:** Johnny is away for a stretch and said to work "without need for
+   permissions" — he'll grant what's needed on return. Interpretation (conservative):
+   keep building Tier-0/1 work and QUEUE it (PRs, confirms, asks) for his return; do NOT
+   treat it as blanket approval — his merge taps and all Tier-2 keys wait for him. Same
+   spirit as the NIGHT-SHIFT precedent (2026-07-13).
+
 ## 2026-07-15 — The plum blossom mark redesigned ("no more starfish")
 Johnny received feedback that the five-ellipse blossom looked like a **starfish** and asked
 for something more organic. From three candidates he chose **variant C, "Ink & Petal", at

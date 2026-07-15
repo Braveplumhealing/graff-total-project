@@ -83,11 +83,11 @@ Growth in two directions at once: deeper into who you already are, wider into wh
 ## Section 3 — The window: the pane you cannot see through *(THE PORTAL)*
 **Target: 10 min** *(the peak — protect this)*
 
-- Introduce the window as a picture, not a framework — human first, never academic: *"There's an old, simple picture of the self — two psychologists drew it in the 1950s, and it's just a window with four panes."* Build it physically, hands framing each pane:
-  1. *"One pane, everyone can see through — you and the world both. That's the you at the dinner table, the open pane."*
-  2. *"One pane only YOU see through — what you keep behind the curtain. Your private rooms. Everyone has them."*
-  3. *"One pane NOBODY sees through yet — the unknown self, the rooms even you haven't opened. Hold that one; we're coming back to it."*
-  4. *"And one pane… everyone can see through EXCEPT you."* **(pause)** *"Think about that. There is a whole pane of your life — your patterns, your effect on people, your gifts you discount, your edges you can't feel — in plain view of everyone who loves you. And you have never seen it once."*
+- Introduce the window as a picture, not a framework — human first, never academic, but give the room the full map by name *(per Johnny, 2026-07-15: a clinical dive into Johari is for another day, but all four quadrants get a mention so the audience has the context)*: *"There's an old, simple picture of the self — psychologists call it the Johari Window, and it's just that: a window, with four panes. The **known self**, the **hidden self**, the **unknown self** — and the **blind spot**. That's as clinical as tonight gets. Now let me show you the window."* Build it physically, hands framing each pane:
+  1. *"The first pane, everyone can see through — you and the world both. The **known self**: the you at the dinner table, the open pane."*
+  2. *"The second pane, only YOU see through — the **hidden self**: what you keep behind the curtain. Your private rooms. Everyone has them."*
+  3. *"The third pane, NOBODY sees through yet — the **unknown self**: the rooms even you haven't opened. Hold that one; we're coming back to it."*
+  4. *"And the fourth pane… everyone can see through EXCEPT you. The **blind spot**."* **(pause)** *"Think about that. There is a whole pane of your life — your patterns, your effect on people, your gifts you discount, your edges you can't feel — in plain view of everyone who loves you. And you have never seen it once."*
 - Johnny's story — the load-bearing wall: a real piece of feedback he received, hard to hear, that opened a pane he could not have opened alone. `[Johnny to fill: the feedback that changed you — who said it (named only as you're comfortable), what they saw that you couldn't, what it cost to hear, and what it opened. One true scene. If the truest version is "I avoided hearing it for years," tell THAT — the dismissal is the story.]`
 
 ### ★ THE PORTAL MOMENT — the single unforgettable beat
@@ -102,7 +102,7 @@ Growth in two directions at once: deeper into who you already are, wider into wh
 - **THE REVEAL — drop the volume:** *"So the bravest thing you'll do this year probably won't look like a leap. It will look like sitting across from someone who knows you, and saying: 'What do you see that I don't?' — and then not defending yourself against the answer."*
 - Hold two full seconds before moving on.
 
-*Speaker note: This is the peak and the talk's feather-rock-truck equivalent — the four-pane build + the portal reveal, built in full exactly once. Keep the Johari attribution light (one clause, no names-and-dates lecture; "Johari" can be named once for the curious — it's Joseph Luft and Harrington Ingham, 1955, if anyone asks after). Johnny's verbatim "portal to growth" is the anchor and must land unparaphrased. HARD RULE: only a true feedback story goes here; if a detail can't be told truly, tell less. The person who gave the feedback is honored, never villained — they opened the pane.*
+*Speaker note: This is the peak and the talk's feather-rock-truck equivalent — the four-pane build + the portal reveal, built in full exactly once. JOHARI RULE (Johnny, 2026-07-15): all four quadrants are NAMED once — known self · hidden self · unknown self · blind spot — so the room has the context, and that single naming is the entire clinical content of the talk; the deep dive is deliberately saved for another day. Attribution stays one clause (Joseph Luft and Harrington Ingham, 1955, if anyone asks after). Johnny's verbatim "portal to growth" is the anchor and must land unparaphrased. HARD RULE: only a true feedback story goes here; if a detail can't be told truly, tell less. The person who gave the feedback is honored, never villained — they opened the pane.*
 
 ---
 
