@@ -77,7 +77,7 @@ Leading from the Inside Out. To make the next one:
 3. Publish via the Artifact tool (favicon: one emoji per talk — 🔥 = Inside Out), record
    the URL in `brain/INDEX.md` beside the talk, archive the HTML source in
    `brain/speaking/artifacts/`.
-Published pages: The Aligned Life → claude.ai/code/artifact/932b15f8-01f2-4b9b-8cd7-6b7ce7e7a650 ·
+Published pages (source for each archived in speaking/artifacts/): The Aligned Life (🌸, re-dressed into this system 2026-07-15, Beat 2 seated) → claude.ai/code/artifact/932b15f8-01f2-4b9b-8cd7-6b7ce7e7a650 ·
 Leading from the Inside Out → claude.ai/code/artifact/d9a2c286-79cb-48fe-909f-aaa58dbedbd6 ·
 The Courage to Change (🪟) → claude.ai/code/artifact/6a035b3d-fd65-4fce-9b4b-b6618eb97165 ·
 Conflict as Catalyst (🚪) → claude.ai/code/artifact/e9950744-916a-4b7a-9e3f-3a98251144ac
