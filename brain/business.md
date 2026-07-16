@@ -29,6 +29,49 @@ healing-modality demonstration each month. Starts at 10–15 people; grows organ
 each participant may invite others. Tagline: *"Rooted in Kittitas. Growing together."*
 Flier + print files: `outreach/healers-grove/`.
 
+## Johnny's story — the career path (his own telling, 2026-07-15)
+Deposited verbatim-faithful from Johnny's dictation. This is the ground under "years of
+professional success that left him feeling hollow" — and the source material for the
+[Johnny to fill] story slots in all four talks (brain/speaking/).
+
+**25 years in public education, then 8 years reclaiming his gifts:**
+1. **Teacher/coach first — industrial arts** (~15 years in the classroom): woodshop,
+   metalshop, drafting, technology, and foundry, plus basic math. A maker's teacher.
+2. **"I became a champion for the underdog."** (his exact words — a load-bearing phrase)
+3. **Founded an alternative-education program** on Central Washington University's campus
+   (Ellensburg — deep Kittitas County roots) for 7th–8th graders who were underperforming
+   and on track to become high-school dropouts. Founded after his 15 classroom years, and
+   he taught in it himself.
+4. **Assistant principal** at the local high school (2 years) — earned his principal's
+   credential while still teaching the alternative program.
+5. **Principal, Lincoln Elementary School (6 years).** "My work there was transformative
+   but took its toll." Earned his **superintendent's credential** during this time.
+6. **The disillusionment:** during the principalship he "fell out of love with public
+   education" as he began to see the chinks in the armor — **"not the least of which was
+   labeling students for their deficiencies rather than their gifts."** (verbatim; this
+   sentence is the philosophical hinge of his whole second act — the healing work is the
+   inversion of deficit-labeling)
+7. **The tough decision:** left public education after **25 years as an educator** — even
+   though the superintendent's path stood open.
+8. **The past 8 years:** "my journey… has been to **reclaim my own gifts and express them
+   to the world.**" (verbatim) → coaching, Reiki mastery, mediation training, the book
+   (*Soulnapped*), retreats, Brave Plum Farm, and now Brave Plum Healing + The Healers' Grove.
+
+**Sacred-adjacent phrases (his, verbatim — use with care):** "champion for the underdog" ·
+"labeling students for their deficiencies rather than their gifts" · "reclaim my own gifts
+and express them to the world."
+
+**Note on the homepage "8+ years of practice" stat (⚠ still unconfirmed as a *practice*
+claim):** his stated 8-year journey since leaving education matches the number, but "years
+of practice" ≠ "years since leaving" — leave ⚠ until Johnny confirms the wording he wants.
+
+**What this unlocks in the talks (story seeds — his scenes still needed):** The Aligned
+Life Beat 1 (the outward win: 25-year education career, principalship, superintendent's
+credential earned); Inside Out §1 credential + §3 leadership season (the principal years
+that "took their toll"); Courage §1 crossing (leaving after 25 years); the anti-labeling
+conviction threads all four. Do NOT fill scene-level slots from this summary — the talks
+need his specific moments, told by him.
+
 ## How to work with Johnny (accessibility — permanent)
 - **Johnny is now the SOLE operator (as of 2026-07-12).** His web designer handed over the
   reins; there is no technical intermediary anymore. The agent neighborhood owns **ALL**
