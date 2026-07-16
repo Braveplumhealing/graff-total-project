@@ -57,6 +57,21 @@ professional success that left him feeling hollow" — and the source material f
    to the world.**" (verbatim) → coaching, Reiki mastery, mediation training, the book
    (*Soulnapped*), retreats, Brave Plum Farm, and now Brave Plum Healing + The Healers' Grove.
 
+
+**THE MOMENT (told in *Soulnapped*; retold by Johnny 2026-07-15 — the sacred interruption
+of his own life):** At a **house concert**, listening to **Mike Beck** sing songs told from
+the perspective of a horse. The song **"Don't Sore My Back"** — a horse being broken by a
+cowboy it loved so much it was **willing to surrender itself**, asking only that the cowboy
+**not sore its back or jerk its mouth**. As Johnny listened, **a wave of guilt rushed
+through him** — and then the line came: **"I forgive you for my wildness lost."** *(the
+line is Mike Beck's, from the song — always credit Beck when telling it.)* "I knew in that
+moment that it was the beginning of the end of my educational career. **How many students
+had I 'broken' so that they could fit in the box of our modern education system?**"
+(verbatim). NOTE the deep rhyme: *wildness lost* ↔ *the eagle in the coop* (his book's
+title image) — the broken horse and the cooped eagle are the same grief; his healing work
+is the un-breaking. This scene is PUBLIC material (it's in his book) and now seats The
+Aligned Life Beat 2.
+
 **Sacred-adjacent phrases (his, verbatim — use with care):** "champion for the underdog" ·
 "labeling students for their deficiencies rather than their gifts" · "reclaim my own gifts
 and express them to the world."
