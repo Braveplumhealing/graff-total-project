@@ -76,3 +76,10 @@ paraphrase, in any talk/page/copy about courage or change:
 Key phrases that are HIS (never soften): *courage is never blind* · *the portal to growth*
 · *stagnation and rot* · *depth and breadth* · *trust the process of journeying forward*.
 Spine of [[the-courage-to-change]]. Johari attribution when needed: Luft & Ingham, 1955.
+
+## Blessed lines (crafted in session, approved by Johnny — usable in his voice)
+- **"You can't see the lit life from inside the unlit one."** (2026-07-15 — Johnny: "that's
+  solid.") Born from the torch teaching meeting Bashar's embodiment principle (see the
+  resonance shelf in ideas.md). Natural homes: *Leading from the Inside Out* (the torch
+  movement) or *The Aligned Life* Section 4 (why the aligned life is invisible across the
+  gap). Use once per talk at most — it's a landing line, not wallpaper.
