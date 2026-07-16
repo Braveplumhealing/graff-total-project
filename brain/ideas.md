@@ -43,3 +43,14 @@ Format: `- [ ] YYYY-MM idea — why it might matter (source)`
   2026-07-15: "will be for another day." The Courage to Change carries only the four-name
   mention; the full treatment (all four quadrants worked, exercises, disclosure + feedback
   as the two levers) is parked here until he calls for it.
+
+- **Resonance shelf — Bashar on embodiment (shared by Johnny, 2026-07-15):** from a reel
+  ("Don't wait," session *Past & Future History*, Bashar channeled by Darryl Anka,
+  facebook.com/reel/1506949891131907 · tv.bashar.org/programs/past-future-history).
+  Closing line, per Johnny: **"You cannot perceive a reality until you embody the vibration
+  of the reality first."** — EXTERNAL quote (Bashar/Darryl Anka): always attributed, never
+  folded into Johnny's own sacred language. Why it's shelved: it rhymes with the spine of
+  his work — embodiment precedes perception (the torch: lit before lighting; the two hands:
+  close the gap, then the aligned life becomes visible; caption's own word was
+  "alignment"). Possible future uses (Johnny's call only): a quoted-with-credit beat in a
+  talk, a journal post on embodiment, Grove conversation fodder.
