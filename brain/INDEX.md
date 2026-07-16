@@ -44,6 +44,10 @@ every future surface equally.
   KNOW to act correctly on Johnny's behalf.
 
 ## Working content
+- `downloads/` — **Johnny's late-night downloads, verbatim-faithful** (his word; capture
+  whole, distill after, never overwrite). First: `2026-07-15-the-gift.md` — the gift
+  question, the schooling wound, tall poppy, **"midlife transformation, not midlife
+  crisis"** — the philosophy under the career story and possibly the umbrella message.
 - `voice.md` — **how Johnny sounds** + his sacred language. His triad (his own words, to be
   defined by him): **sacred exhaustion · sacred interruption · rising mercy** — the likely
   spine of all four talks. Read before writing ANY copy in his voice; never invent his

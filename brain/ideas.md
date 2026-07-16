@@ -54,3 +54,9 @@ Format: `- [ ] YYYY-MM idea — why it might matter (source)`
   close the gap, then the aligned life becomes visible; caption's own word was
   "alignment"). Possible future uses (Johnny's call only): a quoted-with-credit beat in a
   talk, a journal post on embodiment, Grove conversation fodder.
+
+- **"The Gift" — possible fifth talk / umbrella message (from the 2026-07-15 download,
+  see brain/downloads/):** the gift question for young humans · the schooling wound
+  (categorize/catalog/critique) · tall poppy · **midlife transformation, not midlife
+  crisis** · the permission cascade. Could be a keynote, the book's companion talk, or the
+  through-line ABOVE all four talks. Waiting on Johnny's word.
