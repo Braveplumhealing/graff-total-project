@@ -115,6 +115,13 @@ Always first: `export PATH="$HOME/.local/bin:$HOME/bin:$PATH"` (node/npm/gh are 
     braveplumhealing.com on 2026-07). After ANY Pages-settings change, verify and restore:
     `gh api repos/Braveplumhealing/graff-total-project/pages --method PUT -f build_type=workflow`,
     then re-run the deploy-pages workflow.
+14. **Parallel branches must not both append to the ledger — stack the PRs instead.** Two
+    open branches each appending to `audit/log.jsonl` guarantee a merge conflict (the chain
+    forks). When work depends on an unmerged PR or both touch the ledger/brain registers,
+    branch FROM the open PR's branch and open the new PR with that branch as its base
+    (GitHub retargets to main when the parent merges). Also: force-push is blocked on ALL
+    branches (protection) — a bad branch gets a replacement branch + a superseding PR, never
+    a rewrite. (Learned 2026-07-15: PR #16 → #17.)
 
 ## Sync status (verified at last review, 2026-07-08)
 - Audit ledger: **intact, 20 entries, chain valid** (verified independently + in-browser algorithm).

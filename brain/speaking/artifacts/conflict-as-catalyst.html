@@ -1,0 +1,239 @@
+<title>Conflict as Catalyst — Keynote Outline</title>
+<style>
+:root{
+  --plum:#3D1A3D; --rose:#C4637E; --blush:#F2B8C6; --petal:#FDE8EE; --cream:#FDF5F0;
+  --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826;
+  --muted:#84677A; --line:rgba(61,26,61,.12); --accent:var(--rose); --heading:#3D1A3D;
+  --hero-ink:#FDE8EE; --hero-sub:#E7B9C8;
+  --serif:"Cormorant Garamond",Palatino,"Palatino Linotype",Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15);
+    --heading:#F2B8C6; --hero-ink:#FDE8EE; --hero-sub:#E3A9BC; }
+}
+:root[data-theme="light"]{ --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826; --muted:#84677A; --line:rgba(61,26,61,.12); --heading:#3D1A3D; }
+:root[data-theme="dark"]{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15); --heading:#F2B8C6; }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
+
+.hero{background:var(--plum);color:var(--hero-ink);padding:64px 24px 60px;position:relative;overflow:hidden;text-align:center}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 30%,rgba(196,99,126,.30),transparent 65%);pointer-events:none}
+.hero-inner{max-width:760px;margin:0 auto;position:relative}
+.hero .bloom{width:58px;height:58px;margin:0 auto 18px;display:block}
+.eyebrow{font-family:var(--sans);font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--blush);opacity:.85;margin:0 0 20px}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.5rem,6.5vw,4.1rem);line-height:1.04;margin:0;color:var(--hero-ink);text-wrap:balance}
+.hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--hero-sub);margin:18px auto 0;max-width:46ch;line-height:1.4;text-wrap:balance}
+.hero .meta{margin-top:26px;display:inline-flex;flex-wrap:wrap;gap:10px 14px;justify-content:center;font-size:.75rem;letter-spacing:.02em}
+.hero .meta span{border:1px solid rgba(253,232,238,.28);border-radius:999px;padding:5px 13px;color:var(--blush)}
+
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,3.6vw,2.15rem);line-height:1.15;color:var(--heading);margin:64px 0 6px;padding-top:22px;border-top:1px solid var(--line);text-wrap:balance}
+h3{font-family:var(--serif);font-weight:500;font-size:1.3rem;color:var(--rose);margin:34px 0 4px}
+p{margin:14px 0;max-width:68ch}
+strong{color:var(--ink);font-weight:700}
+a{color:var(--rose)}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.86em;background:var(--petal);color:#7A3070;padding:1px 6px;border-radius:5px}
+
+ul{list-style:none;margin:14px 0;padding:0;max-width:68ch}
+li{position:relative;padding-left:26px;margin:9px 0;line-height:1.65}
+li::before{content:"\2767";position:absolute;left:0;top:0;color:var(--blush);font-size:.95em}
+
+blockquote{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.35rem,3.2vw,1.75rem);line-height:1.42;color:var(--rose);margin:30px 0;padding:6px 0 6px 26px;border-left:3px solid var(--blush);max-width:60ch;text-wrap:balance}
+
+.callout{background:var(--petal);border-left:4px solid var(--rose);border-radius:0 10px 10px 0;padding:18px 22px;margin:22px 0;max-width:68ch;color:#4A2340}
+:root[data-theme="dark"] .callout{background:rgba(196,99,126,.14);color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .callout{background:rgba(196,99,126,.14);color:var(--ink)}}
+.callout.big{border-left-color:var(--plum)}
+:root[data-theme="dark"] .callout.big{border-left-color:var(--blush)}
+.clabel{display:block;font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin-bottom:6px}
+
+.timing{display:inline-block;background:var(--plum);color:var(--blush);font-family:var(--sans);font-size:.76rem;letter-spacing:.03em;padding:5px 13px;border-radius:999px;margin:12px 0}
+.timing::before{content:"\25F7\00A0";opacity:.9}
+.timing strong{color:var(--petal);font-weight:600}
+
+.mv{display:inline-block;font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7A3070;background:var(--petal);border:1px solid rgba(196,99,126,.25);padding:2px 10px;border-radius:999px;margin-left:8px;vertical-align:middle}
+:root[data-theme="dark"] .mv{background:rgba(196,99,126,.16);color:var(--blush)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .mv{background:rgba(196,99,126,.16);color:var(--blush)}}
+
+.note{display:block;background:transparent;border-left:2px solid var(--blush);color:var(--muted);font-size:.92rem;line-height:1.6;padding:2px 0 2px 18px;margin:16px 0;max-width:66ch;font-style:italic}
+
+.fill{background:linear-gradient(transparent 62%, var(--blush) 62%);padding:0 2px;color:var(--ink);border-radius:2px}
+.fill-tag{display:inline-block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--rose);padding:1px 6px;border-radius:4px;margin-right:6px;vertical-align:middle;transform:translateY(-1px)}
+.done-tag{display:inline-block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:#6B8F6B;padding:1px 6px;border-radius:4px;margin-right:6px;vertical-align:middle;transform:translateY(-1px)}
+
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:3px}
+
+@media (prefers-reduced-motion:no-preference){
+  .wrap>*,.hero-inner>*{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+  .hero-inner>*:nth-child(2){animation-delay:.05s}
+  .hero-inner>*:nth-child(3){animation-delay:.1s}
+  .hero-inner>*:nth-child(4){animation-delay:.15s}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<div class="hero"><div class="hero-inner">
+  <svg class="bloom" viewBox="-40 -40 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Brave Plum Healing blossom"><defs><radialGradient id="bparta" cx="50%" cy="85%" r="85%"><stop offset="0%" stop-color="#FDE8EE"/><stop offset="55%" stop-color="#F2B8C6"/><stop offset="100%" stop-color="#EDA5BA"/></radialGradient><radialGradient id="bpartb" cx="50%" cy="85%" r="85%"><stop offset="0%" stop-color="#FBD9E2"/><stop offset="60%" stop-color="#EDA5BA"/><stop offset="100%" stop-color="#E293AC"/></radialGradient></defs><g transform="rotate(-6)"><g transform="rotate(0)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bparta)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(72)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bpartb)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(144)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bparta)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(216)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bpartb)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(288)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bparta)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><circle r="4.2" fill="#FDE8EE" fill-opacity=".95"/><path d="M0 -3.2Q0.39 -6.57 0 -11.96" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="0" cy="-11.96" r="1.5" fill="#C4637E"/><path d="M2.35 -2.18Q4.01 -3.3 6.92 -6.42" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="6.92" cy="-6.42" r="1.5" fill="#C4637E"/><path d="M3.19 -0.2Q4.83 -0.01 8.77 -0.54" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="8.77" cy="-0.54" r="1.5" fill="#C4637E"/><path d="M2.81 1.54Q5.67 3.57 10.68 5.85" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="10.68" cy="5.85" r="1.5" fill="#C4637E"/><path d="M1.48 2.83Q1.87 4.17 3.85 7.36" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="3.85" cy="7.36" r="1.5" fill="#C4637E"/><path d="M-0.79 3.1Q-1.69 5.28 -2.5 9.76" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-2.5" cy="9.76" r="1.5" fill="#C4637E"/><path d="M-2.84 1.48Q-5.82 2.6 -10.28 5.35" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-10.28" cy="5.35" r="1.5" fill="#C4637E"/><path d="M-3.04 -0.98Q-4 -1.56 -7.43 -2.4" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-7.43" cy="-2.4" r="1.5" fill="#C4637E"/><path d="M-1.85 -2.61Q-3.29 -5.29 -6.55 -9.25" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-6.55" cy="-9.25" r="1.5" fill="#C4637E"/></g></svg>
+  <p class="eyebrow">Keynote &#183; Working draft v1</p>
+  <h1>Conflict as&nbsp;Catalyst</h1>
+  <p class="sub">How to transform difficult conversations into doorways for growth, understanding, and deeper connection.</p>
+  <div class="meta"><span>The Knock &#183; The Threshold &#183; The Opening</span><span>~45 min &#183; flexes 30&#8211;60</span><span>The doorway &#8212; to confirm</span><span>Core teaching &#8212; awaiting Johnny</span><span>Brave Plum Healing</span></div>
+</div></div>
+
+<main class="wrap">
+<p><em>Working script v1 for a ~45-minute keynote. Warm, grounded, fireside — a mediator's calm, never a debate coach's swagger. Built for any room that contains two humans: couples, teams, families, boards, congregations. <strong>One honest difference from the other talks: the center seat is empty on purpose.</strong> What conflict IS in Johnny's language is marked <span class="fill"><span class="fill-tag">define</span> …</span> and nothing has been invented in its place — his teaching, when he speaks it, becomes the spine.</em></p>
+
+<div class="callout"><span class="clabel">Throughline</span>We treat conflict as a fire to put out — and so we spend our lives fleeing, appeasing, or winning, and stay exactly as we were; but a difficult conversation was never a fire. It is a knock at a door. And on the other side of that door — if we can stand in it without running or swinging — is everything conflict was trying to deliver: growth, understanding, and deeper connection.</div>
+
+<div class="callout big"><span class="clabel">The one big idea</span>Conflict is not the opposite of connection — avoidance is. The relationships and rooms that go cold are almost never the ones that fought; they're the ones that stopped telling each other the truth. A difficult conversation, held with courage and curiosity, is a <em>catalyst</em>: it doesn't destroy the relationship, it converts it — surface politeness into real understanding, distance into depth. <strong>The door is not the danger. The hallway of unsaid things is.</strong></div>
+
+<h2>The spine — three movements, through the doorway</h2>
+<p>The talk walks one idea through three movements. The doorway carries the whole visual arc: hearing the knock for what it is (The Knock) &#8594; standing in the threshold without fleeing or swinging (The Threshold) &#8594; walking through into what conflict was carrying (The Opening).</p>
+
+<p><strong>1. THE KNOCK</strong> <em>(Movement I — Sections 1, 2)</em> — what conflict actually is.</p>
+<p><span class="fill"><span class="fill-tag">define</span> what conflict IS in your language — your one-sentence teaching, as "courage is never blind" anchors The Courage to Change. Everything in this movement reshapes around your words the day you speak them.</span></p>
+<p>Working placeholder (universal, not attributed to Johnny): conflict is unmet truth asking to be heard — a knock, not a fire.</p>
+
+<p><strong>2. THE THRESHOLD</strong> <em>(Movement II — Sections 3, 4)</em> — staying in the doorway.</p>
+<p>The hardest square meter in any relationship: the place where you neither flee (avoidance), nor appease (abandoning yourself), nor swing (winning instead of understanding). A mediator's whole craft is helping two people stand there a minute longer than instinct allows.</p>
+
+<p><strong>3. THE OPENING</strong> <em>(Movement III — Sections 5, 6, 7)</em> — what's on the other side.</p>
+<p>The site's own three gifts, in order: <strong>growth, understanding, and deeper connection.</strong> Not the absence of the fight — the harvest of it.</p>
+
+<p><strong>The arc in one line:</strong> conflict knocks (it was never a fire) &#8594; we've been taught three escapes — flee, appease, swing — and all three leave us unchanged &#8594; the threshold is where the catalyst works: staying, listening, staying again &#8594; and the door opens onto what the difficulty was carrying all along: growth, understanding, deeper connection.</p>
+
+<h2>Section 1 — Cold open: the knock we all dread <span class="mv">The Knock</span></h2>
+<p class="timing"><strong>Target: 5 min</strong></p>
+<ul>
+<li>Open on the universal body-moment, warmly: <em>"You know the feeling. The 'can we talk?' text. The meeting invite with no agenda. The pause at the dinner table that means it's coming. Somewhere between your chest and your stomach, a door slams shut — before a single word has been said."</em></li>
+<li>Name what we've all been taught: conflict is damage. Conflict means something has gone wrong. Good relationships don't have it; good leaders prevent it; good people avoid it. <em>"I want to spend our time together taking that belief apart — gently, the way you'd take apart something that's been hurting someone you love."</em></li>
+<li>The reframe, planted early: <em>"What if the difficult conversation isn't the fire? What if it's the knock — something true, standing outside the door, asking to be let in?"</em> <span class="fill"><span class="fill-tag">confirm</span> the doorway as this talk's signature image.</span></li>
+<li>One-breath self-intro, modest: coach, Reiki master, <strong>trained mediator</strong> — someone whose working life includes sitting between two people at their hardest table. <span class="fill"><span class="fill-tag">your turn</span> your one-line mediator credential — the settings you've actually mediated in, named only as you're comfortable.</span></li>
+<li>Promise the shape honestly: what conflict actually is, the three escapes we've all mastered, and the doorway practice that turns difficulty into depth.</li>
+</ul>
+<aside class="note"><em>Speaker note: The open must meet the conflict-avoidant with total compassion — most of the room is there because "can we talk?" scares them, not because they love a fight. No debate-bro energy, no corporate "crucial conversations" cadence. Johnny's mediator credential is real (site tag: Trained Mediator) but stays modest and unnumbered.</em></aside>
+
+<h2>Section 2 — The knock: what conflict actually is <span class="mv">The Knock</span></h2>
+<p class="timing"><strong>Target: 7 min</strong> &#183; <em>(Audience Moment 1 lands here)</em></p>
+<ul>
+<li><span class="fill"><span class="fill-tag">define</span> THE CENTER OF THE TALK: your teaching on what conflict is. Until your words arrive, this section carries a universal placeholder, clearly not attributed to you.</span></li>
+<li>Working placeholder frame: conflict is unmet truth asking to be heard. Behind nearly every difficult conversation is something real that has been waiting — a need unspoken, a hurt unnamed, a value stepped on, a change unannounced. <em>"The knock is never really about the dishes, the deadline, the tone of the email. The knock is the truth underneath, tired of waiting in the hallway."</em></li>
+<li>The cost of not answering, told with tenderness: unanswered knocks don't leave. They move in. They become the silence at the table, the meeting after the meeting, the resentment with excellent manners. <em>"Most relationships don't die in a fight. They die in the hallway — in everything that was never said."</em></li>
+<li>Distinguish the knock from the storm: this talk is about the difficult conversations worth having — not abuse, not cruelty, not doors that safety says must stay closed. <em>"If a door in your life is dangerous, this talk is not asking you to open it. Some doors are closed for holy reasons."</em></li>
+<li><strong>&#8594; Audience Moment 1 (silent recognition):</strong> <em>"No hands. Just check, privately: what's knocking, in your life, right now? The conversation you've been rescheduling — with a person, or with yourself. You know its name."</em> Hold ~15 seconds of real silence. Then, softly: <em>"That flutter you just felt? That's not dread. That's the truth in the hallway, glad to be noticed."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: SAFETY LINE IS NON-NEGOTIABLE — the distinction between difficult-and-worth-having versus unsafe must be stated plainly in every venue; never imply anyone owes an unsafe person a doorway. The placeholder framing ("unmet truth asking to be heard") must be replaced or blessed by Johnny before this talk is ever delivered — it is scaffolding, not his teaching.</em></aside>
+
+<h2>Section 3 — The three escapes, and the day I stopped running <span class="mv">The Threshold</span></h2>
+<p class="timing"><strong>Target: 10 min</strong> <em>(the peak — protect this)</em></p>
+<ul>
+<li>Name the three escapes we've all mastered — each with compassion, each recognizable from the inside:</li>
+<li><strong>FLEE:</strong> change the subject, stay busy, keep the peace by keeping the distance. <em>"The politest way to lose someone slowly."</em></li>
+<li><strong>APPEASE:</strong> agree before you've spoken, apologize for existing, hand over your truth to end the discomfort. <em>"It looks like kindness. It's actually a door closed from the inside."</em></li>
+<li><strong>SWING:</strong> win. Be right. Cross-examine. <em>"You can win the conversation and lose the person — most of us have the trophies to prove it."</em></li>
+<li>The turn: all three escapes share one belief — that the knock is a threat. <em>"I spent years as a professional peacekeeper in my own life."</em> <span class="fill"><span class="fill-tag">your turn</span> the load-bearing wall: YOUR conflict story. The difficult conversation you fled, appeased, or swung at for years — with whom (named only as you're comfortable), what it cost, and the day you finally stood in the doorway instead. What was said. What it opened. If the truest version is that someone else held the door for you, tell THAT. One true scene; nothing invented, no client or mediation-table stories — confidentiality is absolute.</span></li>
+</ul>
+<h3>&#9733; THE DOORWAY MOMENT — the single unforgettable beat</h3>
+<p><em>Build it slowly, at fireside volume. Real silence between steps.</em></p>
+<blockquote><em>"Here's what those years taught me. Every difficult conversation is a door. And we've all been taught there are only two things to do at a hard door: bolt it — or break it down."</em> <strong>(pause)</strong></blockquote>
+<blockquote><em>"Nobody taught us the third thing. <strong>Stand in it.</strong> Not fleeing. Not appeasing. Not swinging. Just standing in the doorway — open, grounded, still there."</em> <strong>(pause)</strong></blockquote>
+<blockquote><em>"And here's the strange mercy I've seen at more hard tables than I can count: <strong>the door was never holding back a fire. It was holding back a delivery.</strong> Growth. Understanding. A closeness you couldn't get any other way. Conflict is the catalyst — but only for the ones who stay in the doorway long enough to receive it."</em> <strong>(hold)</strong></blockquote>
+<p><strong>THE REVEAL — drop the volume:</strong> <em>"The conversations I ran from for years — every single one of them was carrying something I needed. The difficulty was the wrapping paper. I just kept refusing the package."</em></p>
+<p><strong>Hold two full seconds before moving on.</strong></p>
+<aside class="note"><em>Speaker note: The three escapes must be delivered so every listener finds THEIR escape without shame — the room laughs in recognition, never at anyone. HARD RULE: Johnny's story only; mediation-table stories are confidential and never appear, even anonymized. The doorway build is this talk's feather-rock-truck: built in full exactly once, lightly reprised only in the charge.</em></aside>
+
+<h2>Section 4 — The threshold: standing in the hardest square meter <span class="mv">The Threshold</span></h2>
+<p class="timing"><strong>Target: 6 min</strong></p>
+<ul>
+<li>Honor why the threshold is hard — the body at the door: the racing heart, the rehearsed comebacks, the ancient wiring that reads disagreement as danger. <em>"Your nervous system is not wrong — it's just out of date. It thinks every knock is a wolf. It's usually a package."</em></li>
+<li>The mediator's secret, made human: two people in conflict almost never disagree about as much as they think. <em>"At most hard tables I've sat at, the two people are not actually fighting about the thing. They're fighting to be heard about the thing. And nobody can hear anybody through a bolted door — or over a battering ram."</em></li>
+<li>The posture of the threshold, plain: grounded (you don't abandon your truth — appeasing helps no one), open (you don't need them wrong to be okay), and still there (you don't leave — physically or behind your eyes).</li>
+<li><em>"Standing in the threshold doesn't mean having no edges. It means bringing your whole self to the door — including your no, including your hurt — without turning the doorway into a battlefield or a goodbye."</em></li>
+<li>Curiosity as the doorstop: the single move that keeps the door open. <em>"You cannot be furious and curious in the same breath. Curiosity is not surrender — it's the strongest position in the room."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: Keep all nervous-system language observational and everyday ("racing heart," "out-of-date wiring") — no clinical claims, no trauma instruction; this is a keynote, not therapy. The "fighting to be heard" line comes from Johnny's real mediation vantage but stays general — no table, no case, no parties, ever.</em></aside>
+
+<h2>Section 5 — The doorway practice: three moves <span class="mv">The Opening</span></h2>
+<p class="timing"><strong>Target: 8 min</strong> &#183; <em>(Audience Moment 2 lands here)</em></p>
+<p><span class="fill"><span class="fill-tag">confirm</span> or replace ALL THREE with your actual tools — you're the trained mediator; these are candidate moves in the doorway spirit, not your named method.</span></p>
+<ul>
+<li>Frame the give: <em>"So the knock comes — this week, probably. Three small moves for the doorway. None of them require you to be calm-natured or quick-witted. All of them fit in one breath."</em></li>
+<li><strong>ANSWER THE KNOCK, NAME THE DOOR:</strong> open it on purpose, and say what kind of conversation it is: <em>"'Something's been sitting with me, and our relationship matters enough to say it out loud.' You've just told them there's a knock AND that the door is safe. Half the fear in hard conversations is not knowing which one it is."</em></li>
+<li><strong>ASK THE HALLWAY QUESTION:</strong> before defending anything, ask for what's been waiting: <em>"'Help me understand what this has been like from your side.' — and then the hard part: actually listen. Not reload-listening. Listening like their answer could change you. Because if it can't, you're not in a conversation — you're in a deposition."</em></li>
+<li><strong>STAND STILL AT THE HOT MOMENT:</strong> the make-or-break second when the heat spikes and every muscle votes for flee, appease, or swing: <em>"One breath. Feet on the floor. And say the quiet, door-holding thing: 'I'm still here. I want to understand this.' You will not feel brave when you say it. Say it anyway. That sentence has saved more relationships than every clever argument ever made."</em></li>
+<li><strong>&#8594; Audience Moment 2 (private write):</strong> <em>"Two blanks, just for you: The conversation that's knocking is with ______. And the truth waiting in the hallway is ______."</em> 60–90 seconds. Then, gently: <em>"You didn't just name a dreaded talk. You named a delivery you haven't received yet."</em></li>
+<li>Close the section warm: <em>"Name the door. Ask the hallway question. Stand still once at the hot moment. That's the whole practice. Not a technique for winning — a way of staying."</em></li>
+</ul>
+<aside class="note"><em>Speaker note: This is "the give" — three moves, no acronym, no branding, and the whole section is explicitly provisional until Johnny blesses or replaces it with his own mediator's toolkit. Every illustration universal or from Johnny's own life; never invented couples or teams; never mediation cases. Keep Moment 2 fully private in every venue — it names real people.</em></aside>
+
+<h2>Section 6 — The opening: growth, understanding, deeper connection <span class="mv">The Opening</span></h2>
+<p class="timing"><strong>Target: 4 min</strong></p>
+<ul>
+<li>The exhale. Walk through the door the site promised, gift by gift:</li>
+<li><strong>GROWTH:</strong> every difficult conversation held is a rep for the self you're becoming — you leave each one slightly more able to hear, to stand, to say the true thing sooner. <em>"The catalyst doesn't just change the relationship. It changes YOU."</em></li>
+<li><strong>UNDERSTANDING:</strong> the person on the other side of the door is never quite who you argued with in the shower. <em>"You've been fighting a rehearsal of them. The doorway is where you finally meet the real one."</em></li>
+<li><strong>DEEPER CONNECTION:</strong> the tenderness on the far side of a hard conversation survived — trust that has been through weather. <em>"The relationships that feel unbreakable are not the ones that never cracked. They're the ones that cracked and got answered."</em></li>
+<li>Set a true expectation, not a guarantee: not every door opens onto reunion. Some honest conversations end things — honestly. <em>"Even then, the catalyst worked. You walked out of the hallway. You stopped living with the unsaid. That, too, is health."</em> <em>(No promised outcomes.)</em></li>
+<li>Callback to the cold open: <em>"That flutter when the 'can we talk?' text lands? It may never fully leave. But it can change meaning — from 'something is about to be destroyed' to 'something is about to be delivered.'"</em></li>
+</ul>
+<aside class="note"><em>Speaker note: The honest-endings beat is essential and stays — without it the talk over-promises reconciliation, and anyone leaving a harmful situation hears that their courage failed. It didn't; say so plainly. No metrics, no "conflict makes teams 30% more…" — nothing we can't source.</em></aside>
+
+<h2>Section 7 — One door this week: soft bridge and closing charge <span class="mv">The Opening</span></h2>
+<p class="timing"><strong>Target: 5 min</strong> &#183; <em>(Audience Moment 3 lands here)</em></p>
+<ul>
+<li>Gather the room to their own single hallway: <em>"You already named it — the conversation that's knocking, the truth that's been waiting. The door isn't going anywhere. But neither is the hallway, and things left in hallways don't keep."</em></li>
+<li><strong>&#8594; Audience Moment 3 (one chosen conversation, small and dated):</strong> <em>"Before you leave: choose the door. The conversation you named twenty minutes ago — or a smaller one, a practice door, if that one's too heavy for this week. Name the person. Now, quietly, name the day."</em> A real beat of silence. <em>"You don't have to know how it ends. You just have to answer the knock."</em></li>
+<li><strong>The soft bridge (once, gently, then released — Johnny's exact site language):</strong> <em>"If you'd like a steady hand at your own doorway — or a trained mediator at a table that needs one — the first step is simply a free thirty-minute discovery call. No pressure, just an honest conversation. But you don't need me to answer this week's knock. You have the door. You have the day."</em> Say it once. No prices, no packages, no urgency.</li>
+<li>Close the loop from the open: <em>"That slam you feel in your chest when the hard conversation comes? It was never proof of danger. It was proof that something true is standing outside — and it came all this way to be let in."</em></li>
+<li><strong>Deliver the closing charge</strong> (below), then stillness. Two full seconds before "thank you."</li>
+</ul>
+<aside class="note"><em>Speaker note: End on THEM, not the offer — bridge before the final loop-close, once, power handed straight back. The mediation mention in the bridge is the ONLY place paid mediation is referenced, and only as an aside. Phone booking (Rachel) stays back-office.</em></aside>
+
+<h2>The closing charge — the single unforgettable line</h2>
+<blockquote><em>"You were taught that conflict is a fire, and so you learned to run with water in both hands. Put it down. It was never a fire.</em></blockquote>
+<blockquote><em>It's a knock. Something true — about them, about you, about what the two of you could still become — standing outside the door you've been guarding, holding a delivery with your name on it.</em></blockquote>
+<blockquote><strong>So this week: answer one knock. Stand in one doorway. Not to win it — to receive it.</strong></blockquote>
+<blockquote><em>Because conflict was never the thing breaking your relationships. The hallway was. Open the door — and let the difficulty deliver what it came to give: growth, understanding, and a connection deep enough to hold weather. That's conflict as catalyst. And it's been knocking the whole time."</em></blockquote>
+<p><em>(Step back. Stillness. Two full seconds. Then, quietly: "Thank you.")</em></p>
+
+<h2>The 30-minute cut</h2>
+<p>Protect the two load-bearing sections in full: <strong>Section 3 (the three escapes + Johnny's story + the doorway build)</strong> and <strong>Section 5 (the practice + Audience Moment 2)</strong>. Trim everywhere else; never trim the peak's silences.</p>
+<ul>
+<li><strong>Section 1 &#8594; ~3 min:</strong> keep the body-moment open + the knock reframe + the doorway plant.</li>
+<li><strong>Section 2 &#8594; ~4 min:</strong> keep the knock teaching + the safety line + Moment 1 at ~10 sec.</li>
+<li><strong>Section 3 &#8594; ~8 min:</strong> keep all three escapes compressed + the full story + the full doorway build.</li>
+<li><strong>Section 4 &#8594; ~3.5 min:</strong> keep the out-of-date wiring + "fighting to be heard" + curiosity as doorstop.</li>
+<li><strong>Section 5 &#8594; ~6.5 min:</strong> keep all three moves compressed + Moment 2 at ~45 sec.</li>
+<li><strong>Section 6 &#8594; ~2 min:</strong> keep the three gifts named + the honest-endings beat (never cut this).</li>
+<li><strong>Section 7 &#8594; ~2.5 min:</strong> keep Moment 3, the bridge (once), and the charge intact.</li>
+</ul>
+
+<h2>The 60-minute expansion</h2>
+<p>Deepen honesty and stillness; never inflate drama or add hype.</p>
+<ul>
+<li><strong>Section 1:</strong> add one true observation about the <em>specific</em> room's flavor of conflict (executive team / couples retreat / congregation / family systems).</li>
+<li><strong>Section 2:</strong> add a second portrait of the hallway (the workplace version: the meeting after the meeting) so professional rooms see themselves.</li>
+<li><strong>Section 3:</strong> one more small, true detail in Johnny's story — deepen honesty, never drama.</li>
+<li><strong>Section 4:</strong> add a gentle guided beat: feet on the floor, one breath — the threshold, rehearsed once in the safety of the room.</li>
+<li><strong>Section 5:</strong> give each move a short true illustration; in workshop rooms, an optional pair practice of the hallway question on a LOW-stakes topic only.</li>
+<li><strong>Section 6:</strong> add a guided image — one relationship, one year of answered knocks later.</li>
+<li><strong>Section 7:</strong> short, calm Q&amp;A or shared silence before the charge.</li>
+</ul>
+
+<h2>The bridge to working with Johnny</h2>
+<p>Mentioned <strong>once</strong>, gently, in Section 7, in Johnny's exact site language — <em>"a free 30-minute discovery call — no pressure, just an honest conversation"</em> — with the single aside that mediation is part of his working life, then power handed straight back (<em>"you don't need me to answer this week's knock"</em>). A dignified door held open, never a close. No prices, no packages, no repeated CTA. Phone booking (Rachel) and paid work stay back-office. End on THEM.</p>
+
+<h2>What I need from you, Johnny</h2>
+<p>This one is different from the other three — the architecture is ready, but <strong>the center seat is empty on purpose.</strong> Nothing here is attributed to you until you speak it:</p>
+<ul>
+<li><strong>Your conflict teaching <span class="fill-tag" style="background:#C4637E">define</span> — the center of the talk:</strong> what IS conflict, in your language? One to five sentences, the way you gave me courage ("courage is never blind…"). The moment you speak it, it becomes the spine and every placeholder reshapes around it.</li>
+<li><strong>The doorway <span class="fill-tag" style="background:#C4637E">confirm</span>:</strong> difficult conversations as doors — the knock, the threshold, the delivery. It comes from your own site's promise ("doorways for growth"). Does it sit right as the signature image?</li>
+<li><strong>Section 3 — your conflict story (the load-bearing wall):</strong> the conversation YOU fled, appeased, or swung at for years, and the day you finally stood in the doorway — or someone held it for you. Your story only; the mediation table stays confidential forever.</li>
+<li><strong>Section 1 — your mediator credential:</strong> one plain line on the settings you've actually mediated in, named only as far as you're comfortable.</li>
+<li><strong>Section 5 — the practice <span class="fill-tag" style="background:#C4637E">confirm</span> or replace:</strong> the three moves are candidates written in your spirit. You're the trained mediator — replace them with your real tools if you have named ones.</li>
+<li><strong>Venue call on Audience Moment 2:</strong> written fully-private everywhere (it names real people) — agreed?</li>
+<li><strong>Slides decision:</strong> zero slides works beautifully (the doorway lives in your hands and voice). If slides, maximum three — a black open, one simple door ajar, nothing that turns the moves into bullets.</li>
+</ul>
+</main>
