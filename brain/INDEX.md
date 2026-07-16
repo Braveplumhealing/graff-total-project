@@ -66,8 +66,16 @@ every future surface equally.
     page (BPH look, torch favicon): claude.ai/code/artifact/d9a2c286-79cb-48fe-909f-aaa58dbedbd6;
     HTML source archived in speaking/artifacts/; repeatable pattern in playbooks.md. Sacred triad
     cross-referenced ONCE (verbatim), never redefined — it belongs to The Aligned Life.
-    7 [Johnny to fill/confirm] items listed at the end of the file. The four talks
-    are: The Aligned Life ✅v2 · Leading from the Inside Out ✅v1 · The Courage to Change ·
+    7 [Johnny to fill/confirm] items listed at the end of the file.
+  - `speaking/the-courage-to-change.md` — **v1, 2026-07-15.** Spine = **Johnny's verbatim
+    courage teaching** (given same day, deposited in voice.md): courage is never blind →
+    grounding requires feedback → **the Blind Spot is the portal to growth** → the
+    alternative is stagnation and rot → depth and breadth. Master image = **THE WINDOW**
+    (four panes, one blind; opens only from the outside) [Johnny to confirm]. Signature
+    beat: the four-pane build + portal reveal. Optional orchard callback [confirm].
+    Branded Artifact page (🪟): claude.ai/code/artifact/6a035b3d-fd65-4fce-9b4b-b6618eb97165;
+    HTML source in speaking/artifacts/. 7 fill/confirm items at end of file. The four talks
+    are: The Aligned Life ✅v2 · Leading from the Inside Out ✅v1 · The Courage to Change ✅v1 ·
     Conflict as a Catalyst. **Voice-tuning pass pending Johnny's book** *Soulnapped: The Eagle
     in the Coop* (couldn't be pulled through the OneDrive share; awaiting the `.docx` on his Desktop).
     Iron rule for all talks: nothing about Johnny invented — real specifics come from him,

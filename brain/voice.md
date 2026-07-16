@@ -61,3 +61,18 @@ words: *"it does not recognize me for my light — for the torch that I carry."*
 intro, or page about Johnny must **paint the whole cycle: the darkness AND the light.**
 Never describe him by his wounds alone. This pairs with the arc above — the interruption is
 never the destination; carrying the light home is.
+
+## The courage teaching (Johnny's exact words, 2026-07-15)
+Given while commissioning The Courage to Change. Treat as sacred language — quote, never
+paraphrase, in any talk/page/copy about courage or change:
+> "Courage is never blind. Courage is moving forward into the unknown and being grounded
+> in who you are. Being grounded in who you are requires feedback. And receiving feedback
+> is perhaps the act that requires the most courage. **The Blind Spot of Johari's window
+> is the portal to growth.** It takes us into vulnerable spaces. It requires us to trust
+> the process of journeying forward. The alternative is stagnation and rot. In this way —
+> courage leads us forward to our own health and allows us to uncover our unknown self and
+> build upon our character, adding both depth and breadth."
+
+Key phrases that are HIS (never soften): *courage is never blind* · *the portal to growth*
+· *stagnation and rot* · *depth and breadth* · *trust the process of journeying forward*.
+Spine of [[the-courage-to-change]]. Johari attribution when needed: Luft & Ingham, 1955.

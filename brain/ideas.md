@@ -38,3 +38,8 @@ Format: `- [ ] YYYY-MM idea — why it might matter (source)`
 - 2026-07 Refund-policy page — Johnny: no published terms. (decisions.md #3)
 - 2026-07 Testimonials — only real, permissioned ones, which don't exist yet. (decisions.md #5)
 - 2026-07 Podcast — removed; returns only with real episodes. (decisions.md #1)
+
+- **A clinical Johari Window deep-dive** (workshop or standalone talk/session) — Johnny,
+  2026-07-15: "will be for another day." The Courage to Change carries only the four-name
+  mention; the full treatment (all four quadrants worked, exercises, disclosure + feedback
+  as the two levers) is parked here until he calls for it.
