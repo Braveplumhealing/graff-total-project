@@ -42,3 +42,13 @@ repeating: love + hate = a braided ring. What love does with the ring is the tea
 wears it, does not return it, and answers with forgiveness — the un-braiding. Candidate
 definition for Johnny to bless, prune, or reject:
 > **Rath (n.):** the braided ring of love and hate — what love wears until it is un-braided.
+
+## THE LANDING (Johnny, same night, verbatim): "A 'Rath' around the heart!"
+His exclamation — the download's destination. **Rath = the braided ring of love and hate
+around the heart.** It names, in one image, what the whole body of work un-does: the armor
+around the blind pane, the bolted door, the laminated calm, the coop around the eagle, the
+performed self around the true one. Protection that became prison — built of love and hate
+braided so tight the strands forgot themselves. The healing work, named: **un-braiding the
+Rath.** Treat "a Rath around the heart" as Johnny's sacred language (born 2026-07-15).
+Candidate homes when he calls for them: the conflict talk's center orbit · the book ·
+retreat teaching · a journal post. Nothing ships without his word.
