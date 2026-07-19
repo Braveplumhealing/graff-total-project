@@ -10,13 +10,13 @@ we don't yet have his exact words, we mark `[Johnny to define]` and ask — we n
 sacred language on a page or a stage.
 
 ## THE CENTER — Johnny's philosophy (his words, 2026-07-15)
-> "My life is centered around the idea that **we come from love, we return from love, and
+> "My life is centered around the idea that **we come from love, we return to love, and
 > our work while on our earthly journey is to nurture a path of love.**"
 
-(Transcribed exactly as given; he may have intended "return TO love" — flag raised,
-awaiting his one-word confirm. Either way: love is origin, destination, and the work
-between. Every talk, page, practice, and crew decision should be traceable to this. The
-sacred triad, the torch, the window, the doorway, the gift — all are paths of love.)
+(Wording CONFIRMED by Johnny 2026-07-15: "return to love." Love is origin, destination,
+and the work between. Every talk, page, practice, and crew decision should be traceable to
+this. The sacred triad, the torch, the window, the doorway, the gift — all are paths of
+love.)
 
 ## The sacred triad (Johnny named these, 2026-07-13)
 Johnny asked us to center three components. They are a natural arc — quite possibly **THE
