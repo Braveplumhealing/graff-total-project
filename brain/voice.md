@@ -9,6 +9,15 @@ His definitions come from him, or from his book, *Soulnapped: The Eagle in the C
 we don't yet have his exact words, we mark `[Johnny to define]` and ask — we never guess his
 sacred language on a page or a stage.
 
+## THE CENTER — Johnny's philosophy (his words, 2026-07-15)
+> "My life is centered around the idea that **we come from love, we return from love, and
+> our work while on our earthly journey is to nurture a path of love.**"
+
+(Transcribed exactly as given; he may have intended "return TO love" — flag raised,
+awaiting his one-word confirm. Either way: love is origin, destination, and the work
+between. Every talk, page, practice, and crew decision should be traceable to this. The
+sacred triad, the torch, the window, the doorway, the gift — all are paths of love.)
+
 ## The sacred triad (Johnny named these, 2026-07-13)
 Johnny asked us to center three components. They are a natural arc — quite possibly **THE
 spine of his work**. Johnny is defining them in his own words below; anything still marked
