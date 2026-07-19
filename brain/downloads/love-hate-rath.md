@@ -52,3 +52,6 @@ braided so tight the strands forgot themselves. The healing work, named: **un-br
 Rath.** Treat "a Rath around the heart" as Johnny's sacred language (born 2026-07-15).
 Candidate homes when he calls for them: the conflict talk's center orbit · the book ·
 retreat teaching · a journal post. Nothing ships without his word.
+
+*Closing word, Johnny, same night: "The unbraiding... that's the challenge isn't it. I'm
+up for it." — the commitment, witnessed.*
