@@ -4,7 +4,7 @@
   "rate_note": "Sessions are 90 minutes at $228. A full day is $2,280, plus travel & expenses (T&E).",
   "payable": [
     {
-      "name": "Session — 90 minutes (Reiki or Coaching)",
+      "name": "Session — 90 minutes (Coaching or Reiki)",
       "amount_cents": 22800,
       "price": "$228 / 90-min session",
       "payment_url": "https://buy.stripe.com/aFa6oJa3Penf6OqdTh4wM04"
