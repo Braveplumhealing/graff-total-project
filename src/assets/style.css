@@ -10,17 +10,6 @@ nav{position:fixed;top:0;left:0;right:0;height:68px;background:rgba(61,26,61,.94
 .nav-links a:hover,.nav-links a.active{color:var(--petal)}.nav-cta{background:var(--rose);color:var(--petal)!important;padding:.42rem 1.1rem;border-radius:100px}
 .hero{min-height:100vh;background:var(--plum);display:flex;align-items:center;padding-top:68px;position:relative;overflow:hidden}
 .hero-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 60% at 55% 35%,rgba(196,99,126,.28) 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 20% 75%,rgba(122,48,112,.4) 0%,transparent 55%)}
-.petals{position:absolute;inset:0;overflow:hidden;pointer-events:none}
-.p{position:absolute;top:-40px;opacity:0}.p svg{width:100%;height:100%}
-@keyframes fall{0%{transform:translateY(0) rotate(0) translateX(0);opacity:0}5%{opacity:.8}45%{transform:translateY(45vh) rotate(200deg) translateX(35px)}90%{opacity:.35}100%{transform:translateY(110vh) rotate(380deg) translateX(-25px);opacity:0}}
-.p:nth-child(1){left:7%;width:18px;height:18px;animation:fall 7s .3s ease-in-out infinite}
-.p:nth-child(2){left:19%;width:14px;height:14px;animation:fall 8.5s 1.5s ease-in-out infinite}
-.p:nth-child(3){left:31%;width:20px;height:20px;animation:fall 6.5s .9s ease-in-out infinite}
-.p:nth-child(4){left:45%;width:16px;height:16px;animation:fall 9s 2.2s ease-in-out infinite}
-.p:nth-child(5){left:58%;width:22px;height:22px;animation:fall 7.5s .1s ease-in-out infinite}
-.p:nth-child(6){left:68%;width:15px;height:15px;animation:fall 8s 3s ease-in-out infinite}
-.p:nth-child(7){left:78%;width:19px;height:19px;animation:fall 7s 1.8s ease-in-out infinite}
-.p:nth-child(8){left:88%;width:13px;height:13px;animation:fall 9.5s .6s ease-in-out infinite}
 .hero-inner{position:relative;max-width:1100px;margin:0 auto;padding:5rem 2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .eyebrow{font-size:.67rem;letter-spacing:.28em;text-transform:uppercase;color:var(--blush);margin-bottom:1.4rem;opacity:.85;display:flex;align-items:center;gap:.65rem}
 .eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--blush)}

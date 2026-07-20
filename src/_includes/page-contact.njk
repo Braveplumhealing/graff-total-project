@@ -2,7 +2,6 @@
 layout: base.njk
 ---
 <div class="ph">
-<div class="petals"></div>
 <p class="ph-ey">{{ eyebrow }}</p>
 <h1>{{ heading }}</h1>
 <p class="ph-l">{{ lead | safe }}</p>
@@ -12,7 +11,7 @@ layout: base.njk
 {% if site.contact_phone %}<p style="background:var(--petal);border:1px solid rgba(194,99,126,.15);border-radius:12px;padding:1.1rem 1.4rem">📞 Prefer to talk? Call or text <strong>Rachel</strong> at <a href="tel:{{ site.contact_phone_tel }}">{{ site.contact_phone }}</a> to book some time with Johnny.</p>{% endif %}
 <div class="form-box"><form id="cf" novalidate>
 <div class="form-row"><div class="form-group"><label for="cf-name">Your Name</label><input id="cf-name" type="text" name="name" placeholder="First &amp; last name" autocomplete="name" required></div><div class="form-group"><label for="cf-email">Email Address</label><input id="cf-email" type="email" name="email" placeholder="you@email.com" autocomplete="email" required></div></div>
-<div class="form-group"><label for="cf-topic">What brings you here?</label><select id="cf-topic" name="topic"><option value="">Select one...</option><option>Healing Workshops</option><option>Team Building / Off-site</option><option>Weekend Retreat</option><option>Mediation / Facilitation</option><option>1:1 Life Coaching</option><option>Reiki Healing Sessions</option><option>Speaking / Keynote</option><option>General Question</option></select></div>
+<div class="form-group"><label for="cf-topic">What brings you here?</label><select id="cf-topic" name="topic"><option value="">Select one...</option><option>Mediation / Facilitation</option><option>Healing Workshops</option><option>Team Building / Off-site</option><option>Weekend Retreat</option><option>1:1 Life Coaching</option><option>Reiki Healing Sessions</option><option>Speaking / Keynote</option><option>General Question</option></select></div>
 <div class="form-group"><label for="cf-message">Your Message</label><textarea id="cf-message" name="message" placeholder="Share a little about where you are and what you&rsquo;re hoping for. There are no wrong answers." required></textarea></div>
 <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
 <input type="hidden" name="subject" value="New message from braveplumhealing.com">
