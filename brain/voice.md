@@ -92,3 +92,15 @@ Spine of [[the-courage-to-change]]. Johari attribution when needed: Luft & Ingha
   resonance shelf in ideas.md). Natural homes: *Leading from the Inside Out* (the torch
   movement) or *The Aligned Life* Section 4 (why the aligned life is invisible across the
   gap). Use once per talk at most — it's a landing line, not wallpaper.
+
+## Johnny's elevator speech (HIS final wording, 2026-07-15 — blessed, use verbatim)
+> "I'm in the **gift permission business**. What is your gift — the thing your soul came
+> here to give… Most people have never been asked, because most of us were taught to
+> manage our weakness and hide our magic. My work is to help people discover their gift
+> and give them permission to express their gift to the world around them."
+
+Born from the Gift download (see brain/downloads/). This is his answer to "what do you
+do?" — hallways, Grove gatherings, discovery calls, dinner tables. Note his coinage:
+**"the gift permission business."** Ten-second trim (candidate, in his spirit — offer,
+never assume): "I'm in the gift permission business. Most of us were taught to hide our
+magic — I help people discover their gift and give them permission to share it."
