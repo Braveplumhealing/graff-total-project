@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-20 — Grove flier: origin-story blurb removed, layout rebalanced
+Johnny: remove the Brave Plum history blurb from the bottom of the Healers' Grove
+invitation. Done; on his "rebalance" the spacing was redistributed (larger blossom,
+roomier detail cards, airier type) so the card fills evenly without the story block. The
+origin story itself stays sacred in brain/business.md and on any future page Johnny
+chooses — it just no longer rides the invitation.
+
 ## 2026-07-20 — Mediation to the top · "Weekend Retreats" · falling petals retired
 Three directives from Johnny, same message: (1) **Mediation & Facilitation now leads every
 list** — nav badge ("Mediation · Workshops · Retreats"), hero eyebrow and cards, homepage
