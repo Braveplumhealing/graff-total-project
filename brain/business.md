@@ -6,7 +6,7 @@
   **Reiki as "the quiet thread"** woven through (in the shadows BY JOHNNY'S DESIGN,
   2026-07-15 — see decisions.md; never re-promote it to primary without his word). Plus
   speaking/keynotes. (Podcast REMOVED from the site 2026-07 per Johnny.)
-- **Founder & practitioner:** Johnny Graf ("Johnny"). GitHub: `Braveplumhealing`.
+- **Founder & practitioner:** Johnny Graf ("Johnny") — **last name spelled GRAF, one f** (confirmed 2026-07-20; the repo name graff-total-project is a legacy coincidence, not his name). GitHub: `Braveplumhealing`.
 - **Bookings by phone:** **Rachel** answers +1 (206) 360-9618 (call/text) and books time
   with Johnny.
 - **Email:** braveplumhealing@outlook.com (also the login identity for GitHub, Calendly,
