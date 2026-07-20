@@ -2,6 +2,19 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-15 — Reiki steps into the shadows (site hierarchy repositioned)
+Johnny's direction, verbatim intent: "The reiki healing aspect of my work needs to be
+subservient to the workshops, retreats, team building, mediation work… It gets to be in
+the shadows of the other work." Applied sitewide: **the light = Healing Workshops · Team
+Building (NEW, its own named offering at last) · Weekend Retreats · Mediation &
+Facilitation**; coaching stays strong as the 1:1 path; **Reiki = "the quiet thread"** —
+woven through copy (retreats/sessions), full card LAST on Work With Me, removed from the
+homepage hero/grid headline positions, credential kept but listed last. Nav badge now
+"Workshops · Retreats · Mediation"; hero eyebrow carries all four. Grove flier host block
+updated to match (PDFs re-rendered). "Quiet thread" is the sanctioned phrase for Reiki's
+new register. **Why:** Johnny's call on how his work is actually weighted; the site had
+Reiki as primary focus by the old designer's framing.
+
 ## 2026-07-15 — Johari stays a mention, not a dive + away-authorization
 Two directives from Johnny (spoken, same message):
 1. **Johari in The Courage to Change:** a clinical dive "will be for another day," but the

@@ -1,9 +1,11 @@
 # Business — ground truth
 
 ## Who
-- **Business:** Brave Plum Healing — life coaching, Reiki, healing workshops, weekend
-  retreats, speaking/keynotes, mediation & facilitation. (Podcast REMOVED from the site
-  2026-07 per Johnny.)
+- **Business:** Brave Plum Healing — **healing workshops, team building, weekend retreats,
+  mediation & facilitation** (the light), with 1:1 life coaching strong beside them and
+  **Reiki as "the quiet thread"** woven through (in the shadows BY JOHNNY'S DESIGN,
+  2026-07-15 — see decisions.md; never re-promote it to primary without his word). Plus
+  speaking/keynotes. (Podcast REMOVED from the site 2026-07 per Johnny.)
 - **Founder & practitioner:** Johnny Graf ("Johnny"). GitHub: `Braveplumhealing`.
 - **Bookings by phone:** **Rachel** answers +1 (206) 360-9618 (call/text) and books time
   with Johnny.
