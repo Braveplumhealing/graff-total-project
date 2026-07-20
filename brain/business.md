@@ -1,8 +1,8 @@
 # Business — ground truth
 
 ## Who
-- **Business:** Brave Plum Healing — **healing workshops, team building, weekend retreats,
-  mediation & facilitation** (the light), with 1:1 life coaching strong beside them and
+- **Business:** Brave Plum Healing — **mediation & facilitation (FIRST, per Johnny
+  2026-07-20), healing workshops, team building, weekend retreats** (the light), with 1:1 life coaching strong beside them and
   **Reiki as "the quiet thread"** woven through (in the shadows BY JOHNNY'S DESIGN,
   2026-07-15 — see decisions.md; never re-promote it to primary without his word). Plus
   speaking/keynotes. (Podcast REMOVED from the site 2026-07 per Johnny.)

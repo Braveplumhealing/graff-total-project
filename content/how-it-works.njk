@@ -15,9 +15,6 @@ eleventyExcludeFromCollections: true
 body{font-family:'Jost',sans-serif;background:var(--plum);color:var(--petal);min-height:100vh;overflow-x:hidden}
 .wrap{max-width:1000px;margin:0 auto;padding:2rem 1.5rem 6rem;position:relative;z-index:2}
 .glow{position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse 70% 60% at 55% 25%,rgba(196,99,126,.30),transparent 60%),radial-gradient(ellipse 50% 50% at 15% 80%,rgba(122,48,112,.45),transparent 55%)}
-.petals{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:1}
-.pt{position:absolute;top:-40px;opacity:0}
-@keyframes fall{0%{transform:translateY(0) rotate(0);opacity:0}8%{opacity:.7}100%{transform:translateY(110vh) rotate(360deg);opacity:0}}
 h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,5vw,3.2rem);text-align:center;line-height:1.1}
 h1 em{font-style:italic;color:var(--blush)}
 .tagline{text-align:center;color:rgba(253,232,238,.7);font-weight:300;margin:.6rem 0 1.6rem}
@@ -68,7 +65,7 @@ h1 em{font-style:italic;color:var(--blush)}
 </style>
 </head>
 <body>
-<div class="glow"></div><div class="petals" id="petals"></div>
+<div class="glow"></div>
 <div class="wrap">
 <h1>How it all works, <em>with Mary</em> 🌸</h1>
 <p class="tagline">A little self-running tour of the Brave Plum Healing machine — press play and enjoy.</p>
@@ -146,9 +143,6 @@ document.getElementById('prev').onclick=()=>go(idx-1);
 document.getElementById('play').onclick=()=>setPlay(!playing);
 go(0);
 
-// petals
-const P='<svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="5" ry="9" fill="#F2B8C6" opacity=".7"/></svg>';
-for(let i=0;i<14;i++){const d=document.createElement('div');d.className='pt';d.style.left=Math.random()*100+'%';d.style.width=(10+Math.random()*14)+'px';d.innerHTML=P;d.style.animation=`fall ${6+Math.random()*6}s ${Math.random()*6}s linear infinite`;document.getElementById('petals').appendChild(d);}
 </script>
 </body>
 </html>{% endraw %}

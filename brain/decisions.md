@@ -2,6 +2,17 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-20 — Mediation to the top · "Weekend Retreats" · falling petals retired
+Three directives from Johnny, same message: (1) **Mediation & Facilitation now leads every
+list** — nav badge ("Mediation · Workshops · Retreats"), hero eyebrow and cards, homepage
+grid, Work With Me, About offers, Book options, contact dropdown, meta/JSON-LD, Grove
+flier badge. Hierarchy now: Mediation → Workshops → Team Building → Retreats (coaching
+beside, Reiki the quiet thread). (2) **"Weekend Healing Retreats" → "Weekend Retreats"**
+("cast a broader net"). (3) **The falling-blossom animation is DELETED sitewide** — his
+words: "they feel like snowflakes and don't make sense with a plum blossom." Removed from
+base.njk script, style.css, index/404/how-it-works and all page includes. Do not
+reintroduce falling petals; static blossom marks are fine.
+
 ## 2026-07-15 — Reiki steps into the shadows (site hierarchy repositioned)
 Johnny's direction, verbatim intent: "The reiki healing aspect of my work needs to be
 subservient to the workshops, retreats, team building, mediation work… It gets to be in
