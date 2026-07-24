@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-20 — The Grove is collectively funded; BPH logo off the invitation
+Johnny: "we have decided to fund this as a collective rather than Brave Plum Healing being
+the sole sponsor." The Brave Plum host block (logo + wordmark + site URL) is removed from
+the flier's base; the invitation lines now close the card, and the top blossom stands as
+the Grove's own flower. The Grove belongs to its members — future Grove materials carry no
+sole-sponsor branding unless Johnny says otherwise.
+
 ## 2026-07-20 — Grove flier: origin-story blurb removed, layout rebalanced
 Johnny: remove the Brave Plum history blurb from the bottom of the Healers' Grove
 invitation. Done; on his "rebalance" the spacing was redistributed (larger blossom,

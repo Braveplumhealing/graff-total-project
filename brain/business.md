@@ -29,7 +29,9 @@ healers to one another, a monthly social gathering, and elevating the craft of h
 the county. **Third Thursday monthly, 6:00–8:00 PM**, rotating host locations, one
 healing-modality demonstration each month. Starts at 10–15 people; grows organically —
 each participant may invite others. Tagline: *"Rooted in Kittitas. Growing together."*
-Flier + print files: `outreach/healers-grove/`.
+**FUNDED AS A COLLECTIVE (Johnny, 2026-07-20)** — Brave Plum Healing is NOT the sole
+sponsor; BPH branding was removed from the invitation accordingly. The Grove belongs to
+its members. Flier + print files: `outreach/healers-grove/`.
 
 ## Johnny's story — the career path (his own telling, 2026-07-15)
 Deposited verbatim-faithful from Johnny's dictation. This is the ground under "years of
