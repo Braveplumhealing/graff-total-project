@@ -38,7 +38,7 @@ tagline "Rooted in Kittitas County, Growing here Together"; closing: "…support
 and celebrates each one of us as we are. Bring your loving heart and curious nature.").
 **Distribution strategy: the flier stays EVERGREEN (no date printed)** — mass-printed so
 attendees take cards home at each gathering's end to invite others the following month.
-Flier + print files: `outreach/healers-grove/`.
+Flier + print files: `outreach/healers-grove/`. **Sent to the printer 2026-07-29** — physical cards in production for the Sept 17 first gathering.
 
 ## Johnny's story — the career path (his own telling, 2026-07-15)
 Deposited verbatim-faithful from Johnny's dictation. This is the ground under "years of
