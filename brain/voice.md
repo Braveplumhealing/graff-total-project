@@ -104,3 +104,11 @@ do?" — hallways, Grove gatherings, discovery calls, dinner tables. Note his co
 **"the gift permission business."** Ten-second trim (candidate, in his spirit — offer,
 never assume): "I'm in the gift permission business. Most of us were taught to hide our
 magic — I help people discover their gift and give them permission to share it."
+
+## The organic-growth principle (Johnny, verbatim, 2026-07-29)
+> "I do not desire to chase the dollar — rather I desire the dollars to find me on
+> purpose."
+
+Governing test for ALL growth/marketing moves (business plan, social media, offers):
+would this chase, or make us findable on purpose? Chasing fails the test. See
+docs/BUSINESS-PLAN-2027.md.

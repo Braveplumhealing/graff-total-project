@@ -66,7 +66,8 @@ professional success that left him feeling hollow" — and the source material f
    though the superintendent's path stood open.
 8. **The past 8 years:** "my journey… has been to **reclaim my own gifts and express them
    to the world.**" (verbatim) → coaching, Reiki mastery, mediation training, the book
-   (*Soulnapped*), retreats, Brave Plum Farm, and now Brave Plum Healing + The Healers' Grove.
+   (*Soulnapped* — **retitle in progress, 2026-07-29: "We Endeavor Forth"**), retreats,
+   Brave Plum Farm, and now Brave Plum Healing + The Healers' Grove.
 
 
 **THE MOMENT (told in *Soulnapped*; retold by Johnny 2026-07-15 — the sacred interruption

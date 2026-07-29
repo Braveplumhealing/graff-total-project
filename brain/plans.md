@@ -1,5 +1,13 @@
 # Plans — the roadmap for every element
 
+**⭐ THE MASTER PLAN: `docs/BUSINESS-PLAN-2027.md` — "The Chair Test"** (2026-07-29).
+Johnny's eight accomplishments for July 29, 2027, with paths, the 90-day list, and the
+quarter map. The sections below serve it; when they conflict, the Chair Test wins.
+Johnny's 2027 vision, verbatim summary: brand established · practice 3–5 clients/week ·
+online workshops live · retreats established & well executed · healthy non-overwhelming
+social presence · organic growth ("dollars find me on purpose") · website as the engine ·
+book published as **"We Endeavor Forth"**.
+
 Each element: where we are → **Now** (this month) → **Next** (this quarter) → **Later**.
 Every "Now" item has a first move Johnny can trigger with one plain sentence to Mr Rogers.
 

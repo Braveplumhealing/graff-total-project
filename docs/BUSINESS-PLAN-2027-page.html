@@ -1,0 +1,166 @@
+<title>Brave Plum Healing — The Chair Test (Plan to July 2027)</title>
+<style>
+:root{
+  --plum:#3D1A3D; --rose:#C4637E; --blush:#F2B8C6; --petal:#FDE8EE; --cream:#FDF5F0;
+  --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826;
+  --muted:#84677A; --line:rgba(61,26,61,.12); --accent:var(--rose); --heading:#3D1A3D;
+  --hero-ink:#FDE8EE; --hero-sub:#E7B9C8;
+  --serif:"Cormorant Garamond",Palatino,"Palatino Linotype",Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15);
+    --heading:#F2B8C6; --hero-ink:#FDE8EE; --hero-sub:#E3A9BC; }
+}
+:root[data-theme="light"]{ --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826; --muted:#84677A; --line:rgba(61,26,61,.12); --heading:#3D1A3D; }
+:root[data-theme="dark"]{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15); --heading:#F2B8C6; }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
+
+.hero{background:var(--plum);color:var(--hero-ink);padding:64px 24px 60px;position:relative;overflow:hidden;text-align:center}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 30%,rgba(196,99,126,.30),transparent 65%);pointer-events:none}
+.hero-inner{max-width:760px;margin:0 auto;position:relative}
+.hero .bloom{width:58px;height:58px;margin:0 auto 18px;display:block}
+.eyebrow{font-family:var(--sans);font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--blush);opacity:.85;margin:0 0 20px}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.5rem,6.5vw,4.1rem);line-height:1.04;margin:0;color:var(--hero-ink);text-wrap:balance}
+.hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--hero-sub);margin:18px auto 0;max-width:46ch;line-height:1.4;text-wrap:balance}
+.hero .meta{margin-top:26px;display:inline-flex;flex-wrap:wrap;gap:10px 14px;justify-content:center;font-size:.75rem;letter-spacing:.02em}
+.hero .meta span{border:1px solid rgba(253,232,238,.28);border-radius:999px;padding:5px 13px;color:var(--blush)}
+
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,3.6vw,2.15rem);line-height:1.15;color:var(--heading);margin:64px 0 6px;padding-top:22px;border-top:1px solid var(--line);text-wrap:balance}
+h3{font-family:var(--serif);font-weight:500;font-size:1.3rem;color:var(--rose);margin:34px 0 4px}
+p{margin:14px 0;max-width:68ch}
+strong{color:var(--ink);font-weight:700}
+a{color:var(--rose)}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.86em;background:var(--petal);color:#7A3070;padding:1px 6px;border-radius:5px}
+
+ul{list-style:none;margin:14px 0;padding:0;max-width:68ch}
+li{position:relative;padding-left:26px;margin:9px 0;line-height:1.65}
+li::before{content:"\2767";position:absolute;left:0;top:0;color:var(--blush);font-size:.95em}
+
+blockquote{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.35rem,3.2vw,1.75rem);line-height:1.42;color:var(--rose);margin:30px 0;padding:6px 0 6px 26px;border-left:3px solid var(--blush);max-width:60ch;text-wrap:balance}
+
+.callout{background:var(--petal);border-left:4px solid var(--rose);border-radius:0 10px 10px 0;padding:18px 22px;margin:22px 0;max-width:68ch;color:#4A2340}
+:root[data-theme="dark"] .callout{background:rgba(196,99,126,.14);color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .callout{background:rgba(196,99,126,.14);color:var(--ink)}}
+.callout.big{border-left-color:var(--plum)}
+:root[data-theme="dark"] .callout.big{border-left-color:var(--blush)}
+.clabel{display:block;font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin-bottom:6px}
+
+.timing{display:inline-block;background:var(--plum);color:var(--blush);font-family:var(--sans);font-size:.76rem;letter-spacing:.03em;padding:5px 13px;border-radius:999px;margin:12px 0}
+.timing::before{content:"\25F7\00A0";opacity:.9}
+.timing strong{color:var(--petal);font-weight:600}
+
+.mv{display:inline-block;font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7A3070;background:var(--petal);border:1px solid rgba(196,99,126,.25);padding:2px 10px;border-radius:999px;margin-left:8px;vertical-align:middle}
+:root[data-theme="dark"] .mv{background:rgba(196,99,126,.16);color:var(--blush)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .mv{background:rgba(196,99,126,.16);color:var(--blush)}}
+
+.note{display:block;background:transparent;border-left:2px solid var(--blush);color:var(--muted);font-size:.92rem;line-height:1.6;padding:2px 0 2px 18px;margin:16px 0;max-width:66ch;font-style:italic}
+
+.fill{background:linear-gradient(transparent 62%, var(--blush) 62%);padding:0 2px;color:var(--ink);border-radius:2px}
+.fill-tag{display:inline-block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--rose);padding:1px 6px;border-radius:4px;margin-right:6px;vertical-align:middle;transform:translateY(-1px)}
+.done-tag{display:inline-block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:#6B8F6B;padding:1px 6px;border-radius:4px;margin-right:6px;vertical-align:middle;transform:translateY(-1px)}
+
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:3px}
+
+@media (prefers-reduced-motion:no-preference){
+  .wrap>*,.hero-inner>*{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+  .hero-inner>*:nth-child(2){animation-delay:.05s}
+  .hero-inner>*:nth-child(3){animation-delay:.1s}
+  .hero-inner>*:nth-child(4){animation-delay:.15s}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<div class="hero"><div class="hero-inner">
+  <svg class="bloom" viewBox="-40 -40 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Brave Plum Healing blossom"><defs><radialGradient id="bplana" cx="50%" cy="85%" r="85%"><stop offset="0%" stop-color="#FDE8EE"/><stop offset="55%" stop-color="#F2B8C6"/><stop offset="100%" stop-color="#EDA5BA"/></radialGradient><radialGradient id="bplanb" cx="50%" cy="85%" r="85%"><stop offset="0%" stop-color="#FBD9E2"/><stop offset="60%" stop-color="#EDA5BA"/><stop offset="100%" stop-color="#E293AC"/></radialGradient></defs><g transform="rotate(-6)"><g transform="rotate(0)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bplana)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(72)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bplanb)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(144)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bplana)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(216)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bplanb)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><g transform="rotate(288)"><path d="M0 -1C-11.2 -3 -16 -16.2 -13.12 -27C-10.56 -34.92 -4.48 -36 -3 -34C-1 -32.8 1 -32.8 3 -34C4.48 -36 10.56 -34.92 13.12 -27C16 -16.2 11.2 -3 0 -1Z" fill="url(#bplana)" fill-opacity=".8"/><path d="M0 -8C-1.2 -16 -1.2 -24 0 -31" stroke="#E293AC" stroke-width=".8" fill="none" stroke-opacity=".48" stroke-linecap="round"/></g><circle r="4.2" fill="#FDE8EE" fill-opacity=".95"/><path d="M0 -3.2Q0.39 -6.57 0 -11.96" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="0" cy="-11.96" r="1.5" fill="#C4637E"/><path d="M2.35 -2.18Q4.01 -3.3 6.92 -6.42" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="6.92" cy="-6.42" r="1.5" fill="#C4637E"/><path d="M3.19 -0.2Q4.83 -0.01 8.77 -0.54" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="8.77" cy="-0.54" r="1.5" fill="#C4637E"/><path d="M2.81 1.54Q5.67 3.57 10.68 5.85" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="10.68" cy="5.85" r="1.5" fill="#C4637E"/><path d="M1.48 2.83Q1.87 4.17 3.85 7.36" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="3.85" cy="7.36" r="1.5" fill="#C4637E"/><path d="M-0.79 3.1Q-1.69 5.28 -2.5 9.76" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-2.5" cy="9.76" r="1.5" fill="#C4637E"/><path d="M-2.84 1.48Q-5.82 2.6 -10.28 5.35" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-10.28" cy="5.35" r="1.5" fill="#C4637E"/><path d="M-3.04 -0.98Q-4 -1.56 -7.43 -2.4" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-7.43" cy="-2.4" r="1.5" fill="#C4637E"/><path d="M-1.85 -2.61Q-3.29 -5.29 -6.55 -9.25" stroke="#FDE8EE" stroke-width=".9" fill="none" stroke-linecap="round"/><circle cx="-6.55" cy="-9.25" r="1.5" fill="#C4637E"/></g></svg>
+  <p class="eyebrow">Business plan &#183; The year to July 29, 2027</p>
+  <h1>The Chair&nbsp;Test</h1>
+  <p class="sub">"If I were sitting in this chair on July 29th of 2027, this is what I would have wanted to accomplish."</p>
+  <div class="meta"><span>Eight accomplishments</span><span>90-day list &#183; four quarters</span><span>Brave Plum Healing</span></div>
+</div></div>
+
+<main class="wrap">
+<div class="callout big"><span class="clabel">The governing principle — Johnny, verbatim</span>"I do not desire to chase the dollar &mdash; rather I desire the dollars to find me on purpose." <em>Every move in this plan is tested against that sentence: organic, warm, on purpose. Nothing pushy, nothing hyped.</em></div>
+
+<h2>The eight accomplishments <span class="mv">the north wall</span></h2>
+<ul>
+<li><strong>1. Brave Plum Healing established as a brand.</strong></li>
+<li><strong>2. The healing practice at 3&ndash;5 clients per week.</strong></li>
+<li><strong>3. Online workshops published</strong> &mdash; supporting healers, seekers, enlightened humans.</li>
+<li><strong>4. Weekend retreats established and well executed.</strong></li>
+<li><strong>5. A healthy social media presence</strong> that overwhelms neither Johnny nor the viewer.</li>
+<li><strong>6. Organic growth</strong> &mdash; dollars finding Johnny on purpose.</li>
+<li><strong>7. The website working as the engine</strong> for all of the above and everything yet to come.</li>
+<li><strong>8. The book published</strong> &mdash; <em>"We Endeavor Forth"</em> (retitled from <em>Soulnapped, the Eagle in the Coop</em>) &mdash; supporting the growth of Brave Plum.</li>
+</ul>
+
+<h2>The foundation already under our feet</h2>
+<p>Johnny Graf &mdash; 25 years an educator, 8 years reclaiming his gifts; trained mediator, workshop &amp; retreat facilitator, certified coach, author, Reiki master. <strong>The gift permission business.</strong> Philosophy: <em>we come from love, we return to love, and the work between is to nurture a path of love.</em></p>
+<p>In hand today: the live, honest website &middot; confirmed prices ($228 session &middot; $2,280 day &middot; free discovery call as the only front door) &middot; four stage-ready keynotes &middot; <strong>The Healers&rsquo; Grove, first gathering September 17, 2026</strong> (cards at the printer) &middot; the book manuscript &middot; Brave Plum Farm on the horizon &middot; an agent neighborhood doing every technical thing.</p>
+
+<h2>Each accomplishment, and its path</h2>
+
+<h3>1 &middot; The brand</h3>
+<p><strong>Today:</strong> site live and true; blossom settled; voice defined. <strong>Path:</strong> brand is repetition of the true thing in public &mdash; Grove monthly, talks when booked, the book, a gentle content rhythm; same blossom, palette, voice everywhere. <strong>The chair measure:</strong> Kittitas County says "Brave Plum" and knows what it means without Johnny in the room.</p>
+
+<h3>2 &middot; The practice: 3&ndash;5 clients a week</h3>
+<p><strong>Today:</strong> the funnel exists (discovery call &rarr; sessions &rarr; packages); current weekly average <span class="fill"><span class="fill-tag">Johnny</span> your honest number today, so the gap is real</span>. <strong>Path:</strong> flow into the top &mdash; every Grove night, talk, and workshop ends with the same soft bridge, once, no pressure. At $228, 3&ndash;5/week &asymp; $2,700&ndash;5,700/month of calm core income.</p>
+
+<h3>3 &middot; Online workshops <span class="mv">the biggest build</span></h3>
+<p><strong>Today:</strong> new territory &mdash; the site speaks only of in-person. <strong>Path (crawl &rarr; walk &rarr; run):</strong> one workshop Johnny already teaches, delivered live over video this fall &middot; a small self-serve recorded library in winter &middot; a recurring online rhythm by spring, feeding retreat waitlists. <span class="fill"><span class="fill-tag">Johnny</span> which workshop first, live or recorded</span></p>
+
+<h3>4 &middot; Weekend retreats</h3>
+<p><strong>Today:</strong> beautifully described; none yet run through the site <span class="fill"><span class="fill-tag">Johnny</span> past-retreat history in one sentence, so the page stays true</span>. <strong>Path:</strong> ONE retreat, executed with love, before July 2027. Season + venue decision this fall (the Farm if ready, borrowed if not) &middot; 6&ndash;14 souls &middot; deposits through existing Stripe &middot; the Grove and workshop rooms are the natural first invitees. The neighborhood carries every logistic; Johnny only holds the room.</p>
+
+<h3>5 &middot; The quiet garden (social media)</h3>
+<p><strong>Path:</strong> ONE channel only <span class="fill"><span class="fill-tag">Johnny</span> which one &mdash; where your people actually are</span> &middot; a fixed gentle rhythm (&asymp;2 posts/week) &middot; Johnny speaks seeds, the crew drafts in his voice, the PR gate approves, nothing daily, nothing performative. <strong>Guardrail:</strong> if it ever feels like performing, we shrink it &mdash; the channel must obey the talks.</p>
+
+<h3>6 &middot; Organic growth</h3>
+<p>Not a workstream &mdash; <strong>the test applied to everything else:</strong> does this move chase a dollar, or make us easier to find on purpose? The findability work is already chosen: honest SEO (done), the Grove&rsquo;s hand-to-hand cards, the talks&rsquo; single soft bridge, the book. Nothing else.</p>
+
+<h3>7 &middot; The website as the engine</h3>
+<p><strong>Today:</strong> live, true, hierarchy-corrected; missing events, the online-workshop surface, the book page, confirmed stats <span class="fill"><span class="fill-tag">Johnny</span> real homepage numbers &mdash; or "retire the tiles"</span>. <strong>Path:</strong> one new cylinder per quarter &mdash; events/workshops (fall) &rarr; online library (winter) &rarr; retreat page with deposits (winter/spring) &rarr; book page (when she&rsquo;s ready).</p>
+
+<h3>8 &middot; The book: <em>We Endeavor Forth</em></h3>
+<p><strong>Today:</strong> the manuscript is the single most important un-backed-up asset in the business &mdash; it has never reached the vault. <strong>Path:</strong> (1) Desktop drop, the crew vaults it &mdash; this week; (2) editing on Johnny&rsquo;s rhythm; (3) publishing route decision when ready; (4) the site grows a book page. The book is the deepest "found on purpose" engine there is.</p>
+
+<h2>The next 90 days <span class="mv">Aug &rarr; Oct 2026</span></h2>
+<ul>
+<li><strong>Guard the manuscript</strong> &mdash; Desktop drop, vaulted same day.</li>
+<li><strong>Launch the Grove well</strong> (Sept 17) &mdash; then tell the brain how it felt.</li>
+<li><strong>True numbers on the homepage</strong> &mdash; real stats, or retire the tiles.</li>
+<li><strong>Turn on the site&rsquo;s eyes</strong> &mdash; GoatCounter, one concierge click.</li>
+<li><strong>Verify the money path</strong> &mdash; one real checkout; deactivate the two stale Stripe links (taps prepared).</li>
+<li><strong>Date the first workshop</strong> and let the site sell it.</li>
+<li><strong>Choose the one channel</strong> and bless the quiet-garden rhythm.</li>
+<li><strong>Sketch the retreat</strong> &mdash; season + venue direction only.</li>
+</ul>
+
+<h2>Four quarters to the chair</h2>
+<p class="timing"><strong>Q3 2026</strong></p>
+<p>The 90 days above: Grove launched, manuscript safe, engine instrumented, first workshop dated.</p>
+<p class="timing"><strong>Q4 2026</strong></p>
+<p>First workshop delivered (live online counts) &middot; library crawl begins &middot; social rhythm steady &middot; retreat venue booked.</p>
+<p class="timing"><strong>Q1 2027</strong></p>
+<p>Retreat selling via the site &middot; 2&ndash;3 recorded offerings &middot; practice trending to 3&ndash;5/week &middot; book editing under the new title.</p>
+<p class="timing"><strong>Q2 2027</strong></p>
+<p><strong>The retreat runs.</strong> Publishing route executed or scheduled &middot; online workshops self-serving &middot; the eight reviewed from the chair, honestly, one by one.</p>
+
+<h2>What this plan asks of Johnny &mdash; the complete list</h2>
+<p>Spoken sentences, one-tap decisions, single clicks; the neighborhood does everything else:</p>
+<ul>
+<li>Drop the manuscript on the Desktop (once).</li>
+<li>Real homepage stats &mdash; or "retire the tiles."</li>
+<li>Your current weekly client average, honestly.</li>
+<li>Past-retreat history in one sentence.</li>
+<li>First workshop: which one, live or recorded.</li>
+<li>The one social channel.</li>
+<li>Retreat season + venue direction.</li>
+<li>GoatCounter click + two Stripe deactivation taps (both concierge-prepared).</li>
+</ul>
+
+<aside class="note"><em>Working truth lives in <code>docs/BUSINESS-PLAN-2027.md</code>; the crew re-reads it monthly and flags drift. Beyond the chair: Brave Plum Farm as the physical space, the healer network (the Grove is its front porch), bigger stages, and</em> We Endeavor Forth <em>doing its quiet work in strangers&rsquo; hands.</em></aside>
+</main>
