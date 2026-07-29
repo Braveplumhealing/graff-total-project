@@ -31,7 +31,14 @@ healing-modality demonstration each month. Starts at 10–15 people; grows organ
 each participant may invite others. Tagline: *"Rooted in Kittitas. Growing together."*
 **FUNDED AS A COLLECTIVE (Johnny, 2026-07-20)** — Brave Plum Healing is NOT the sole
 sponsor; BPH branding was removed from the invitation accordingly. The Grove belongs to
-its members. Flier + print files: `outreach/healers-grove/`.
+its members. **FIRST GATHERING: Thursday, September 17, 2026** (a third Thursday; final
+planning meeting held 2026-07). **Official spelling confirmed by Johnny 2026-07-24: "The
+Healers' Grove"** (plural possessive). Flier copy is the planning circle's own (2026-07 —
+tagline "Rooted in Kittitas County, Growing here Together"; closing: "…supports, inspires,
+and celebrates each one of us as we are. Bring your loving heart and curious nature.").
+**Distribution strategy: the flier stays EVERGREEN (no date printed)** — mass-printed so
+attendees take cards home at each gathering's end to invite others the following month.
+Flier + print files: `outreach/healers-grove/`.
 
 ## Johnny's story — the career path (his own telling, 2026-07-15)
 Deposited verbatim-faithful from Johnny's dictation. This is the ground under "years of

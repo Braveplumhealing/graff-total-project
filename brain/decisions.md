@@ -2,6 +2,14 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-24 — Grove: circle's flier copy, first date Sept 17, evergreen strategy
+From Johnny's final planning meeting: **first gathering Thursday, September 17, 2026.**
+Flier copy revised to the circle's own words (new tagline, warmer closing invitation,
+"a healing craft"); spelling settled as **The Healers' Grove**; the flier stays
+**evergreen — no date printed** because it's mass-printed as a take-home card: attendees
+carry cards out at each gathering's end to invite others for the following month. The
+invitation is the growth engine, by design.
+
 ## 2026-07-20 — The Grove is collectively funded; BPH logo off the invitation
 Johnny: "we have decided to fund this as a collective rather than Brave Plum Healing being
 the sole sponsor." The Brave Plum host block (logo + wordmark + site URL) is removed from
