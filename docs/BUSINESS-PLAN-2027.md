@@ -115,8 +115,9 @@ online library (winter) → retreat page with deposits (winter/spring) → book 
 **"We Endeavor Forth"** is Johnny's stated intent. The manuscript has still never
 reached the vault (the OneDrive share failed months ago) — it remains the single most
 important un-backed-up asset in the business.
-**The path:** (1) get the manuscript into safe keeping NOW — Desktop drop, the crew
-fetches (the portrait pattern); (2) editing on Johnny's rhythm (⚠ editor plans his
+**The path:** (1) ✅ DONE 2026-07-30 — manuscript vaulted via Desktop drop (private local
+vault, checksummed) and the second-draft goalsheet is set (4 phases, to editor Jan 31,
+2027 — 📖 artifact page); (2) editing on Johnny's rhythm (⚠ editor plans his
 call); (3) publishing route decision (⚠ self-publish vs traditional); (4) the site
 grows a book page; the talks already quote it; the Grove and workshops become its first
 rooms. The book is the deepest "found on purpose" engine there is.
