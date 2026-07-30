@@ -3,8 +3,9 @@
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
 ## 2026-07-30 — Book subtitle sealed; The Threshold is the placeholder cover
-Johnny's final wording (his "ahead" added): **"We Endeavor Forth — Bravery for the road,
-courage for the weather, resolution for the journey ahead."** Cover: **The Threshold**
+Johnny's final wording (his third pass, same day — supersedes the road/weather drafts):
+**"We Endeavor Forth — Bravery for the moment, Courage for the Choice, Resolution for
+the journey ahead."** Cover: **The Threshold**
 concept (doorway onto storm and mountains, one figure stepping through, warm light at the
 feet) is the working placeholder "for right now" — refined mockup rendered with full
 title/subtitle/author; PNG + source in the private vault and on Johnny's Desktop. Final

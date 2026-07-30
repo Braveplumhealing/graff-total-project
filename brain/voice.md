@@ -113,7 +113,7 @@ Governing test for ALL growth/marketing moves (business plan, social media, offe
 would this chase, or make us findable on purpose? Chasing fails the test. See
 docs/BUSINESS-PLAN-2027.md.
 
-- **"Bravery for the road, courage for the weather, resolution for the journey ahead."** (FINAL wording — Johnny added "ahead," 2026-07-30; sealed as the working subtitle.)
+- **"Bravery for the moment, Courage for the Choice, Resolution for the journey ahead."** (FINAL — Johnny's own third pass, 2026-07-30, supersedes "road/weather" versions; his capitalization kept. The teaching in temporal order: the moment → the choice → the journey. Sealed as the working subtitle of *We Endeavor Forth*.)
   (2026-07-30 — Johnny: "I love the tagline.") Born from his cover feeling-words for
   *We Endeavor Forth*; candidate book subtitle/tagline — portable to any cover concept,
   the back cover, the book page, and launch materials. Use with the book only (it belongs
