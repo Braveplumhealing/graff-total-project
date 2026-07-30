@@ -118,3 +118,13 @@ docs/BUSINESS-PLAN-2027.md.
   *We Endeavor Forth*; candidate book subtitle/tagline — portable to any cover concept,
   the back cover, the book page, and launch materials. Use with the book only (it belongs
   to her), pending his final subtitle decision.
+
+## Bravery vs. Courage (Johnny's exact words, 2026-07-30 — sacred distinction)
+> "Bravery faces down the danger around you, Courage transforms the world within you."
+
+His own doctrine: bravery = outward, meeting the external danger; courage = inward, the
+transformation of the inner world. This is the KEY to the book's subtitle ("Bravery for
+the moment" = the outer danger arriving; "Courage for the Choice" = the inner turning) and
+deepens the courage teaching in [[the-courage-to-change]] (courage as inner work —
+grounded, feedback-fed, transformative). Quote verbatim; never blur the two words in his
+copy again — they are technical terms now.
