@@ -2,6 +2,16 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-30 — THE EAGLE IS RETIRED: "The book is for humans"
+Johnny, as author: "I am walking away from the eagle story and my edits will reflect
+that. The book is for humans." The eagle/coop imagery — already cut from The Aligned Life
+talk at his request (2026-07-13) — now leaves the book itself; second-draft edits will
+remove it. Standing rule for ALL agents and copy: **do not use eagle/coop imagery for
+Johnny's work going forward**; the animal images (horse, eagle, dragon) were mirrors whose
+work is complete — the human is the subject now. (The Mike Beck horse MOMENT remains his
+true biographical story and stays where he's placed it; the dragon poem remains a private
+vault treasure.) Cover direction follows: human imagery, human language.
+
 ## 2026-07-24 — Grove: circle's flier copy, first date Sept 17, evergreen strategy
 From Johnny's final planning meeting: **first gathering Thursday, September 17, 2026.**
 Flier copy revised to the circle's own words (new tagline, warmer closing invitation,
