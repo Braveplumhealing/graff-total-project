@@ -128,3 +128,13 @@ the moment" = the outer danger arriving; "Courage for the Choice" = the inner tu
 deepens the courage teaching in [[the-courage-to-change]] (courage as inner work —
 grounded, feedback-fed, transformative). Quote verbatim; never blur the two words in his
 copy again — they are technical terms now.
+
+## The Two Arrows doctrine (Johnny's exact words, 2026-07-30)
+His tattoos, made teaching: left ring finger = straight arrow; right = crooked arrow.
+> "My left hand, the straight arrow, is about control and ego, while my right hand is
+> about my authentic journey and surrendering to the crooked path. **The left hand
+> targets while the right hand receives.**"
+
+Candidate spine-image for the book's new introduction (see vault viewpoint letter). Maps
+onto his bravery/courage distinction: targeting = outward/bravery, receiving =
+inward/courage. His body carries the doctrine; quote verbatim, never paraphrase.
