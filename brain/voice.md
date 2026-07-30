@@ -112,3 +112,9 @@ magic — I help people discover their gift and give them permission to share it
 Governing test for ALL growth/marketing moves (business plan, social media, offers):
 would this chase, or make us findable on purpose? Chasing fails the test. See
 docs/BUSINESS-PLAN-2027.md.
+
+- **"Bravery for the road, courage for the weather, resolution for the journey."**
+  (2026-07-30 — Johnny: "I love the tagline.") Born from his cover feeling-words for
+  *We Endeavor Forth*; candidate book subtitle/tagline — portable to any cover concept,
+  the back cover, the book page, and launch materials. Use with the book only (it belongs
+  to her), pending his final subtitle decision.
