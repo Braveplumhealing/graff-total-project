@@ -116,11 +116,15 @@ online library (winter) → retreat page with deposits (winter/spring) → book 
 reached the vault (the OneDrive share failed months ago) — it remains the single most
 important un-backed-up asset in the business.
 **The path:** (1) ✅ DONE 2026-07-30 — manuscript vaulted via Desktop drop (private local
-vault, checksummed) and the second-draft goalsheet is set (4 phases, to editor Jan 31,
-2027 — 📖 artifact page); (2) editing on Johnny's rhythm (⚠ editor plans his
-call); (3) publishing route decision (⚠ self-publish vs traditional); (4) the site
-grows a book page; the talks already quote it; the Grove and workshops become its first
-rooms. The book is the deepest "found on purpose" engine there is.
+vault, checksummed). **TIMELINE TRUNCATED BY THE AUTHOR (2026-07-30): the world revolves
+around the book — final polish complete SEPTEMBER 30, 2026** (compressed goalsheet: 📖
+artifact page + private vault; two chapters/week, whole-cycle read mid-Sept, polish by
+month's end); (2) editor's final round (Oct 2026); (3) publishing route decision (⚠ self-publish vs
+traditional); (4) the site grows a book page; (5) **THE BOOK LAUNCH CEREMONY & SIGNING**
+(added by Johnny 2026-07-30) — a real gathering to send her into the world; venue/date
+⚠ Johnny's call once the route is chosen (Brave Plum Farm and the Grove community are
+natural candidates); the neighborhood builds the invitation, page, and RSVP when he says
+the word. The book is the deepest "found on purpose" engine there is.
 
 ---
 
@@ -180,6 +184,7 @@ Spoken sentences, one-tap decisions, or single clicks; the crew does everything 
 3. Weekly client average today (so #2's gap is honest). ⚠
 4. Past-retreat history in one sentence (so #4's page stays true). ⚠
 5. First workshop: which one, live or recorded. ⚠
+6. Book launch ceremony: venue + date, once the publishing route is chosen. ⚠
 6. The one social channel. ⚠
 7. Retreat season + venue direction. ⚠
 8. GoatCounter click + two Stripe deactivation taps (both concierge-prepared).

@@ -66,7 +66,7 @@ professional success that left him feeling hollow" — and the source material f
    though the superintendent's path stood open.
 8. **The past 8 years:** "my journey… has been to **reclaim my own gifts and express them
    to the world.**" (verbatim) → coaching, Reiki mastery, mediation training, the book
-   (*Soulnapped* — **retitle in progress: "We Endeavor Forth"; MANUSCRIPT VAULTED 2026-07-30** — checksummed copies in Johnny's private local vault, NEVER in this public repo; measured 4 parts / 9 chapters + intro / ~22.5k words; second-draft goalsheet set with his mentor — target to editor Jan 31, 2027; goalsheet in the private vault + his 📖 artifact page), retreats,
+   (*Soulnapped* — **retitle in progress: "We Endeavor Forth"; MANUSCRIPT VAULTED 2026-07-30** — checksummed copies in Johnny's private local vault, NEVER in this public repo; measured 4 parts / 9 chapters + intro / ~22.5k words; second-draft goalsheet TRUNCATED by the author 2026-07-30: world revolves around the book, final polish complete SEPT 30, 2026; a BOOK LAUNCH CEREMONY & SIGNING is now part of the business plan (venue/date his call); goalsheet in the private vault + his 📖 artifact page), retreats,
    Brave Plum Farm, and now Brave Plum Healing + The Healers' Grove.
 
 
