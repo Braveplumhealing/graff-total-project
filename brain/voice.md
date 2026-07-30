@@ -113,7 +113,7 @@ Governing test for ALL growth/marketing moves (business plan, social media, offe
 would this chase, or make us findable on purpose? Chasing fails the test. See
 docs/BUSINESS-PLAN-2027.md.
 
-- **"Bravery for the road, courage for the weather, resolution for the journey."**
+- **"Bravery for the road, courage for the weather, resolution for the journey ahead."** (FINAL wording — Johnny added "ahead," 2026-07-30; sealed as the working subtitle.)
   (2026-07-30 — Johnny: "I love the tagline.") Born from his cover feeling-words for
   *We Endeavor Forth*; candidate book subtitle/tagline — portable to any cover concept,
   the back cover, the book page, and launch materials. Use with the book only (it belongs

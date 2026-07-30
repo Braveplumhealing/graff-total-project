@@ -2,6 +2,14 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-07-30 — Book subtitle sealed; The Threshold is the placeholder cover
+Johnny's final wording (his "ahead" added): **"We Endeavor Forth — Bravery for the road,
+courage for the weather, resolution for the journey ahead."** Cover: **The Threshold**
+concept (doorway onto storm and mountains, one figure stepping through, warm light at the
+feet) is the working placeholder "for right now" — refined mockup rendered with full
+title/subtitle/author; PNG + source in the private vault and on Johnny's Desktop. Final
+cover decision waits for the publishing route; the four concepts remain on file.
+
 ## 2026-07-30 — THE EAGLE IS RETIRED: "The book is for humans"
 Johnny, as author: "I am walking away from the eagle story and my edits will reflect
 that. The book is for humans." The eagle/coop imagery — already cut from The Aligned Life
