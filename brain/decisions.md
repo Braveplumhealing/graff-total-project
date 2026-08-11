@@ -2,6 +2,19 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-11 — braveplumhealing.org will FORWARD to braveplumhealing.com
+Johnny's call (one tap, this session): don't delete the WordPress site, don't hand-maintain
+two sites — forward .org → .com. **Why:** the sites had already drifted (.org still led
+"Life Coaching · Reiki · Retreats" while .com leads "Mediation · Workshops · Retreats"),
+sync is retired (2026-06-07 decision stands), and deletion would dead-end old links.
+Setup is Johnny's clicks in WordPress.com (Tier 2 adjacent — account/purchase); Mr Rogers
+prepares the click-path. DNS fact: .org nameservers are ns1–3.wordpress.com, so the
+forward happens inside WordPress.com (Site Redirect), not at a registrar.
+Interim fix, same day (see ledger): on the .org homepage, the theme header bar rendered
+"Brave Plum Healing" in near-black on dark plum (unreadable, empty nav) — hidden via the
+page's `bph-design` style block; wordmark added into the hero in Cormorant Garamond petal.
+Backup: WP revisions + session scratchpad copy. Only the homepage was touched.
+
 ## 2026-07-24 — Grove: circle's flier copy, first date Sept 17, evergreen strategy
 From Johnny's final planning meeting: **first gathering Thursday, September 17, 2026.**
 Flier copy revised to the circle's own words (new tagline, warmer closing invitation,
