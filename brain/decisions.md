@@ -2,6 +2,17 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-11 — Homepage hero broadened to include business/team work
+Johnny: the old opening ("A gentle space to come back to yourself" + aligned-life line)
+was beloved but "excludes the work that pays the bills." From three drafted options he
+chose **"Find the way forward"** — new hero, verbatim:
+**"A gentle space to find the way *forward* — Whether you arrive on your own or with your
+whole team, Johnny creates a warm, steady sanctuary — where conflict softens, trust
+rebuilds, and what matters most comes gently into focus."**
+**Why:** widens the door to businesses, teams, corporations (the mediation/workshops/
+team-building revenue work) while keeping the sanctuary voice. The retired personal line
+stays available for personal-page use. PR: hero-way-forward branch.
+
 ## 2026-08-11 — braveplumhealing.org will FORWARD to braveplumhealing.com
 Johnny's call (one tap, this session): don't delete the WordPress site, don't hand-maintain
 two sites — forward .org → .com. **Why:** the sites had already drifted (.org still led
