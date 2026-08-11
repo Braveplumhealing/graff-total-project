@@ -10,6 +10,12 @@ sync is retired (2026-06-07 decision stands), and deletion would dead-end old li
 Setup is Johnny's clicks in WordPress.com (Tier 2 adjacent — account/purchase); Mr Rogers
 prepares the click-path. DNS fact: .org nameservers are ns1–3.wordpress.com, so the
 forward happens inside WordPress.com (Site Redirect), not at a registrar.
+**DONE same day (ledger #88):** Johnny set the forward himself via WordPress.com Domain
+forwarding (permanent 301, root domain, paths → homepage; WP site's primary address moved
+to braveplumhealing-onbai.wpcomstaging.com first — required to free the root). Verified
+externally: https/http/www .org variants all land on braveplumhealing.com (200). The .org
+domain renews (auto-renew on, paid to May 2027) so the forward persists; the WP site
+itself still exists untouched behind the free address.
 Interim fix, same day (see ledger): on the .org homepage, the theme header bar rendered
 "Brave Plum Healing" in near-black on dark plum (unreadable, empty nav) — hidden via the
 page's `bph-design` style block; wordmark added into the hero in Cormorant Garamond petal.
