@@ -11,7 +11,10 @@ whole team, Johnny creates a warm, steady sanctuary — where conflict softens, 
 rebuilds, and what matters most comes gently into focus."**
 **Why:** widens the door to businesses, teams, corporations (the mediation/workshops/
 team-building revenue work) while keeping the sanctuary voice. The retired personal line
-stays available for personal-page use. PR: hero-way-forward branch.
+stays available for personal-page use. PR: hero-way-forward branch (merged, live, ledger #91).
+**Same day:** Work With Me lead matched to it (Johnny: "update to match"): "Whether you
+arrive as one person at a crossroads, a team that needs to hear each other again, or an
+organisation navigating change — there's a path forward here for you."
 
 ## 2026-08-11 — braveplumhealing.org will FORWARD to braveplumhealing.com
 Johnny's call (one tap, this session): don't delete the WordPress site, don't hand-maintain
