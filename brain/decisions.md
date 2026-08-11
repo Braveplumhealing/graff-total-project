@@ -2,6 +2,17 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-11 — About page now carries the school-leadership story publicly
+Johnny: "update the About page with my school leadership background." Sourced from
+brain/business.md (his 2026-07-15 dictation), summary-level only per its note (no
+scene-level material). Added: intro paragraph (25y arc: classroom → alt-ed founder →
+AP → elementary principal), rewritten His Story (uses his sacred phrases with care:
+"champion for the underdog", deficiencies-vs-gifts, "reclaim my own gifts"; ends "he has
+been in both chairs"), and two new credentials ("25 Years in Public Education —
+Teacher, Program Founder, Assistant Principal, Elementary Principal" + "Superintendent's
+Credential"). Meta description matched. Old hollow-success story line superseded — the
+career now names itself. Serves the corporate-credibility goal of today's broadened scope.
+
 ## 2026-08-11 — Reiki line dropped from homepage services lead
 Johnny: remove "And beneath it all runs the quiet thread of Reiki." from the homepage
 Ways-to-Work-Together lead. Reiki's register keeps quieting: 2026-07-15 moved it to the
