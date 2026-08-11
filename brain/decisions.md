@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-11 — Reiki line dropped from homepage services lead
+Johnny: remove "And beneath it all runs the quiet thread of Reiki." from the homepage
+Ways-to-Work-Together lead. Reiki's register keeps quieting: 2026-07-15 moved it to the
+shadows; now it's unnamed on the homepage entirely (still present on Work With Me's last
+card and the Contact intro — untouched, his ask was this line only). "Quiet thread"
+remains the sanctioned phrase where Reiki IS named.
+
 ## 2026-08-11 — Homepage hero broadened to include business/team work
 Johnny: the old opening ("A gentle space to come back to yourself" + aligned-life line)
 was beloved but "excludes the work that pays the bills." From three drafted options he
