@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-11 — Old placeholder Stripe links DEACTIVATED (Johnny's taps)
+The 2026-07-15 pending Tier-2 item is done: Johnny deactivated the $450/hr (…M03),
+$5,000/day (…M01), and stale $228/hr placeholder links in the Stripe dashboard —
+Mr Rogers aimed (opened each row's menu), Johnny fired (each red Deactivate). The three
+real links remain Active and were verified resolving 200: $228/90-min (…M04) ·
+$2,280/day (…M05) · T&E (…M02). No placeholder price can be paid anymore.
+
 ## 2026-08-11 — About page now carries the school-leadership story publicly
 Johnny: "update the About page with my school leadership background." Sourced from
 brain/business.md (his 2026-07-15 dictation), summary-level only per its note (no
