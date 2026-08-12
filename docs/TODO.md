@@ -29,7 +29,7 @@ weekly digest · branch protection · backups + restore drill + Wayback + ledger
 - [ ] **Durability armor** (`docs/DURABILITY.md` #1–2, #6–7): passkeys (fingerprint
   beats typing!), registrar auto-renew + lock, a second keyholder note, yearly key rotation.
 - [ ] **Marblism** — log in once and say "ready"; drafts start flowing through the PR gate.
-- [ ] **A warm portrait of Johnny** — send any photo; it drops into the homepage's
+- [x] **A warm portrait of Johnny** — DONE since 2026-07-13 (johnny.jpg live on About + homepage ring; stale item caught 2026-08-11). Was: send any photo; it drops into the homepage’s
   gradient ring (`site.json → portrait`).
 
 ## Decided — parked on purpose (won't be re-pitched)
