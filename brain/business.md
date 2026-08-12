@@ -87,9 +87,10 @@ Aligned Life Beat 2.
 "labeling students for their deficiencies rather than their gifts" · "reclaim my own gifts
 and express them to the world."
 
-**Note on the homepage "8+ years of practice" stat (⚠ still unconfirmed as a *practice*
-claim):** his stated 8-year journey since leaving education matches the number, but "years
-of practice" ≠ "years since leaving" — leave ⚠ until Johnny confirms the wording he wants.
+**Homepage stats RESOLVED (2026-08-11):** Johnny declared all three designer-era numbers
+(500+ guided · 8+ years · 40+ retreats) **inaccurate**; every mention was deleted (homepage
+stats row, About "8+ years" credential, HQ confirm-card). Do NOT reintroduce numeric claims
+of any kind unless Johnny supplies the figures himself.
 
 **What this unlocks in the talks (story seeds — his scenes still needed):** The Aligned
 Life Beat 1 (the outward win: 25-year education career, principalship, superintendent's
