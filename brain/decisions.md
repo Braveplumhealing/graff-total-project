@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-11 — Homepage numbers deleted: "500+ · 8+ · 40+" were inaccurate
+Johnny's words: "All of the numbers … are inaccurate. Let's delete the mention of them."
+Removed sitewide: homepage stats row, About credential's "— 8+ years of dedicated
+practice" suffix, and the /neighborhood confirm-numbers ask card (question now moot).
+**Standing rule: no numeric claims on the site unless Johnny supplies the real figures.**
+(The About intro's word "hundreds" was left pending Johnny's call — flagged to him.)
+
 ## 2026-08-11 — Old placeholder Stripe links DEACTIVATED (Johnny's taps)
 The 2026-07-15 pending Tier-2 item is done: Johnny deactivated the $450/hr (…M03),
 $5,000/day (…M01), and stale $228/hr placeholder links in the Stripe dashboard —

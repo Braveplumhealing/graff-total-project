@@ -17,7 +17,9 @@ weekly digest · branch protection · backups + restore drill + Wayback + ledger
   resolving 200.
 - [ ] **GoatCounter code** (analytics are wired, waiting) — HQ card sends the ask as-is;
   Rogers walks the free signup; you dictate the code.
-- [ ] **Confirm homepage numbers** (500+ · 8+ · 40+) — HQ card; answer yes/no by voice.
+- [x] **Homepage numbers** — RESOLVED 2026-08-11: Johnny declared all three (500+ · 8+ ·
+  40+) inaccurate; the stats row and the About "8+ years" credential were deleted sitewide.
+  Real numbers may return only if Johnny supplies them.
 - [ ] **Telegram door** (~10 min walk) — `docs/TELEGRAM-SETUP.md`; then the business is in
   your pocket.
 - [ ] **Email door** (~10 min walk; prereq already met — DNS is on Cloudflare) —
