@@ -104,3 +104,37 @@ do?" — hallways, Grove gatherings, discovery calls, dinner tables. Note his co
 **"the gift permission business."** Ten-second trim (candidate, in his spirit — offer,
 never assume): "I'm in the gift permission business. Most of us were taught to hide our
 magic — I help people discover their gift and give them permission to share it."
+
+## The organic-growth principle (Johnny, verbatim, 2026-07-29)
+> "I do not desire to chase the dollar — rather I desire the dollars to find me on
+> purpose."
+
+Governing test for ALL growth/marketing moves (business plan, social media, offers):
+would this chase, or make us findable on purpose? Chasing fails the test. See
+docs/BUSINESS-PLAN-2027.md.
+
+- **"Bravery for the moment, Courage for the Choice, Resolution for the journey ahead."** (FINAL — Johnny's own third pass, 2026-07-30, supersedes "road/weather" versions; his capitalization kept. The teaching in temporal order: the moment → the choice → the journey. Sealed as the working subtitle of *We Endeavor Forth*.)
+  (2026-07-30 — Johnny: "I love the tagline.") Born from his cover feeling-words for
+  *We Endeavor Forth*; candidate book subtitle/tagline — portable to any cover concept,
+  the back cover, the book page, and launch materials. Use with the book only (it belongs
+  to her), pending his final subtitle decision.
+
+## Bravery vs. Courage (Johnny's exact words, 2026-07-30 — sacred distinction)
+> "Bravery faces down the danger around you, Courage transforms the world within you."
+
+His own doctrine: bravery = outward, meeting the external danger; courage = inward, the
+transformation of the inner world. This is the KEY to the book's subtitle ("Bravery for
+the moment" = the outer danger arriving; "Courage for the Choice" = the inner turning) and
+deepens the courage teaching in [[the-courage-to-change]] (courage as inner work —
+grounded, feedback-fed, transformative). Quote verbatim; never blur the two words in his
+copy again — they are technical terms now.
+
+## The Two Arrows doctrine (Johnny's exact words, 2026-07-30)
+His tattoos, made teaching: left ring finger = straight arrow; right = crooked arrow.
+> "My left hand, the straight arrow, is about control and ego, while my right hand is
+> about my authentic journey and surrendering to the crooked path. **The left hand
+> targets while the right hand receives.**"
+
+Candidate spine-image for the book's new introduction (see vault viewpoint letter). Maps
+onto his bravery/courage distinction: targeting = outward/bravery, receiving =
+inward/courage. His body carries the doctrine; quote verbatim, never paraphrase.

@@ -2,7 +2,9 @@
 
 ## Who
 - **Business:** Brave Plum Healing — **mediation & facilitation (FIRST, per Johnny
-  2026-07-20), healing workshops, team building, weekend retreats** (the light), with 1:1 life coaching strong beside them and
+  2026-07-20; incl. COUPLE'S RECONCILIATION, its own page/tab since 2026-08-04 — sessions
+  $228 · one-day intensive $2,280 + travel; mediation/coaching language only, never
+  "therapy"), healing workshops, team building, weekend retreats** (the light), with 1:1 life coaching strong beside them and
   **Reiki as "the quiet thread"** woven through (in the shadows BY JOHNNY'S DESIGN,
   2026-07-15 — see decisions.md; never re-promote it to primary without his word). Plus
   speaking/keynotes. (Podcast REMOVED from the site 2026-07 per Johnny.)
@@ -66,7 +68,8 @@ professional success that left him feeling hollow" — and the source material f
    though the superintendent's path stood open.
 8. **The past 8 years:** "my journey… has been to **reclaim my own gifts and express them
    to the world.**" (verbatim) → coaching, Reiki mastery, mediation training, the book
-   (*Soulnapped*), retreats, Brave Plum Farm, and now Brave Plum Healing + The Healers' Grove.
+   (*Soulnapped* — **retitle in progress: "We Endeavor Forth"; MANUSCRIPT VAULTED 2026-07-30** — checksummed copies in Johnny's private local vault, NEVER in this public repo; measured 4 parts / 9 chapters + intro / ~22.5k words; second-draft goalsheet TRUNCATED by the author 2026-07-30: world revolves around the book, final polish complete SEPT 30, 2026; a BOOK LAUNCH CEREMONY & SIGNING is now part of the business plan (venue/date his call); goalsheet in the private vault + his 📖 artifact page), retreats,
+   Brave Plum Farm, and now Brave Plum Healing + The Healers' Grove.
 
 
 **THE MOMENT (told in *Soulnapped*; retold by Johnny 2026-07-15 — the sacred interruption
