@@ -87,6 +87,11 @@ Key phrases that are HIS (never soften): *courage is never blind* · *the portal
 Spine of [[the-courage-to-change]]. Johari attribution when needed: Luft & Ingham, 1955.
 
 ## Blessed lines (crafted in session, approved by Johnny — usable in his voice)
+- **"A world where no one's gift dies unexpressed."** (2026-08-20 — Johnny: "Vision A is
+  a real nugget!") His PERSONAL VISION statement, forged while building his
+  vision/mission/values compass for the About-page edit. Arrangement of his own gift
+  language (the elevator speech + the Gift download). Governing horizon for the About
+  page and a natural landing line anywhere the work needs its "why" in one breath.
 - **"You can't see the lit life from inside the unlit one."** (2026-07-15 — Johnny: "that's
   solid.") Born from the torch teaching meeting Bashar's embodiment principle (see the
   resonance shelf in ideas.md). Natural homes: *Leading from the Inside Out* (the torch
