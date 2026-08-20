@@ -2,6 +2,15 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-20 — Reconciliation tab demoted to a Work With Johnny service card
+Johnny: "It needs to sit as a service on Work with Johnny instead of its own tab at the
+top of the website." Top-nav "Reconciliation" tab removed; a 🕊 Couple's Reconciliation
+service card added on Work With Johnny (right after Mediation & Facilitation, its family),
+linking to the full page. The deep page stays live at /couples-reconciliation.html
+(footer Explore link and contact-form dropdown unchanged). **Why:** the top nav stays
+lean around the primary doors; reconciliation is a service within the mediation craft,
+not a separate wing of the house.
+
 ## 2026-08-11 — Homepage numbers deleted: "500+ · 8+ · 40+" were inaccurate
 Johnny's words: "All of the numbers … are inaccurate. Let's delete the mention of them."
 Removed sitewide: homepage stats row, About credential's "— 8+ years of dedicated
