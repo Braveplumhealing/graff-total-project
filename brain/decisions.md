@@ -2,6 +2,18 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-20 — Every Work With Johnny card is now a live door to its own page
+Johnny: "make each of the tabs on Work with Johnny active… instead of 'read more about
+reconciliation' simply make the tabs a live button." All seven service cards are now
+fully clickable ("Step inside →"), each opening a dedicated page: mediation-facilitation
+· couples-reconciliation (existed) · healing-workshops · team-building · weekend-retreats
+· life-coaching · reiki-healing. Five new deep pages built ONLY from confirmed material
+(offerings.json prices, existing site copy, book-page truths — no invented dates, stats,
+or claims; workshops/retreats say "announced as they open"). Homepage "Learn more" cards
+and footer Retreats link now point at the deep pages. Coaching & Reiki pages carry the
+same honest not-therapy / never-replaces-medical-care language as reconciliation.
+**Why:** depth one click in, nav stays lean — each service gets a room, not a sentence.
+
 ## 2026-08-20 — Reconciliation tab demoted to a Work With Johnny service card
 Johnny: "It needs to sit as a service on Work with Johnny instead of its own tab at the
 top of the website." Top-nav "Reconciliation" tab removed; a 🕊 Couple's Reconciliation
