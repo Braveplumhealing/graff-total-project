@@ -8,11 +8,20 @@ layout: base.njk
 </div>
 <section class="content"><div class="ci">
 {% for s in services %}
+{% if s.url %}
+<a class="service-block service-door" href="{{ s.url }}">
+<h2>{{ s.title | safe }}</h2>
+<p>{{ s.body | safe }}</p>
+<ul>{% for t in s.tags %}<li>{{ t | safe }}</li>{% endfor %}</ul>
+<span class="svc-more">Step inside &rarr;</span>
+</a>
+{% else %}
 <div class="service-block">
 <h2>{{ s.title | safe }}</h2>
 <p>{{ s.body | safe }}</p>
 <ul>{% for t in s.tags %}<li>{{ t | safe }}</li>{% endfor %}</ul>
 </div>
+{% endif %}
 {% endfor %}
 <div class="cta-box">
 <h2>{{ cta_heading | safe }}</h2>
