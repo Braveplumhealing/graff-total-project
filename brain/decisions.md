@@ -2,7 +2,6 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
-<<<<<<< HEAD
 ## 2026-08-11 — Homepage numbers deleted: "500+ · 8+ · 40+" were inaccurate
 Johnny's words: "All of the numbers … are inaccurate. Let's delete the mention of them."
 Removed sitewide: homepage stats row, About credential's "— 8+ years of dedicated
@@ -67,7 +66,7 @@ Interim fix, same day (see ledger): on the .org homepage, the theme header bar r
 "Brave Plum Healing" in near-black on dark plum (unreadable, empty nav) — hidden via the
 page's `bph-design` style block; wordmark added into the hero in Cormorant Garamond petal.
 Backup: WP revisions + session scratchpad copy. Only the homepage was touched.
-=======
+
 ## 2026-07-30 — Book subtitle sealed; The Threshold is the placeholder cover
 Johnny's final wording (his third pass, same day — supersedes the road/weather drafts):
 **"We Endeavor Forth — Bravery for the moment, Courage for the Choice, Resolution for
@@ -96,7 +95,6 @@ Johnny's work going forward**; the animal images (horse, eagle, dragon) were mir
 work is complete — the human is the subject now. (The Mike Beck horse MOMENT remains his
 true biographical story and stays where he's placed it; the dragon poem remains a private
 vault treasure.) Cover direction follows: human imagery, human language.
->>>>>>> business-plan-2027
 
 ## 2026-07-24 — Grove: circle's flier copy, first date Sept 17, evergreen strategy
 From Johnny's final planning meeting: **first gathering Thursday, September 17, 2026.**
