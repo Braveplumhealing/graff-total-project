@@ -2,6 +2,7 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+<<<<<<< HEAD
 ## 2026-08-11 — Homepage numbers deleted: "500+ · 8+ · 40+" were inaccurate
 Johnny's words: "All of the numbers … are inaccurate. Let's delete the mention of them."
 Removed sitewide: homepage stats row, About credential's "— 8+ years of dedicated
@@ -66,6 +67,36 @@ Interim fix, same day (see ledger): on the .org homepage, the theme header bar r
 "Brave Plum Healing" in near-black on dark plum (unreadable, empty nav) — hidden via the
 page's `bph-design` style block; wordmark added into the hero in Cormorant Garamond petal.
 Backup: WP revisions + session scratchpad copy. Only the homepage was touched.
+=======
+## 2026-07-30 — Book subtitle sealed; The Threshold is the placeholder cover
+Johnny's final wording (his third pass, same day — supersedes the road/weather drafts):
+**"We Endeavor Forth — Bravery for the moment, Courage for the Choice, Resolution for
+the journey ahead."** Cover: **The Threshold**
+concept (doorway onto storm and mountains, one figure stepping through, warm light at the
+feet) is the working placeholder "for right now" — refined mockup rendered with full
+title/subtitle/author; PNG + source in the private vault and on Johnny's Desktop. Final
+cover decision waits for the publishing route; the four concepts remain on file.
+
+## 2026-08-04 — "Couple's Reconciliation" is live on the site (new tab)
+Johnny's call after market research (see ideas.md): a dedicated page + nav tab elevating
+relationship mediation into a named offering. Two formats at EXISTING prices: Reconciliation
+Sessions ($228 / 90-min, couple together) and The Reconciliation Intensive (one full day,
+$2,280 + travel). POSITIONING RULES (standing): mediation + coaching language ONLY — never
+"therapy"/"counseling" (protected clinical terms); the page carries an honest-referral
+paragraph and a safety-first line, both of which stay. Wired: nav tab, footer link,
+contact-form option, Work With Me cross-link. **Why:** proven market, his mediator training
+is the differentiator, and reconciliation is the business expression of his deepest frames.
+
+## 2026-07-30 — THE EAGLE IS RETIRED: "The book is for humans"
+Johnny, as author: "I am walking away from the eagle story and my edits will reflect
+that. The book is for humans." The eagle/coop imagery — already cut from The Aligned Life
+talk at his request (2026-07-13) — now leaves the book itself; second-draft edits will
+remove it. Standing rule for ALL agents and copy: **do not use eagle/coop imagery for
+Johnny's work going forward**; the animal images (horse, eagle, dragon) were mirrors whose
+work is complete — the human is the subject now. (The Mike Beck horse MOMENT remains his
+true biographical story and stays where he's placed it; the dragon poem remains a private
+vault treasure.) Cover direction follows: human imagery, human language.
+>>>>>>> business-plan-2027
 
 ## 2026-07-24 — Grove: circle's flier copy, first date Sept 17, evergreen strategy
 From Johnny's final planning meeting: **first gathering Thursday, September 17, 2026.**
