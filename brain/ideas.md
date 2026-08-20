@@ -73,3 +73,19 @@ Format: `- [ ] YYYY-MM idea — why it might matter (source)`
   mediator language and differentiates him; the mediation card already lists
   "Relationship mediation" — this elevates an existing capability under the
   mediation-first hierarchy. Build = Tier 1 PR on his word.
+
+- **Men's heart-centered coaching (Johnny, 2026-08-11 — researched, parked, awaiting his
+  word):** Spurred by a dear friend's relationship challenges (partner shaped by surviving
+  abusive relationships). Market check: men's work is a real, growing niche inside a ~$5B
+  coaching industry (9–12%/yr) — established men's groups/programs exist (Relationship
+  School men's group, Evolutionary Men, Spirit Rock "Strength with Heart," ManKind-style
+  circles), and coaching (not therapy) is the door men actually walk through. JOHNNY'S FIT
+  IS UNUSUALLY NATIVE: 25 years coaching boys/young men (wrestling, shop, alt-ed), his own
+  armor story (the wells, the known hero), and his doctrine IS men's-work language (the
+  Rath around the heart; bravery faces outward / courage transforms within; the gift
+  question). FORMAT CANDIDATES (existing prices, organic-first): 1:1 coaching positioning
+  ($228) · a monthly MEN'S CIRCLE on the Grove pattern (evergreen card, rotating host,
+  free/low-cost, feeds 1:1 + reconciliation upstream) · first ONLINE WORKSHOP topic (Chair
+  Test goal #3). CAUTIONS (standing): abuse-survivor adjacency = coaching-not-therapy
+  discipline with honest referrals; positioning must stay unmistakably heart-centered
+  (avoid the niche's "alpha" grifter corners); start with real valley men, never a funnel.
