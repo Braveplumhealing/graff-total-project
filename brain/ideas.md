@@ -60,3 +60,16 @@ Format: `- [ ] YYYY-MM idea — why it might matter (source)`
   (categorize/catalog/critique) · tall poppy · **midlife transformation, not midlife
   crisis** · the permission cascade. Could be a keynote, the book's companion talk, or the
   through-line ABOVE all four talks. Waiting on Johnny's word.
+
+- **"Couple's Reconciliation" site tab (Johnny, 2026-08-04 — researched, awaiting his
+  go):** Market check: the space is large and established — couples therapy $150–300/
+  session (licensed); relationship COACHING (unlicensed-legal) similar; private marriage
+  intensives $2,500–5,500/weekend. FINDINGS: (1) his existing fee schedule maps cleanly —
+  $228/90-min couple session is mid-market, $2,280 day = a private one-day reconciliation
+  intensive priced at/below the intensive market; no new prices needed. (2) POSITIONING
+  RULE: Johnny is a trained mediator + coach, NOT a licensed therapist — the tab must use
+  mediation/coaching/reconciliation language, never "therapy/counseling" (protected
+  clinical terms); present-focused, refer out for clinical needs. (3) "Reconciliation" is
+  mediator language and differentiates him; the mediation card already lists
+  "Relationship mediation" — this elevates an existing capability under the
+  mediation-first hierarchy. Build = Tier 1 PR on his word.
