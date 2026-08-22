@@ -17,9 +17,9 @@ Front: blush gradient, blossom, BRAVE PLUM / HEALING, petal rule, rose subtitle.
 Back: plum gradient, "Healing Begins in Love's Presence" tagline (kept from the old card,
 Johnny's), script name, phone · email · **braveplumhealing.com**, watermark blossom.
 
-Note: the script face for the name may render via the system's cursive fallback
-(Snell Roundhand on macOS) if Google Fonts doesn't load during headless render — the
-committed PDFs are the authority; look at them before reprinting.
+Signature face: **Great Vibes** (Johnny's pick, 2026-08-22, from three rendered options)
+— embedded in card-back.html as a base64 @font-face, so renders are identical on any
+machine, offline included. (OFL-licensed Google Font.)
 
 ## To re-render after editing the HTML
 ```bash
