@@ -23,6 +23,20 @@ linking to the full page. The deep page stays live at /couples-reconciliation.ht
 lean around the primary doors; reconciliation is a service within the mediation craft,
 not a separate wing of the house.
 
+## 2026-08-22 — NEW OFFERING: "Presence — A Couples' Reiki Retreat" (first run early Dec 2026)
+Johnny's new project. Weekend couples retreat teaching Reiki I (Fri eve → Sun morning,
+pre-consultation + post-retreat check-in), participant guide/journal drafted with another
+AI, brought to Mr Rogers 2026-08-22 for polish. Johnny's decisions: **NOT on the website**
+(but marketing materials will link to braveplumhealing.com); host space = **a property
+Johnny owns**; target = **early December 2026, first of its kind**; demand exists (multiple
+inquiries). Core line: "You will be held while you learn how to hold one another."
+Work plan: split facilitator material out of the participant book → restyle participant
+guide in Brave Plum voice/design → facilitator guide build → marketing pieces when ready.
+Johnny-only slots open: personal dedication, Reiki lineage/attunement framework,
+certification framework. Source draft: Presence_Couples_Reiki_Retreat_Participant_Guide_
+Draft.docx (Johnny's Downloads; working copies in repo outreach/presence-retreat/ once
+created). See brain/business.md offerings.
+
 ## 2026-08-11 — Homepage numbers deleted: "500+ · 8+ · 40+" were inaccurate
 Johnny's words: "All of the numbers … are inaccurate. Let's delete the mention of them."
 Removed sitewide: homepage stats row, About credential's "— 8+ years of dedicated
