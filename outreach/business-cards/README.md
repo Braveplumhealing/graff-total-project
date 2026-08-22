@@ -17,8 +17,11 @@ Front: blush gradient; **emblem** — the canonical Ink & Petal blossom set on a
 with two leaves, held in a fine rose ring (Johnny 2026-08-22: the twig "gives the blossom
 a reference", the circle feels "captured and displayed" — carried over from the original
 card he loved); BRAVE PLUM / HEALING; petal rule; rose subtitle.
-Back: plum gradient, "Healing Begins in Love's Presence" tagline (kept from the old card,
-Johnny's), script name, phone · email · **braveplumhealing.com**, watermark blossom.
+Back: plum gradient, tagline **"A Gentle Space to Find the Way Forward"** (Johnny 2026-08-22
+— taken verbatim from the site hero for card↔site congruence; replaced the old "Healing
+Begins in Love's Presence"), script name, phone · email · **braveplumhealing.com**,
+full-emblem watermark. Front subtitle: **"Team Building · Workshops · Retreats"** (Johnny's
+wording for the card).
 
 Signature face: **Great Vibes** (Johnny's pick, 2026-08-22, from three rendered options)
 — embedded in card-back.html as a base64 @font-face, so renders are identical on any
