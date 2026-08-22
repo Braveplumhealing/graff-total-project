@@ -13,7 +13,10 @@ Also fixes the typo on the old card ("Johnnny" → "Johnny").
 | `card-front.html` / `card-back.html` | Design sources (Brave Plum palette; Cormorant Garamond + Jost + script) |
 | `preview-front.png` / `preview-back.png` | Screen previews |
 
-Front: blush gradient, blossom, BRAVE PLUM / HEALING, petal rule, rose subtitle.
+Front: blush gradient; **emblem** — the canonical Ink & Petal blossom set on a plum twig
+with two leaves, held in a fine rose ring (Johnny 2026-08-22: the twig "gives the blossom
+a reference", the circle feels "captured and displayed" — carried over from the original
+card he loved); BRAVE PLUM / HEALING; petal rule; rose subtitle.
 Back: plum gradient, "Healing Begins in Love's Presence" tagline (kept from the old card,
 Johnny's), script name, phone · email · **braveplumhealing.com**, watermark blossom.
 
