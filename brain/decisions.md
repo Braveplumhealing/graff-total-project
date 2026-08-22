@@ -23,6 +23,15 @@ linking to the full page. The deep page stays live at /couples-reconciliation.ht
 lean around the primary doors; reconciliation is a service within the mediation craft,
 not a separate wing of the house.
 
+## 2026-08-22 — Business cards refreshed (personal cell OFF the card)
+Johnny's ask: cards must match the current site. New cards (outreach/business-cards/):
+Ink & Petal blossom, "Mediation · Workshops · Retreats" subtitle, braveplumhealing.com
+added, and the phone is now the site's business line **(206) 360-9618** — his personal
+cell (509-899-0833) comes OFF all public materials. Kept: tagline "Healing Begins in
+Love's Presence", braveplumhealing@outlook.com (matches site contact_email), script name.
+Fixed the old card's typo ("Johnnny"). Print PDFs are 3.5×2" trim + 0.125" bleed.
+Ordering/printing is Johnny's key-turn (money).
+
 ## 2026-08-22 — NEW OFFERING: "Presence — A Couples' Reiki Retreat" (first run early Dec 2026)
 Johnny's new project. Weekend couples retreat teaching Reiki I (Fri eve → Sun morning,
 pre-consultation + post-retreat check-in), participant guide/journal drafted with another
