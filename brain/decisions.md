@@ -2,6 +2,18 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-22 — Possibilities first EVERYWHERE (Johnny's sweep before "letting the world in")
+Johnny: "reorder it and match it - possibilities first everywhere" + "cut the numbers,
+match it, gathering a team is better." Applied across the whole site: Work With Johnny
+service cards now lead Team Building > Healing Workshops > Weekend Retreats > Mediation >
+Reconciliation > Coaching > Reiki (reconciliation stays beside mediation; Reiki stays
+last); homepage hero cards (Gather & Grow first), services grid, and services lead
+("gathering a team" now opens the sentence); Contact intro matched; About offers list
+matched; About's "guided hundreds of individuals" CUT → "guided people and teams through
+pivotal transitions" (last designer-era numeric-ish claim gone — extends the 2026-08-11
+no-numbers rule). Standing rule: in any service list, possibility offerings lead,
+mediation follows, Reiki closes.
+
 ## 2026-08-22 — TEAM BUILDING leads the trio ("possibilities rather than grievances")
 Johnny, choosing the site badge wording: "i like the 'team building' better. I think it
 focuses on possibilities rather than grievances. Happier wording." **Supersedes the
