@@ -2,6 +2,15 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-22 — TEAM BUILDING leads the trio ("possibilities rather than grievances")
+Johnny, choosing the site badge wording: "i like the 'team building' better. I think it
+focuses on possibilities rather than grievances. Happier wording." **Supersedes the
+2026-07-20 "Mediation leads every list" rule for the BADGE/TITLE layer:** nav badge, page
+<title>s, meta/og descriptions, JSON-LD, and homepage hero eyebrow now lead with
+Team Building (mediation stays present, listed later). Matches the new business cards.
+NOT yet reordered (Johnny's call pending): Work With Johnny service-card order (still
+Mediation first per 2026-08-20), homepage services lead sentence, Contact intro sentence.
+
 ## 2026-08-22 — The EMBLEM: blossom on a twig, held in a ring (cards + site nav)
 Evolved from the original business card Johnny loved: the canonical Ink & Petal blossom
 now sits on a plum twig ("gives the blossom a reference") inside a fine ring ("captured
