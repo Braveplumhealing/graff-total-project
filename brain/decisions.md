@@ -2,6 +2,17 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-22 — Prices OFF the info pages; /rates.html is pricing's one home
+Johnny: "remove pricing from the information pages and make a special landing page for
+rates… Descriptors are more on point than the prices." Done: all six deep-page tag lists
+stripped of $228/$2,280 (descriptors kept), how-it-works chip now says "simple published
+rates", Book page's rate_note replaced with a "See all rates →" link. NEW PAGE /rates.html
+("Simple, Honest Rates"): $228/90-min · $2,280/day (+T&E at cost) · retreats priced per
+retreat · speaking by conversation · discovery call always free. Footer carries a Rates
+link; nav stays lean. Payment buttons on Book KEEP their prices (honesty at the point of
+payment). **SYNC RULE: if offerings.json prices ever change, /rates.html must change in
+the same PR.**
+
 ## 2026-08-22 — "The Threshold" button: the emblem is the doorknob
 Johnny's pick (C of three rendered options: Doorknob/Seal/Threshold) for the Work With
 Johnny "Step inside" links, then extended at his word ("use it everywhere that needs it")
