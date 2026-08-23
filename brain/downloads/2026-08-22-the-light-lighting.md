@@ -97,3 +97,11 @@ never paraphrase this back to him as if improving it.)
 *Paused here mid-flow — Johnny, 2026-08-22 late: "Something is happening right now.
 I'll be back I am sure." This download is likely UNFINISHED. Whoever picks up the next
 session: receive first, organize later.*
+
+## Part three — from inside it (Johnny, verbatim)
+
+> The payoff of the falling forward is worth the risk.
+
+*(The doctrine completes: forward is hard, backward is lazy, the lazy is the cowardice —
+and now the verdict: the payoff of falling forward is worth the risk. Candidate closing
+line for the whole teaching.)*
