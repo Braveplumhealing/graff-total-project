@@ -122,6 +122,12 @@ Always first: `export PATH="$HOME/.local/bin:$HOME/bin:$PATH"` (node/npm/gh are 
     (GitHub retargets to main when the parent merges). Also: force-push is blocked on ALL
     branches (protection) — a bad branch gets a replacement branch + a superseding PR, never
     a rewrite. (Learned 2026-07-15: PR #16 → #17.)
+15. **SVG `<use>`/`<symbol>` paint servers die inside `display:none`.** Gradients and
+    masks defined in a hidden SVG library render as nothing (the Threshold buttons shipped
+    as ghost discs, 2026-08-22). Hide shared symbol libraries with `width="0" height="0"
+    style="position:absolute;overflow:hidden"` — never `display:none`. And visual QA means
+    LOOKING at the rendered element up close, not counting markup.
+
 
 ## Sync status (verified at last review, 2026-07-08)
 - Audit ledger: **intact, 20 entries, chain valid** (verified independently + in-browser algorithm).
