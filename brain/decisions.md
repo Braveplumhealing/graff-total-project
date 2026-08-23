@@ -2,6 +2,14 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-23 — "For My Son" will be PERFORMED: Gallery One gala, Sept 25
+The midnight letter (brain/downloads/2026-08-22-for-my-son.md) is a poem, by Johnny's
+own naming, and he will perform it **September 25, 2026 at the Gallery One gala**.
+First public performance of the piece born the night of the light lighting. The poem
+stays out of all Brave Plum materials otherwise (private-family flag holds for web/book);
+the stage is Johnny's own. Support offered: large-type reading copy, rehearsal passes,
+timing. Venue details to confirm with Johnny.
+
 ## 2026-08-22 — OPEN (Johnny thinking on it): card-back watermark, grey vs petal
 Johnny asked to see the business-card back watermark in grey tones; rendered and compared
 side-by-side (grey = silvered/embossed/formal; petal = warm, one color family). He is
