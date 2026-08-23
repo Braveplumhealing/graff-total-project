@@ -157,3 +157,15 @@ ego's two states tonight: keeper of the dimmer switch → cape.)*
 is-cowardice doctrine — acting nice is the path of least resistance; being good is the
 hard choice, sustained. Kin also to "You can't see the lit life from inside the unlit
 one" — embodiment as the only real currency. Candidate sacred pair: good man / nice guy.)*
+
+## Part nine — where the cowardice lives (Johnny, verbatim)
+
+> The knowing of the failing of oneself and carrying on with it is where the cowardice
+> lives. Ignorance is the bliss.
+
+*(The doctrine sharpens to its final edge: the failing itself is not the cowardice —
+the KNOWING-and-carrying-on is. Ignorance is the bliss: before the knowing there is no
+moral weight. This is the same hinge as part five turned to its shadow side — the
+knowing that ends the gamble is the knowing that begins the accountability. One knowing,
+two doors: no longer a gamble / no longer innocent. Kin to his Johari teaching — the
+Blind Spot is the portal; once seen, it cannot be unseen, only answered or betrayed.)*
