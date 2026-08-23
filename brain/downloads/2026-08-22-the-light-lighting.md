@@ -91,3 +91,9 @@ never paraphrase this back to him as if improving it.)
   riding it out until we expire IS the rot, named plainly.
 - The tipping imbalance echoes sacred interruption mechanics: the status quo shifts
   and cannot hold; feather-to-truck escalation is what happens to those who fall backward.
+
+---
+
+*Paused here mid-flow — Johnny, 2026-08-22 late: "Something is happening right now.
+I'll be back I am sure." This download is likely UNFINISHED. Whoever picks up the next
+session: receive first, organize later.*
