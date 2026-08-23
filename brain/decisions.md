@@ -5,7 +5,7 @@ Append-only. Newest first. Re-opening a decision is fine — silently contradict
 ## 2026-08-22 — Video tool verdict: Descript first; Veo for garnish; skip InVideo/ElevenLabs for now
 Side-by-side done for Johnny (Descript vs InVideo vs ElevenLabs vs Gemini/Veo, web-checked
 2026-08-22; prices approximate, verify at signup). Verdict for the Johnny-on-camera
-strategy: **Descript Creator (~$12-15/mo annual) is the one purchase** — transcript-based
+strategy: **Descript is the one purchase — CORRECTED at signup 2026-08-22: Hobbyist tier, $16/mo annual** (live pricing differed from research; Hobbyist includes filler-word removal + 1080p watermark-free + 10 media hrs — plenty for weekly videos) — transcript-based
 editing (Hands-friendly), filler-word removal, auto-captions, one take → all cuts.
 **Gemini AI Pro ($19.99/mo, Veo Lite 3 clips/day)** optional later for AI B-roll garnish
 only. **InVideo skipped** — faceless template videos cut against the presence brand
