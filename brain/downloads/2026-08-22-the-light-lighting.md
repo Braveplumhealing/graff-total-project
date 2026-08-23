@@ -147,3 +147,13 @@ contradicting one is not — so this is FLAGGED, not acted on. The eagle stays r
 all public work until Johnny explicitly says otherwise. New image regardless: the tamed
 ego as CAPE — worn at the back, serving the flight, adding lift, never steering. The
 ego's two states tonight: keeper of the dimmer switch → cape.)*
+
+## Part eight — good man vs. nice guy (Johnny, verbatim)
+
+> I always wante to be a good man but was always just a really nice guy. Being a good
+> man takes work. It's easier to act like a good guy than to actually embody it.
+
+*(New distinction, his: NICE is a performance; GOOD is an embodiment. Kin to the lazy-
+is-cowardice doctrine — acting nice is the path of least resistance; being good is the
+hard choice, sustained. Kin also to "You can't see the lit life from inside the unlit
+one" — embodiment as the only real currency. Candidate sacred pair: good man / nice guy.)*
