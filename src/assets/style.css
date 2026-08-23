@@ -157,8 +157,12 @@ footer{background:var(--plum);color:var(--petal);padding:4rem 2rem 2rem}
 a.service-door{display:block;text-decoration:none;color:inherit;transition:border-color .25s,box-shadow .25s,transform .25s}
 a.service-door:hover{border-color:rgba(196,99,126,.5);box-shadow:0 10px 30px rgba(61,26,61,.09);transform:translateY(-3px)}
 a.service-door:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
-.svc-more{display:inline-block;margin-top:1.1rem;color:var(--rose);font-size:.85rem;font-weight:500;letter-spacing:.05em}
-a.service-door:hover .svc-more{text-decoration:underline}
+.btn-step{display:inline-flex;align-items:center;gap:.6rem;background:var(--rose);border-radius:100px;padding:.42rem 1.2rem .42rem .45rem;color:var(--cream)!important;font-size:.82rem;font-weight:500;letter-spacing:.06em;text-transform:none;box-shadow:0 3px 14px rgba(196,99,126,.35);transition:box-shadow .25s var(--ease),transform .25s var(--ease)}
+.btn-step .bs-disc{background:var(--petal);border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.btn-step .bs-em{width:24px;height:24px;display:block}
+.btn-step:hover,a.service-door:hover .btn-step{box-shadow:0 6px 20px rgba(196,99,126,.5);transform:translateY(-1px)}
+.svc-more{margin-top:1.1rem}
+.card .btn-step{margin-top:.2rem;font-size:.76rem}
 .cta-box{background:var(--plum);color:var(--petal);border-radius:12px;padding:2.5rem;text-align:center;margin-top:3rem}
 .cta-box h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;margin-bottom:.75rem;color:var(--petal)}
 .cta-box p{font-size:.95rem;font-weight:300;color:rgba(253,232,238,.7);margin-bottom:1.5rem}

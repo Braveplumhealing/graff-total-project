@@ -2,6 +2,15 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-22 — "The Threshold" button: the emblem is the doorknob
+Johnny's pick (C of three rendered options: Doorknob/Seal/Threshold) for the Work With
+Johnny "Step inside" links, then extended at his word ("use it everywhere that needs it")
+to the homepage services grid's "Learn more" links — 13 doors total. Component:
+`.btn-step` (rose pill, petal disc holding the emblem via one shared `<symbol id=
+"bp-emblem">` defined in base.njk, hover lift). Deliberately NOT applied to action
+buttons (booking, contact, payment) — doors get the emblem; actions stay plain. Rule:
+the emblem marks passage into a room of the house, and stays special by not being everywhere.
+
 ## 2026-08-22 — Possibilities first EVERYWHERE (Johnny's sweep before "letting the world in")
 Johnny: "reorder it and match it - possibilities first everywhere" + "cut the numbers,
 match it, gathering a team is better." Applied across the whole site: Work With Johnny
