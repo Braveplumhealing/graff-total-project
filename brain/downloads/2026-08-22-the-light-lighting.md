@@ -169,3 +169,12 @@ moral weight. This is the same hinge as part five turned to its shadow side — 
 knowing that ends the gamble is the knowing that begins the accountability. One knowing,
 two doors: no longer a gamble / no longer innocent. Kin to his Johari teaching — the
 Blind Spot is the portal; once seen, it cannot be unseen, only answered or betrayed.)*
+
+## Part ten — corrective action and carried expectations (Johnny, verbatim)
+
+> The knowing of the failing of oneself requires corrective action. And it comes with
+> expectations. They aren't your expectations but you will carry them nonetheless.
+
+*(The doctrine turns practical: knowing demands ACTION, and the action arrives with
+expectations not of your own making — carried anyway. The weight of the answered
+knowing. Kin to rising mercy: what is dismissed escalates; what is answered obligates.)*
