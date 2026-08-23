@@ -2,6 +2,17 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-22 — VIDEO PROJECT BEGINS: "Triggers as Teachers" is script 01
+Johnny is ready to make videos. His decisions: NOT breathwork first ("saturated market");
+first topic = "facing your triggers — triggers as teachers" (possibilities register).
+Production path: Johnny on camera reading Mr Rogers' scripts (real presence beats AI
+avatar — counsel accepted implicitly); Descript recommended for editing (edit-by-transcript
+= Hands-Covenant-friendly); AI B-roll acceptable as garnish. Script 01 written
+(outreach/videos/scripts/01-triggers-as-teachers.md, ~2:20): uses his Bravery/Courage
+doctrine + feather-feather-rock-truck VERBATIM; ten-second practice ("What are you here
+to teach me?"); ends "No pressure, ever." Videos page returns from parking when the first
+real clip exists.
+
 ## 2026-08-22 — Homepage About card re-registered; VIDEOS PAGE PARKED (podcast precedent)
 Johnny: "update it and park it." Homepage About card now: "A guide who has sat in both
 chairs" + the 25-years/8-years steadiness blurb (replaces "dark seasons…carrying his
