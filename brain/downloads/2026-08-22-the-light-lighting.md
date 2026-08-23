@@ -115,3 +115,12 @@ meant to be dimmed → the imbalance tips → forward is hard, backward is lazy 
 is the cowardice → the payoff of falling forward is worth the risk → your life is at
 stake. Not a metaphor softened: the unlit life IS the expiring. Kin to "ride it out
 until we expire" and "stagnation and rot.")*
+
+## Part five — the knowing (Johnny, verbatim)
+
+> and if you know that it is no longer a gamble.
+
+*(The turn that closes the doctrine: knowing transmutes risk. Before the knowing,
+falling forward looks like a gamble; after it, the odds are irrelevant — there is only
+the one live choice. This is the same mechanic as his courage teaching: "courage is
+never blind… grounded in who you are." The knowing IS the ground.)*
