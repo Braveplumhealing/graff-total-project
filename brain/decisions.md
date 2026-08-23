@@ -2,6 +2,14 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-22 — About intro: "the quiet power of presence" (energy-healing wording retired)
+Johnny's dictated edit, verbatim: "With a warm, grounded way of being and a genuine gift
+for meeting people exactly where they are, Johnny blends the precision of evidence-based
+coaching with the quiet power of presence." Replaces "grounded presence…quiet power of
+energy healing." Note the register shift: "energy healing" no longer appears in the About
+intro — presence is the named power (rhymes with the Presence retreat). Reiki's public
+quieting continues.
+
 ## 2026-08-22 — Prices OFF the info pages; /rates.html is pricing's one home
 Johnny: "remove pricing from the information pages and make a special landing page for
 rates… Descriptors are more on point than the prices." Done: all six deep-page tag lists
