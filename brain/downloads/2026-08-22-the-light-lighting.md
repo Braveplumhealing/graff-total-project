@@ -124,3 +124,13 @@ until we expire" and "stagnation and rot.")*
 falling forward looks like a gamble; after it, the odds are irrelevant — there is only
 the one live choice. This is the same mechanic as his courage teaching: "courage is
 never blind… grounded in who you are." The knowing IS the ground.)*
+
+## Part six — the question to the room (Johnny, verbatim)
+
+> is this not the taming of the ego
+
+*(First time tonight he turns and asks. Mr Rogers' reflection offered from HIS OWN
+architecture only — the Two Arrows doctrine: "The left hand targets while the right
+hand receives." The masking of insecurities was the left hand — ego targeting,
+controlling the image. Speaking them openly is the right hand — surrender to the
+crooked path. Whether "taming" is his final word for it is HIS to name.)*
