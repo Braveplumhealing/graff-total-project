@@ -19,7 +19,7 @@ layout: base.njk
 {% endif %}
 
 {% set paid %}{% for item in offerings.payable %}{% if item.payment_url %}<a class="btn-p" style="margin:.3rem .5rem .3rem 0" href="{{ item.payment_url }}">{{ item.name }}{% if item.price %} — {{ item.price }}{% endif %} &rarr;</a>{% endif %}{% endfor %}{% endset %}
-{% if paid | trim %}<h2>Reserve &amp; Pay</h2>{% if offerings.rate_note %}<p>{{ offerings.rate_note }}</p>{% endif %}<div>{{ paid | safe }}</div>{% endif %}
+{% if paid | trim %}<h2>Reserve &amp; Pay</h2><p><a href="rates.html">See all rates &rarr;</a></p><div>{{ paid | safe }}</div>{% endif %}
 
 <h2>How It Works</h2>
 <div class="steps">
