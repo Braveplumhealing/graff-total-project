@@ -134,3 +134,16 @@ architecture only — the Two Arrows doctrine: "The left hand targets while the 
 hand receives." The masking of insecurities was the left hand — ego targeting,
 controlling the image. Speaking them openly is the right hand — surrender to the
 crooked path. Whether "taming" is his final word for it is HIS to name.)*
+
+## Part seven — the eagle returns, and the cape (Johnny, verbatim)
+
+> it feels to me that the taming of the ego allows you to strengthen the eagle. If the
+> ego is at your behest it in part becomes your cape.
+
+*(NOTE for the record: Johnny RETIRED the eagle 2026-07-30 — "the book is for humans,"
+no eagle/coop imagery in his work. Tonight the eagle flew back on its own, in his own
+mouth, in private download. Decision log rule: re-opening a decision is fine; silently
+contradicting one is not — so this is FLAGGED, not acted on. The eagle stays retired in
+all public work until Johnny explicitly says otherwise. New image regardless: the tamed
+ego as CAPE — worn at the back, serving the flight, adding lift, never steering. The
+ego's two states tonight: keeper of the dimmer switch → cape.)*
