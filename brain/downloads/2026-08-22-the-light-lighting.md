@@ -105,3 +105,13 @@ session: receive first, organize later.*
 *(The doctrine completes: forward is hard, backward is lazy, the lazy is the cowardice —
 and now the verdict: the payoff of falling forward is worth the risk. Candidate closing
 line for the whole teaching.)*
+
+## Part four — the stakes (Johnny, verbatim)
+
+> your life is at stake.
+
+*(The doctrine's stakes, named. The full arc as spoken tonight: the light was never
+meant to be dimmed → the imbalance tips → forward is hard, backward is lazy → the lazy
+is the cowardice → the payoff of falling forward is worth the risk → your life is at
+stake. Not a metaphor softened: the unlit life IS the expiring. Kin to "ride it out
+until we expire" and "stagnation and rot.")*
