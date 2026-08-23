@@ -1,37 +1,72 @@
 # Script 01 — Triggers as Teachers
 
-**Runtime:** ~2:20 at an unhurried pace · **Format:** direct to camera, one take
+**Runtime:** ~3:15 at an unhurried pace · **Format:** direct to camera, one take
 **Sacred language used (verbatim, Johnny's own):** the Bravery/Courage doctrine (2026-07-30) ·
 "feather, feather, rock, truck" (rising mercy, 2026-07-13)
+**Story:** Johnny's own (2026-08-22, the gas station by the pass) — told nearly verbatim.
 
 ---
 
-*[Look into the lens. Unhurried. You're talking to one person.]*
+*[Look into the lens. Unhurried. You're telling a friend what happened yesterday.]*
 
-You know the moment.
+Yesterday my wife and I were driving back from the airport,
+and we stopped at a gas station to fill up before heading over the pass.
 
-Someone says the thing — **that** thing —
-and heat rises in your chest.
-Your jaw sets.
-Your story starts writing itself.
+The road was being resurfaced —
+a whole crew in bright green vests, directing traffic.
+You can see it, right?
 
-We call it being triggered.
-And we've been taught to treat it like an enemy —
-something to manage, to hide, to apologize for.
+Getting through the construction was easy enough.
+But coming **out** of that parking lot —
+weaving between the equipment and the torn-up road —
+there was confusion.
+
+One worker waved me through: *come on, you're fine.*
+The other one… was losing his mind.
+Screaming at my windshield.
+Arms going like a windmill.
+
+Now — we had happy music playing in the car.
+I have no idea what he was saying.
 
 *[beat]*
 
+But I can tell you this: **I didn't feel happy.**
+
+I found myself gesturing right back at him.
+And somewhere under my ribs,
+my caveman self was ready to stop the car
+and show him who's boss.
+
+We followed the other worker's directions and got back on the freeway.
+And it took me **a few miles** to settle.
+A few miles before I could even ask the real question:
+
+*What was in that moment for me to learn?*
+
+*[beat]*
+
+I notice my triggers these days.
+Not because they stopped coming — they haven't —
+but because I finally stopped treating them like enemies.
+
+Because that's what that was.
+A trigger.
+Heat rising. Jaw set. The story writing itself.
+
+We've been taught to treat triggers like enemies —
+something to manage, to hide, to apologize for.
+
 I'd like to offer you a different possibility.
 
-What if the trigger isn't an enemy at all?
-What if it's a **teacher** —
+What if the trigger is a **teacher** —
 showing up, uninvited, with the exact lesson you've been avoiding?
 
-Because here's the thing about triggers:
-they don't point at the person in front of you.
+Because here's the thing:
+that man in the green vest didn't create what happened in me.
+He just **found** it.
+Triggers don't point at the person in front of you.
 They point at something **in you** that's asking to be seen.
-A tender place. An old story.
-A boundary that was crossed long before today.
 
 In my work I hold a distinction:
 
@@ -46,8 +81,7 @@ than any argument ever will.
 
 *[beat]*
 
-And here's what I've learned about ignored teachers:
-they don't give up. They get louder.
+And ignored teachers don't give up. They get louder.
 
 First a feather.
 Then another feather.
@@ -56,15 +90,14 @@ Then a truck.
 
 The lesson keeps rising until we finally sit down for class.
 
-So here's a practice — ten seconds, no mat required.
+So here's the practice — it took me a few miles; maybe you'll be faster.
 
-The next time the heat rises:
+When the heat rises:
 **Pause.** Don't fix, don't flee, don't fire back.
 **Name it**, gently: *"Something in me just got touched."*
 Then ask the question a student asks:
 *"What are you here to teach me?"*
 
-That's it.
 You don't have to like the teacher.
 You just have to stay for the lesson.
 
@@ -72,7 +105,8 @@ You just have to stay for the lesson.
 
 Because the goal was never to have no triggers.
 The goal is a life where nothing in you has to stay hidden —
-where even the tender places get to become teachers.
+where even the man screaming at your windshield
+gets to be one of your teachers.
 
 I'm Johnny.
 This is Brave Plum Healing.
@@ -86,15 +120,16 @@ No pressure, ever.
 
 - **Setup:** phone at eye level, window light on your face, quiet room. One take is plenty —
   Descript removes stumbles afterward.
+- **The story is the take.** Tell it like you told it to me — don't polish it. The windmill
+  arms, the happy music, the caveman under the ribs: those details ARE the video.
 - **Pace:** slower than feels natural. The `[beat]` marks are a full breath. The
   feather/rock/truck lines land hardest with a small pause between each.
-- **Wardrobe/set:** whatever feels like you. A plain warm wall beats a busy background.
-- **Don't memorize** — familiarity beats recitation. Read it aloud a few evenings; film
-  when it feels like talking.
+- **Don't memorize** — familiarity beats recitation. Especially the story: it's yours,
+  you can't get it wrong.
 - **Editing (Descript):** delete ums by deleting words in the transcript; auto-captions on;
   export 1080p vertical (Reels/Shorts) AND horizontal (YouTube) if the framing allows.
-- **Thumbnail/title candidates:** "Triggers as Teachers" · "Your Trigger Is Not Your Enemy" ·
-  "What Your Triggers Are Trying to Teach You"
-- **Description draft:** What if the heat of the moment is a lesson, not an attack?
-  A short teaching on reading your triggers as teachers — from Johnny Graf of Brave Plum
-  Healing. Team building, workshops & retreats: braveplumhealing.com
+- **Thumbnail/title candidates:** "Triggers as Teachers" · "The Man Screaming at My
+  Windshield" · "What Your Triggers Are Trying to Teach You"
+- **Description draft:** Two flaggers, opposite directions, and one very loud teacher.
+  A short true story about reading your triggers as teachers — from Johnny Graf of
+  Brave Plum Healing. Team building, workshops & retreats: braveplumhealing.com
