@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-22 — OPEN (Johnny thinking on it): card-back watermark, grey vs petal
+Johnny asked to see the business-card back watermark in grey tones; rendered and compared
+side-by-side (grey = silvered/embossed/formal; petal = warm, one color family). He is
+sleeping on it. Recipe if grey wins: add `filter:grayscale(1)` to `.watermark` in
+outreach/business-cards/card-back.html, re-render PDF. A "between" (grey with a blush
+hint) was also offered. Do not print cards until he decides.
+
 ## 2026-08-22 — Video tool verdict: Descript first; Veo for garnish; skip InVideo/ElevenLabs for now
 Side-by-side done for Johnny (Descript vs InVideo vs ElevenLabs vs Gemini/Veo, web-checked
 2026-08-22; prices approximate, verify at signup). Verdict for the Johnny-on-camera
