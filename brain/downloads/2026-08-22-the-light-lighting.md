@@ -55,3 +55,39 @@ never paraphrase this back to him as if improving it.)
 - Does this breakthrough belong in the book's arc, a talk (Inside Out §the torch?), or
   simply in him for a while?
 - The "presence being magical" confirmation — connected to the Presence retreat's name?
+
+---
+
+## Part two — the learning, minutes later (Johnny, verbatim)
+
+> The learning is that of the failure. It is a recognition that our light was never
+> meant to be dimmed or constrained in any way. With that knowing of the failure of
+> self comes a new understanding of cowardice. And with that knew knowledge and
+> understanding the real coward bears its ugly head. The status quo has shifted.
+> There is an inbalance that is either going to tip backward or tip forward. Backward
+> is lazy. Forward is hard. So the inbalance presents itself through choice. We can
+> chose to fall forward or we can choose to fall backward. Forward is hard. Backward
+> is lazy. The cowardice comes by not making an easy choice it comes as something
+> worse; it comes by making a lazy choice. The lazy is the cowardice. And once you
+> know that you have another choice to make. Are you going to get back into the hard
+> choice or simply ride it out until we expire.
+
+## New phrases that are HIS (candidates, pending blessing)
+
+- **"Our light was never meant to be dimmed or constrained in any way."**
+- **"Forward is hard. Backward is lazy."** — the imbalance's two directions.
+- **"The lazy is the cowardice."** — cowardice redefined: not fear, not the easy
+  choice — the LAZY choice.
+- **"Fall forward or fall backward"** — the imbalance presents itself through choice.
+- The closing question: **"Are you going to get back into the hard choice or simply
+  ride it out until we expire."**
+
+## Where part two sits in his architecture (observation, not his words)
+
+- **"Courage for the Choice"** (the book's sealed subtitle) just found its shadow term:
+  the choice's counterfeit is not refusal but LAZINESS. This may be the book's missing
+  antagonist — cowardice-as-laziness.
+- Direct kin to his courage teaching's "the alternative is stagnation and rot" —
+  riding it out until we expire IS the rot, named plainly.
+- The tipping imbalance echoes sacred interruption mechanics: the status quo shifts
+  and cannot hold; feather-to-truck escalation is what happens to those who fall backward.
