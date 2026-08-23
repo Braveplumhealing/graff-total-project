@@ -2,6 +2,15 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-22 — Homepage About card re-registered; VIDEOS PAGE PARKED (podcast precedent)
+Johnny: "update it and park it." Homepage About card now: "A guide who has sat in both
+chairs" + the 25-years/8-years steadiness blurb (replaces "dark seasons…carrying his
+light" + hollow-success line — old register fully retired sitewide). Videos page:
+redirect home, footer + how-it-works links removed, a11y exemption added — the page had
+promised clips/meditations that never existed (same honesty rule as podcast). RETURNS
+when real videos exist — and Johnny is ready to MAKE them: he wants scripts (Mr Rogers
+writes, his voice) + an external AI video tool for production. Video project incoming.
+
 ## 2026-08-22 — About intro: "the quiet power of presence" (energy-healing wording retired)
 Johnny's dictated edit, verbatim: "With a warm, grounded way of being and a genuine gift
 for meeting people exactly where they are, Johnny blends the precision of evidence-based

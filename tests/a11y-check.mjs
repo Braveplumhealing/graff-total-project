@@ -11,7 +11,7 @@ import { dirname, join } from 'node:path';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = join(root, '_site');
 // Standalone ops/demo pages own their whole document; the public pages are the promise.
-const SKIP = ['neighborhood', 'rogers', 'how-it-works', 'admin', '404', 'podcast'];
+const SKIP = ['neighborhood', 'rogers', 'how-it-works', 'admin', '404', 'podcast', 'videos'];
 
 function pages(dir) {
   return readdirSync(dir).flatMap((f) => {
