@@ -127,6 +127,12 @@ Always first: `export PATH="$HOME/.local/bin:$HOME/bin:$PATH"` (node/npm/gh are 
     as ghost discs, 2026-08-22). Hide shared symbol libraries with `width="0" height="0"
     style="position:absolute;overflow:hidden"` — never `display:none`. And visual QA means
     LOOKING at the rendered element up close, not counting markup.
+16. **Browsers cache style.css past deploys** — visitors (including Johnny) see stale
+    design for up to a day after a CSS change. Fixed 2026-08-23: the stylesheet link
+    carries `?v={{ buildstamp }}` (content/_data/buildstamp.js emits a per-build token),
+    so every deploy busts the cache. Immediate remedy for a stale page: hard refresh
+    (Cmd+Shift+R).
+
 
 
 ## Sync status (verified at last review, 2026-07-08)
