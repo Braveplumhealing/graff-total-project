@@ -2,6 +2,17 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — Work With Johnny regrouped: FIVE CORE + "Additional Services"
+Johnny: group the front page's services together and let the rest "sit under Additional
+Services… more for when I want a place to direct people as needed." Applied: core =
+Team Building · Workshops · Weekend Retreats · Personal Coaching · Speaking & Keynotes
+(Speaking card NEWLY ADDED to the page; body from existing grid copy). Additional
+Services (divider — heading ONLY, Johnny trimmed the explainer note): Mediation & Facilitation · Couple's Reconciliation · Reiki Healing. Rule:
+Work With Johnny's core mirrors the homepage's five doors; the quieter crafts live below.
+BONUS BUG FIXED (found by screenshot QA): the cta-box "Book Your Discovery Call" button
+had INVISIBLE text sitewide (.ci a color rule beat .btn — rose on rose) — live since the
+Aug-20 deep-pages build. .btn color fortified.
+
 ## 2026-08-24 — COACHING PACKAGES PRICED: "The 228 Thread" (Johnny's pick of 3)
 Market research done (established coaches $150-300/session-hour; 12-week packages
 $2,400-4,500; three tiers = sweet spot; his $228/90-min = $152/hr, honestly UNDER-priced
