@@ -2,6 +2,14 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — Email signature built (braveplumhealing@outlook.com)
+Outlook-safe HTML signature: hosted emblem (site asset /assets/emblem-email.png — email
+clients need remote images), Georgia/Arial only, table layout, inline styles. Contents:
+emblem · Johnny Graf · "A Gentle Space to Find Your Way Forward" · Brave Plum Healing ·
+Kittitas Valley, Washington · braveplumhealing.com · (206) 360-9618. Source:
+outreach/email-signature/signature.html. Install = Johnny's clicks in Outlook settings
+(open file in browser → select box → copy → paste into signature editor).
+
 ## 2026-08-24 — "Graf" appears once: the homepage About card
 Johnny: add the last name on the front page About Johnny — "It will be the only space
 that shares my last name." Eyebrow now "About Johnny Graf". Rule: the surname appears
