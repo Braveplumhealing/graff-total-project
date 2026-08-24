@@ -2,6 +2,16 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-23 — Service renamed: "Life Coaching" → "PERSONAL COACHING" sitewide
+Johnny: "find everyplace that says life coaching and change it to personal coaching."
+9 replacements across index grid, Work With Johnny card, Book options, contact dropdown,
+About offers, deep-page title/heading/description, JSON-LD. DELIBERATELY UNCHANGED
+(flagged to Johnny): the credential "Certified Life Coach (ICF-aligned training)" and
+"life coach" role descriptors (About lead/intro, deep-page body, portrait alt) — a
+certification's name isn't ours to rewrite; his call if he wants those too. URL stays
+/life-coaching.html (links + search standing preserved); can rename with redirect on
+his word.
+
 ## 2026-08-23 — FOUR HERO DOORS, mirroring the banner exactly
 Johnny: the hero cards should be "one for each of the banner listed services." Now four
 cards in banner order: Gather & Grow/Team Building · Experiential/Workshops ·
