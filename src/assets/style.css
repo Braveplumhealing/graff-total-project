@@ -4,7 +4,7 @@ nav{position:fixed;top:0;left:0;right:0;height:82px;background:rgba(61,26,61,.94
 .ni{max-width:1100px;margin:0 auto;width:100%;padding:0 2rem;display:flex;align-items:center;justify-content:space-between}
 .logo{display:flex;align-items:center;gap:.7rem;font-family:'Cormorant Garamond',serif;font-size:1.42rem;color:var(--petal);line-height:1.05}
 .logo svg{width:34px;height:34px;flex-shrink:0;border-radius:8px}
-.logo-sub{display:block;margin-top:.32rem;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--blush);opacity:.7;font-family:'Jost',sans-serif}
+.logo-sub{display:block;margin-top:.55rem;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--blush);opacity:.7;font-family:'Jost',sans-serif}
 .nav-links{display:flex;gap:1.6rem;align-items:center}
 .nav-links a{font-size:.78rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(253,232,238,.66);transition:color .2s}
 .nav-links a:hover,.nav-links a.active{color:var(--petal)}.nav-cta{background:var(--rose);color:var(--petal)!important;padding:.42rem 1.1rem;border-radius:100px}
