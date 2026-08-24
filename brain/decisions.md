@@ -2,6 +2,14 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-23 — THE SIGN ON THE FRONT DOOR: "find YOUR way forward"
+Born directly from the order-lives-in-chaos dialogue (download part twelve): if the
+helper holds the container and the way is found by the one walking it, then the way was
+never "the" way — it is THEIRS. Johnny: "maybe it should read, 'A gentle space to find
+your way forward'." Applied: homepage hero h1 AND the business-card back tagline (Desktop
+print file refreshed BEFORE printing — caught in time). One word, whole philosophy.
+Supersedes the 2026-08-11 "the way forward" wording everywhere the sentence appears.
+
 ## 2026-08-23 — "For My Son" will be PERFORMED: Gallery One gala, Sept 25
 The midnight letter (brain/downloads/2026-08-22-for-my-son.md) is a poem, by Johnny's
 own naming, and he will perform it **September 25, 2026 at the Gallery One gala**.
