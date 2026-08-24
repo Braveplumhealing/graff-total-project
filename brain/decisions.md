@@ -2,6 +2,15 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-23 — FOUR HERO DOORS, mirroring the banner exactly
+Johnny: the hero cards should be "one for each of the banner listed services." Now four
+cards in banner order: Gather & Grow/Team Building · Experiential/Workshops ·
+Immersive/Weekend Retreats · One to One/Personal Coaching — each opening its existing
+deep page. "That's way cleaner. way better." CONSCIOUS TRADE: Mediation ("At the Table")
+left the hero — flagged to Johnny, accepted; it leads nowhere-first per the
+possibilities rule and lives on Work With Johnny + its deep page. Rule extends: the
+banner's four services are THE four doors — hero mirrors banner, always.
+
 ## 2026-08-23 — Hero eyebrow REMOVED (the banner is the rhythm)
 Johnny spotted the duplication: nav badge (Team Building · Workshops · Retreats ·
 Personal Coaching) sat directly above the hero eyebrow (…· Mediation) — "The banner is
