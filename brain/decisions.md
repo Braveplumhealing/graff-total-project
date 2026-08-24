@@ -10,12 +10,12 @@ stays out of all Brave Plum materials otherwise (private-family flag holds for w
 the stage is Johnny's own. Support offered: large-type reading copy, rehearsal passes,
 timing. Venue details to confirm with Johnny.
 
-## 2026-08-22 — OPEN (Johnny thinking on it): card-back watermark, grey vs petal
+## 2026-08-22 — RESOLVED 2026-08-23: card-back watermark is GREY (Johnny: "Grey")
 Johnny asked to see the business-card back watermark in grey tones; rendered and compared
 side-by-side (grey = silvered/embossed/formal; petal = warm, one color family). He is
 sleeping on it. Recipe if grey wins: add `filter:grayscale(1)` to `.watermark` in
 outreach/business-cards/card-back.html, re-render PDF. A "between" (grey with a blush
-hint) was also offered. Do not print cards until he decides.
+hint) was also offered. DECIDED: grey (grayscale filter applied). Emblem also enlarged to 1.05in ("spot on"). Cards are print-ready; ordering is Johnny's key-turn.
 
 ## 2026-08-22 — Video tool verdict: Descript first; Veo for garnish; skip InVideo/ElevenLabs for now
 Side-by-side done for Johnny (Descript vs InVideo vs ElevenLabs vs Gemini/Veo, web-checked
