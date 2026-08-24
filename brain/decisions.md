@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — Footer Explore mirrors the nav (redundancy rule extends downward)
+Johnny: Explore tabs = "work with me, about, rates, and book a call. the other tabs are
+again a redundancy." Applied; the deep-page links (Reconciliation/Speaking/Retreats) left
+the footer — those rooms are reached through their proper doors. Connect column deduped
+too (Book a Session + Rates rows removed; it keeps email/phone/Calendly/Privacy). Rule:
+nav and footer-Explore always mirror; no service deep-links in the footer.
+
 ## 2026-08-24 — LANDING PAGE COMPOSED: grid gone, rooted, three steps, KIND WORDS
 Johnny's sweep of the front page, all approved:
 1. Six-card services grid REMOVED ("repetition and contrast" vs the five doors — "Way
