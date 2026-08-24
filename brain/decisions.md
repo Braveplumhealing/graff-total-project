@@ -2,6 +2,18 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — COACHING PACKAGES PRICED: "The 228 Thread" (Johnny's pick of 3)
+Market research done (established coaches $150-300/session-hour; 12-week packages
+$2,400-4,500; three tiers = sweet spot; his $228/90-min = $152/hr, honestly UNDER-priced
+for his depth — flagged). Johnny chose structure A of A/B/C: **$228 session · $1,228
+six-week cycle · $2,280 twelve-week cycle** — "it's A for me. the magic of $2280 is too
+obvious to miss." The motif: 228 → 1,228 → 2,280; twelve weeks of coaching = one full
+day's rate. TWO NEW LIVE Stripe links minted (…M06 $1,228 · …M07 $2,280), checkout pages
+verified by screenshot (correct amounts + branding). Rates page gains "Coaching Cycles"
+group; Book page buttons auto-appeared. Deep pages stay price-free per standing rule.
+DEFERRED with his blessing implied: the premium reset ($288, option C) — legitimate as
+an annual rate review, suggested January, NOT days after publishing Simple Honest Rates.
+
 ## 2026-08-24 — Speaking becomes the FIFTH DOOR; RATES takes its nav seat
 Johnny: "move Speaking from the banner and add a fifth button alongside" the four doors;
 "pricing to take the place of where Speaking was." Applied: nav is now WORK WITH ME ·
