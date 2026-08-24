@@ -7,8 +7,7 @@ Johnny: group the front page's services together and let the rest "sit under Add
 Services… more for when I want a place to direct people as needed." Applied: core =
 Team Building · Workshops · Weekend Retreats · Personal Coaching · Speaking & Keynotes
 (Speaking card NEWLY ADDED to the page; body from existing grid copy). Additional
-Services (divider + note "Quieter doors, here when you need them — or when Johnny points
-the way."): Mediation & Facilitation · Couple's Reconciliation · Reiki Healing. Rule:
+Services (divider — heading ONLY, Johnny trimmed the explainer note): Mediation & Facilitation · Couple's Reconciliation · Reiki Healing. Rule:
 Work With Johnny's core mirrors the homepage's five doors; the quieter crafts live below.
 BONUS BUG FIXED (found by screenshot QA): the cta-box "Book Your Discovery Call" button
 had INVISIBLE text sitewide (.ci a color rule beat .btn — rose on rose) — live since the

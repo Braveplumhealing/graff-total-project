@@ -24,7 +24,7 @@ layout: base.njk
 {% endif %}
 {% endfor %}
 {% if additional_services %}
-<div class="addl-divider"><p class="ph-ey">{{ additional_heading }}</p><p class="addl-note">{{ additional_note }}</p></div>
+<div class="addl-divider"><p class="ph-ey">{{ additional_heading }}</p></div>
 {% for s in additional_services %}
 {% if s.url %}
 <a class="service-block service-door" href="{{ s.url }}">
