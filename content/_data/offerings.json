@@ -20,6 +20,18 @@
       "custom_amount": true,
       "price": "billed at cost",
       "payment_url": "https://buy.stripe.com/cNi3cxa3Pa6Zb4G02r4wM02"
+    },
+    {
+      "name": "Personal Coaching — 6-Week Cycle (6 × 90-min)",
+      "amount_cents": 122800,
+      "price": "$1,228 / 6 weeks",
+      "payment_url": "https://buy.stripe.com/bJe6oJgsd0wp3Ce02r4wM06"
+    },
+    {
+      "name": "Personal Coaching — 12-Week Cycle (12 × 90-min)",
+      "amount_cents": 228000,
+      "price": "$2,280 / 12 weeks",
+      "payment_url": "https://buy.stripe.com/4gM3cxgsd0wpegSeXl4wM07"
     }
   ]
 }
