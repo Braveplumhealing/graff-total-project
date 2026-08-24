@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — THE JOURNAL GETS A FRONT ROOM: /journal.html
+Johnny couldn't find the Triggers post "on the brave plum journal space" — because there
+WAS no journal space: the footer linked straight to the welcome post; no index listed
+posts at all (gap since June). Built /journal.html: page-hero + all posts newest-first
+(date cards, Read links); footer Journal link now points there. Fixed en route: post
+ordering + UTC date drift. Rule: every post is reachable from /journal.html, newest first.
+
 ## 2026-08-24 — JOURNAL AWAKENS: "Triggers as Teachers" is post #2
 Johnny: "Draft the trigger post and put it up." Script 01 adapted to essay form
 (story verbatim, sacred lines intact, ends with discovery-call door + "No pressure,
