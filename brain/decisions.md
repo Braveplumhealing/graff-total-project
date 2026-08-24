@@ -2,6 +2,22 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — LANDING PAGE COMPOSED: grid gone, rooted, three steps, KIND WORDS
+Johnny's sweep of the front page, all approved:
+1. Six-card services grid REMOVED ("repetition and contrast" vs the five doors — "Way
+   cleaner"); its "gathering a team…" lead sentence retired with it (flagged, accepted).
+2. LOCATION, his verbatim line, in the footer sitewide + JSON-LD address/areaServed:
+   "Rooted in the Kittitas Valley, Washington — serving teams across the Pacific
+   Northwest and beyond." (First time the site says where he is.)
+3. THREE STEPS in Begin Your Journey: free discovery call → we design it together →
+   the work, held on both sides.
+4. TESTIMONIALS ARE LIVE AT LAST — the no-testimonials rule is SATISFIED, not broken:
+   three real, attributed quotes found on Johnny's own 4humangoodinc.com (previously
+   published by him); he confirmed "permissions hold." Kind Words section (Raychel —
+   coaching/greatness; Meghan + Meredith — Harriet House retreats), verbatim, seated
+   between About and CTA. The unattributed fourth quote NOT used (attribution required).
+Page flow now: five doors → his quote → both chairs → Kind Words → Begin Your Journey.
+
 ## 2026-08-24 — Work With Johnny regrouped: FIVE CORE + "Additional Services"
 Johnny: group the front page's services together and let the rest "sit under Additional
 Services… more for when I want a place to direct people as needed." Applied: core =
