@@ -2,6 +2,15 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-23 — Hero eyebrow REMOVED (the banner is the rhythm)
+Johnny spotted the duplication: nav badge (Team Building · Workshops · Retreats ·
+Personal Coaching) sat directly above the hero eyebrow (…· Mediation) — "The banner is
+the rhythm that I prefer and I don't think we need them both." The eyebrow was actually
+the THIRD naming in one viewport (badge + eyebrow + hero cards). Removed; the hero now
+opens straight into "A gentle space to find your way forward." Mediation stays visible
+in the "At the Table" hero card. Rule: the badge is the one canonical service rhythm
+at the top of every page — nothing repeats it in the hero.
+
 ## 2026-08-23 — THE SIGN ON THE FRONT DOOR: "find YOUR way forward"
 Born directly from the order-lives-in-chaos dialogue (download part twelve): if the
 helper holds the container and the way is found by the one walking it, then the way was
