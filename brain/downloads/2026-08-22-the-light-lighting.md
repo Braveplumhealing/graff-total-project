@@ -191,3 +191,17 @@ the sacred interruption IS the chaos that completes; feather-to-truck is chaos i
 service of return; the trigger is chaos knocking with curriculum. And it is his
 mediator's credo in one line — he sits down in other people's chaos precisely because
 order lives there. Candidate question it opens: what pattern is in process now?)*
+
+## Part twelve — the planetary wondering (Johnny, verbatim, 2026-08-23)
+
+> That's a really cool question. I don't have an answer just yet. But I have had this
+> wondering based on the chaos that we are all experiencing on our planet right now.
+> Is it that chaos can be resolved or is it that chaos must resolve itself? If it is
+> the latter than what is our role as thinkers, and doers, and helpers?
+
+*(The doctrine reaches the world. He holds the pattern-question open — "I don't have an
+answer just yet" — and asks the helper's question: if chaos must resolve itself, what
+are we FOR? Dialogue was invited; Mr Rogers offered the mirror from his own practice:
+the mediator never resolves the conflict — the parties do; the mediator holds the
+container. See reflection in session. Candidate teaching seed: "the helper's role when
+chaos must resolve itself.")*
