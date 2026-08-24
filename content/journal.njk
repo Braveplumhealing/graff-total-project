@@ -1,0 +1,21 @@
+---
+layout: base.njk
+permalink: /journal.html
+title: "The Brave Plum Journal"
+description: "Gentle notes on healing, alignment, and finding your way forward — honest reflections from Johnny."
+---
+<div class="page-hero">
+<p class="ph-ey">The Journal</p>
+<h1>The Brave Plum Journal</h1>
+<p class="ph-lead">Gentle notes on healing, alignment, and finding your way forward. No noise, no pressure &mdash; honest reflections you can take or leave, whenever the timing feels right.</p>
+</div>
+<section class="content"><div class="ci">
+{% for post in collections.posts | sort(true, false, 'date') %}
+<a class="service-block service-door" href="{{ post.url }}">
+<h2>{{ post.data.title }}</h2>
+<p class="post-date">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) }}</p>
+<p>{{ post.data.description }}</p>
+<span class="read-more">Read &rarr;</span>
+</a>
+{% endfor %}
+</div></section>
