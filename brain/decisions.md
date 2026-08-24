@@ -2,6 +2,12 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — "Graf" appears once: the homepage About card
+Johnny: add the last name on the front page About Johnny — "It will be the only space
+that shares my last name." Eyebrow now "About Johnny Graf". Rule: the surname appears
+exactly there and nowhere else visible (JSON-LD founder + card signature already carry
+it structurally; visible site pages stay first-name warm elsewhere).
+
 ## 2026-08-24 — Banner badge grows to FIVE: Speaking & Keynotes joins
 Johnny: "let speaking and keynotes have space along the other 4 key services in the
 header." Badge now: Team Building · Workshops · Retreats · Personal Coaching ·
