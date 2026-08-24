@@ -1,14 +1,14 @@
 :root{--plum:#3D1A3D;--rose:#C4637E;--blush:#F2B8C6;--petal:#FDE8EE;--cream:#FDF5F0;--sage:#6B8F6B;--muted:#8A6570;--text:#2D1520;--ease:cubic-bezier(.16,1,.3,1)}
 *{box-sizing:border-box;margin:0;padding:0}body{background:var(--cream);color:var(--text);font-family:'Jost',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}a{text-decoration:none;color:inherit}ul{list-style:none}
-nav{position:fixed;top:0;left:0;right:0;height:68px;background:rgba(61,26,61,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(242,184,198,.15);z-index:200;display:flex;align-items:center}
+nav{position:fixed;top:0;left:0;right:0;height:82px;background:rgba(61,26,61,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(242,184,198,.15);z-index:200;display:flex;align-items:center}
 .ni{max-width:1100px;margin:0 auto;width:100%;padding:0 2rem;display:flex;align-items:center;justify-content:space-between}
 .logo{display:flex;align-items:center;gap:.7rem;font-family:'Cormorant Garamond',serif;font-size:1.42rem;color:var(--petal);line-height:1.05}
 .logo svg{width:34px;height:34px;flex-shrink:0;border-radius:8px}
-.logo-sub{display:block;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--blush);opacity:.7;font-family:'Jost',sans-serif}
+.logo-sub{display:block;margin-top:.55rem;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--blush);opacity:.7;font-family:'Jost',sans-serif}
 .nav-links{display:flex;gap:1.6rem;align-items:center}
 .nav-links a{font-size:.78rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(253,232,238,.66);transition:color .2s}
 .nav-links a:hover,.nav-links a.active{color:var(--petal)}.nav-cta{background:var(--rose);color:var(--petal)!important;padding:.42rem 1.1rem;border-radius:100px}
-.hero{min-height:100vh;background:var(--plum);display:flex;align-items:center;padding-top:68px;position:relative;overflow:hidden}
+.hero{min-height:100vh;background:var(--plum);display:flex;align-items:center;padding-top:82px;position:relative;overflow:hidden}
 .hero-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 60% at 55% 35%,rgba(196,99,126,.28) 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 20% 75%,rgba(122,48,112,.4) 0%,transparent 55%)}
 .hero-inner{position:relative;max-width:1100px;margin:0 auto;padding:5rem 2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .eyebrow{font-size:.67rem;letter-spacing:.28em;text-transform:uppercase;color:var(--blush);margin-bottom:1.4rem;opacity:.85;display:flex;align-items:center;gap:.65rem}
@@ -91,14 +91,14 @@ footer{background:var(--plum);color:var(--petal);padding:4rem 2rem 2rem}
 @media(max-width:900px){.hero-inner,.about-inner{grid-template-columns:1fr}.hero-cards{display:none}.grid{grid-template-columns:1fr 1fr}.fg{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr}
 .nav-toggle{display:flex}
-.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:rgba(61,26,61,.98);flex-direction:column;gap:0;padding:.6rem 0 1rem;border-bottom:1px solid rgba(242,184,198,.2)}
+.nav-links{display:none;position:absolute;top:82px;left:0;right:0;background:rgba(61,26,61,.98);flex-direction:column;gap:0;padding:.6rem 0 1rem;border-bottom:1px solid rgba(242,184,198,.2)}
 .nav-links.open{display:flex}
 .nav-links li{width:100%;text-align:center}
 .nav-links a{display:block;padding:.7rem 1rem;font-size:.85rem}
 .nav-links .nav-cta{display:inline-block;margin-top:.4rem}}
 
 /* ===== Inner pages (about, work-with-me, speaking, podcast, videos, book, contact) ===== */
-.page-hero,.ph{background:var(--plum);padding:calc(68px + 4rem) 2rem 4rem;text-align:center;position:relative;overflow:hidden}
+.page-hero,.ph{background:var(--plum);padding:calc(82px + 4rem) 2rem 4rem;text-align:center;position:relative;overflow:hidden}
 .page-hero::before,.ph::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(196,99,126,.22) 0%,transparent 65%)}
 .ph-ey{font-size:.67rem;letter-spacing:.28em;text-transform:uppercase;color:var(--blush);opacity:.75;margin-bottom:.9rem;position:relative;z-index:1}
 .page-hero h1,.ph h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,3.8rem);font-weight:300;color:var(--petal);line-height:1.1;margin-bottom:1rem;position:relative;z-index:1}
