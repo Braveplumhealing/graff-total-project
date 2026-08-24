@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — Banner badge grows to FIVE: Speaking & Keynotes joins
+Johnny: "let speaking and keynotes have space along the other 4 key services in the
+header." Badge now: Team Building · Workshops · Retreats · Personal Coaching ·
+Speaking & Keynotes — matching the five hero doors exactly (badge ↔ doors rule complete).
+One line at desktop; wraps as glued units below. NOTE: business cards still carry four
+services + Personal Coaching (not updated — his call if the printed card should match five).
+
 ## 2026-08-24 — THE JOURNAL GETS A FRONT ROOM: /journal.html
 Johnny couldn't find the Triggers post "on the brave plum journal space" — because there
 WAS no journal space: the footer linked straight to the welcome post; no index listed
