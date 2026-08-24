@@ -2,6 +2,15 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — JOURNAL AWAKENS: "Triggers as Teachers" is post #2
+Johnny: "Draft the trigger post and put it up." Script 01 adapted to essay form
+(story verbatim, sacred lines intact, ends with discovery-call door + "No pressure,
+ever"). First real teaching in the Journal (after the June welcome note). When the
+video exists, embed it in this same post. POEM PLAN: Johnny named its purpose — "a
+healing peace for dads and sons. Not just for me and my son." Journal publication
+planned AFTER the Gallery One premiere (Sept 26 candidate framing: the poem read last
+night at Gallery One). He is filming BOTH pieces (Descript test) — clips incoming.
+
 ## 2026-08-24 — Footer Explore mirrors the nav (redundancy rule extends downward)
 Johnny: Explore tabs = "work with me, about, rates, and book a call. the other tabs are
 again a redundancy." Applied; the deep-page links (Reconciliation/Speaking/Retreats) left
