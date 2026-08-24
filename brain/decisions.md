@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — Speaking becomes the FIFTH DOOR; RATES takes its nav seat
+Johnny: "move Speaking from the banner and add a fifth button alongside" the four doors;
+"pricing to take the place of where Speaking was." Applied: nav is now WORK WITH ME ·
+ABOUT · RATES · BOOK A CALL; hero has five doors — the four banner services + "On Stage /
+Speaking & Keynotes" (spotlight icon). Logic recorded: a SERVICE belongs among the doors;
+an ANSWER (pricing) belongs in the menu. Johnny on the mock: "Looks Awesome."
+
 ## 2026-08-23 — Service renamed: "Life Coaching" → "PERSONAL COACHING" sitewide
 Johnny: "find everyplace that says life coaching and change it to personal coaching."
 9 replacements across index grid, Work With Johnny card, Book options, contact dropdown,
