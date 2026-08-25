@@ -2,6 +2,21 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — The video space is named: "A WALK AROUND THE BLOCK"
+Johnny: the site's video section will be called "A Walk Around the Block" — "It fits
+our neighborhood motif and is a show I used to do live on Facebook." His own former
+live show, coming home. When the Videos page returns from parking (first real clip
+published), it returns under this name. ALSO: first practice video reviewed (3:38,
+720p, Descript captions with word-highlight, couch + warm room, story told naturally
+off-script — exactly as coached). Practice only, NOT posted, per Johnny.
+
+## 2026-08-24 — FIRST VIDEO CUT (Descript works); thumbnail template born
+Johnny cut his first video in Descript ("Amazing"). Thumbnail system built:
+outreach/videos/thumbnails/thumbnail-template.html — B&W portrait left, plum panel,
+kicker + big Cormorant title (petal italic accent), emblem + "Brave Plum Healing with
+Johnny Graf" brand line, watermark emblem. First render: 01-triggers-as-teachers.png
+(1280x720 YouTube spec). Per-video: swap __KICKER__/__TITLE__ and re-render.
+
 ## 2026-08-24 — Email signature built (braveplumhealing@outlook.com)
 Outlook-safe HTML signature: hosted emblem (site asset /assets/emblem-email.png — email
 clients need remote images), Georgia/Arial only, table layout, inline styles. Contents:
