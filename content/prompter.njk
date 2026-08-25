@@ -1,0 +1,160 @@
+---
+permalink: /prompter.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Prompter — Brave Plum Healing</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;color:#FDE8EE;font-family:Georgia,serif;overflow:hidden;height:100vh}
+#stage{height:100vh;overflow:hidden;position:relative}
+#text{padding:45vh 6vw;font-size:34px;line-height:1.6;white-space:pre-wrap;transition:none}
+#text.mirror{transform:scaleX(-1)}
+#bar{position:fixed;top:0;left:0;right:0;background:rgba(61,26,61,.95);padding:10px 12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;z-index:10;font-family:Arial,sans-serif;font-size:13px}
+#bar.hidden{display:none}
+button,input[type=range]{touch-action:manipulation}
+button{background:#C4637E;color:#fff;border:none;border-radius:100px;padding:8px 16px;font-size:14px}
+label{color:#F2B8C6;display:flex;align-items:center;gap:6px}
+#edit{position:fixed;inset:0;background:#000;z-index:20;display:none;padding:12px;flex-direction:column;gap:10px}
+#edit textarea{flex:1;background:#111;color:#FDE8EE;border:1px solid #C4637E;border-radius:8px;padding:12px;font-size:16px;font-family:Georgia,serif}
+.midline{position:fixed;top:45vh;left:0;right:0;border-top:1px solid rgba(242,184,198,.35);pointer-events:none}
+</style></head><body>
+<div id="bar">
+  <button id="play">▶ Start</button>
+  <label>Speed <input type="range" id="speed" min="10" max="120" value="42" style="width:90px"></label>
+  <label>Size <input type="range" id="size" min="22" max="60" value="34" style="width:80px"></label>
+  <button id="mirrorBtn">Mirror</button>
+  <button id="editBtn">Script</button>
+  <button id="resetBtn">⟲</button>
+</div>
+<div class="midline"></div>
+<div id="stage"><div id="text">— Look into the lens. Unhurried. You're telling a friend what happened yesterday. —
+
+Yesterday my wife and I were driving back from the airport,
+and we stopped at a gas station to fill up before heading over the pass.
+
+The road was being resurfaced —
+a whole crew in bright green vests, directing traffic.
+You can see it, right?
+
+Getting through the construction was easy enough.
+But coming out of that parking lot —
+weaving between the equipment and the torn-up road —
+there was confusion.
+
+One worker waved me through: come on, you're fine.
+The other one… was losing his mind.
+Screaming at my windshield.
+Arms going like a windmill.
+
+Now — we had happy music playing in the car.
+I have no idea what he was saying.
+
+— beat —
+
+But I can tell you this: I didn't feel happy.
+
+I found myself gesturing right back at him.
+And somewhere under my ribs,
+my caveman self was ready to stop the car
+and show him who's boss.
+
+We followed the other worker's directions and got back on the freeway.
+And it took me a few miles to settle.
+A few miles before I could even ask the real question:
+
+What was in that moment for me to learn?
+
+— beat —
+
+I notice my triggers these days.
+Not because they stopped coming — they haven't —
+but because I finally stopped treating them like enemies.
+
+Because that's what that was.
+A trigger.
+Heat rising. Jaw set. The story writing itself.
+
+We've been taught to treat triggers like enemies —
+something to manage, to hide, to apologize for.
+
+I'd like to offer you a different possibility.
+
+What if the trigger is a teacher —
+showing up, uninvited, with the exact lesson you've been avoiding?
+
+Because here's the thing:
+that man in the green vest didn't create what happened in me.
+He just found it.
+Triggers don't point at the person in front of you.
+They point at something in you that's asking to be seen.
+
+In my work I hold a distinction:
+
+**"Bravery faces down the danger around you.
+Courage transforms the world within you."**
+
+A trigger feels like outer danger.
+That's the disguise.
+It's actually an invitation to inner work —
+and receiving that invitation takes more courage
+than any argument ever will.
+
+— beat —
+
+And ignored teachers don't give up. They get louder.
+
+First a feather.
+Then another feather.
+Then a rock.
+Then a truck.
+
+The lesson keeps rising until we finally sit down for class.
+
+So here's the practice — it took me a few miles; maybe you'll be faster.
+
+When the heat rises:
+Pause. Don't fix, don't flee, don't fire back.
+Name it, gently: "Something in me just got touched."
+Then ask the question a student asks:
+"What are you here to teach me?"
+
+You don't have to like the teacher.
+You just have to stay for the lesson.
+
+— beat — soften —
+
+Because the goal was never to have no triggers.
+The goal is a life where nothing in you has to stay hidden —
+where even the man screaming at your windshield
+gets to be one of your teachers.
+
+I'm Johnny.
+This is Brave Plum Healing.
+And when you're ready — the door's open at braveplumhealing.com.
+
+No pressure, ever.
+
+---</div></div>
+<div id="edit"><textarea id="ta"></textarea><div style="display:flex;gap:10px"><button id="useBtn">Use this script</button><button id="cancelBtn">Cancel</button></div></div>
+<script>
+(function(){
+var t=document.getElementById('text'),stage=document.getElementById('stage');
+var playing=false,y=0,last=null,raf=null;
+var speed=document.getElementById('speed'),size=document.getElementById('size');
+function step(ts){if(!playing)return;if(last!==null){y+=(ts-last)/1000*speed.value;t.style.transform=(t.classList.contains('mirror')?'scaleX(-1) ':'')+'translateY('+(-y)+'px)';}last=ts;raf=requestAnimationFrame(step);}
+function setPlay(p){playing=p;last=null;document.getElementById('play').textContent=p?'❚❚ Pause':'▶ Start';document.getElementById('bar').classList.toggle('hidden',p);if(p)raf=requestAnimationFrame(step);else cancelAnimationFrame(raf);}
+document.getElementById('play').onclick=function(e){e.stopPropagation();setPlay(!playing);};
+stage.onclick=function(){setPlay(!playing);};
+size.oninput=function(){t.style.fontSize=size.value+'px';};
+document.getElementById('mirrorBtn').onclick=function(){t.classList.toggle('mirror');};
+document.getElementById('resetBtn').onclick=function(){y=0;t.style.transform='';};
+var edit=document.getElementById('edit'),ta=document.getElementById('ta');
+document.getElementById('editBtn').onclick=function(){ta.value=t.textContent;edit.style.display='flex';};
+document.getElementById('useBtn').onclick=function(){t.textContent=ta.value;edit.style.display='none';y=0;t.style.transform='';};
+document.getElementById('cancelBtn').onclick=function(){edit.style.display='none';};
+})();
+</script>
+</body></html>
