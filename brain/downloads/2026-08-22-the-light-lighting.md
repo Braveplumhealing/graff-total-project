@@ -205,3 +205,13 @@ are we FOR? Dialogue was invited; Mr Rogers offered the mirror from his own prac
 the mediator never resolves the conflict — the parties do; the mediator holds the
 container. See reflection in session. Candidate teaching seed: "the helper's role when
 chaos must resolve itself.")*
+
+## Part thirteen — the trigger doctrine sharpens (Johnny, verbatim, 2026-08-24)
+
+> reacting to the trigger is bravery - responding to the trigger is courage.
+
+*(The Bravery/Courage doctrine meets the trigger teaching and fuses: REACTING = bravery
+(outward, meeting the danger around you — the caveman revving); RESPONDING = courage
+(inward, transforming the world within — pause, name, ask). One trigger, two roads,
+mapped exactly onto his sacred distinction. Candidate line for the video series, Mini
+Lesson № 2, and the book. Pending his blessing for public use.)*
