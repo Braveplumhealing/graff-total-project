@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-24 — FIRST VIDEO CUT (Descript works); thumbnail template born
+Johnny cut his first video in Descript ("Amazing"). Thumbnail system built:
+outreach/videos/thumbnails/thumbnail-template.html — B&W portrait left, plum panel,
+kicker + big Cormorant title (petal italic accent), emblem + "Brave Plum Healing with
+Johnny Graf" brand line, watermark emblem. First render: 01-triggers-as-teachers.png
+(1280x720 YouTube spec). Per-video: swap __KICKER__/__TITLE__ and re-render.
+
 ## 2026-08-24 — Email signature built (braveplumhealing@outlook.com)
 Outlook-safe HTML signature: hosted emblem (site asset /assets/emblem-email.png — email
 clients need remote images), Georgia/Arial only, table layout, inline styles. Contents:
