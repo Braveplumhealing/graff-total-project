@@ -191,3 +191,15 @@ a.service-door:hover .read-more{text-decoration:underline}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .p{display:none}
 }
+
+/* A Walk Around the Block — episode layout */
+.walk-episode{display:flex;gap:2.6rem;align-items:flex-start;flex-wrap:wrap;margin:1.2rem 0 2.4rem}
+.walk-player{flex:0 0 320px;max-width:320px;width:100%}
+.walk-player iframe{width:100%;aspect-ratio:9/16;border:0;border-radius:18px;box-shadow:0 10px 34px rgba(61,26,61,.28);background:#000}
+.walk-notes{flex:1 1 320px;min-width:260px}
+.walk-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.3rem 0 .9rem}
+.walk-fine{font-size:.85rem;opacity:.85}
+.walk-about{border-top:1px solid rgba(242,184,198,.25);padding-top:1.6rem;max-width:640px}
+@media(max-width:640px){.walk-episode{gap:1.6rem}.walk-player{margin:0 auto}}
+.ci a.btn-r{color:#fdfaf8!important;text-decoration:none}
+.ci a.btn-g{text-decoration:none}
