@@ -50,6 +50,12 @@ Johnny films; Mr Rogers assembles. Established 2026-08-25, after Episode №1.
 - A broken template layout can bury finished scenes (Episode №1's finale sat under
   an oversized quote headline). When a scene looks wrong, check for an oversized
   layer on top before assuming the content is missing.
+- TYPED WORDS ARE SILENT WORDS. Typing a correction into the Descript script
+  (replacing what was spoken with better wording) leaves words with NO recording
+  behind them — they play as 0.5–2s of silence and blank video. Episode №1 had six
+  such spots. Fix wording by DELETING spoken words only, never by typing new ones;
+  if a line must change, refilm the line. Never accept Descript's "Regenerate"
+  offer — no AI voice on this show, ever.
 - Mr Rogers' keyboard input in the Descript editor must land in a focused text box;
   stray keys become editor shortcuts (splits scenes, changes playback speed).
   Verify focus with a screenshot before typing; storyboard view is the truth for
