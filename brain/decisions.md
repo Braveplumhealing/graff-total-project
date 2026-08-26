@@ -2,6 +2,26 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-26 — Instagram born + LinkedIn dressed; quote-card system started
+1. INSTAGRAM: new business account (Johnny's hands; personal info swapped for
+   braveplumhealing@outlook.com), category Personal Coach, home address withheld
+   (sanctuary stays private; city only). Meta Verified upsell REFUSED — business
+   accounts are free. Blossom avatar, brand bio, quote card 01 as first post.
+2. LINKEDIN: company-page creation gated (needs connections) → flipped to the
+   stronger play: Johnny's PERSONAL profile is the engine. Dressed (headline,
+   About, Founder + 25-yr school-leadership experience) and quote card posted
+   personally. Company page = 5-min nameplate later; assets ready.
+3. QUOTE-CARD SYSTEM: outreach/brand/quote-card-01.html (1080x1350 doctrine card)
+   — template for every episode's Friday card. LI cover: outreach/brand/li-cover.html.
+4. Channel counsel: NO new social porches. Next: Google Business Profile (local
+   search), maybe Nextdoor. TikTok = free mirror someday. X = never. Email at ~100.
+
+## 2026-08-26 — Facebook page rebranded (Brand Pack applied)
+Profile picture (blossom-in-ring) + plum cover (1640x624, mobile-safe) rendered
+from canonical emblem; bio, About, website/email, and "Learn more" action button ->
+braveplumhealing.com applied by Johnny's taps. Cover source: outreach/brand/
+fb-cover.html. Same pattern serves any platform.
+
 ## 2026-08-26 — Brand Guidelines PDF (Edition One) for the Marblism team
 Sonny (Marblism social manager) took the Brand Pack and produced a branded post;
 the Marblism team asked for a full brand guideline doc. Built the 8-page PDF from
