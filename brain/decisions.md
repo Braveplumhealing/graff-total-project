@@ -2,6 +2,62 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-25 (late) — Header repaired after The Walk joined the nav
+Five tabs overflowed the old header: labels wrapped mid-word, Book-a-Call pill broke.
+Fix: nowrap links, tighter gap, 1200px container, hamburger at ≤980px (was 600),
+phone hides the services sub-line. LATENT BUG: the hamburger button had NEVER
+displayed (base display:none later in stylesheet than the media query enabling it —
+same specificity, last wins). Mobile visitors had no menu until tonight. Verified
+open on real mobile viewport, all five doors present.
+
+## 2026-08-25 (night) — THE SHOW IS LIVE: YouTube channel + Episode 1 public + The Walk page
+1. YouTube channel created (Brand Account under Johnny's personal Google — scalable,
+   ownership transferable later): "A Walk Around the Block · Brave Plum Healing",
+   handle @BravePlumHealing, emblem avatar + plum banner, Education category,
+   braveplumhealing@outlook.com, link braveplumhealing.com.
+2. Episode 1 PUBLIC: https://youtu.be/dLtA0Tv5yuk ("Triggers as Teachers — A Walk
+   Around the Block №1", 4:09). Published via Descript→YouTube DIRECT destination —
+   the web download stalls repeatedly; the direct destination is the reliable path,
+   use it every episode. It defaults Access=Private; flip Public in YT Studio.
+3. Site: "The Walk" nav tab → /walk.html — embedded episode (youtube-nocookie,
+   vertical player), $2.28 mini-lesson buy button (the product-under-the-video
+   vision COMPLETE), subscribe button, Journal cross-links; video atop the Triggers
+   Journal post + buy link at its close; footer mirrors nav.
+4. CSS lesson (3rd occurrence): `.ci a` swallows new button classes — every new
+   .btn-* inside .ci needs an explicit color override.
+
+## 2026-08-25 — Devotion vs Self-Sacrifice: the teaching ships, the testimony waits
+A powerful morning conversation (Johnny + another AI) surfaced the fuller story of
+his departure from public education AND a teaching distinction. Two clocks, per
+Mr Rogers' counsel, accepted by Johnny:
+- Script 02 written — leads with Johnny's chosen line: "Devotion serves that which
+  we love — self-sacrifice tries to prove that we are worthy of love." ZERO
+  autobiography by Johnny's explicit direction: "I don't want to give away my power
+  in the middle of a teaching." All examples belong to the listener.
+- The cast-out testimony is VAULTED (not yet) — waits until it's a scar, and until
+  his family hears it from him first. Verbatim in
+  brain/downloads/2026-08-25-devotion-and-self-sacrifice.md.
+- Pattern confirmed as Johnny's signature teaching move: near-synonyms split apart
+  (bravery/courage → devotion/self-sacrifice). Mini Lesson № 3 candidate: the two
+  questions + "Be devoted. Stay whole." pocket card.
+
+## 2026-08-24 — MINI LESSONS BORN at $2.28; phone teleprompter built
+1. Mini Lesson № 1 — Triggers as Teachers (4-page PDF: cover, teaching, ten-second
+   practice + 3 journal prompts, two cut-out pocket cards). Johnny's product idea:
+   "a customer and little bit of coin." PRICE $2.28 to the customer (visible 228
+   thread; nets ~$1.91 after Stripe). LIVE payment link …M08 minted; after-payment
+   redirect delivers the PDF from /assets/lessons/. Buy button now lives under the
+   video on /walk.html and in the Journal post. Template: outreach/mini-lessons/.
+   NEW DOCTRINE captured en route: "reacting to the trigger is bravery - responding
+   to the trigger is courage" (download part thirteen).
+2. Teleprompter: /prompter.html — unlisted, noindex, phone-first: preloaded script,
+   tap to start/pause, speed + size sliders, mirror mode, edit box for any script
+   (the poem can be pasted without ever being hosted). A11y-exempted tool page.
+3. PROCESS LESSON (found 08-25 late): four deposits in a row silently failed —
+   the insert-anchor referenced an entry that only existed on an unmerged branch,
+   and the deposit script printed success without verifying the write. Every
+   deposit script must ASSERT its anchor exists and verify the file changed.
+
 ## 2026-08-24 — The video space is named: "A WALK AROUND THE BLOCK"
 Johnny: the site's video section will be called "A Walk Around the Block" — "It fits
 our neighborhood motif and is a show I used to do live on Facebook." His own former
