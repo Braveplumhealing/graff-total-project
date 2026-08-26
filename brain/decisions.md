@@ -2,6 +2,16 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-26 — Brand Guidelines PDF (Edition One) for the Marblism team
+Sonny (Marblism social manager) took the Brand Pack and produced a branded post;
+the Marblism team asked for a full brand guideline doc. Built the 8-page PDF from
+canonical sources (gen-emblem, palette, voice skill): cover, the mark + usage rules,
+color system, typography (Cormorant/Jost/Great Vibes-for-signature-only), voice
+do/don't + house sign-off, the words (hero line, service order, doctrine verbatim,
+boilerplate), the show system, and the hard governance page (drafts only, only-links
+table, quick test). Source: outreach/brand/brand-guidelines.html (regenerate via
+headless Chrome print-to-pdf). Desktop copy delivered for upload to Marblism.
+
 ## 2026-08-26 — Brand Pack created for outside agents (Marblism first)
 Johnny: Marblism's social media manager will soon create/manage posts but "doesn't
 have any of my branding." Built brain/brand-pack.md — the ONE document any outside
