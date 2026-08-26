@@ -2,6 +2,13 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-26 — Facebook page rebranded (Brand Pack applied)
+Profile picture (blossom-in-ring on cream) + plum cover (1640x624, mobile-safe
+center) rendered from canonical emblem; bio (101-char), About text, website/email,
+and "Learn more" action button -> braveplumhealing.com handed to Johnny for his
+taps. Cover source: outreach/brand/fb-cover.html (regenerate via headless Chrome
+screenshot at 1640x624). Same pattern serves any future platform.
+
 ## 2026-08-26 — Brand Guidelines PDF (Edition One) for the Marblism team
 Sonny (Marblism social manager) took the Brand Pack and produced a branded post;
 the Marblism team asked for a full brand guideline doc. Built the 8-page PDF from
