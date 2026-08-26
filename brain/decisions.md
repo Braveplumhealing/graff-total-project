@@ -2,6 +2,14 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-26 — Brand Pack created for outside agents (Marblism first)
+Johnny: Marblism's social media manager will soon create/manage posts but "doesn't
+have any of my branding." Built brain/brand-pack.md — the ONE document any outside
+agent gets: identity, voice rules + house sign-off, palette/type/mark, the show,
+the ONLY allowed links, social mechanics, and HARD governance (drafts only — nothing
+auto-posts; no DMs/replies/spending; forbidden topics). Desktop copy made for
+pasting into Marblism agent instructions. Concierge configuration walk pending.
+
 ## 2026-08-25 (late) — Header repaired after The Walk joined the nav
 Five tabs overflowed the old header: labels wrapped mid-word, Book-a-Call pill broke.
 Fix: nowrap links, tighter gap, 1200px container, hamburger at ≤980px (was 600),
