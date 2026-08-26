@@ -5,6 +5,10 @@ description: Two flaggers, opposite directions, and one very loud teacher — a 
 draft: false
 ---
 
+<div class="walk-player" style="margin:0 auto 1.8rem"><iframe src="https://www.youtube-nocookie.com/embed/dLtA0Tv5yuk" title="Triggers as Teachers — A Walk Around the Block №1 (video)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+*Prefer to watch? This story is [Episode №1 of A Walk Around the Block](/walk.html) — or read on.*
+
 A few days ago my wife and I were driving back from the airport, and we stopped at a
 gas station to fill up before heading over the pass.
 
@@ -80,6 +84,10 @@ You don't have to like the teacher. You just have to stay for the lesson.
 Because the goal was never to have no triggers. The goal is a life where nothing in
 you has to stay hidden — where even the man screaming at your windshield gets to be
 one of your teachers.
+
+Want to take this lesson home? The [$2.28 Mini Lesson](https://buy.stripe.com/28E28t0tfenf1u6aH54wM08)
+is a beautifully made companion PDF — the teaching, a ten-second practice, and two
+pocket cards for your wallet.
 
 When you're ready, the door's open — [a free discovery call](/book.html) is where
 every path here begins. No pressure, ever.
