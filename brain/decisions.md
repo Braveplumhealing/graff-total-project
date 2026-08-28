@@ -2,6 +2,15 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-28 — "I Love You Son" pursues a City of Ellensburg Artist Grant
+Johnny read the poem to a small group of men; they encouraged the grant. Request:
+$1,000 — $750 poet's labor (30 hrs @ $25) + $250 chapbook production. One-page
+budget on Brave Plum letterhead built as attachable PDF (Desktop:
+ILYS-Grant-Budget.pdf; source outreach/grants/ilys-grant-budget.html). Frames the
+poem in Johnny's words: "a healing peace for dads and sons"; premiere Gallery One
+gala Sept 25 2026; chapbook distributed free in Ellensburg. NEW THREAD: the poem
+is becoming a BOOK. Poem itself remains vaulted until the premiere.
+
 ## 2026-08-26 — Instagram born + LinkedIn dressed; quote-card system started
 1. INSTAGRAM: new business account (Johnny's hands; personal info swapped for
    braveplumhealing@outlook.com), category Personal Coach, home address withheld
