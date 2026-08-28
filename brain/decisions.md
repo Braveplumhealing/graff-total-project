@@ -2,6 +2,12 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-28 — Artist Grant application SUBMITTED
+Johnny submitted the City of Ellensburg Artist Grant application same-day, budget
+PDF attached ("The Journey to Self Love", $1,000). Awaiting city response — follow
+up if nothing heard by late September; ask Johnny for any award/decision date the
+portal showed.
+
 ## 2026-08-28 — "The Journey to Self Love" pursues a City of Ellensburg Artist Grant
 Johnny read "I Love You Son" to a small group of men; they encouraged the grant.
 REVISED per Johnny: the grant project is "THE JOURNEY TO SELF LOVE" — a COLLECTION
