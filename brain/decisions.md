@@ -2,14 +2,16 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
-## 2026-08-28 — "I Love You Son" pursues a City of Ellensburg Artist Grant
-Johnny read the poem to a small group of men; they encouraged the grant. Request:
-$1,000 — $750 poet's labor (30 hrs @ $25) + $250 chapbook production. One-page
-budget on Brave Plum letterhead built as attachable PDF (Desktop:
-ILYS-Grant-Budget.pdf; source outreach/grants/ilys-grant-budget.html). Frames the
-poem in Johnny's words: "a healing peace for dads and sons"; premiere Gallery One
-gala Sept 25 2026; chapbook distributed free in Ellensburg. NEW THREAD: the poem
-is becoming a BOOK. Poem itself remains vaulted until the premiere.
+## 2026-08-28 — "The Journey to Self Love" pursues a City of Ellensburg Artist Grant
+Johnny read "I Love You Son" to a small group of men; they encouraged the grant.
+REVISED per Johnny: the grant project is "THE JOURNEY TO SELF LOVE" — a COLLECTION
+of original poems and stories (bigger vessel; ILYS presumably lives inside it), and
+NO gala mention (Gallery One premiere not yet confirmed — note: the Sept 25 date is
+now uncertain business-wide). Request: $1,000 — $750 poet's labor (30 hrs @ $25) +
+$250 chapbook production. One-page letterhead PDF: Desktop
+Journey-to-Self-Love-Grant-Budget.pdf; source outreach/grants/journey-grant-budget.html.
+Chapbook distributed free in Ellensburg. NEW THREAD: Johnny is becoming a published
+author; the poem stays vaulted until first public reading.
 
 ## 2026-08-26 — Instagram born + LinkedIn dressed; quote-card system started
 1. INSTAGRAM: new business account (Johnny's hands; personal info swapped for
