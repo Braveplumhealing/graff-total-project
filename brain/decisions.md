@@ -2,6 +2,30 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-08-29 — THE LIGHTNING BOLT: the Path of Love + "The Well Within" workshop SHIPS
+Johnny's overnight clarity (verbatim in brain/downloads/2026-08-29-the-path-of-love.md):
+we come from love, return to love, and our work is to nurture a path of love — and
+the love to nurture is OUR OWN. The well resides within; garden yourself and never
+forget; your gift is from the divine ("divine" chosen deliberately to keep the
+religiously-traumatized in the conversation); we stand on a precipice ("Why did we
+hate each other"); self love is the defining moment of our time.
+BUILT SAME DAY (his order: "We need to make this available"):
+- **The Well Within — a self-love workshop.** 90 min, live online, small circle,
+  hand mirror + journal. Arc: arrive → find your well → tending practices
+  (self-compassion, evidence-informed per Neff/MSC) → name your gift → THE MIRROR:
+  "I love you, ______" (Louise Hay mirror-work lineage, 30-day take-home practice).
+- **PRICE $22.80** (the 228 thread; anyone can walk in; "no one turned away from
+  their own well" — write-me hardship line). LIVE Stripe link …M09
+  (price_1UAD1SQ8DeehxGKML5IKSeRs) → redirect /workshop-welcome.html.
+- Pages: /workshop.html (public) + /workshop-welcome.html (post-payment; email-from-
+  Johnny flow carries date+Zoom — needs NO scheduling infrastructure to sell today).
+- First circle: September 2026, exact evening TBD BY JOHNNY (page says "arrives by
+  email"). OPEN: Johnny picks the evening + hosting (Zoom = his account/hands);
+  field-guide PDF accoutrement next; episode script (the philosophy walk) next;
+  workshop mention to be added to Ep2/next episode script per his plan.
+- Design question that governs everything: "is there a way through that is less
+  painful?" — the workshop is the answer: guide + map + circle.
+
 ## 2026-08-28 — Artist Grant application SUBMITTED
 Johnny submitted the City of Ellensburg Artist Grant application same-day, budget
 PDF attached ("The Journey to Self Love", $1,000). Awaiting city response — follow
