@@ -4,8 +4,10 @@
 honest difference: **the core teaching seat is still Johnny's to fill.** The Aligned Life
 runs on his sacred triad; The Courage to Change runs on his verbatim courage teaching,
 given in his own words. This talk's architecture is stage-ready, but its center — what
-conflict IS in Johnny's language — is marked `[Johnny to define]` and nothing has been
-invented in its place. He is a **Trained Mediator** (site credential); his conflict
+conflict IS in Johnny's language — was marked `[Johnny to define]` for six weeks and is now
+FILLED. **Johnny's teaching, given verbatim 2026-08-31: "Conflict is the space between what
+we fear and what we assume."** Every placeholder below has been retired; the talk is no
+longer blocked. He is a **Trained Mediator** (site credential); his conflict
 teaching, when he speaks it, replaces every placeholder here. Master image: **THE
 DOORWAY** — from the site's own promise ("transform difficult conversations into doorways
 for growth, understanding, and deeper connection") — `[Johnny to confirm]`. Every
@@ -34,8 +36,7 @@ expansion** notes near the end before you set your timing.*
 The talk walks one idea through three movements. The doorway carries the whole visual arc: hearing the knock for what it is (The Knock) → standing in the threshold without fleeing or swinging (The Threshold) → walking through into what conflict was carrying (The Opening).
 
 **1. THE KNOCK** *(Movement I — Sections 1, 2)* — what conflict actually is.
-`[Johnny to define: what conflict IS in your language — your one-sentence teaching, as "courage is never blind" anchors The Courage to Change. Everything in this movement reshapes around your words the day you speak them.]`
-Working placeholder (universal, not attributed to Johnny): conflict is unmet truth asking to be heard — a knock, not a fire.
+**Johnny's teaching, verbatim:** *"Conflict is the space between what we fear and what we assume."* The knock is what that space sounds like from the inside. The movement now reshapes around this line — conflict is not the other person, and not the event; it is the room we build between our fear and our assumption, and then live in.
 
 **2. THE THRESHOLD** *(Movement II — Sections 3, 4)* — staying in the doorway.
 The hardest square meter in any relationship: the place where you neither flee (avoidance), nor appease (abandoning yourself), nor swing (winning instead of understanding). A mediator's whole craft is helping two people stand there a minute longer than instinct allows.
@@ -63,13 +64,14 @@ The site's own three gifts, in order: **growth, understanding, and deeper connec
 ## Section 2 — The knock: what conflict actually is *(THE KNOCK)*
 **Target: 7 min** · *(Audience Moment 1 lands here)*
 
-- `[Johnny to define — THE CENTER OF THE TALK: your teaching on what conflict is. Until your words arrive, this section carries a universal placeholder, clearly not attributed to you.]`
-- Working placeholder frame: conflict is unmet truth asking to be heard. Behind nearly every difficult conversation is something real that has been waiting — a need unspoken, a hurt unnamed, a value stepped on, a change unannounced. *"The knock is never really about the dishes, the deadline, the tone of the email. The knock is the truth underneath, tired of waiting in the hallway."*
+- **THE CENTER OF THE TALK — Johnny's words, delivered slowly, once, and never paraphrased:**
+  > *"Conflict is the space between what we fear and what we assume."*
+- Unfold it in three beats: it is a **space**, not a fire — you cannot put out a space. Both walls of it are **inside you**: what you fear is true, what you've assumed is true, and neither one is the other person. And the space is **empty**, which is why it fills with whatever you bring to it. Behind nearly every difficult conversation is something real that has been waiting — a need unspoken, a hurt unnamed, a value stepped on, a change unannounced. *"The knock is never really about the dishes, the deadline, the tone of the email. The knock is the truth underneath, tired of waiting in the hallway."*
 - The cost of not answering, told with tenderness: unanswered knocks don't leave. They move in. They become the silence at the table, the meeting after the meeting, the resentment with excellent manners. *"Most relationships don't die in a fight. They die in the hallway — in everything that was never said."*
 - Distinguish the knock from the storm: this talk is about the difficult conversations worth having — not abuse, not cruelty, not doors that safety says must stay closed. *"If a door in your life is dangerous, this talk is not asking you to open it. Some doors are closed for holy reasons."*
 - **→ Audience Moment 1 (silent recognition):** *"No hands. Just check, privately: what's knocking, in your life, right now? The conversation you've been rescheduling — with a person, or with yourself. You know its name."* Hold ~15 seconds of real silence. Then, softly: *"That flutter you just felt? That's not dread. That's the truth in the hallway, glad to be noticed."*
 
-*Speaker note: SAFETY LINE IS NON-NEGOTIABLE — the distinction between difficult-and-worth-having versus unsafe must be stated plainly in every venue; never imply anyone owes an unsafe person a doorway. The placeholder framing ("unmet truth asking to be heard") must be replaced or blessed by Johnny before this talk is ever delivered — it is scaffolding, not his teaching.*
+*Speaker note: SAFETY LINE IS NON-NEGOTIABLE — the distinction between difficult-and-worth-having versus unsafe must be stated plainly in every venue; never imply anyone owes an unsafe person a doorway. The center is now Johnny's own line (2026-08-31) — deliver it verbatim, let it land in silence, and never explain it twice.*
 
 ---
 

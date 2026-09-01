@@ -143,3 +143,33 @@ His tattoos, made teaching: left ring finger = straight arrow; right = crooked a
 Candidate spine-image for the book's new introduction (see vault viewpoint letter). Maps
 onto his bravery/courage distinction: targeting = outward/bravery, receiving =
 inward/courage. His body carries the doctrine; quote verbatim, never paraphrase.
+
+## The conflict teaching (Johnny's exact words, 2026-08-31 — the center of *Conflict as Catalyst*)
+> **"Conflict is the space between what we fear and what we assume."**
+
+Given on 2026-08-31, after six weeks of the seat being deliberately left empty. This
+**replaces every placeholder** in `brain/speaking/conflict-as-catalyst.md` and anchors that
+talk the way the courage teaching anchors *The Courage to Change*. Verbatim only — never
+paraphrased, never "improved."
+
+**What it carries (reading, not doctrine — Johnny corrects):**
+- Conflict is a **space**, not an event. Not a fire. This is the same structure as sacred
+  exhaustion, which is *caused by the gap between the outer life and the inner truth* — his
+  work runs on gaps. The doorway's "hallway of unsaid things" IS this space.
+- The space is bounded by two things that are **both inside one person**: what I *fear* is
+  true, and what I've *assumed* is true. Neither is knowledge. Neither is the other person.
+  So conflict is not between two people — it is between two things in each of them, met in
+  the middle.
+- The space is **empty**, which is why it fills with whatever we bring to it. Fear and
+  assumption expand to fit the available silence.
+- The remedy is implied and it is the whole practice: **put something real in the space.**
+  A difficult conversation is the act of replacing fear and assumption with actual
+  information. This is why avoidance — not conflict — is the opposite of connection.
+
+**Related:** [[the-courage-to-change]] (bravery faces the danger around you; courage
+transforms the world within you) · the doorway · the three escapes, each of which is a way
+of refusing to enter the space.
+
+*Note on a nearby line:* Johnny also said, of a leader who hunts for deceit and finds it,
+**"what you seek is seeking you."** That phrasing is commonly attributed to Rumi — keep it
+credited if it ever reaches a page or a stage. It is not part of the teaching above.
