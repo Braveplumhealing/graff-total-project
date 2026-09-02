@@ -125,6 +125,12 @@ The end card lands free on the full cut: there is already ~3s of silence after
 - **Johnny's Mac sleeps the display at 2 minutes and the system at 1.** Long renders and
   uploads get interrupted. `caffeinate -d -t 2700 &` holds it and expires on its own.
 - **Always duplicate the composition before a large cut** (right-click → Duplicate).
+- **Local export: don't type into the Save As field before clicking Save.** Typing a new
+  filename into the native save sheet was unreliable — three attempts silently produced no
+  file at all. The pattern that worked every time: click **Export → Save** immediately with
+  Descript's default filename, confirm the file landed (`ls`), then rename it with `mv`.
+  The Export panel also resets to the **YouTube** destination every time it's reopened —
+  switch it back to **Local export** each time, don't assume it remembers.
 
 ---
 
