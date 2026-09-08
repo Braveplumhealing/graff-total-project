@@ -7,12 +7,12 @@ sweeps this list; ideas graduate to `plans.md` or get a dated "not now."
 Format: `- [ ] YYYY-MM idea — why it might matter (source)`
 
 ## Parked
-- [ ] 2026-09-02 **This week's A Walk Around the Block episode needs attention** —
-  Johnny filmed it live on Facebook (2026-09-01), but wind ruined the audio and video
-  quality. Not usable as-is for the polished YouTube cut. Options when he's ready:
-  reshoot for YouTube, or accept the rougher FB-native version as a one-off. His call;
-  no action taken. (See `brain/playbooks/walk-around-the-block-show.md` for the show's
-  quality bar.)
+- [x] 2026-09-02 **A Walk Around the Block live-filming problem** — RESOLVED
+  2026-09-08. The wind-ruined Facebook live take (2026-09-01) led Johnny to a standing
+  decision: never film live again. Always record locally, bring the file back for Mr
+  Rogers to produce in Descript. Rule now lives in
+  `brain/playbooks/walk-around-the-block-show.md`. Still open, separately: whether the
+  9/1 footage itself gets reshot or dropped — ask Johnny.
 
 - [ ] 2026-07 Workshop/events system (`events.json` + deposits + waitlist) — the revenue
   engine; biggest gap between what the site *says* and what it *sells* (review finding).
