@@ -2,6 +2,20 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-09 — Flagship workshop designed: "Self Love is the Canon of our Times"
+Johnny's ask: build the workshop for his thesis. Designed (10-agent pass grounded in his
+verbatim downloads — `the-well-and-the-canon`, `the-path-of-love`) as his **flagship
+manifesto-workshop: the WHY** (individual light → society), **sibling to and a funnel for
+The Well Within** (the HOW / the 30-day mirror). Spine = four images: **the Well → the Gift →
+the Torch/Match → the Canon**; keeper lines verbatim ("the canon of our time is to awaken to
+self-love"; "how can we be a torch if we never strike the match?"). Care held: workshop-not-
+therapy disclaimer, confidentiality (only Johnny's own story), "divine" kept inclusive, societal
+critique incentive-shaped not conspiratorial. Format: half-day flex; **price [Johnny to set]**
+(228-thread · higher flagship/tier · sliding-scale "no one turned away from their own well").
+Design: `brain/workshops/self-love-canon.md` + private Artifact. **OPEN — Johnny's alone:**
+format (online/in-person + host), price + Stripe key-turn (Tier-2), dates/venue, opening welcome
+lines, match-circle wording, care-card resources. **Nothing public ships and no price is set until Johnny says.**
+
 ## 2026-08-29 — THE LIGHTNING BOLT: the Path of Love + "The Well Within" workshop SHIPS
 Johnny's overnight clarity (verbatim in brain/downloads/2026-08-29-the-path-of-love.md):
 we come from love, return to love, and our work is to nurture a path of love — and

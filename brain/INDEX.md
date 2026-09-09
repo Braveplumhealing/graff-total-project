@@ -106,4 +106,10 @@ every future surface equally.
     Iron rule for all talks: nothing about Johnny invented — real specifics come from him,
     marked `[Johnny to fill: …]`.
 
+- `workshops/` — workshop designs. `workshops/self-love-canon.md` — **"Self Love is the Canon
+  of our Times"** (design v1, 2026-09-09): Johnny's **flagship manifesto-workshop (the WHY)**,
+  sibling to & funnel for **The Well Within** (the HOW). Spine: the Well → the Gift → the
+  Torch/Match → the Canon; keeper lines verbatim. Half-day flex; price **[Johnny to set]**.
+  Private Artifact page. OPEN: format, price + Stripe key-turn, dates — Johnny's.
+
 Maintenance: the `rogers-brain` skill (`.claude/skills/rogers-brain/`) governs updates.

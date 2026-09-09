@@ -20,6 +20,9 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   footage was dropped, so the next episode **starts clean**.
 - **The Well Within** (self-love workshop) — built & live at **$22.80**; first circle
   **September 2026, evening still TBD by Johnny** (+ Zoom host).
+- **Self Love is the Canon of our Times** (flagship manifesto-workshop) — **design v1 done
+  2026-09-09** (`brain/workshops/self-love-canon.md` + Artifact); the WHY that funnels into The
+  Well Within. Awaiting Johnny's format, price, and dates before anything ships.
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading
@@ -36,7 +39,9 @@ LIVE Stripe links only — **only Johnny moves money.**
 Merged three PRs (the multicam + video-branding playbooks and the windy-footage cleanup);
 Johnny: *"we'll start clean with the next one"* — i.e., the next Walk episode begins fresh.
 (Later that day: this window renamed to "Brave Plum Healing"; this NOW note created; confirmed the old
-placeholder Stripe links **$450/hr and $5,000/day are still OFF** (deactivated 2026-08-11) — real $228/$2,280 links live.)
+placeholder Stripe links **$450/hr and $5,000/day are still OFF** (deactivated 2026-08-11) — real $228/$2,280 links live;
+Stripe bank/payouts **confirmed connected**; and **designed the flagship workshop "Self Love is the Canon of our Times"**
+(brain/workshops/self-love-canon.md + Artifact) — awaiting Johnny's format/price/dates.)
 
 ## 👉 Next step (Johnny's pick)
 The next Walk episode · lock The Well Within's first-circle evening · or whatever's on his mind.
