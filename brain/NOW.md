@@ -35,14 +35,14 @@ LIVE Stripe links only — **only Johnny moves money.**
 ## 📍 Where we left off — 2026-09-09 (morning)
 Merged three PRs (the multicam + video-branding playbooks and the windy-footage cleanup);
 Johnny: *"we'll start clean with the next one"* — i.e., the next Walk episode begins fresh.
-(Later that day: this window renamed to "Brave Plum Healing"; this NOW note created.)
+(Later that day: this window renamed to "Brave Plum Healing"; this NOW note created; confirmed the old
+placeholder Stripe links **$450/hr and $5,000/day are still OFF** (deactivated 2026-08-11) — real $228/$2,280 links live.)
 
 ## 👉 Next step (Johnny's pick)
 The next Walk episode · lock The Well Within's first-circle evening · or whatever's on his mind.
 
 ## ✋ Waiting on Johnny (one tap / one word each)
 - Pick **The Well Within's evening** (+ Zoom host).
-- **Deactivate** the old placeholder Stripe links ($450/hr, $5,000/day) — say *"walk me."*
 - Grab the free **GoatCounter** code (analytics light up the moment it lands).
 - **Pin** the "Brave Plum Healing" window to the top of the sidebar.
 - **Grant** follow-up if nothing's heard by late September.
