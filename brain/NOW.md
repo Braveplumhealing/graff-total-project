@@ -22,9 +22,11 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   **September 2026, evening still TBD by Johnny** (+ Zoom host).
 - **Self Love is the Canon of our Times** — design v1 done 2026-09-09 (`brain/workshops/self-love-canon.md`
   + Artifact). Two products: a **$22.80 workbook** (TaT-branded) + a **$228 half-day virtual
-  training** (= the workshop; workbook free with it). TaT to get a $228 training too. **To build:**
-  the workbook (content), the pages + Stripe links; **still need from Johnny:** training format
-  (online/host) + first date. Nothing ships until he approves.
+  training** (= the workshop; workbook free with it). TaT to get a $228 training too.
+  **$22.80 workbook ✅ drafted 2026-09-09** (`brain/workshops/canon-workbook.md` + Artifact) —
+  needs Johnny's **crisis-support line** + go to ship (then print PDF + Stripe link). **Still to
+  build:** the $228 training page + link — **need from Johnny:** training format (online/host) +
+  first date. Nothing ships until he approves.
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading

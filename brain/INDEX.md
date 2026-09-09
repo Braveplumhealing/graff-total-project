@@ -111,5 +111,8 @@ every future surface equally.
   sibling to & funnel for **The Well Within** (the HOW). Spine: the Well → the Gift → the
   Torch/Match → the Canon; keeper lines verbatim. Half-day flex; price **[Johnny to set]**.
   Private Artifact page. OPEN: format, price + Stripe key-turn, dates — Johnny's.
+  - `workshops/canon-workbook.md` — the **$22.80 Canon workbook** (draft v1, 2026-09-09;
+    Triggers-as-Teachers family, meant to be written in). Private Artifact. Needs Johnny's
+    **crisis-support resource** + his go before the print PDF + the $22.80 Stripe link ship.
 
 Maintenance: the `rogers-brain` skill (`.claude/skills/rogers-brain/`) governs updates.
