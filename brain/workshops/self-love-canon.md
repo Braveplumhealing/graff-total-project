@@ -1,4 +1,5 @@
-> **Design v1 · 2026-09-09.** Johnny's flagship manifesto-workshop ("Self Love is the Canon of our Times") — the WHY, sibling to and funnel for **The Well Within** (the HOW). Built via a 10-agent design pass grounded in his verbatim downloads (the-well-and-the-canon, the-path-of-love) → 3 architectures → judged → synthesized → red-teamed for care/voice/confidentiality. Nothing about Johnny invented; real specifics marked `[Johnny to fill]`. Format: half-day flex; price `[Johnny to set]`. A private Artifact page exists for Johnny.
+> **Design v1 · 2026-09-09.** Johnny's flagship manifesto-workshop ("Self Love is the Canon of our Times") — the WHY, sibling to and funnel for **The Well Within** (the HOW). Built via a 10-agent design pass grounded in his verbatim downloads (the-well-and-the-canon, the-path-of-love) → 3 architectures → judged → synthesized → red-teamed for care/voice/confidentiality. Nothing about Johnny invented; real specifics marked `[Johnny to fill]`. Format: half-day virtual training; **price $228** (set 2026-09-09), with a companion **$22.80
+workbook** (Triggers-as-Teachers branding) included FREE with the training. A private Artifact page exists for Johnny.
 
 # Self Love is the Canon of our Times
 ### A flagship workshop by Johnny Graf · Brave Plum Healing

@@ -2,6 +2,20 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-09 — Product ladder from a teaching (the "228 thread")
+Johnny's structure for turning ONE teaching into a family of products, priced on the 228 thread:
+- **Free** — the video (A Walk Around the Block) + the Journal post.
+- **$2.28 — Mini Lesson** (4-page companion PDF).
+- **$22.80 — Workbook** (self-paced, deeper; **branded like the Triggers-as-Teachers materials**).
+- **$228 — Half-day virtual training** (live). **Includes the $22.80 workbook FREE.**
+
+For **"Self Love is the Canon of our Times":** the **$228 half-day virtual training = the workshop
+designed today** (`brain/workshops/self-love-canon.md`), price now set at **$228**; plus a NEW
+**$22.80 Canon workbook** (TaT-branded), included free with the training.
+ALSO: **Triggers as Teachers gets its own $228 half-day virtual training option** (build later) —
+so every teaching can offer workbook + training. **Nothing ships / no Stripe link goes live until
+Johnny approves each build** (money surface = his key-turn).
+
 ## 2026-09-09 — Flagship workshop designed: "Self Love is the Canon of our Times"
 Johnny's ask: build the workshop for his thesis. Designed (10-agent pass grounded in his
 verbatim downloads — `the-well-and-the-canon`, `the-path-of-love`) as his **flagship
