@@ -7,7 +7,7 @@
 | **/admin editor** (Sveltia) | LIVE | `admin/config.yml` | Johnny's GitHub fine-grained PAT (his keychain) | open /admin, sign in |
 | **Contact form** (Web3Forms) | LIVE, tested | `content/_data/site.json` → `contact_endpoint` (public-by-design key) | Web3Forms account = outlook email | submit form, check inbox |
 | **Calendly** | LIVE | `site.json` → `calendly_url` = calendly.com/braveplumhealing/30min | Johnny's Calendly login (Microsoft SSO) | open Book page, widget + fallback link |
-| **Stripe** | LIVE — real payments | links in `content/_data/offerings.json`; created by `scripts/stripe-links.mjs` | `.claude/stripe.env` (sk_live — NEVER read/print) | open a pay link; Stripe dashboard = Johnny |
+| **Stripe** | LIVE — real payments; **payouts→Johnny's bank CONFIRMED connected 2026-09-09** (the money road home is paved) | links in `content/_data/offerings.json`; created by `scripts/stripe-links.mjs` | `.claude/stripe.env` (sk_live — NEVER read/print); bank details live in Johnny's Stripe account only, never the repo | open a pay link; payouts: Settings→Payouts (Johnny) |
 | **Phone (Rachel)** | LIVE | `site.json` → `contact_phone*` | — | — |
 | **WordPress** (.org) | independent | WP admin; REST app-password "Claude Code" | `.claude/wordpress.env` + CI secrets `WP_*` | `scripts/mirror-check.mjs` (reachability only) |
 | **WP sync** | **RETIRED** | `scripts/wp-map.json` = empty **on purpose** | — | do not re-enable without Johnny (brain/decisions.md) |
