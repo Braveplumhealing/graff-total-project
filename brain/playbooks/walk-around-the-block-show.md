@@ -4,6 +4,12 @@
 Johnny films; Mr Rogers assembles. Established 2026-08-25, after Episode №1.
 
 ## The handoff (Johnny's part — the whole part)
+
+**Standing rule (2026-09-08): never live.** Johnny tried filming live on Facebook
+2026-09-01 — spotty phone reception away from wifi plus wind ruined the audio and
+video. He decided going forward: **always record locally, then bring the file back
+to produce in Descript.** No live-streaming for this show, full stop.
+
 1. Film the take. Phone at eye level, window light or open shade, lav mic on.
    Use braveplumhealing.com/prompter.html if a script is wanted.
 2. Drop the raw file on the **Desktop** named like `WATB-raw-<topic>.mp4`

@@ -7,6 +7,13 @@ sweeps this list; ideas graduate to `plans.md` or get a dated "not now."
 Format: `- [ ] YYYY-MM idea — why it might matter (source)`
 
 ## Parked
+- [x] 2026-09-02 **A Walk Around the Block live-filming problem** — RESOLVED
+  2026-09-08. The wind-ruined Facebook live take (2026-09-01) led Johnny to a standing
+  decision: never film live again. Always record locally, bring the file back for Mr
+  Rogers to produce in Descript. Rule lives in
+  `brain/playbooks/walk-around-the-block-show.md`. The 9/1 footage itself: **dropped,
+  not reshot** (Johnny, 2026-09-09) — "we will start clean with the next one."
+
 - [ ] 2026-07 Workshop/events system (`events.json` + deposits + waitlist) — the revenue
   engine; biggest gap between what the site *says* and what it *sells* (review finding).
 - [ ] 2026-07 Thank-you page after Stripe payment + tie payment→booking — closes the
@@ -15,7 +22,16 @@ Format: `- [ ] YYYY-MM idea — why it might matter (source)`
   came by" in the Monday note (analytics plan).
 - [ ] 2026-07 Marblism intake automation once Johnny connects it — drafts → `_inbox/` →
   PR gate (original design, still unwired).
-- [ ] 2026-07 Real Videos library page when Johnny shares his YouTube links.
+- [ ] 2026-09-08 **Media tab** (upgraded from the 2026-07 "Real Videos library page" idea,
+  now with real content to justify it): a proper site section for video/podcast content —
+  Johnny's podcast appearance with Dr. David Douglas is now live as a journal post
+  (content/posts/disrupt-your-life-on-purpose.md) and could be its first entry. Real decisions
+  needed before building: nav placement/wording, what content types live there (podcast
+  guest spots, A Walk Around the Block episodes, future Reels), one page vs. a filterable
+  library, whether it replaces or sits beside the journal. Johnny floated this 2026-09-04;
+  deliberately scoped as its own design session rather than improvised alongside the podcast
+  post. See also the retired /videos.html redirect and its "returns when real videos exist"
+  precedent (decisions.md, 2026-08-22).
 - [ ] 2026-07 Retreat landing pages per season — when dates exist.
 - [x] 2026-07 External ledger-hash anchor — DONE 2026-07-13 (weekly digest prints
   entry-count + tip hash).
