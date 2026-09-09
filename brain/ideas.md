@@ -10,9 +10,9 @@ Format: `- [ ] YYYY-MM idea — why it might matter (source)`
 - [x] 2026-09-02 **A Walk Around the Block live-filming problem** — RESOLVED
   2026-09-08. The wind-ruined Facebook live take (2026-09-01) led Johnny to a standing
   decision: never film live again. Always record locally, bring the file back for Mr
-  Rogers to produce in Descript. Rule now lives in
-  `brain/playbooks/walk-around-the-block-show.md`. Still open, separately: whether the
-  9/1 footage itself gets reshot or dropped — ask Johnny.
+  Rogers to produce in Descript. Rule lives in
+  `brain/playbooks/walk-around-the-block-show.md`. The 9/1 footage itself: **dropped,
+  not reshot** (Johnny, 2026-09-09) — "we will start clean with the next one."
 
 - [ ] 2026-07 Workshop/events system (`events.json` + deposits + waitlist) — the revenue
   engine; biggest gap between what the site *says* and what it *sells* (review finding).
