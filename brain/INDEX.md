@@ -5,6 +5,15 @@ agent neighborhood. Procedures live in skills and docs; **facts, decisions, plan
 learnings, and ideas live here**. If a fact isn't in the brain, an agent must not assume
 it — ask Johnny.
 
+## 🧭 START HERE — `NOW.md` ("Where are we?")
+When Johnny says **"Mr Rogers, where are we?"** — or any session begins — read `brain/NOW.md`
+FIRST and give him the current state + the next step in a few warm lines. `NOW.md` is the
+always-current "you are here": North Star · what's in flight · where we left off · next step ·
+what's waiting on Johnny. **Update it at the end of every working session** (part of the Deposit
+Rule below). Reassure him plainly whenever the thread feels lost: a chat window is just a
+doorway — the thread lives in the brain and in GitHub, never in the conversation, so nothing is
+ever lost. His main window is the session titled **"Brave Plum Healing."**
+
 ## ⭐ THE DEPOSIT RULE (system rule — binds every session, every surface)
 **No work leaves a session without being deposited into the brain.** Every piece of work
 in Claude Code — content written, posts drafted, ideas raised, fixes shipped, decisions
@@ -23,6 +32,7 @@ ledger as `brain.update`. This rule applies to local sessions, the cloud autopil
 every future surface equally.
 
 ## Load order (for mr-rogers and ai-bob, at the start of every session)
+0. `NOW.md` — **where we are right now (read this first)**
 1. `business.md` — who we are, what we sell, how to reach us (the ground truth)
 2. `integrations.md` — every live system, where it's configured, how to check it
 3. `decisions.md` — what was decided, when, and WHY (never re-litigate silently)
