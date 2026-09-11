@@ -4,15 +4,33 @@
 
 ### A gentle workbook for two — moving from silent judgment and guessed-at expectations to clarity you can speak, and agreements kind enough to keep.
 
+## A note from us
+
+My wife and I love love—and we think you probably do too.
+
+We created this workbook first for ourselves, as a way to grow our relationship in healthier soil. We wanted to become more curious about one another, more intentional with the space between us, and more willing to have the conversations that allow love to deepen rather than simply endure.
+
+And now, we're sharing it with you.
+
+We trust that *The Space Between Us* will help you cultivate vibrant, honest conversations as you nurture your own love affair.
+
+Because love is an action verb.
+
+It asks something of us. It asks us to remain curious. To listen. To risk being known. To keep discovering the person beside us—even after years of believing we already know them.
+
+And perhaps most importantly, it asks us to grow and entwine together as the seasons and years carry us forward.
+
+This workbook isn't about creating a perfect relationship. It is about tending the space between two people with enough care, courage, playfulness, and love that something beautiful can continue to grow there.
+
+Thank you for trusting us to accompany you into that space.
+
+May you remain curious about one another.
+
+May you keep choosing one another.
+
+And may you never stop nurturing your love affair.
+
 *Brave Plum Healing · with Johnny Graf*
-
----
-
-> *"Conflict is the space between what we fear and what we assume."* — Johnny Graf
-
-This whole book lives inside that one line. So much of what aches between two people does not really live in either of you. It lives in a space — the quiet gap between what you are afraid is true and what you have assumed is true. Neither of those is knowledge. Neither of them is actually your partner. And because the space sits empty, it fills, in the silence, with a harsher story than the truth. The work ahead is simple to name and tender to do: you learn, together, to put something real into that space. Actual words. Honest information. Spoken clarity, offered with care.
-
-That is all this book is. A slow, kind way of doing exactly that.
 
 ---
 
