@@ -2,6 +2,26 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-10 — Couples workbook created: "The Space Between Us"
+From Johnny's real walk with his wife (their 37th year) on judgment & guessed-at expectations.
+Built via a 12-agent pass (brand/voice + TWO web-research streams — Gottman/EFT + expectations/
+self-compassion/boundaries → 3 architectures → judged → synthesized → red-teamed). **ORIGINAL
+Brave Plum writing:** a competing-AI response Johnny pasted was DIRECTION only, never copied
+(distinctive lines re-expressed — "love with its guard up," not the paste's "frightened love";
+the "reward/wage" reframe rewritten). Spine = Johnny's own **"Conflict is the space between what
+we fear and what we assume"** (ties to the Conflict-as-Catalyst keynote). Comprehensive: warm
+teaching, PRIVATE journaling for EACH partner, area-by-area walk, humane repairable agreements,
+a shared covenant. Care held: a plain "not couples therapy" line + a real **DV/safety off-ramp**
+(`[Johnny to fill]` the crisis resource). Grounded in real, cited sources (Gottman, Sue Johnson/
+EFT, Neff, Tawwab, Cloud/Townsend, Burns, Lerner) — no invented studies.
+**⚠ False-flag resolved:** the red-team wrongly called the plum-orchard close "fabricated." VERIFIED
+it is REAL — `brain/business.md` "The name — origin story" (told by Johnny 2026-07-15, "with respect
+for her memory"). Kept, faithful & anonymized; Johnny to confirm he's comfortable including a real
+(now-deceased) person's story in a product. Design: `brain/workshops/couples-space-between-us.md`
++ private Artifact. Becomes a website PRODUCT + a WORKSHOP. **OPEN — Johnny's:** the DV/crisis
+resource (must fill before ship), confirm the orchard close, price/tier [to set], and his go
+before print PDF + Stripe link + workshop.
+
 ## 2026-09-09 — Product ladder from a teaching (the "228 thread")
 Johnny's structure for turning ONE teaching into a family of products, priced on the 228 thread:
 - **Free** — the video (A Walk Around the Block) + the Journal post.

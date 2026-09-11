@@ -114,5 +114,10 @@ every future surface equally.
   - `workshops/canon-workbook.md` — the **$22.80 Canon workbook** (draft v1, 2026-09-09;
     Triggers-as-Teachers family, meant to be written in). Private Artifact. Needs Johnny's
     **crisis-support resource** + his go before the print PDF + the $22.80 Stripe link ship.
+  - `workshops/couples-space-between-us.md` — **"The Space Between Us"** (couples workbook,
+    draft v1, 2026-09-10): comprehensive couples PRODUCT + WORKSHOP on judgment/standards/
+    agreements; original Brave Plum writing, research-grounded (Gottman/EFT/Neff…), private
+    pages per partner + shared agreements. Care: not-therapy + DV safety off-ramp. Private
+    Artifact. Needs Johnny's **DV/crisis resource** + orchard-close OK + price + go to ship.
 
 Maintenance: the `rogers-brain` skill (`.claude/skills/rogers-brain/`) governs updates.
