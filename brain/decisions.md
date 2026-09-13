@@ -2,6 +2,23 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-13 — Email deliverability: outlook.com business mail lands in recipients' spam
+Symptom: recipients weren't getting Johnny's emails from braveplumhealing@outlook.com (and his
+signature had vanished). **Diagnosis (confirmed):** mail IS sending and IS delivered — a test to
+Gmail landed in **Gmail's Spam**, not blocked or dropped. So this is a reputation/spam-filter
+problem, NOT an account block or compromise. Root cause: business-style mail (links + image HTML
+signature + new-sender-to-recipient) sent from a *personal* @outlook.com address that carries no
+domain authentication of its own → receiving filters (esp. Gmail) quarantine it. His signature-less
+test still hit spam, so the signature is a minor factor, not the cause.
+**Immediate (Johnny's taps/behavior):** recipients mark "Not spam" + add the address to contacts
+(fastest fix for new-sender-to-spam); keep messages plain and personal; avoid group/BCC blasts
+from this address. **Durable fix (recommended, not yet chosen):** send business mail from the OWN
+domain (e.g. johnny@ / hello@braveplumhealing.com) with proper SPF/DKIM/DMARC — Johnny owns
+braveplumhealing.com (DNS on Cloudflare); ties to docs/EMAIL-SETUP.md. Agents build + walk; DNS,
+accounts, and keys are Johnny's Tier-2 turns. Signature safe in outreach/email-signature/ (images
+live); restore likely in a lighter, more deliverable form. **OPEN — awaiting Johnny:** one-to-one
+vs bulk sending, whether to move to domain email, and the signature-restore choice.
+
 ## 2026-09-10 — Couples workbook created: "The Space Between Us"
 From Johnny's real walk with his wife (their 37th year) on judgment & guessed-at expectations.
 Built via a 12-agent pass (brand/voice + TWO web-research streams — Gottman/EFT + expectations/

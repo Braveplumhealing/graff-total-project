@@ -56,6 +56,11 @@ Stripe bank/payouts **confirmed connected**; and **designed the flagship worksho
 The next Walk episode · lock The Well Within's first-circle evening · or whatever's on his mind.
 
 ## ✋ Waiting on Johnny (one tap / one word each)
+- **Email deliverability (open 2026-09-13):** outlook.com business mail lands in recipients'
+  **spam** (confirmed via Gmail test — sending works, filters quarantine it). Immediate:
+  recipients mark "not spam" + add contact. Durable fix: move business mail to **domain email**
+  (johnny@braveplumhealing.com, SPF/DKIM/DMARC — see docs/EMAIL-SETUP.md). Restore the signature
+  (lighter). Awaiting Johnny's path (one-to-one vs bulk; go on domain email).
 - Pick **The Well Within's evening** (+ Zoom host).
 - Grab the free **GoatCounter** code (analytics light up the moment it lands).
 - **Pin** the "Brave Plum Healing" window to the top of the sidebar.
