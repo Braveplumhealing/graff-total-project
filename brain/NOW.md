@@ -60,8 +60,11 @@ The next Walk episode · lock The Well Within's first-circle evening · or whate
   **spam** (confirmed via Gmail test — sending works, filters quarantine it). Immediate:
   recipients mark "not spam" + add contact. Durable fix: move business mail to **domain email**
   (johnny@braveplumhealing.com, SPF/DKIM/DMARC — see docs/EMAIL-SETUP.md). Restore the signature
-  (lighter). **Johnny sends one-to-one; chose Microsoft 365** — setup IN PROGRESS (walking him:
-  signup → verify domain → DNS records in Cloudflare → create mailbox → restore lighter signature → test).
+  (lighter). **Johnny sends one-to-one and chose ROAD A (2026-09-13): keep braveplumhealing@outlook.com,
+  no new address** (domain-email/M365 paused — available anytime, `docs/EMAIL-SETUP.md`). Fix = reputation:
+  recipients mark "not spam" + add contact; lighter image-free signature (`outreach/email-signature/signature-lite.txt`);
+  plain, few-link messages. Honest limit: @outlook.com can't carry its own SPF/DKIM/DMARC, so first mail to
+  brand-new people may still occasionally hit spam.
 - Pick **The Well Within's evening** (+ Zoom host).
 - Grab the free **GoatCounter** code (analytics light up the moment it lands).
 - **Pin** the "Brave Plum Healing" window to the top of the sidebar.

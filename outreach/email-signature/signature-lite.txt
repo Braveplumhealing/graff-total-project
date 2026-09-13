@@ -1,0 +1,14 @@
+Brave Plum Healing — lighter email signature (image-free, deliverability-friendly)
+Created 2026-09-13. Reason: heavy image/link signatures nudge personal-account mail toward
+spam. This one is plain, warm, one link, no remote images. Paste into Outlook.com →
+Settings → Mail → Compose and reply → Email signature. Optionally bold the name and
+italicize the tagline in the editor. (The full branded version lives in signature.html.)
+
+--- copy the four lines below ---
+
+Johnny Graf
+A gentle space to find your way forward
+Brave Plum Healing · Ellensburg, Washington
+braveplumhealing.com · (206) 360-9618
+
+--- end ---
