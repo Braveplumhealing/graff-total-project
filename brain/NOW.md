@@ -62,9 +62,12 @@ The next Walk episode · lock The Well Within's first-circle evening · or whate
   (johnny@braveplumhealing.com, SPF/DKIM/DMARC — see docs/EMAIL-SETUP.md). Restore the signature
   (lighter). **Johnny sends one-to-one and chose ROAD A (2026-09-13): keep braveplumhealing@outlook.com,
   no new address** (domain-email/M365 paused — available anytime, `docs/EMAIL-SETUP.md`). Fix = reputation:
-  recipients mark "not spam" + add contact; lighter image-free signature (`outreach/email-signature/signature-lite.txt`);
-  plain, few-link messages. Honest limit: @outlook.com can't carry its own SPF/DKIM/DMARC, so first mail to
-  brand-new people may still occasionally hit spam.
+  recipients mark "not spam" + add contact; plain, few-link messages. **Signature: FULL branded one
+  restored** — copy-paste source published at **braveplumhealing.com/email-signature.html** (noindex;
+  `content/email-signature.njk`; images `/assets/emblem-email.png` + `/assets/signature-name.png`). The
+  signature was NOT the spam cause (his signature-less test still hit spam), so the brand stays; a plain
+  `signature-lite.txt` remains only as an optional hedge. Honest limit: @outlook.com can't carry its own
+  SPF/DKIM/DMARC, so first mail to brand-new people may still occasionally hit spam (domain email fixes that).
 - Pick **The Well Within's evening** (+ Zoom host).
 - Grab the free **GoatCounter** code (analytics light up the moment it lands).
 - **Pin** the "Brave Plum Healing" window to the top of the sidebar.
