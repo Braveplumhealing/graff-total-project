@@ -76,44 +76,6 @@ It is an invitation into a slow and steady becoming, created in partnership by t
 
 So, lover... Let’s begin.
 
-## How to Use This Workbook
-
-The following is a list of suggestions that may support you on your journey.
-
-**Move slowly.**
-
-There are ten parts to this workbook, and one part is plenty of work for an evening. Be intentionally slow. There is no schedule to keep, and no one is grading you. If a week passes between parts, that is fine. If a season passes, the book will wait. But remember: stories have a way of going rogue when we leave too much empty space for fear and assumption to occupy.
-
-So keep returning to one another. Keep asking. Keep speaking. Keep writing the story together.
-
-**Each of you keeps a private page.**
-
-Nearly every part begins with writing that you do *alone* before a single word is spoken aloud to your partner. This order matters more than almost anything else in the book. Clarity often comes more easily to a blank page than to a live conversation filled with feelings, history, reactions, and emotions. You deserve the opportunity to discover what is true for you before you try to explain it to someone you love. Use the space provided or keep a notebook of your own. Your private page belongs to you; it is not homework to be checked; it is not evidence to be presented later; it is a place to hear yourself clearly. Share as much of it as you choose.
-
-**Then you come together.**
-
-The private writing is followed by a guided conversation designed to support intentional speaking and intentional listening. The goal is not agreement; the goal is understanding. You will practice hearing one another without immediately negotiating, correcting, defending, fixing, or persuading. Sometimes the greatest gift we can give the person we love is simply allowing their experience to be true for them without our judgement drifting into the conversation.
-
-**Let it be repairable.**
-
-You will fumble some of this. You will interrupt when you meant to listen. You may hear a  preference as an accusation. You may become defensive. You may go quiet when you meant to stay engaged. That is not failure. That is two humans learning a new language together. Every part of this workbook assumes that you will occasionally lose your footing—and that you can find your way back.
-
-Pause.
-
-Repair.
-
-Try again.
-
-Return to curiosity.
-
-Return to kindness.
-
-Return to each other.
-
-Don’t worry.
-
-You’ve got this.
-
 ## Before We Begin
 
 There is something important we want to say before we invite you into the pages ahead.
@@ -151,6 +113,44 @@ There will be time for reflection.
 There will be time for conversation.
 
 **Safety comes first.**
+
+## How to Use This Workbook
+
+The following is a list of suggestions that may support you on your journey.
+
+**Move slowly.**
+
+There are ten parts to this workbook, and one part is plenty of work for an evening. Be intentionally slow. There is no schedule to keep, and no one is grading you. If a week passes between parts, that is fine. If a season passes, the book will wait. But remember: stories have a way of going rogue when we leave too much empty space for fear and assumption to occupy.
+
+So keep returning to one another. Keep asking. Keep speaking. Keep writing the story together.
+
+**Each of you keeps a private page.**
+
+Nearly every part begins with writing that you do *alone* before a single word is spoken aloud to your partner. This order matters more than almost anything else in the book. Clarity often comes more easily to a blank page than to a live conversation filled with feelings, history, reactions, and emotions. You deserve the opportunity to discover what is true for you before you try to explain it to someone you love. Use the space provided or keep a notebook of your own. Your private page belongs to you; it is not homework to be checked; it is not evidence to be presented later; it is a place to hear yourself clearly. Share as much of it as you choose.
+
+**Then you come together.**
+
+The private writing is followed by a guided conversation designed to support intentional speaking and intentional listening. The goal is not agreement; the goal is understanding. You will practice hearing one another without immediately negotiating, correcting, defending, fixing, or persuading. Sometimes the greatest gift we can give the person we love is simply allowing their experience to be true for them without our judgement drifting into the conversation.
+
+**Let it be repairable.**
+
+You will fumble some of this. You will interrupt when you meant to listen. You may hear a  preference as an accusation. You may become defensive. You may go quiet when you meant to stay engaged. That is not failure. That is two humans learning a new language together. Every part of this workbook assumes that you will occasionally lose your footing—and that you can find your way back.
+
+Pause.
+
+Repair.
+
+Try again.
+
+Return to curiosity.
+
+Return to kindness.
+
+Return to each other.
+
+Don’t worry.
+
+You’ve got this.
 
 ## Part One — Love With Its Guard Up
 
