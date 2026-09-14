@@ -32,6 +32,8 @@ Thank you for trusting us to accompany you into that space.
 
 May you remain curious about one another. May you keep choosing one another. And may you never stop nurturing your love affair.
 
+So, lover... Let’s begin.
+
 *Brave Plum Healing · with Johnny Graf*
 
 ## Introduction
@@ -73,8 +75,6 @@ We ask instead of assume. We reveal instead of protect. We become curious instea
 That is what this book is.
 
 It is an invitation into a slow and steady becoming, created in partnership by two conscious authors of an intentional love story. A story capable of adapting to the seasons. Weathering the unexpected. Making room for who each of you is becoming. And continuing to be written for as long as you keep choosing one another.
-
-So, lover... Let’s begin.
 
 ## Before We Begin
 
