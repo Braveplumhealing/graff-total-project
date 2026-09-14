@@ -10,6 +10,8 @@
 
 ### A workbook for two
 
+## Welcome
+
 My wife and I love love—and we think you probably do too.
 
 We created this workbook first for ourselves, as a way to grow our relationship in healthier soil. We wanted to become more curious about one another, more intentional with the space between us, and more willing to have the conversations that allow love to deepen rather than simply endure.
@@ -31,6 +33,8 @@ Thank you for trusting us to accompany you into that space.
 May you remain curious about one another. May you keep choosing one another. And may you never stop nurturing your love affair.
 
 *Brave Plum Healing · with Johnny Graf*
+
+## Introduction
 
 *"Conflict lives in the unspoken space occupied by our fear and our assumptions."*
 
