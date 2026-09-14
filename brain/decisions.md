@@ -2,6 +2,20 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-13 (eve) — "The Space Between Us" ships as a TWO-workbook set (one per partner)
+Johnny: the book is for two partners (he said "Couple A / Couple B" — read as **Partner A / Partner B**).
+Because the private-journaling pages are done ALONE, **each partner needs their OWN copy** → the PRODUCT
+is a **set of two workbooks, sold as a pair**, so each person has private space to write. Implication:
+identical copies (or lightly A/B-labeled), plenty of private write space in each, price/bundle = a pair.
+Fits the global/multilingual intent.
+**NEXT SESSION (morning 2026-09-14) — planned with Johnny:**
+1. **Clarity + formatting pass** on Johnny's own text — collaborative; he sees room for greater clarity.
+   Suggest, don't impose; his voice stays. (He has now invited editing of his writing.)
+2. **Enhance the workbook feel** — give users MORE space to write and reflect throughout (more/roomier
+   prompts, journaling room), so it reads as a true workbook, not a book with a few blanks.
+3. **Two-workbook structure** — build/lay out so it works as one-per-partner.
+Then: the global helpline line (findahelpline.com), a price (for the pair), print-ready PDF, translations.
+
 ## 2026-09-13 — "The Space Between Us" is Johnny's own rewrite + a GLOBAL, multilingual product
 Johnny fully rewrote/edited the couples workbook himself (2026-09-11..13; The_Space_Between_Us_Clean.docx).
 His text is now the **AUTHORITATIVE master** (`brain/workshops/couples-space-between-us.md`) — Mr Rogers

@@ -30,8 +30,11 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
 - **The Space Between Us** (couples workbook) — **Johnny's full rewrite is now the master (v2,
   2026-09-13)**, branded & republished to the same Artifact. His words verbatim; we only brand/lay
   out. **North star: a GLOBAL, multilingual product** → no region-specific numbers; keep it
-  culturally neutral. **Needs from Johnny:** confirm a global crisis-directory line (e.g.
-  findahelpline.com), set price/tier — then print PDF + translations + workshop.
+  culturally neutral. **↳ NEXT SESSION (AM 2026-09-14):** (1) collaborative **clarity + formatting
+  pass** on Johnny's text (he invited it; suggest, don't impose); (2) **enhance the workbook feel —
+  more room to write & reflect** throughout; (3) structure as a **two-workbook set (Partner A /
+  Partner B, one per partner, sold as a pair)**. Then: global helpline line (findahelpline.com),
+  price for the pair, print PDF, translations.
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading
