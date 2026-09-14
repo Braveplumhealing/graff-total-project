@@ -209,7 +209,7 @@ const body = out.join('\n');
 const CLOCK = '\\25F7\\00A0';
 const LEAF = '\\2767';
 
-// ---- front-cover artwork: a real plum-blossom branch across the plum ground ----
+// ---- front-cover artwork: a lush, dreamy plum-blossom branch on the plum ground ----
 function coverArt() {
   // notched plum-blossom petal (tip up), with a small cleft
   const petal = 'M0,0 C -5,-4 -8,-10.5 -6.4,-16 C -5.4,-19.4 -2.4,-20.8 -0.6,-18 L0,-16.8 L0.6,-18 C 2.4,-20.8 5.4,-19.4 6.4,-16 C 8,-10.5 5,-4 0,0 Z';
@@ -218,18 +218,21 @@ function coverArt() {
   const anthers = stA.map((a, i) => `<circle cx="0" cy="${(-6.9 - (i % 3) * 0.7).toFixed(1)}" r="0.85" transform="rotate(${a})"/>`).join('');
   const sym = (id, angs, scs) => {
     const p = angs.map((a, i) => `<use href="#pt" transform="rotate(${a}) scale(${scs[i]})"/>`).join('');
-    return `<g id="${id}"><g fill="currentColor">${p}</g><circle r="8.5" fill="url(#cwash)"/>`
+    return `<g id="${id}"><circle r="15" fill="url(#halo)"/><g fill="currentColor">${p}</g><circle r="8.5" fill="url(#cwash)"/>`
       + `<g stroke="#EFC985" stroke-width="0.5" stroke-linecap="round" opacity="0.9">${stamens}</g>`
       + `<g fill="#E1A64B">${anthers}</g><circle r="1.7" fill="#A8425F"/></g>`;
   };
   const defs = `<defs><path id="pt" d="${petal}"/>`
     + `<radialGradient id="cwash" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#B4506E" stop-opacity="0.6"/><stop offset="100%" stop-color="#B4506E" stop-opacity="0"/></radialGradient>`
-    + `<radialGradient id="glow" cx="50%" cy="26%" r="62%"><stop offset="0" stop-color="#C4637E" stop-opacity="0.38"/><stop offset="66%" stop-color="#C4637E" stop-opacity="0"/></radialGradient>`
+    + `<radialGradient id="halo"><stop offset="0" stop-color="#F2B8C6" stop-opacity="0.30"/><stop offset="100%" stop-color="#F2B8C6" stop-opacity="0"/></radialGradient>`
+    + `<radialGradient id="boke"><stop offset="0" stop-color="#F6C9D5" stop-opacity="1"/><stop offset="65%" stop-color="#F6C9D5" stop-opacity="0.28"/><stop offset="100%" stop-color="#F6C9D5" stop-opacity="0"/></radialGradient>`
+    + `<radialGradient id="glow" cx="50%" cy="24%" r="60%"><stop offset="0" stop-color="#C4637E" stop-opacity="0.34"/><stop offset="66%" stop-color="#C4637E" stop-opacity="0"/></radialGradient>`
+    + `<radialGradient id="glow2" cx="28%" cy="80%" r="58%"><stop offset="0" stop-color="#C4637E" stop-opacity="0.34"/><stop offset="70%" stop-color="#C4637E" stop-opacity="0"/></radialGradient>`
+    + `<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.4"/></filter>`
     + sym('bl1', [-2, 70, 146, 215, 289], [1.02, 0.97, 1.03, 0.98, 1.0])
     + sym('bl2', [3, 75, 143, 218, 286], [0.98, 1.03, 0.97, 1.02, 1.0])
     + `</defs>`;
 
-  // smooth a polyline into a flowing bezier (Catmull-Rom -> cubic) — organic edges
   function smooth(pts) {
     let d = 'M' + pts[0][0].toFixed(1) + ' ' + pts[0][1].toFixed(1);
     for (let i = 0; i < pts.length - 1; i++) {
@@ -240,7 +243,6 @@ function coverArt() {
     }
     return d;
   }
-  // a filled, tapering, organically-curved limb from a centerline + per-point widths
   function limb(pts, ws) {
     const n = pts.length, top = [], bot = [];
     for (let i = 0; i < n; i++) {
@@ -254,38 +256,71 @@ function coverArt() {
     return smooth(top) + ' L' + br[0][0].toFixed(1) + ' ' + br[0][1].toFixed(1) + smooth(br).replace(/^M\S+ \S+/, '') + ' Z';
   }
 
-  // main branch sweeps lower-left -> upper-right with natural bends + knuckles; twigs + broken nubs
-  const main = [[-30, 1020], [92, 950], [184, 904], [268, 850], [320, 830], [404, 776], [500, 704], [562, 674], [646, 624], [714, 598], [794, 564], [842, 552]];
-  const mainW = [30, 27, 25, 24, 27, 22, 18, 17, 14, 12, 8, 5];
-  const tw1 = [[320, 830], [300, 758], [278, 700], [258, 648]], tw1W = [10, 7, 5, 3];
-  const tw2 = [[500, 704], [522, 640], [544, 588], [562, 538]], tw2W = [10, 7, 5, 3];
-  const tw3 = [[714, 598], [744, 556], [768, 520], [788, 498]], tw3W = [9, 6, 4, 3];
-  const tw4 = [[404, 776], [400, 836], [390, 892]], tw4W = [8, 5, 3];
-  const nub1 = [[562, 674], [582, 650]], nub1W = [6, 2];
-  const nub2 = [[646, 624], [632, 600]], nub2W = [5, 2];
+  // branch: a crooked, gnarled limb rising lower-left -> upper-right, with elbows,
+  // knuckles, bending twigs and a couple of bare shoots — living wood, not a straight twig
+  const main = [[-30, 1060], [80, 1002], [150, 968], [210, 905], [252, 888], [300, 846], [352, 842], [430, 796], [500, 748], [548, 724], [600, 690], [656, 648], [712, 632], [770, 600], [842, 560]];
+  const mainW = [30, 28, 27, 25, 27, 24, 25, 21, 18, 17, 15, 15, 13, 9, 6];
+  const tw1 = [[300, 846], [292, 798], [268, 762], [276, 712], [258, 652]], tw1W = [10, 8, 6, 5, 3];
+  const tw2 = [[430, 796], [452, 744], [470, 702], [492, 660], [512, 624]], tw2W = [9, 7, 6, 4, 3];
+  const tw3 = [[656, 648], [678, 612], [692, 582], [714, 562]], tw3W = [8, 6, 4, 3];
+  const tw4 = [[210, 905], [202, 955], [216, 1000], [196, 1044]], tw4W = [8, 6, 4, 3];
+  const tw5 = [[252, 888], [236, 860], [250, 828]], tw5W = [6, 4, 2];       // little crook into the cluster
+  const nub1 = [[548, 724], [568, 708], [560, 686]], nub1W = [5, 3, 2];      // short back-shoot
+  const nub2 = [[712, 632], [736, 646], [758, 640]], nub2W = [4, 3, 2];      // bare twiglet
+  const twigs = [[tw1, tw1W], [tw2, tw2W], [tw3, tw3W], [tw4, tw4W], [tw5, tw5W], [nub1, nub1W], [nub2, nub2W]];
   const dark = `<g fill="#3A241B" opacity="0.85"><path d="${limb(main.map(p => [p[0], p[1] + 3]), mainW)}"/></g>`;
-  const wood = `<g fill="#6B4636"><path d="${limb(main, mainW)}"/><path d="${limb(tw1, tw1W)}"/><path d="${limb(tw2, tw2W)}"/>`
-    + `<path d="${limb(tw3, tw3W)}"/><path d="${limb(tw4, tw4W)}"/><path d="${limb(nub1, nub1W)}"/><path d="${limb(nub2, nub2W)}"/></g>`;
-  const sheen = `<path d="${smooth(main)}" fill="none" stroke="#8A6249" stroke-width="1.1" opacity="0.45" stroke-linecap="round"/>`;
-  const branches = dark + wood + sheen;
+  const wood = `<g fill="#6B4636"><path d="${limb(main, mainW)}"/>` + twigs.map(([p, w]) => `<path d="${limb(p, w)}"/>`).join('') + `</g>`;
+  const sheen = `<path d="${smooth(main)}" fill="none" stroke="#8A6249" stroke-width="1.1" opacity="0.4" stroke-linecap="round"/>`;
+  const bark = `<g stroke="#3A241B" stroke-width="1.2" opacity="0.5" stroke-linecap="round">`
+    + [[60, 1010, 76, 1001], [150, 956, 168, 949], [330, 843, 348, 842], [470, 762, 486, 753], [610, 682, 628, 673]].map(([x1, y1, x2, y2]) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`).join('')
+    + `</g>`;
+  const branches = dark + wood + sheen + bark;
 
-  const drift = [[636, 470, 0.55, 40, 0.5], [730, 436, 0.5, -30, 0.4], [470, 910, 0.5, 120, 0.4], [822, 472, 0.45, 70, 0.38]]
-    .map(([x, y, s, r, o]) => `<use href="#pt" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" fill="#F2B8C6" opacity="${o}"/>`).join('');
-  const buds = [[246, 632, 0.75, '#E79BB0'], [566, 520, 0.7, '#F2B8C6'], [794, 486, 0.62, '#FDE8EE'], [380, 902, 0.6, '#E79BB0']]
-    .map(([x, y, s, c]) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M0 6 C -4 2 -4 -5 0 -8 C 4 -5 4 2 0 6 Z" fill="${c}"/><circle r="1.5" cy="5" fill="#6B4636"/></g>`).join('');
+  // deterministic scatter so the composition is stable across rebuilds
+  let seed = 20240915;
+  const rnd = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
+  const pick = a => a[Math.floor(rnd() * a.length)];
+  const tones = ['#FDE8EE', '#F2B8C6', '#F2B8C6', '#E79BB0', '#E79BB0', '#D98BA6'];
   const B = (x, y, s, r, c, o, v) => `<use href="#${v ? 'bl2' : 'bl1'}" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" style="color:${c}" opacity="${o}"/>`;
-  const blossoms = [
-    B(252, 640, 1.55, -10, '#F2B8C6', 1, 0), B(288, 672, 1.15, 25, '#FDE8EE', 1, 1), B(226, 684, 0.95, -35, '#E79BB0', 1, 0),
-    B(560, 530, 1.5, 8, '#F2B8C6', 1, 1), B(596, 560, 1.05, -20, '#FDE8EE', 1, 0), B(528, 566, 0.9, 30, '#E79BB0', 0.95, 1),
-    B(788, 492, 1.22, 12, '#F2B8C6', 1, 0), B(752, 528, 0.85, -15, '#FDE8EE', 1, 1),
-    B(168, 898, 1.02, 15, '#F2B8C6', 0.95, 1), B(430, 760, 1.15, -8, '#FDE8EE', 1, 0), B(672, 600, 0.95, 20, '#E79BB0', 0.95, 1),
-    B(384, 900, 0.95, -25, '#F2B8C6', 1, 1), B(398, 846, 0.7, 10, '#FDE8EE', 0.9, 0),
-    B(66, 986, 0.85, 35, '#F2B8C6', 0.9, 0),
-  ].join('');
+  function scatter(cx, cy, rx, ry, n, smin, smax, pal) {
+    const P = pal || tones; let o = '';
+    for (let i = 0; i < n; i++) {
+      const t = Math.sqrt(rnd()), a = rnd() * 6.2832;
+      const x = (cx + Math.cos(a) * t * rx).toFixed(0), y = (cy + Math.sin(a) * t * ry).toFixed(0);
+      const s = ((smax - (smax - smin) * t) * (0.85 + rnd() * 0.3)).toFixed(2);
+      o += B(x, y, s, (rnd() * 360 - 180) | 0, pick(P), (0.9 + rnd() * 0.1).toFixed(2), rnd() < 0.5 ? 1 : 0);
+    }
+    return o;
+  }
+
+  const bokeh = [[640, 300, 84, 0.16], [730, 430, 52, 0.20], [560, 360, 40, 0.14], [300, 300, 60, 0.10], [770, 700, 74, 0.14],
+  [170, 520, 50, 0.16], [680, 860, 64, 0.13], [430, 450, 34, 0.16], [820, 540, 48, 0.15], [120, 760, 60, 0.12]]
+    .map(([x, y, r, o]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="url(#boke)" opacity="${o}"/>`).join('');
+
+  const back = `<g filter="url(#soft)" opacity="0.6">` + scatter(272, 882, 240, 200, 9, 0.5, 1.0, ['#FDE8EE', '#F2B8C6', '#E7C7D2']) + `</g>`;
+
+  const budTones = ['#B03A5E', '#9E2F52', '#C24A6E'];
+  const buds = [[250, 650], [300, 846], [512, 622], [714, 564], [214, 908], [280, 790], [188, 1016], [520, 700], [236, 838], [332, 878]]
+    .map(([x, y]) => {
+      const s = (0.55 + rnd() * 0.4).toFixed(2), c = pick(budTones), r = (rnd() * 70 - 35) | 0;
+      return `<g transform="translate(${x} ${y}) scale(${s}) rotate(${r})"><path d="M0 6 C -4 2 -4.5 -5 0 -8.5 C 4.5 -5 4 2 0 6 Z" fill="${c}"/><circle r="1.6" cy="5.5" fill="#6B4636"/></g>`;
+    }).join('');
+
+  const cluster = scatter(250, 858, 178, 150, 15, 0.75, 1.7)
+    + scatter(232, 834, 82, 72, 5, 1.1, 1.85)
+    + B(250, 650, 1.4, -10, '#F2B8C6', 1, 1) + B(512, 620, 1.05, -8, '#F2B8C6', 1, 0)
+    + B(714, 562, 0.9, 12, '#FDE8EE', 1, 1) + B(686, 600, 0.72, -18, '#E79BB0', 0.95, 0)
+    + B(196, 1044, 0.9, 20, '#FDE8EE', 1, 0);
+
+  const drift = `<g filter="url(#soft)" opacity="0.5">`
+    + [[600, 460, 0.6, 40], [700, 420, 0.5, -30], [520, 540, 0.45, 80]].map(([x, y, s, r]) => `<use href="#pt" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" fill="#F2B8C6"/>`).join('')
+    + `</g>`
+    + [[470, 940, 0.55, 120, 0.5], [360, 720, 0.5, -60, 0.45], [560, 980, 0.45, 30, 0.4]].map(([x, y, s, r, o]) => `<use href="#pt" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" fill="#F2B8C6" opacity="${o}"/>`).join('');
 
   return `<svg viewBox="0 0 850 1100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">`
-    + defs + `<rect width="850" height="1100" fill="#3D1A3D"/><rect width="850" height="1100" fill="url(#glow)"/>`
-    + branches + drift + buds + blossoms + `</svg>`;
+    + defs
+    + `<rect width="850" height="1100" fill="#3D1A3D"/><rect width="850" height="1100" fill="url(#glow)"/><rect width="850" height="1100" fill="url(#glow2)"/>`
+    + bokeh + back + branches + buds + cluster + drift + `</svg>`;
 }
 const COVER_ART = coverArt();
 
