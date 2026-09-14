@@ -2,6 +2,24 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-14 (AM) — "The Space Between Us": plum-blossom section dividers + builder preserved in repo
+Two small moves this morning, both live on the same Artifact URL:
+1. **Editorial:** moved *"So, lover... Let's begin."* from the end of the Introduction to the **close of
+   the Welcome** (just above Johnny's byline). It read wrong to say "let's begin" and then open a
+   "Before We Begin" section. (Follows yesterday's reorder: Welcome → Introduction → Before We Begin →
+   How to Use → Parts.)
+2. **Design:** added a **plum-blossom divider** between every section on the web page — a small 5-petal
+   bloom (blush petals `#F2B8C6`, rose pistil `#C4637E`) flanked by faint rose rules, rendered before
+   each `## ` heading **except the first (Welcome)**. On the single-scroll web version this is the
+   "page marker" motif Johnny wanted; the true per-page corner blossom belongs to the **print/PDF**
+   build (still to come). 14 dividers across 15 sections.
+**Durability:** the branded-page builder (markdown → Brave Plum HTML) had been lost to scratchpad pruning
+**twice** before. It is now preserved in the repo at **`brain/workshops/build-workbook-page.mjs`** so the
+blossom + all branding logic survive. Run: `SRC=couples-clean.md OUT=couples-workbook.html
+EYEBROW="Couples workbook" META_A="A workbook for two" META_B="Private pages · shared agreements"
+META_C="Brave Plum Healing" PAGE_TITLE="The Space Between Us" node build-workbook-page.mjs` (paths are
+scratchpad-relative in the saved copy; point SRC/OUT at wherever the working markdown lives).
+
 ## 2026-09-13 (eve) — "The Space Between Us" ships as a TWO-workbook set (one per partner)
 Johnny: the book is for two partners (he said "Couple A / Couple B" — read as **Partner A / Partner B**).
 Because the private-journaling pages are done ALONE, **each partner needs their OWN copy** → the PRODUCT
