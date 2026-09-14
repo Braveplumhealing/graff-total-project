@@ -2,6 +2,20 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-14 (AM) — "The Space Between Us": TWO-workbook set built (Partner A / Partner B) ✅
+The product is now a **pair of print-ready PDFs**, delivered to Johnny:
+**`The-Space-Between-Us-Partner-A.pdf`** and **`…-Partner-B.pdf`** (69 pages each, US Letter).
+**Same workbook inside both** — same teaching, same prompts, same writing space — because each partner does
+the private journaling ALONE in their **own** copy, then they come together. The two differ ONLY on the
+**cover**: a serif "**Partner A / Partner B &#183; your private copy**" line and a "**This book belongs to ___**"
+sign-line so each book is identifiably that person's. (Also dropped the cover's duplicate "A workbook for two"
+chip in favor of "Ten guided parts".) The shared pieces (Part 8 agreement form with Partner A/B lines, Part 10
+create canvas) appear in both copies, so each partner keeps a record.
+**How:** the builder now takes a `PARTNER=A|B` env (adds the badge + owner line); build each HTML then run
+`gen-pdf.mjs`. Verified both covers. Builder updated at `brain/workshops/build-workbook-page.mjs`.
+**STILL OPEN:** a **price for the pair** (Johnny to set) + a Stripe link for the bundle; then global helpline
+line, translations, optional POD bound edition. Johnny may still want to react to writing-room/labels.
+
 ## 2026-09-14 (AM) — "The Space Between Us": true print-ready PDF with per-page corner blossoms ✅
 Built the real print edition Johnny asked for: **`The-Space-Between-Us.pdf`** — **69 pages, US Letter**
 (for home printing), ruled writing space throughout, and a **plum blossom in the bottom-right corner of

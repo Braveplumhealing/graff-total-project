@@ -39,9 +39,11 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   `The-Space-Between-Us.pdf` — 69 pages, US Letter, ruled writing space throughout, **plum blossom in the
   bottom-right corner of every page** (delivered to Johnny). Made with the Mac's own Chrome via
   puppeteer-core + Chrome `footerTemplate` for the corner mark; recipe `brain/workshops/gen-pdf.mjs`
-  (build the HTML, then run gen-pdf.mjs). **↳ NEXT (Johnny's pick):** (1) react to the PDF — tweak writing
-  room / labels / trim size; (2) **two-workbook set (Partner A / Partner B, sold as a pair)**; (3) a
-  **price for the pair**. Then: global helpline line, translations, optional POD bound edition.
+  (build the HTML, then run gen-pdf.mjs). **TWO-WORKBOOK SET DONE 2026-09-14:** delivered
+  `The-Space-Between-Us-Partner-A.pdf` + `…-Partner-B.pdf` (69pp each, US Letter) — same workbook inside,
+  covers differ (Partner A/B + "This book belongs to ___"). Builder takes `PARTNER=A|B`. **↳ NEXT (Johnny's
+  pick):** (1) set a **price for the pair** + a Stripe bundle link; (2) react to writing-room / labels /
+  trim size. Then: global helpline line, translations, optional POD bound edition.
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading

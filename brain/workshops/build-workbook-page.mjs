@@ -8,6 +8,8 @@ const META_B = process.env.META_B || 'Private pages · shared agreements';
 const META_C = process.env.META_C || 'Brave Plum Healing';
 const PAGE_TITLE = process.env.PAGE_TITLE || 'The Space Between Us — Brave Plum Healing';
 const PRINT_NOTE = process.env.PRINT_NOTE || 'A pencil-and-paper workbook — print these pages and write by hand.';
+const PARTNER = process.env.PARTNER || '';   // '' | 'A' | 'B' — set for a one-per-partner copy
+const OWNER_PROMPT = process.env.OWNER_PROMPT || 'This book belongs to';
 let md = fs.readFileSync(SRC, 'utf8');
 
 // ---- line-count settings (generous, print-first pencil-and-paper) ----
@@ -239,6 +241,9 @@ body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
 .hero .meta span{border:1px solid rgba(253,232,238,.28);border-radius:999px;padding:5px 13px;color:var(--blush)}
 .print-note{margin:22px auto 0;font-family:var(--sans);font-size:.78rem;letter-spacing:.04em;color:var(--blush);opacity:.9}
 .print-note::before{content:"\\270E\\00A0"}
+.partner{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.25rem;color:var(--hero-sub);margin:16px 0 0}
+.owner{font-family:var(--sans);font-size:.85rem;letter-spacing:.02em;color:var(--blush);margin:14px 0 0}
+.ownerline{display:inline-block;min-width:15em;max-width:60vw;border-bottom:1px solid var(--blush);margin-left:.45em;vertical-align:baseline}
 
 h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,3.6vw,2.15rem);line-height:1.15;color:var(--heading);margin:58px 0 6px;text-wrap:balance}
 .bloom{display:flex;align-items:center;justify-content:center;gap:22px;margin:62px 0 0}
@@ -326,6 +331,9 @@ blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font
   .hero h1,.hero .sub{color:var(--plum)}
   .hero .eyebrow{color:var(--rose)}
   .hero .meta span{color:var(--rose);border-color:var(--rose)}
+  .hero .partner{color:var(--rose)}
+  .hero .owner{color:var(--rose)}
+  .hero .ownerline{border-color:var(--rose)}
   .print-note{display:none}
   .hero-inner>*,.wrap>*{animation:none}
   .callout,.callout.big,.together{background:var(--petal) !important;color:#4A2340 !important;border-color:var(--rose) !important}
@@ -342,6 +350,7 @@ blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font
   <h1>${esc(title)}</h1>
   <p class="sub">${esc(subtitle)}</p>
   <div class="meta"><span>${META_A}</span><span>${META_B}</span><span>${META_C}</span></div>
+${PARTNER ? `  <p class="partner">Partner ${esc(PARTNER)} &#183; your private copy</p>\n  <p class="owner">${esc(OWNER_PROMPT)} <span class="ownerline"></span></p>` : ''}
   <p class="print-note">${esc(PRINT_NOTE)}</p>
 </div></div>
 
