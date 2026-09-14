@@ -2,6 +2,19 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-13 — "The Space Between Us" is Johnny's own rewrite + a GLOBAL, multilingual product
+Johnny fully rewrote/edited the couples workbook himself (2026-09-11..13; The_Space_Between_Us_Clean.docx).
+His text is now the **AUTHORITATIVE master** (`brain/workshops/couples-space-between-us.md`) — Mr Rogers
+only brands/lays it out, never rewrites his words. Rebuilt the branded Brave Plum page from his .docx
+(mammoth → markdown → build-artifact) and republished to the SAME Artifact URL. Care pages (not-therapy
++ safety off-ramp) and research sources intact. His new epigraph: *"Conflict lives in the unspoken space
+occupied by our fear and our assumptions."*
+**PRODUCT INTENT (Johnny, 2026-09-13): GLOBAL, hopefully many languages → NO region-specific numbers.**
+The safety note points to "your local emergency number" (universal). Recommended global addition (offered,
+awaiting his OK): a worldwide directory such as findahelpline.com / befrienders.org, localized per translated
+edition; keep content culturally neutral / translation-friendly. **OPEN:** price/tier [to set], confirm the
+global crisis-directory line, print PDF, translations. Supersedes the earlier workflow-generated draft.
+
 ## 2026-09-13 — Email deliverability: outlook.com business mail lands in recipients' spam
 Symptom: recipients weren't getting Johnny's emails from braveplumhealing@outlook.com (and his
 signature had vanished). **Diagnosis (confirmed):** mail IS sending and IS delivered — a test to

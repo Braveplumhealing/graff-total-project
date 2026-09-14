@@ -27,11 +27,11 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   needs Johnny's **crisis-support line** + go to ship (then print PDF + Stripe link). **Still to
   build:** the $228 training page + link — **need from Johnny:** training format (online/host) +
   first date. Nothing ships until he approves.
-- **The Space Between Us** (couples workbook) — **draft v1 done 2026-09-10**
-  (`brain/workshops/couples-space-between-us.md` + Artifact). From Johnny & his wife's walk on
-  judgment; original + research-grounded; private pages per partner + shared agreements; becomes
-  a product + workshop. **Needs from Johnny:** the DV/crisis resource, confirm the orchard close,
-  price/tier — then print PDF + Stripe + workshop.
+- **The Space Between Us** (couples workbook) — **Johnny's full rewrite is now the master (v2,
+  2026-09-13)**, branded & republished to the same Artifact. His words verbatim; we only brand/lay
+  out. **North star: a GLOBAL, multilingual product** → no region-specific numbers; keep it
+  culturally neutral. **Needs from Johnny:** confirm a global crisis-directory line (e.g.
+  findahelpline.com), set price/tier — then print PDF + translations + workshop.
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading
