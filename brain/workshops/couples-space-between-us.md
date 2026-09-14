@@ -108,10 +108,6 @@ If you find yourself carefully managing what you say or do to avoid being harmed
 
 And if you are ever in immediate danger, contact your local emergency services or another trusted source of immediate help.
 
-There will be time for reflection.
-
-There will be time for conversation.
-
 **Safety comes first.**
 
 ## How to Use This Workbook
