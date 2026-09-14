@@ -2,6 +2,20 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-14 (AM) — "The Space Between Us": front-cover blossom artwork ✅
+Johnny: *"I want the front cover to have a bit of artwork with plum blossoms on our purple background."*
+Built a proper **front cover**: a **full-bleed plum (#3D1A3D) page** with a hand-built SVG **plum-blossom
+spray** (two branches blooming across the lower page + small blossoms flanking the title, a soft rose glow,
+drifting petals) — blossoms in blush/petal/rose with gold stamens. Title in cream serif sits in the upper
+third; the "Partner A/B" + "This book belongs to ___" lines sit just below. Interior pages unchanged
+(white, ruled, corner blossom). Rebuilt & delivered both partner PDFs with the new cover; **web Artifact
+republished** (same URL) so the live preview opens on the cover too.
+**Print mechanics:** the cover is its own named page — `.hero{page:cover}` + `@page cover{size:Letter;
+margin:0}` gives true full-bleed plum (Chrome's `footerTemplate` corner blossom correctly does NOT draw on
+the margin-0 cover). `h2{break-before:page}` starts the interior on page 2. (Home-print caveat: consumer
+printers may leave a thin unprintable white edge on a full-bleed page; perfect on POD.) Cover artwork lives
+in `coverArt()` in `brain/workshops/build-workbook-page.mjs` — easy to retune blossom positions/tones.
+
 ## 2026-09-14 (AM) — "The Space Between Us": TWO-workbook set built (Partner A / Partner B) ✅
 The product is now a **pair of print-ready PDFs**, delivered to Johnny:
 **`The-Space-Between-Us-Partner-A.pdf`** and **`…-Partner-B.pdf`** (69 pages each, US Letter).

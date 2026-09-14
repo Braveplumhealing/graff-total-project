@@ -209,6 +209,39 @@ const body = out.join('\n');
 const CLOCK = '\\25F7\\00A0';
 const LEAF = '\\2767';
 
+// ---- front-cover artwork: a spray of plum blossoms on the plum ground ----
+function coverArt() {
+  const petal = 'M0,0 C -6,-6 -7.5,-15 -3,-19 C -1.2,-20.2 -0.6,-18.6 0,-17.4 C 0.6,-18.6 1.2,-20.2 3,-19 C 7.5,-15 6,-6 0,0 Z';
+  const stamens = Array.from({ length: 6 }, (_, i) => `<circle cx="0" cy="-6.6" r="0.9" transform="rotate(${i * 60})"/>`).join('');
+  const petals = Array.from({ length: 5 }, (_, i) => `<use href="#pt" transform="rotate(${i * 72})"/>`).join('');
+  const bl = `<g id="bl"><g fill="currentColor">${petals}</g><g fill="#F2D29A" opacity="0.85">${stamens}</g><circle r="2.7" fill="#C4637E"/></g>`;
+  const defs = `<defs><path id="pt" d="${petal}"/>${bl}`
+    + `<radialGradient id="glow" cx="50%" cy="28%" r="62%"><stop offset="0" stop-color="#C4637E" stop-opacity="0.40"/><stop offset="66%" stop-color="#C4637E" stop-opacity="0"/></radialGradient></defs>`;
+  const branches = `<g fill="none" stroke="#8A5877" stroke-width="3" stroke-linecap="round" opacity="0.85">`
+    + `<path d="M -30 1150 C 130 1000 210 905 300 784"/>`
+    + `<path d="M 300 784 C 340 742 398 662 432 612"/>`
+    + `<path d="M 300 784 C 250 802 214 828 234 846"/>`
+    + `<path d="M 900 1160 C 782 1032 712 962 650 874"/>`
+    + `<path d="M 650 874 C 690 830 702 812 714 794"/>`
+    + `<path d="M 872 64 C 826 116 792 158 782 150"/></g>`;
+  const buds = [[456, 648, 0.6, '#E79BB0'], [692, 744, 0.55, '#F2B8C6'], [262, 902, 0.5, '#FDE8EE']]
+    .map(([x, y, s, c]) => `<g transform="translate(${x} ${y}) scale(${s})"><circle r="7" fill="${c}"/><circle r="3.6" cx="2.6" cy="-2.6" fill="#C4637E" opacity="0.45"/></g>`).join('');
+  const drift = [[352, 662, 0.55, 40, 0.45], [604, 706, 0.5, -30, 0.4], [244, 726, 0.5, 120, 0.42], [700, 1010, 0.55, 80, 0.4], [150, 1030, 0.5, -60, 0.42]]
+    .map(([x, y, s, r, o]) => `<use href="#pt" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" fill="#F2B8C6" opacity="${o}"/>`).join('');
+  const blossoms = [
+    [300, 782, 1.7, -8, '#F2B8C6', 1], [362, 700, 1.15, 20, '#FDE8EE', 1], [232, 846, 1.05, -30, '#E79BB0', 1],
+    [432, 612, 1.0, 12, '#F2B8C6', 1], [176, 954, 0.8, 40, '#FDE8EE', 0.95],
+    [650, 874, 1.45, 10, '#F2B8C6', 1], [714, 794, 1.05, -18, '#FDE8EE', 1], [592, 942, 0.9, 25, '#E79BB0', 0.95],
+    [772, 906, 0.72, -5, '#F2B8C6', 0.9],
+    [794, 150, 0.85, 15, '#F2B8C6', 0.95], [742, 232, 0.58, -20, '#FDE8EE', 0.9],
+    [64, 150, 0.62, 30, '#F2B8C6', 0.9], [120, 236, 0.42, -10, '#FDE8EE', 0.85],
+  ].map(([x, y, s, r, c, o]) => `<use href="#bl" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" style="color:${c}" opacity="${o}"/>`).join('');
+  return `<svg viewBox="0 0 850 1100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">`
+    + defs + `<rect width="850" height="1100" fill="#3D1A3D"/><rect width="850" height="1100" fill="url(#glow)"/>`
+    + branches + buds + drift + blossoms + `</svg>`;
+}
+const COVER_ART = coverArt();
+
 const html = `<title>${PAGE_TITLE}</title>
 <style>
 :root{
@@ -231,9 +264,11 @@ const html = `<title>${PAGE_TITLE}</title>
 body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
 
-.hero{background:var(--plum);color:var(--hero-ink);padding:72px 24px 60px;position:relative;overflow:hidden;text-align:center}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 30%,rgba(196,99,126,.30),transparent 65%);pointer-events:none}
-.hero-inner{max-width:760px;margin:0 auto;position:relative}
+.hero{background:var(--plum);color:var(--hero-ink);padding:15vh 24px 8vh;position:relative;overflow:hidden;text-align:center;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-start}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 30%,rgba(196,99,126,.30),transparent 65%);pointer-events:none;z-index:0}
+.cover-art{position:absolute;inset:0;z-index:0;pointer-events:none}
+.cover-art svg{width:100%;height:100%;display:block}
+.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
 .eyebrow{font-family:var(--sans);font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--blush);opacity:.85;margin:0 0 20px}
 .hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.7rem,7vw,4.4rem);line-height:1.02;margin:0;color:var(--hero-ink);text-wrap:balance}
 .hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--hero-sub);margin:18px auto 0;max-width:46ch;line-height:1.4;text-wrap:balance}
@@ -323,17 +358,11 @@ blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font
     --ground:#FFFFFF; --surface:#FFFFFF; --ink:#2A1826; --muted:#6B5566; --line:rgba(61,26,61,.12);
     --heading:#3D1A3D; --rule:rgba(196,99,126,.32); --pitch:9mm; }
   @page{size:Letter;margin:16mm 16mm 20mm 18mm}
+  @page cover{size:Letter;margin:0}
   body{font-size:11pt;line-height:1.5;background:#fff;color:var(--ink)}
   .wrap{max-width:none;margin:0;padding:0}
   p,.prompt-unit,.writelines,.together,.carry,.field-label,.agreement,ul{max-width:none}
-  .hero{background:#fff;color:var(--plum);padding:0 0 8mm;overflow:visible}
-  .hero::before{display:none}
-  .hero h1,.hero .sub{color:var(--plum)}
-  .hero .eyebrow{color:var(--rose)}
-  .hero .meta span{color:var(--rose);border-color:var(--rose)}
-  .hero .partner{color:var(--rose)}
-  .hero .owner{color:var(--rose)}
-  .hero .ownerline{border-color:var(--rose)}
+  .hero{page:cover;break-after:page;min-height:100vh;padding:42mm 20mm 0;overflow:hidden}
   .print-note{display:none}
   .hero-inner>*,.wrap>*{animation:none}
   .callout,.callout.big,.together{background:var(--petal) !important;color:#4A2340 !important;border-color:var(--rose) !important}
@@ -345,7 +374,7 @@ blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font
 }
 </style>
 
-<div class="hero"><div class="hero-inner">
+<div class="hero"><div class="cover-art" aria-hidden="true">${COVER_ART}</div><div class="hero-inner">
   <p class="eyebrow">${EYEBROW}</p>
   <h1>${esc(title)}</h1>
   <p class="sub">${esc(subtitle)}</p>
