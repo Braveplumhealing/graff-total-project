@@ -54,7 +54,7 @@ But here is where it gets complicated:
 
 **Your lover is writing a story too.**
 
-While you are interpreting their silence, they may be interpreting yours. While you are wondering whether you have disappointed them, they may be wondering whether they have disappointed you. While you are protecting yourself from the rejection you fear might be coming, they may experience your protection as distance—and begin protecting themselves too. And now the stories begin to meld.
+While you are interpreting their silence, they may be interpreting yours. While you are wondering whether you have disappointed them, they may be wondering whether they have disappointed you. While you are protecting yourself from the rejection you fear might be coming, they may experience your protection as distance—and begin protecting themselves too. And now the stories begin to entwine.
 
 *My fear changes the way I behave toward you.*
 
