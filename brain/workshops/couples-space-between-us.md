@@ -114,15 +114,43 @@ Don’t worry.
 
 You’ve got this.
 
-## An honest word before we begin — please read this first
+## Before We Begin
 
-This is a workbook. It is coaching and education — warm, practical, present-focused, in the spirit of guided reflection and mediation. **It is not couples therapy, and it is not a substitute for it.** It cannot diagnose or treat anything, and it makes no clinical or medical claims. Some of the ideas here are informed by respected clinical approaches — the work of the Gottman Institute and Sue Johnson's Emotionally Focused Therapy among them — but those are professional practices delivered by trained people; here you are only meeting a few of their plain-language ideas, not receiving their care. If what you are carrying calls for licensed help — for trauma, for depression or anxiety, for anything that feels beyond what a book can hold — that is not a detour from this work. It is the wisest possible step in it, and a good therapist is worth finding.
+There is something important we want to say before we invite you into the pages ahead.
 
-**This work rests on a single assumption: that the two of you are basically safe with each other.** It is built for partners who can disagree, and even disappoint each other, without fear of what will happen next.
+This workbook was created to help two people become more curious about themselves, one another, and the space they share. It offers coaching, education, guided reflection, and conversation. It is meant to help you notice patterns, ask better questions, speak more honestly, and perhaps understand the person beside you a little more deeply.
 
-Where that safety is not present — where there is abuse, physical or emotional; where one person controls, threatens, intimidates, or frightens the other; where you find yourself managing your own words to stay out of harm — then honest "agreements" are not the right tool, and can quietly make things more dangerous, not less. You cannot operate as equals with someone if they hold manipulative power over you. If any of that is your reality, please set this book down. It is not yours to fix by trying harder or communicating better, and you deserve support from people trained for exactly this. Reaching for that help is not weakness or disloyalty. It is care for both of you.
+**It is not couples therapy, and it is not a substitute for it.**
 
-If you are ever in immediate danger, contact your local emergency number first. Safety comes first. Always. The clarity work can wait; your well-being cannot.
+Some of the ideas you will encounter are informed by respected clinical work, including the Gottman Institute and Sue Johnson's Emotionally Focused Therapy. We have translated a few of those ideas into everyday language and reflection, but this workbook does not diagnose or treat mental health conditions, nor does it make clinical or medical claims.
+
+There are some things a workbook simply cannot hold.
+
+If what you are carrying includes trauma, depression, anxiety, or something that feels larger than what the two of you can safely work through together, reaching for professional help is not a departure from this work. It may be the most caring way to continue it. There is wisdom in knowing when we need another person to walk with us.
+
+There is one more thing, and it matters deeply.
+
+**Everything in these pages begins with the assumption that the two of you agree on something essential: you are safe with each other.**
+
+Safety does not mean you always agree. It does not mean you never become angry, disappointed, frustrated, or hurt. And it certainly does not mean you communicate perfectly.
+
+It means that beneath all of those very human moments, there is a shared understanding that each of you is free to tell the truth, to disagree, to have needs and boundaries, and to be fully yourselves without being afraid of what will happen when you do.
+
+**That kind of safety is the ground this work stands on.**
+
+If that safety is not present—if there is physical or emotional abuse, coercion, intimidation, threats, manipulation, controlling behavior, or fear of your partner's response—then the work in these pages may not be safe for you to do together. Vulnerability requires safety. Agreements require freedom. Honest conversation requires two people who are able to speak without fear.
+
+**Where there is fear, the first work is safety.**
+
+If you find yourself carefully managing what you say or do to avoid being harmed, threatened, punished, or controlled, please set this workbook aside and seek support from someone trained to help you navigate what you are experiencing. Trying harder, communicating better, or becoming more vulnerable is not the answer when vulnerability itself may put you at risk.
+
+And if you are ever in immediate danger, contact your local emergency services or another trusted source of immediate help.
+
+There will be time for reflection.
+
+There will be time for conversation.
+
+**Safety comes first.**
 
 ## Part One — Love With Its Guard Up
 
