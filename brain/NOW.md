@@ -41,11 +41,15 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   puppeteer-core + Chrome `footerTemplate` for the corner mark; recipe `brain/workshops/gen-pdf.mjs`
   (build the HTML, then run gen-pdf.mjs). **TWO-WORKBOOK SET DONE 2026-09-14:** delivered
   `The-Space-Between-Us-Partner-A.pdf` + `…-Partner-B.pdf` (69pp each, US Letter) — same workbook inside,
-  covers differ (Partner A/B + "This book belongs to ___"). Builder takes `PARTNER=A|B`. **COVER ARTWORK DONE
-  2026-09-14:** full-bleed plum front cover with a plum-blossom spray (SVG `coverArt()` in the builder);
-  interior unchanged; web Artifact republished on the cover. **↳ NEXT (Johnny's pick):** (1) set a **price
-  for the pair** + a Stripe bundle link; (2) react to the cover / writing-room / trim size. Then: global
-  helpline line, translations, optional POD bound edition.
+  covers differ (Partner A/B + "This book belongs to ___"). Builder takes `PARTNER=A|B`. **COVER LOCKED
+  2026-09-14:** after several rounds (Johnny: not childish, more romantic, natural branch, "impressionistic"),
+  the front cover is an **impressionist plum-blossom** painting on the plum ground — gradient-modeled petals
+  with one shared light, lost-and-found edges dissolving into the plum, broken-color dabs + halation, depth
+  hierarchy (ghost → mid-mass → few crisp heroes), a filled dark branch (SVG `coverArt()`; technique from the
+  impressionist research workflow, recorded in decisions). **WHOLE SET UPDATED & DELIVERED 2026-09-14:** both
+  partner PDFs (69pp, US Letter, 3.4MB — painterly cover rasterizes larger), web Artifact republished, and the
+  **safety-page trim** folded in. **↳ NEXT:** set a **price for the pair** + a Stripe bundle link. Then:
+  global helpline line, translations, optional POD bound edition.
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading
