@@ -2,6 +2,36 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-14 (AM) — "The Space Between Us" is a PRINTED, pencil-and-paper workbook
+Johnny (verbatim): *"I want this to be a printed workbook so that couples are removed from their screens.
+I see this as an old fashioned pencil and paper exercise."* So the **product is print** — a PDF/printed
+book couples write in by hand. The **web Artifact is now a faithful preview** of the printed pages, not a
+place to type. (This settles the open "web-writable vs print" question: **print-to-write**, no on-screen
+editing, no per-viewer storage.)
+**What shipped this morning (same Artifact URL):** every Part now has generous ruled **writing space**,
+placed by a section-state machine in the builder (Johnny's markdown stays pure prose — all layout in code):
+- *For Each of You, Privately* → ruled lines after **each** prompt (5 lines numbered/question, 4 for
+  sentence-completion stems, 1 for a "Room:" name line).
+- *When You Come Together* → one soft petal panel, "Note what you heard," 5 lines (spoken exercise, not
+  per-step writing).
+- *To Carry or Talk Over* → one light 4-line "Carry this" block at the end.
+- Part 8 *A Humane Agreement* → a real fill-in form (empty fields get lines; Partner A/B keep their blanks;
+  the pre-written repair clause stays prose).
+- Part 10 create page → one large blank **canvas** (triggered only by the `[SPACE FOR THE COUPLE TO CREATE]`
+  sentinel).
+- Part 9 *Foundational Agreements* → rejoined to clean paragraphs but **no** writing space (read-aloud).
+**Formatting fixes baked in (whitespace only — not one of Johnny's words changed):** rejoined the numbered
+prompts the Word conversion had split mid-sentence (Parts 1,3,4,7,8,9); handled BOTH bold-number styles
+(`**1.**` and `**1. Label**`) so no stray `**` leaks; collapsed Word's double-spaces; dropped the few
+hand-typed underscore lines in Part 7 (replaced by real ruled space); stripped Part 5/6 decorative trailing
+underscores. **One display change to flag:** Part Two's lowercase section headings now render Title Case to
+match the other Parts. New brand tokens: `--rule` (rose hairline, dark-mode aware), `--pitch` 34px web / 9mm
+print. Full `@media print` block (forced light palette, page margins, prompts never split across a page).
+Builder preserved/updated at `brain/workshops/build-workbook-page.mjs` (design spec from a 6-agent research
++ red-team workflow). **STILL TO DO:** a true **print/PDF edition via a paged engine (Paged.js/Prince/
+WeasyPrint)** so the **per-page corner blossom**, @page margins and page breaks are reliable (browser Print
+can't place per-page corner art). Then: the two-workbook set (Partner A/B), price for the pair, translations.
+
 ## 2026-09-14 (AM) — "The Space Between Us": plum-blossom section dividers + builder preserved in repo
 Two small moves this morning, both live on the same Artifact URL:
 1. **Editorial:** moved *"So, lover... Let's begin."* from the end of the Introduction to the **close of

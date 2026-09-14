@@ -7,9 +7,14 @@ const META_A = process.env.META_A || 'A workbook for two';
 const META_B = process.env.META_B || 'Private pages · shared agreements';
 const META_C = process.env.META_C || 'Brave Plum Healing';
 const PAGE_TITLE = process.env.PAGE_TITLE || 'The Space Between Us — Brave Plum Healing';
+const PRINT_NOTE = process.env.PRINT_NOTE || 'A pencil-and-paper workbook — print these pages and write by hand.';
 let md = fs.readFileSync(SRC, 'utf8');
 
+// ---- line-count settings (generous, print-first pencil-and-paper) ----
+const N = { privNum:5, privQ:5, privComplete:4, privMid:2, room:1, together:5, carry:4, humaneText:2, humaneShort:1 };
+
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const clean = s => s.replace(/\s{2,}/g, ' ').trim();
 function inline(s) {
   s = esc(s);
   s = s.replace(/\[Johnny to fill:([^\]]*)\]/g, '<span class="fill"><span class="fill-tag">your turn</span>$1</span>');
@@ -21,22 +26,86 @@ function inline(s) {
   return s;
 }
 
+// ---- front matter: pull the first # title and first ### subtitle ----
 const lines = md.split('\n');
 let title = 'Brave Plum Healing', subtitle = '';
-const rest = [];
+const raw0 = [];
 let tookTitle = false, tookSub = false;
 for (const ln of lines) {
   if (!tookTitle && /^#\s+/.test(ln)) { title = ln.replace(/^#\s+/, '').trim(); tookTitle = true; continue; }
   if (tookTitle && !tookSub && /^###\s+/.test(ln)) { subtitle = ln.replace(/^###\s+/, '').trim(); tookSub = true; continue; }
-  rest.push(ln);
+  raw0.push(ln);
 }
 
+// ---- normalization: rejoin prompts the Word conversion split across paragraphs ----
+// A numbered/bulleted item that ends "unfinished" (no . ? ! : terminator) absorbs the
+// following continuation block(s). Whitespace only — never a word of Johnny's text changes.
+const isHeadingL = t => /^#{1,6}\s+/.test(t.trim());
+const isBqL = t => /^>\s?/.test(t.trim());
+const isHrL = t => t.trim() === '---';
+const isUnderscoreL = t => /^_{3,}\s*$/.test(t.trim());
+const isBulletL = t => /^\s*[-*●•‣◦]\s+/.test(t) && !/^\s*\*\*/.test(t);
+const isNumL = t => /^\s*(\*\*\s*)?\d+[.)]/.test(t);
+const isMarkerL = t => isBulletL(t) || isNumL(t);
+const endsUnfinished = s => !/[.?!:]["'”’)]?\s*$/.test(s.trim());
+
+const R = [];
+for (let i = 0; i < raw0.length; i++) {
+  let t = raw0[i];
+  if (isMarkerL(t)) {
+    let buf = t.trim();
+    while (endsUnfinished(buf)) {
+      let k = i + 1;
+      while (k < raw0.length && raw0[k].trim() === '') k++;
+      if (k >= raw0.length) break;
+      const nxt = raw0[k];
+      if (isHeadingL(nxt) || isMarkerL(nxt) || isBqL(nxt) || isUnderscoreL(nxt) || isHrL(nxt)) break;
+      buf += ' ' + nxt.trim();
+      i = k;
+    }
+    R.push(buf);
+  } else {
+    R.push(t);
+  }
+}
+
+// ---- prompt parsing helpers ----
+function parseNum(t) {
+  let m;
+  if ((m = t.match(/^\s*\*\*\s*(\d+)\.\s+([\s\S]+?)\*\*\s*([\s\S]*)$/))) return { num: m[1], md: (`**${m[2].trim()}** ${m[3].trim()}`).trim() };
+  if ((m = t.match(/^\s*\*\*\s*(\d+)\.\s*\*\*\s*([\s\S]*)$/))) return { num: m[1], md: m[2].trim() };
+  if ((m = t.match(/^\s*(\d+)[.)]\s+([\s\S]*)$/))) return { num: m[1], md: m[2].trim() };
+  return null;
+}
+const isWhollyBold = t => /^\s*\*\*[\s\S]+\*\*[\s.?!:…]*$/.test(t.trim());
+function isCompletionStem(t) {
+  if (!/_{3,}/.test(t)) return false;
+  const probe = t.trim().replace(/\*+\s*$/, '').replace(/[\s.]+$/, '');
+  return /_{3,}$/.test(probe);
+}
+function stemFromCompletion(t) {
+  let s = t.trim().replace(/_{3,}/g, '').replace(/_+/g, '');
+  s = s.replace(/\s+\*\*/g, '**').replace(/\*\*\s+\./g, '**.').replace(/\s{2,}/g, ' ');
+  s = s.replace(/\s*\.\s*$/, '').trim();
+  return s;
+}
+function classify(h) {
+  const s = h.toLowerCase().replace(/[^a-z ,]/g, '').trim();
+  if (/^for each of you,? *privately$/.test(s)) return 'PRIVATE';
+  if (/^when you come together$/.test(s)) return 'TOGETHER';
+  if (/^to carry or talk over$/.test(s)) return 'CARRY';
+  if (/^a humane agreement$/.test(s)) return 'HUMANE';
+  return 'OTHER';
+}
+const DISP = { PRIVATE: 'For Each of You, Privately', TOGETHER: 'When You Come Together', CARRY: 'To Carry or Talk Over' };
+
+// ---- emitters ----
 const out = [];
-let para = [];
-let inList = false;
-const flushPara = () => { if (para.length) { out.push('<p>' + inline(para.join(' ')) + '</p>'); para = []; } };
+let para = [], inList = false, bqBuf = [], inBq = false;
+const writelines = n => `<div class="writelines" style="--n:${n}" aria-hidden="true"></div>`;
+const afford = l => `<p class="afford">${l}</p>`;
+const flushPara = () => { if (para.length) { out.push('<p>' + inline(clean(para.join(' '))) + '</p>'); para = []; } };
 const closeList = () => { if (inList) { out.push('</ul>'); inList = false; } };
-let bqBuf = [], inBq = false;
 const flushBq = () => {
   if (!inBq) return;
   const parts = bqBuf.filter(x => x.trim() !== '').map(l => {
@@ -46,9 +115,14 @@ const flushBq = () => {
   out.push('<blockquote>' + parts.join('<br>') + '</blockquote>');
   bqBuf = []; inBq = false;
 };
+function emitExtras(m) {
+  if (m === 'TOGETHER') out.push('<div class="together">' + afford('Note what you heard') + writelines(N.together) + '</div>');
+  else if (m === 'CARRY') out.push('<div class="carry">' + afford('Carry this') + writelines(N.carry) + '</div>');
+}
+function promptUnit(inner, n, extraClass) {
+  out.push(`<div class="prompt-unit"><p class="prompt${extraClass || ''}">${inner}</p>${writelines(n)}</div>`);
+}
 
-// Plum-blossom section divider — a quiet bloom between sections, carrying the
-// page-marker motif across the web (single-scroll) version.
 const BLOOM = '<div class="bloom" aria-hidden="true"><svg class="blossom" viewBox="0 0 40 40">'
   + '<g class="petals">'
   + '<ellipse cx="20" cy="11" rx="5.4" ry="8"/>'
@@ -57,38 +131,77 @@ const BLOOM = '<div class="bloom" aria-hidden="true"><svg class="blossom" viewBo
   + '<ellipse cx="20" cy="11" rx="5.4" ry="8" transform="rotate(216 20 20)"/>'
   + '<ellipse cx="20" cy="11" rx="5.4" ry="8" transform="rotate(288 20 20)"/>'
   + '</g><circle class="pistil" cx="20" cy="20" r="3.3"/></svg></div>';
-let h2seen = 0;
 
-for (let raw of rest) {
-  const line = raw.replace(/\s+$/, '');
+let h2seen = 0, mode = 'OTHER';
+
+for (let idx = 0; idx < R.length; idx++) {
+  const line = R[idx].replace(/\s+$/, '');
   const t = line.trim();
   const isBq = /^>\s?/.test(t);
   if (!isBq) flushBq();
   if (t === '') { flushPara(); closeList(); continue; }
   if (t === '---') { flushPara(); closeList(); continue; }
-  if (/^_{3,}\s*$/.test(t)) { flushPara(); closeList(); out.push('<div class="writeline"></div>'); continue; }
+  if (/^_{3,}\s*$/.test(t)) { flushPara(); closeList(); continue; } // legacy blank line — replaced by injected writelines
+  if (t === '[SPACE FOR THE COUPLE TO CREATE]') { flushPara(); closeList(); out.push('<div class="canvas" aria-hidden="true"></div>'); continue; }
   if (isBq) { flushPara(); closeList(); inBq = true; bqBuf.push(t.replace(/^>\s?/, '')); continue; }
+
   let m;
   if ((m = t.match(/^(#{1,6})\s+(.*)$/))) {
     flushPara(); closeList();
     const lvl = Math.min(m[1].length, 4);
-    if (lvl === 2) { if (h2seen > 0) out.push(BLOOM); h2seen++; }
-    out.push(`<h${lvl}>` + inline(m[2]) + `</h${lvl}>`);
+    emitExtras(mode);                       // close the section we are leaving
+    let disp = m[2];
+    if (lvl === 2) { if (h2seen > 0) out.push(BLOOM); h2seen++; mode = 'OTHER'; }
+    else if (lvl === 3) { mode = classify(m[2]); if (DISP[mode]) disp = DISP[mode]; }
+    // lvl >= 4: sub-heading, mode unchanged
+    out.push(`<h${lvl}>` + inline(disp) + `</h${lvl}>`);
+    if (lvl === 3 && mode === 'PRIVATE') out.push(afford('Write on your own'));
     continue;
   }
-  if (/^\*\*Target:/.test(t)) { flushPara(); closeList(); out.push('<p class="timing">' + inline(t) + '</p>'); continue; }
-  if (/^\*Speaker note/i.test(t) || /^\*Facilitator note/i.test(t)) { flushPara(); closeList(); out.push('<aside class="note">' + inline(t) + '</aside>'); continue; }
-  if (/^\*\*Throughline:\*\*/.test(t)) { flushPara(); closeList(); out.push('<div class="callout"><span class="clabel">Throughline</span>' + inline(t.replace(/^\*\*Throughline:\*\*\s*/, '')) + '</div>'); continue; }
-  if (/^\*\*The one big idea:\*\*/.test(t)) { flushPara(); closeList(); out.push('<div class="callout big"><span class="clabel">The one big idea</span>' + inline(t.replace(/^\*\*The one big idea:\*\*\s*/, '')) + '</div>'); continue; }
-  if ((m = line.match(/^\s*[-*]\s+(.*)$/))) {
+
+  // ---- PRIVATE: writing space follows each prompt ----
+  if (mode === 'PRIVATE') {
+    if (/^\*\*Room:/i.test(t)) { flushPara(); closeList(); promptUnit(inline(clean(stemFromCompletion(t))), N.room, ' stem'); continue; }
+    const pn = parseNum(t);
+    if (pn) { flushPara(); closeList(); promptUnit(`<span class="pnum">${pn.num}.</span> ${inline(clean(pn.md))}`, N.privNum); continue; }
+    if (isCompletionStem(t)) { flushPara(); closeList(); promptUnit(inline(clean(stemFromCompletion(t))), N.privComplete, ' stem'); continue; }
+    if (/_{3,}/.test(t)) { flushPara(); closeList(); promptUnit(inline(clean(t)), N.privMid, ' stem'); continue; }
+    if (isWhollyBold(t)) { flushPara(); closeList(); promptUnit(inline(clean(t)), N.privQ, ' stem'); continue; }
+    para.push(t); continue;
+  }
+
+  // ---- HUMANE (Part 8 agreement form): each empty bold field gets ruled lines ----
+  if (mode === 'HUMANE') {
+    if (isWhollyBold(t)) {
+      flushPara(); closeList();
+      let k = idx + 1; while (k < R.length && R[k].trim() === '') k++;
+      const nxt = k < R.length ? R[k].trim() : '';
+      const endsQ = /\?\**\s*$/.test(t);
+      const nextIsPartner = /^\*?\*?partner\s/i.test(nxt) || /_{3,}/.test(nxt);
+      const nextIsField = isWhollyBold(nxt) || /^#{1,6}\s/.test(nxt);
+      out.push(`<p class="field-label">${inline(clean(t))}</p>`);
+      if (!nextIsPartner && nextIsField) out.push(writelines(endsQ ? N.humaneShort : N.humaneText));
+      continue;
+    }
+    // Partner A/B lines and prose fall through to normal handling below
+  }
+
+  // ---- generic / OTHER / TOGETHER / CARRY ----
+  const pnOther = (mode === 'OTHER') ? parseNum(t) : null;
+  if (pnOther && isNumL(t)) {
+    flushPara(); closeList();
+    out.push(`<p class="agreement"><span class="pnum">${pnOther.num}.</span> ${inline(clean(pnOther.md))}</p>`);
+    continue;
+  }
+  if ((m = line.match(/^\s*[-*●•‣◦]\s+(.*)$/)) && !/^\s*\*\*/.test(line)) {
     flushPara();
     if (!inList) { out.push('<ul>'); inList = true; }
-    out.push('<li>' + inline(m[1]) + '</li>');
+    out.push('<li>' + inline(clean(m[1])) + '</li>');
     continue;
   }
   para.push(t);
 }
-flushBq(); flushPara(); closeList();
+flushBq(); flushPara(); closeList(); emitExtras(mode);
 const body = out.join('\n');
 
 const CLOCK = '\\25F7\\00A0';
@@ -101,15 +214,16 @@ const html = `<title>${PAGE_TITLE}</title>
   --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826;
   --muted:#84677A; --line:rgba(61,26,61,.12); --accent:var(--rose); --heading:#3D1A3D;
   --hero-ink:#FDE8EE; --hero-sub:#E7B9C8;
+  --rule:rgba(196,99,126,.30); --pitch:34px; --measure:68ch;
   --serif:"Cormorant Garamond",Georgia,'Times New Roman',serif;
   --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 @media (prefers-color-scheme: dark){
-  :root{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15);
-    --heading:#F2B8C6; --hero-ink:#FDE8EE; --hero-sub:#E3A9BC; }
+  :root:not([data-theme="light"]){ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15);
+    --heading:#F2B8C6; --hero-ink:#FDE8EE; --hero-sub:#E3A9BC; --rule:rgba(242,184,198,.26); }
 }
-:root[data-theme="light"]{ --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826; --muted:#84677A; --line:rgba(61,26,61,.12); --heading:#3D1A3D; }
-:root[data-theme="dark"]{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15); --heading:#F2B8C6; }
+:root[data-theme="light"]{ --ground:#FBF4EF; --surface:#FFFFFF; --ink:#2A1826; --muted:#84677A; --line:rgba(61,26,61,.12); --heading:#3D1A3D; --rule:rgba(196,99,126,.30); }
+:root[data-theme="dark"]{ --ground:#20101E; --surface:#2A1428; --ink:#F4E4EC; --muted:#C6A2B5; --line:rgba(242,184,198,.15); --heading:#F2B8C6; --rule:rgba(242,184,198,.26); }
 
 *{box-sizing:border-box}
 body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased}
@@ -123,6 +237,8 @@ body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
 .hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--hero-sub);margin:18px auto 0;max-width:46ch;line-height:1.4;text-wrap:balance}
 .hero .meta{margin-top:26px;display:inline-flex;flex-wrap:wrap;gap:10px 14px;justify-content:center;font-size:.75rem;letter-spacing:.02em}
 .hero .meta span{border:1px solid rgba(253,232,238,.28);border-radius:999px;padding:5px 13px;color:var(--blush)}
+.print-note{margin:22px auto 0;font-family:var(--sans);font-size:.78rem;letter-spacing:.04em;color:var(--blush);opacity:.9}
+.print-note::before{content:"\\270E\\00A0"}
 
 h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,3.6vw,2.15rem);line-height:1.15;color:var(--heading);margin:58px 0 6px;text-wrap:balance}
 .bloom{display:flex;align-items:center;justify-content:center;gap:22px;margin:62px 0 0}
@@ -159,8 +275,28 @@ blockquote{font-family:var(--serif);font-style:italic;font-weight:300;font-size:
 
 .note{display:block;background:transparent;border-left:2px solid var(--blush);color:var(--muted);font-size:.92rem;line-height:1.6;padding:2px 0 2px 18px;margin:16px 0;max-width:66ch;font-style:italic}
 
-.writeline{border-bottom:1px solid var(--line);height:1.4em;margin:10px 0;max-width:68ch}
-.inkline{display:inline-block;min-width:9em;border-bottom:1px solid var(--rose);margin:0 .15em;vertical-align:baseline}
+/* ---- workbook writing space ---- */
+.afford{font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin:18px 0 2px}
+.mine{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:.98rem;margin:0 0 6px}
+.prompt-unit{margin:18px 0 24px;max-width:var(--measure);break-inside:avoid}
+.prompt{margin:0 0 6px}
+.prompt .pnum{color:var(--rose);font-weight:700;margin-right:.35em}
+.prompt.stem strong{color:var(--heading)}
+.agreement{margin:14px 0;max-width:68ch}
+.agreement .pnum{color:var(--rose);font-weight:700;margin-right:.35em}
+.field-label{margin:18px 0 4px;max-width:var(--measure)}
+.field-label strong{color:var(--heading)}
+.writelines{max-width:var(--measure);margin:8px 0 4px;height:calc(var(--n,5) * var(--pitch));border-radius:4px;
+  background-image:repeating-linear-gradient(to bottom,transparent 0,transparent calc(var(--pitch) - 1px),var(--rule) calc(var(--pitch) - 1px),var(--rule) var(--pitch))}
+.together{background:var(--petal);border:1px solid var(--rule);border-radius:12px;padding:16px 20px 18px;margin:22px 0;max-width:var(--measure)}
+.together .afford{margin-top:0}
+:root[data-theme="dark"] .together{background:rgba(196,99,126,.12)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .together{background:rgba(196,99,126,.12)}}
+.carry{margin:20px 0;max-width:var(--measure)}
+.canvas{border:1px dashed var(--rule);border-radius:14px;min-height:60vh;margin:20px 0}
+
+.writeline{border-bottom:1px solid var(--rule);height:var(--pitch);margin:10px 0;max-width:var(--measure)}
+.inkline{display:inline-block;min-width:9em;border-bottom:1px solid var(--rule);margin:0 .15em;vertical-align:baseline}
 blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font-style:normal;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-family:var(--sans)}
 
 .fill{background:linear-gradient(transparent 62%, var(--blush) 62%);padding:0 2px;color:var(--ink);border-radius:2px}
@@ -175,6 +311,29 @@ blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font
   .hero-inner>*:nth-child(3){animation-delay:.1s}
   @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 }
+
+/* ---- print: the pencil-and-paper edition ---- */
+@media print{
+  :root,:root[data-theme="light"],:root[data-theme="dark"]{
+    --ground:#FFFFFF; --surface:#FFFFFF; --ink:#2A1826; --muted:#6B5566; --line:rgba(61,26,61,.12);
+    --heading:#3D1A3D; --rule:rgba(196,99,126,.32); --pitch:9mm; }
+  @page{margin:18mm 16mm 20mm 18mm}
+  body{font-size:11pt;line-height:1.5;background:#fff;color:var(--ink)}
+  .wrap{max-width:none;margin:0;padding:0}
+  p,.prompt-unit,.writelines,.together,.carry,.field-label,.agreement,ul{max-width:none}
+  .hero{background:#fff;color:var(--plum);padding:0 0 8mm;overflow:visible}
+  .hero::before{display:none}
+  .hero h1,.hero .sub{color:var(--plum)}
+  .hero .eyebrow{color:var(--rose)}
+  .hero .meta span{color:var(--rose);border-color:var(--rose)}
+  .print-note{display:none}
+  .hero-inner>*,.wrap>*{animation:none}
+  .callout,.callout.big,.together{background:var(--petal) !important;color:#4A2340 !important;border-color:var(--rose) !important}
+  .canvas{border-color:var(--rule) !important;min-height:180mm}
+  h2,h3,h4{break-after:avoid}
+  .prompt-unit,.together,blockquote,.field-label,.agreement,li{break-inside:avoid}
+  .bloom{margin:24px 0}
+}
 </style>
 
 <div class="hero"><div class="hero-inner">
@@ -182,6 +341,7 @@ blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font
   <h1>${esc(title)}</h1>
   <p class="sub">${esc(subtitle)}</p>
   <div class="meta"><span>${META_A}</span><span>${META_B}</span><span>${META_C}</span></div>
+  <p class="print-note">${esc(PRINT_NOTE)}</p>
 </div></div>
 
 <main class="wrap">

@@ -27,14 +27,18 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   needs Johnny's **crisis-support line** + go to ship (then print PDF + Stripe link). **Still to
   build:** the $228 training page + link — **need from Johnny:** training format (online/host) +
   first date. Nothing ships until he approves.
-- **The Space Between Us** (couples workbook) — **Johnny's full rewrite is now the master (v2,
-  2026-09-13)**, branded & republished to the same Artifact. His words verbatim; we only brand/lay
-  out. **North star: a GLOBAL, multilingual product** → no region-specific numbers; keep it
-  culturally neutral. **↳ NEXT SESSION (AM 2026-09-14):** (1) collaborative **clarity + formatting
-  pass** on Johnny's text (he invited it; suggest, don't impose); (2) **enhance the workbook feel —
-  more room to write & reflect** throughout; (3) structure as a **two-workbook set (Partner A /
-  Partner B, one per partner, sold as a pair)**. Then: global helpline line (findahelpline.com),
-  price for the pair, print PDF, translations.
+- **The Space Between Us** (couples workbook) — **Johnny's full rewrite is the master (v2)**; his words
+  verbatim, we only brand/lay out. **North star: a GLOBAL, multilingual product** → no region-specific
+  numbers. **DECIDED 2026-09-14: it's a PRINTED, pencil-and-paper workbook** (couples off screens); the
+  web Artifact is a faithful *preview*, not typed in. **DONE 2026-09-14 (AM):** plum-blossom section
+  dividers; moved "So, lover… Let's begin" to close the Welcome; and a full **workbook writing-space**
+  build — ruled lines after every private prompt, a "Note what you heard" panel in each Come Together, a
+  "Carry this" block in each To Carry, Part 8's agreement fill-in form, Part 10's create canvas; plus
+  formatting mends (rejoined Word-split prompts, both bold-number styles, Part Two headings→Title Case).
+  Builder lives at `brain/workshops/build-workbook-page.mjs`. **↳ NEXT:** (1) let Johnny react to a Part
+  or two (print/Save-as-PDF from the link, Cmd+P); (2) build the **true print/PDF via a paged engine
+  (Paged.js)** so the **per-page corner blossom** + page breaks are reliable; (3) **two-workbook set
+  (Partner A / Partner B, sold as a pair)**. Then: global helpline line, price for the pair, translations.
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading
