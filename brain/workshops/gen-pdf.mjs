@@ -1,4 +1,5 @@
 import puppeteer from 'puppeteer-core';
+import { PDFDocument } from 'pdf-lib';
 import fs from 'fs';
 
 const CHROME = process.env.CHROME || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
@@ -23,17 +24,20 @@ const browser = await puppeteer.launch({ executablePath: CHROME, headless: 'new'
 try {
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
-  await page.pdf({
-    path: OUT,
-    printBackground: true,
-    preferCSSPageSize: true,
-    displayHeaderFooter: true,
-    headerTemplate: '<div></div>',
-    footerTemplate: footer,
-    timeout: 120000,
-  });
+  // Cover (page 1): full-bleed, NO footer blossom.
+  const coverBuf = await page.pdf({ printBackground: true, preferCSSPageSize: true, displayHeaderFooter: false, pageRanges: '1', timeout: 120000 });
+  // Interior (pages 2+): corner blossom stamped in the footer of every page.
+  const bodyBuf = await page.pdf({ printBackground: true, preferCSSPageSize: true, displayHeaderFooter: true, headerTemplate: '<div></div>', footerTemplate: footer, pageRanges: '2-', timeout: 120000 });
+  // Merge cover + interior into one file.
+  const merged = await PDFDocument.create();
+  for (const src of [coverBuf, bodyBuf]) {
+    const doc = await PDFDocument.load(src);
+    const pages = await merged.copyPages(doc, doc.getPageIndices());
+    pages.forEach(p => merged.addPage(p));
+  }
+  fs.writeFileSync(OUT, await merged.save());
   const kb = Math.round(fs.statSync(OUT).size / 1024);
-  console.log('wrote', OUT, kb + 'KB');
+  console.log('wrote', OUT, kb + 'KB (' + merged.getPageCount() + ' pages)');
 } finally {
   await browser.close();
 }

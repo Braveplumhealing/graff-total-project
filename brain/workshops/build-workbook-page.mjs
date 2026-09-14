@@ -209,36 +209,59 @@ const body = out.join('\n');
 const CLOCK = '\\25F7\\00A0';
 const LEAF = '\\2767';
 
-// ---- front-cover artwork: a spray of plum blossoms on the plum ground ----
+// ---- front-cover artwork: a real plum-blossom branch across the plum ground ----
 function coverArt() {
   const petal = 'M0,0 C -6,-6 -7.5,-15 -3,-19 C -1.2,-20.2 -0.6,-18.6 0,-17.4 C 0.6,-18.6 1.2,-20.2 3,-19 C 7.5,-15 6,-6 0,0 Z';
   const stamens = Array.from({ length: 6 }, (_, i) => `<circle cx="0" cy="-6.6" r="0.9" transform="rotate(${i * 60})"/>`).join('');
   const petals = Array.from({ length: 5 }, (_, i) => `<use href="#pt" transform="rotate(${i * 72})"/>`).join('');
   const bl = `<g id="bl"><g fill="currentColor">${petals}</g><g fill="#F2D29A" opacity="0.85">${stamens}</g><circle r="2.7" fill="#C4637E"/></g>`;
   const defs = `<defs><path id="pt" d="${petal}"/>${bl}`
-    + `<radialGradient id="glow" cx="50%" cy="28%" r="62%"><stop offset="0" stop-color="#C4637E" stop-opacity="0.40"/><stop offset="66%" stop-color="#C4637E" stop-opacity="0"/></radialGradient></defs>`;
-  const branches = `<g fill="none" stroke="#8A5877" stroke-width="3" stroke-linecap="round" opacity="0.85">`
-    + `<path d="M -30 1150 C 130 1000 210 905 300 784"/>`
-    + `<path d="M 300 784 C 340 742 398 662 432 612"/>`
-    + `<path d="M 300 784 C 250 802 214 828 234 846"/>`
-    + `<path d="M 900 1160 C 782 1032 712 962 650 874"/>`
-    + `<path d="M 650 874 C 690 830 702 812 714 794"/>`
-    + `<path d="M 872 64 C 826 116 792 158 782 150"/></g>`;
-  const buds = [[456, 648, 0.6, '#E79BB0'], [692, 744, 0.55, '#F2B8C6'], [262, 902, 0.5, '#FDE8EE']]
-    .map(([x, y, s, c]) => `<g transform="translate(${x} ${y}) scale(${s})"><circle r="7" fill="${c}"/><circle r="3.6" cx="2.6" cy="-2.6" fill="#C4637E" opacity="0.45"/></g>`).join('');
-  const drift = [[352, 662, 0.55, 40, 0.45], [604, 706, 0.5, -30, 0.4], [244, 726, 0.5, 120, 0.42], [700, 1010, 0.55, 80, 0.4], [150, 1030, 0.5, -60, 0.42]]
+    + `<radialGradient id="glow" cx="50%" cy="26%" r="62%"><stop offset="0" stop-color="#C4637E" stop-opacity="0.38"/><stop offset="66%" stop-color="#C4637E" stop-opacity="0"/></radialGradient></defs>`;
+
+  // a filled, tapering "limb" from a centerline of points (w0 = base width, w1 = tip width)
+  function limb(pts, w0, w1) {
+    const n = pts.length, top = [], bot = [];
+    for (let i = 0; i < n; i++) {
+      const a = pts[Math.max(0, i - 1)], b = pts[Math.min(n - 1, i + 1)];
+      let tx = b[0] - a[0], ty = b[1] - a[1]; const L = Math.hypot(tx, ty) || 1; tx /= L; ty /= L;
+      const nx = -ty, ny = tx, hw = (w0 + (w1 - w0) * (i / (n - 1))) / 2;
+      top.push([pts[i][0] + nx * hw, pts[i][1] + ny * hw]);
+      bot.push([pts[i][0] - nx * hw, pts[i][1] - ny * hw]);
+    }
+    let d = 'M' + top[0][0].toFixed(1) + ' ' + top[0][1].toFixed(1);
+    for (let i = 1; i < n; i++) d += ' L' + top[i][0].toFixed(1) + ' ' + top[i][1].toFixed(1);
+    for (let i = n - 1; i >= 0; i--) d += ' L' + bot[i][0].toFixed(1) + ' ' + bot[i][1].toFixed(1);
+    return d + ' Z';
+  }
+
+  // main branch sweeps lower-left -> upper-right; twigs rise from it
+  const main = [[-30, 1015], [110, 930], [240, 858], [370, 782], [500, 704], [620, 640], [730, 592], [832, 556]];
+  const tw1 = [[300, 790], [286, 712], [258, 644]];
+  const tw2 = [[512, 700], [534, 616], [560, 540]];
+  const tw3 = [[700, 596], [738, 548], [776, 504]];
+  const tw4 = [[398, 760], [388, 828], [378, 892]];
+  const branches = `<g fill="#3A241B" opacity="0.9"><path d="${limb(main.map(p => [p[0], p[1] + 3]), 26, 5)}"/></g>`
+    + `<g fill="#6B4636">`
+    + `<path d="${limb(main, 26, 5)}"/>`
+    + `<path d="${limb(tw1, 9, 3)}"/><path d="${limb(tw2, 9, 3)}"/><path d="${limb(tw3, 8, 3)}"/><path d="${limb(tw4, 7, 3)}"/>`
+    + `</g>`;
+
+  const drift = [[636, 470, 0.55, 40, 0.5], [730, 436, 0.5, -30, 0.4], [470, 906, 0.5, 120, 0.4], [820, 470, 0.45, 70, 0.38]]
     .map(([x, y, s, r, o]) => `<use href="#pt" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" fill="#F2B8C6" opacity="${o}"/>`).join('');
+  const buds = [[246, 628, 0.7, '#E79BB0'], [562, 520, 0.65, '#F2B8C6'], [790, 490, 0.6, '#FDE8EE'], [368, 904, 0.6, '#E79BB0']]
+    .map(([x, y, s, c]) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M0 6 C -4 2 -4 -4 0 -7 C 4 -4 4 2 0 6 Z" fill="${c}"/><circle r="1.4" cy="5" fill="#6B4636"/></g>`).join('');
   const blossoms = [
-    [300, 782, 1.7, -8, '#F2B8C6', 1], [362, 700, 1.15, 20, '#FDE8EE', 1], [232, 846, 1.05, -30, '#E79BB0', 1],
-    [432, 612, 1.0, 12, '#F2B8C6', 1], [176, 954, 0.8, 40, '#FDE8EE', 0.95],
-    [650, 874, 1.45, 10, '#F2B8C6', 1], [714, 794, 1.05, -18, '#FDE8EE', 1], [592, 942, 0.9, 25, '#E79BB0', 0.95],
-    [772, 906, 0.72, -5, '#F2B8C6', 0.9],
-    [794, 150, 0.85, 15, '#F2B8C6', 0.95], [742, 232, 0.58, -20, '#FDE8EE', 0.9],
-    [64, 150, 0.62, 30, '#F2B8C6', 0.9], [120, 236, 0.42, -10, '#FDE8EE', 0.85],
+    [258, 636, 1.5, -10, '#F2B8C6', 1], [292, 668, 1.15, 25, '#FDE8EE', 1], [226, 684, 0.95, -35, '#E79BB0', 1],
+    [560, 528, 1.45, 8, '#F2B8C6', 1], [594, 558, 1.05, -20, '#FDE8EE', 1], [528, 566, 0.9, 30, '#E79BB0', 0.95],
+    [780, 496, 1.2, 12, '#F2B8C6', 1], [744, 532, 0.85, -15, '#FDE8EE', 1],
+    [130, 922, 1.0, 15, '#F2B8C6', 0.95], [386, 776, 1.15, -8, '#FDE8EE', 1], [636, 632, 0.95, 20, '#E79BB0', 0.95],
+    [374, 900, 0.95, -25, '#F2B8C6', 1], [392, 850, 0.7, 10, '#FDE8EE', 0.9],
+    [60, 984, 0.85, 35, '#F2B8C6', 0.9],
   ].map(([x, y, s, r, c, o]) => `<use href="#bl" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" style="color:${c}" opacity="${o}"/>`).join('');
+
   return `<svg viewBox="0 0 850 1100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">`
     + defs + `<rect width="850" height="1100" fill="#3D1A3D"/><rect width="850" height="1100" fill="url(#glow)"/>`
-    + branches + buds + drift + blossoms + `</svg>`;
+    + branches + drift + buds + blossoms + `</svg>`;
 }
 const COVER_ART = coverArt();
 
@@ -378,7 +401,6 @@ blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font
   <p class="eyebrow">${EYEBROW}</p>
   <h1>${esc(title)}</h1>
   <p class="sub">${esc(subtitle)}</p>
-  <div class="meta"><span>${META_A}</span><span>${META_B}</span><span>${META_C}</span></div>
 ${PARTNER ? `  <p class="partner">Partner ${esc(PARTNER)} &#183; your private copy</p>\n  <p class="owner">${esc(OWNER_PROMPT)} <span class="ownerline"></span></p>` : ''}
   <p class="print-note">${esc(PRINT_NOTE)}</p>
 </div></div>

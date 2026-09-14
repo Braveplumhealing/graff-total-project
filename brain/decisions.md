@@ -15,6 +15,14 @@ margin:0}` gives true full-bleed plum (Chrome's `footerTemplate` corner blossom 
 the margin-0 cover). `h2{break-before:page}` starts the interior on page 2. (Home-print caveat: consumer
 printers may leave a thin unprintable white edge on a full-bleed page; perfect on POD.) Cover artwork lives
 in `coverArt()` in `brain/workshops/build-workbook-page.mjs` — easy to retune blossom positions/tones.
+**REVISED same morning (Johnny: "I don't love it"):** (1) removed the three meta chips from the cover
+(they sat between the subtitle and the Partner line); (2) replaced the scattered blossoms with **an actual
+woody plum branch** — a filled, tapering limb (helper `limb(centerline, w0, w1)`) sweeping lower-left →
+upper-right, with twigs rising to blossom clusters, buds, and a few drifting petals (branch `#6B4636`).
+(3) The per-page corner blossom was bleeding onto the cover, so `gen-pdf.mjs` now prints the **cover with NO
+footer** and the **interior with the footer**, then **merges** them with `pdf-lib` (new dep) — cover clean,
+interior keeps its corner mark. Chips removal + brand: "Brave Plum Healing" is no longer on the cover (only
+inside the book); offered Johnny a small bottom brand mark if he wants it back.
 
 ## 2026-09-14 (AM) — "The Space Between Us": TWO-workbook set built (Partner A / Partner B) ✅
 The product is now a **pair of print-ready PDFs**, delivered to Johnny:
