@@ -35,10 +35,13 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   build — ruled lines after every private prompt, a "Note what you heard" panel in each Come Together, a
   "Carry this" block in each To Carry, Part 8's agreement fill-in form, Part 10's create canvas; plus
   formatting mends (rejoined Word-split prompts, both bold-number styles, Part Two headings→Title Case).
-  Builder lives at `brain/workshops/build-workbook-page.mjs`. **↳ NEXT:** (1) let Johnny react to a Part
-  or two (print/Save-as-PDF from the link, Cmd+P); (2) build the **true print/PDF via a paged engine
-  (Paged.js)** so the **per-page corner blossom** + page breaks are reliable; (3) **two-workbook set
-  (Partner A / Partner B, sold as a pair)**. Then: global helpline line, price for the pair, translations.
+  Builder at `brain/workshops/build-workbook-page.mjs`. **TRUE PRINT PDF DONE 2026-09-14:**
+  `The-Space-Between-Us.pdf` — 69 pages, US Letter, ruled writing space throughout, **plum blossom in the
+  bottom-right corner of every page** (delivered to Johnny). Made with the Mac's own Chrome via
+  puppeteer-core + Chrome `footerTemplate` for the corner mark; recipe `brain/workshops/gen-pdf.mjs`
+  (build the HTML, then run gen-pdf.mjs). **↳ NEXT (Johnny's pick):** (1) react to the PDF — tweak writing
+  room / labels / trim size; (2) **two-workbook set (Partner A / Partner B, sold as a pair)**; (3) a
+  **price for the pair**. Then: global helpline line, translations, optional POD bound edition.
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading

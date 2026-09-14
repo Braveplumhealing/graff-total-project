@@ -317,7 +317,7 @@ blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font
   :root,:root[data-theme="light"],:root[data-theme="dark"]{
     --ground:#FFFFFF; --surface:#FFFFFF; --ink:#2A1826; --muted:#6B5566; --line:rgba(61,26,61,.12);
     --heading:#3D1A3D; --rule:rgba(196,99,126,.32); --pitch:9mm; }
-  @page{margin:18mm 16mm 20mm 18mm}
+  @page{size:Letter;margin:16mm 16mm 20mm 18mm}
   body{font-size:11pt;line-height:1.5;background:#fff;color:var(--ink)}
   .wrap{max-width:none;margin:0;padding:0}
   p,.prompt-unit,.writelines,.together,.carry,.field-label,.agreement,ul{max-width:none}
@@ -330,9 +330,10 @@ blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font
   .hero-inner>*,.wrap>*{animation:none}
   .callout,.callout.big,.together{background:var(--petal) !important;color:#4A2340 !important;border-color:var(--rose) !important}
   .canvas{border-color:var(--rule) !important;min-height:180mm}
-  h2,h3,h4{break-after:avoid}
+  h2{break-before:page;break-after:avoid}
+  h3,h4{break-after:avoid}
   .prompt-unit,.together,blockquote,.field-label,.agreement,li{break-inside:avoid}
-  .bloom{margin:24px 0}
+  .bloom{display:none}
 }
 </style>
 

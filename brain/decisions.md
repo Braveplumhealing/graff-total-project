@@ -2,6 +2,23 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-14 (AM) — "The Space Between Us": true print-ready PDF with per-page corner blossoms ✅
+Built the real print edition Johnny asked for: **`The-Space-Between-Us.pdf`** — **69 pages, US Letter**
+(for home printing), ruled writing space throughout, and a **plum blossom in the bottom-right corner of
+every page**. How it's made (no cloud services, uses the Mac's own Google Chrome):
+1. `node brain/workshops/build-workbook-page.mjs` builds the HTML (print CSS now: each Part/section starts
+   on a fresh page via `h2{break-before:page}`, web-only blossom dividers hidden in print, `@page size:Letter`).
+2. `node brain/workshops/gen-pdf.mjs` drives **Chrome via puppeteer-core** (installed with `npm i
+   puppeteer-core` — NO Chromium download, it points at `/Applications/Google Chrome.app/...`) and prints to
+   PDF with `printBackground` + `preferCSSPageSize`. The **corner blossom** is stamped through Chrome's
+   `footerTemplate` (a base64 SVG positioned bottom-right) — this is the reliable way to get per-page corner
+   art from Chrome (CSS `@page` margin boxes / running elements are NOT supported by browser print, which is
+   why the earlier plan needed a paged engine). Verified page-by-page by rasterizing with the `pdf-to-img`
+   npm package (the Mac has no poppler/pdftoppm).
+Delivered the PDF to Johnny. Recipe preserved in `brain/workshops/` (build-workbook-page.mjs + gen-pdf.mjs).
+**STILL OPEN:** the **two-workbook set (Partner A / Partner B)**, a **price for the pair**, and translations;
+optional polish (create-canvas on its own full page; a POD trim size if he wants a bound edition).
+
 ## 2026-09-14 (AM) — "The Space Between Us" is a PRINTED, pencil-and-paper workbook
 Johnny (verbatim): *"I want this to be a printed workbook so that couples are removed from their screens.
 I see this as an old fashioned pencil and paper exercise."* So the **product is print** — a PDF/printed
