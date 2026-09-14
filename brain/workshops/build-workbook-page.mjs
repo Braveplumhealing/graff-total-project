@@ -211,53 +211,77 @@ const LEAF = '\\2767';
 
 // ---- front-cover artwork: a real plum-blossom branch across the plum ground ----
 function coverArt() {
-  const petal = 'M0,0 C -6,-6 -7.5,-15 -3,-19 C -1.2,-20.2 -0.6,-18.6 0,-17.4 C 0.6,-18.6 1.2,-20.2 3,-19 C 7.5,-15 6,-6 0,0 Z';
-  const stamens = Array.from({ length: 6 }, (_, i) => `<circle cx="0" cy="-6.6" r="0.9" transform="rotate(${i * 60})"/>`).join('');
-  const petals = Array.from({ length: 5 }, (_, i) => `<use href="#pt" transform="rotate(${i * 72})"/>`).join('');
-  const bl = `<g id="bl"><g fill="currentColor">${petals}</g><g fill="#F2D29A" opacity="0.85">${stamens}</g><circle r="2.7" fill="#C4637E"/></g>`;
-  const defs = `<defs><path id="pt" d="${petal}"/>${bl}`
-    + `<radialGradient id="glow" cx="50%" cy="26%" r="62%"><stop offset="0" stop-color="#C4637E" stop-opacity="0.38"/><stop offset="66%" stop-color="#C4637E" stop-opacity="0"/></radialGradient></defs>`;
+  // notched plum-blossom petal (tip up), with a small cleft
+  const petal = 'M0,0 C -5,-4 -8,-10.5 -6.4,-16 C -5.4,-19.4 -2.4,-20.8 -0.6,-18 L0,-16.8 L0.6,-18 C 2.4,-20.8 5.4,-19.4 6.4,-16 C 8,-10.5 5,-4 0,0 Z';
+  const stA = [0, 33, 66, 100, 132, 165, 198, 230, 262, 295, 328];
+  const stamens = stA.map((a, i) => `<line x1="0" y1="-2.2" x2="0" y2="${(-6.6 - (i % 3) * 0.7).toFixed(1)}" transform="rotate(${a})"/>`).join('');
+  const anthers = stA.map((a, i) => `<circle cx="0" cy="${(-6.9 - (i % 3) * 0.7).toFixed(1)}" r="0.85" transform="rotate(${a})"/>`).join('');
+  const sym = (id, angs, scs) => {
+    const p = angs.map((a, i) => `<use href="#pt" transform="rotate(${a}) scale(${scs[i]})"/>`).join('');
+    return `<g id="${id}"><g fill="currentColor">${p}</g><circle r="8.5" fill="url(#cwash)"/>`
+      + `<g stroke="#EFC985" stroke-width="0.5" stroke-linecap="round" opacity="0.9">${stamens}</g>`
+      + `<g fill="#E1A64B">${anthers}</g><circle r="1.7" fill="#A8425F"/></g>`;
+  };
+  const defs = `<defs><path id="pt" d="${petal}"/>`
+    + `<radialGradient id="cwash" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#B4506E" stop-opacity="0.6"/><stop offset="100%" stop-color="#B4506E" stop-opacity="0"/></radialGradient>`
+    + `<radialGradient id="glow" cx="50%" cy="26%" r="62%"><stop offset="0" stop-color="#C4637E" stop-opacity="0.38"/><stop offset="66%" stop-color="#C4637E" stop-opacity="0"/></radialGradient>`
+    + sym('bl1', [-2, 70, 146, 215, 289], [1.02, 0.97, 1.03, 0.98, 1.0])
+    + sym('bl2', [3, 75, 143, 218, 286], [0.98, 1.03, 0.97, 1.02, 1.0])
+    + `</defs>`;
 
-  // a filled, tapering "limb" from a centerline of points (w0 = base width, w1 = tip width)
-  function limb(pts, w0, w1) {
+  // smooth a polyline into a flowing bezier (Catmull-Rom -> cubic) — organic edges
+  function smooth(pts) {
+    let d = 'M' + pts[0][0].toFixed(1) + ' ' + pts[0][1].toFixed(1);
+    for (let i = 0; i < pts.length - 1; i++) {
+      const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2;
+      const c1x = p1[0] + (p2[0] - p0[0]) / 6, c1y = p1[1] + (p2[1] - p0[1]) / 6;
+      const c2x = p2[0] - (p3[0] - p1[0]) / 6, c2y = p2[1] - (p3[1] - p1[1]) / 6;
+      d += ` C${c1x.toFixed(1)} ${c1y.toFixed(1)} ${c2x.toFixed(1)} ${c2y.toFixed(1)} ${p2[0].toFixed(1)} ${p2[1].toFixed(1)}`;
+    }
+    return d;
+  }
+  // a filled, tapering, organically-curved limb from a centerline + per-point widths
+  function limb(pts, ws) {
     const n = pts.length, top = [], bot = [];
     for (let i = 0; i < n; i++) {
       const a = pts[Math.max(0, i - 1)], b = pts[Math.min(n - 1, i + 1)];
       let tx = b[0] - a[0], ty = b[1] - a[1]; const L = Math.hypot(tx, ty) || 1; tx /= L; ty /= L;
-      const nx = -ty, ny = tx, hw = (w0 + (w1 - w0) * (i / (n - 1))) / 2;
+      const nx = -ty, ny = tx, hw = ws[i] / 2;
       top.push([pts[i][0] + nx * hw, pts[i][1] + ny * hw]);
       bot.push([pts[i][0] - nx * hw, pts[i][1] - ny * hw]);
     }
-    let d = 'M' + top[0][0].toFixed(1) + ' ' + top[0][1].toFixed(1);
-    for (let i = 1; i < n; i++) d += ' L' + top[i][0].toFixed(1) + ' ' + top[i][1].toFixed(1);
-    for (let i = n - 1; i >= 0; i--) d += ' L' + bot[i][0].toFixed(1) + ' ' + bot[i][1].toFixed(1);
-    return d + ' Z';
+    const br = bot.slice().reverse();
+    return smooth(top) + ' L' + br[0][0].toFixed(1) + ' ' + br[0][1].toFixed(1) + smooth(br).replace(/^M\S+ \S+/, '') + ' Z';
   }
 
-  // main branch sweeps lower-left -> upper-right; twigs rise from it
-  const main = [[-30, 1015], [110, 930], [240, 858], [370, 782], [500, 704], [620, 640], [730, 592], [832, 556]];
-  const tw1 = [[300, 790], [286, 712], [258, 644]];
-  const tw2 = [[512, 700], [534, 616], [560, 540]];
-  const tw3 = [[700, 596], [738, 548], [776, 504]];
-  const tw4 = [[398, 760], [388, 828], [378, 892]];
-  const branches = `<g fill="#3A241B" opacity="0.9"><path d="${limb(main.map(p => [p[0], p[1] + 3]), 26, 5)}"/></g>`
-    + `<g fill="#6B4636">`
-    + `<path d="${limb(main, 26, 5)}"/>`
-    + `<path d="${limb(tw1, 9, 3)}"/><path d="${limb(tw2, 9, 3)}"/><path d="${limb(tw3, 8, 3)}"/><path d="${limb(tw4, 7, 3)}"/>`
-    + `</g>`;
+  // main branch sweeps lower-left -> upper-right with natural bends + knuckles; twigs + broken nubs
+  const main = [[-30, 1020], [92, 950], [184, 904], [268, 850], [320, 830], [404, 776], [500, 704], [562, 674], [646, 624], [714, 598], [794, 564], [842, 552]];
+  const mainW = [30, 27, 25, 24, 27, 22, 18, 17, 14, 12, 8, 5];
+  const tw1 = [[320, 830], [300, 758], [278, 700], [258, 648]], tw1W = [10, 7, 5, 3];
+  const tw2 = [[500, 704], [522, 640], [544, 588], [562, 538]], tw2W = [10, 7, 5, 3];
+  const tw3 = [[714, 598], [744, 556], [768, 520], [788, 498]], tw3W = [9, 6, 4, 3];
+  const tw4 = [[404, 776], [400, 836], [390, 892]], tw4W = [8, 5, 3];
+  const nub1 = [[562, 674], [582, 650]], nub1W = [6, 2];
+  const nub2 = [[646, 624], [632, 600]], nub2W = [5, 2];
+  const dark = `<g fill="#3A241B" opacity="0.85"><path d="${limb(main.map(p => [p[0], p[1] + 3]), mainW)}"/></g>`;
+  const wood = `<g fill="#6B4636"><path d="${limb(main, mainW)}"/><path d="${limb(tw1, tw1W)}"/><path d="${limb(tw2, tw2W)}"/>`
+    + `<path d="${limb(tw3, tw3W)}"/><path d="${limb(tw4, tw4W)}"/><path d="${limb(nub1, nub1W)}"/><path d="${limb(nub2, nub2W)}"/></g>`;
+  const sheen = `<path d="${smooth(main)}" fill="none" stroke="#8A6249" stroke-width="1.1" opacity="0.45" stroke-linecap="round"/>`;
+  const branches = dark + wood + sheen;
 
-  const drift = [[636, 470, 0.55, 40, 0.5], [730, 436, 0.5, -30, 0.4], [470, 906, 0.5, 120, 0.4], [820, 470, 0.45, 70, 0.38]]
+  const drift = [[636, 470, 0.55, 40, 0.5], [730, 436, 0.5, -30, 0.4], [470, 910, 0.5, 120, 0.4], [822, 472, 0.45, 70, 0.38]]
     .map(([x, y, s, r, o]) => `<use href="#pt" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" fill="#F2B8C6" opacity="${o}"/>`).join('');
-  const buds = [[246, 628, 0.7, '#E79BB0'], [562, 520, 0.65, '#F2B8C6'], [790, 490, 0.6, '#FDE8EE'], [368, 904, 0.6, '#E79BB0']]
-    .map(([x, y, s, c]) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M0 6 C -4 2 -4 -4 0 -7 C 4 -4 4 2 0 6 Z" fill="${c}"/><circle r="1.4" cy="5" fill="#6B4636"/></g>`).join('');
+  const buds = [[246, 632, 0.75, '#E79BB0'], [566, 520, 0.7, '#F2B8C6'], [794, 486, 0.62, '#FDE8EE'], [380, 902, 0.6, '#E79BB0']]
+    .map(([x, y, s, c]) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M0 6 C -4 2 -4 -5 0 -8 C 4 -5 4 2 0 6 Z" fill="${c}"/><circle r="1.5" cy="5" fill="#6B4636"/></g>`).join('');
+  const B = (x, y, s, r, c, o, v) => `<use href="#${v ? 'bl2' : 'bl1'}" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" style="color:${c}" opacity="${o}"/>`;
   const blossoms = [
-    [258, 636, 1.5, -10, '#F2B8C6', 1], [292, 668, 1.15, 25, '#FDE8EE', 1], [226, 684, 0.95, -35, '#E79BB0', 1],
-    [560, 528, 1.45, 8, '#F2B8C6', 1], [594, 558, 1.05, -20, '#FDE8EE', 1], [528, 566, 0.9, 30, '#E79BB0', 0.95],
-    [780, 496, 1.2, 12, '#F2B8C6', 1], [744, 532, 0.85, -15, '#FDE8EE', 1],
-    [130, 922, 1.0, 15, '#F2B8C6', 0.95], [386, 776, 1.15, -8, '#FDE8EE', 1], [636, 632, 0.95, 20, '#E79BB0', 0.95],
-    [374, 900, 0.95, -25, '#F2B8C6', 1], [392, 850, 0.7, 10, '#FDE8EE', 0.9],
-    [60, 984, 0.85, 35, '#F2B8C6', 0.9],
-  ].map(([x, y, s, r, c, o]) => `<use href="#bl" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" style="color:${c}" opacity="${o}"/>`).join('');
+    B(252, 640, 1.55, -10, '#F2B8C6', 1, 0), B(288, 672, 1.15, 25, '#FDE8EE', 1, 1), B(226, 684, 0.95, -35, '#E79BB0', 1, 0),
+    B(560, 530, 1.5, 8, '#F2B8C6', 1, 1), B(596, 560, 1.05, -20, '#FDE8EE', 1, 0), B(528, 566, 0.9, 30, '#E79BB0', 0.95, 1),
+    B(788, 492, 1.22, 12, '#F2B8C6', 1, 0), B(752, 528, 0.85, -15, '#FDE8EE', 1, 1),
+    B(168, 898, 1.02, 15, '#F2B8C6', 0.95, 1), B(430, 760, 1.15, -8, '#FDE8EE', 1, 0), B(672, 600, 0.95, 20, '#E79BB0', 0.95, 1),
+    B(384, 900, 0.95, -25, '#F2B8C6', 1, 1), B(398, 846, 0.7, 10, '#FDE8EE', 0.9, 0),
+    B(66, 986, 0.85, 35, '#F2B8C6', 0.9, 0),
+  ].join('');
 
   return `<svg viewBox="0 0 850 1100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">`
     + defs + `<rect width="850" height="1100" fill="#3D1A3D"/><rect width="850" height="1100" fill="url(#glow)"/>`
@@ -287,21 +311,21 @@ const html = `<title>${PAGE_TITLE}</title>
 body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
 
-.hero{background:var(--plum);color:var(--hero-ink);padding:15vh 24px 8vh;position:relative;overflow:hidden;text-align:center;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-start}
+.hero{background:var(--plum);color:var(--hero-ink);padding:13vh 24px 8vh;position:relative;overflow:hidden;text-align:center;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-start}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 30%,rgba(196,99,126,.30),transparent 65%);pointer-events:none;z-index:0}
 .cover-art{position:absolute;inset:0;z-index:0;pointer-events:none}
 .cover-art svg{width:100%;height:100%;display:block}
-.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
-.eyebrow{font-family:var(--sans);font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--blush);opacity:.85;margin:0 0 20px}
-.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.7rem,7vw,4.4rem);line-height:1.02;margin:0;color:var(--hero-ink);text-wrap:balance}
-.hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.15rem,2.6vw,1.5rem);color:var(--hero-sub);margin:18px auto 0;max-width:46ch;line-height:1.4;text-wrap:balance}
+.hero-inner{max-width:820px;margin:0 auto;position:relative;z-index:1}
+.eyebrow{font-family:var(--sans);font-size:.82rem;letter-spacing:.3em;text-transform:uppercase;color:var(--blush);opacity:.85;margin:0 0 22px}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(3rem,8.5vw,5rem);line-height:1.04;margin:0;color:var(--hero-ink);text-wrap:balance}
+.hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.45rem,3.2vw,2rem);color:var(--hero-sub);margin:22px auto 0;max-width:46ch;line-height:1.4;text-wrap:balance}
 .hero .meta{margin-top:26px;display:inline-flex;flex-wrap:wrap;gap:10px 14px;justify-content:center;font-size:.75rem;letter-spacing:.02em}
 .hero .meta span{border:1px solid rgba(253,232,238,.28);border-radius:999px;padding:5px 13px;color:var(--blush)}
 .print-note{margin:22px auto 0;font-family:var(--sans);font-size:.78rem;letter-spacing:.04em;color:var(--blush);opacity:.9}
 .print-note::before{content:"\\270E\\00A0"}
-.partner{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.25rem;color:var(--hero-sub);margin:16px 0 0}
-.owner{font-family:var(--sans);font-size:.85rem;letter-spacing:.02em;color:var(--blush);margin:14px 0 0}
-.ownerline{display:inline-block;min-width:15em;max-width:60vw;border-bottom:1px solid var(--blush);margin-left:.45em;vertical-align:baseline}
+.partner{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.6rem;color:var(--hero-sub);margin:20px 0 0}
+.owner{font-family:var(--sans);font-size:1.05rem;letter-spacing:.02em;color:var(--blush);margin:18px 0 0}
+.ownerline{display:inline-block;min-width:16em;max-width:60vw;border-bottom:1px solid var(--blush);margin-left:.5em;vertical-align:baseline}
 
 h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,3.6vw,2.15rem);line-height:1.15;color:var(--heading);margin:58px 0 6px;text-wrap:balance}
 .bloom{display:flex;align-items:center;justify-content:center;gap:22px;margin:62px 0 0}
@@ -385,7 +409,7 @@ blockquote cite.attrib{display:inline-block;margin-top:.5em;font-size:.58em;font
   body{font-size:11pt;line-height:1.5;background:#fff;color:var(--ink)}
   .wrap{max-width:none;margin:0;padding:0}
   p,.prompt-unit,.writelines,.together,.carry,.field-label,.agreement,ul{max-width:none}
-  .hero{page:cover;break-after:page;min-height:100vh;padding:42mm 20mm 0;overflow:hidden}
+  .hero{page:cover;break-after:page;min-height:100vh;padding:34mm 20mm 0;overflow:hidden}
   .print-note{display:none}
   .hero-inner>*,.wrap>*{animation:none}
   .callout,.callout.big,.together{background:var(--petal) !important;color:#4A2340 !important;border-color:var(--rose) !important}
