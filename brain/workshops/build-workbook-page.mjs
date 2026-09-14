@@ -267,14 +267,23 @@ function coverArt() {
   const tw5 = [[252, 888], [236, 860], [250, 828]], tw5W = [6, 4, 2];       // little crook into the cluster
   const nub1 = [[548, 724], [568, 708], [560, 686]], nub1W = [5, 3, 2];      // short back-shoot
   const nub2 = [[712, 632], [736, 646], [758, 640]], nub2W = [4, 3, 2];      // bare twiglet
-  const twigs = [[tw1, tw1W], [tw2, tw2W], [tw3, tw3W], [tw4, tw4W], [tw5, tw5W], [nub1, nub1W], [nub2, nub2W]];
-  const dark = `<g fill="#3A241B" opacity="0.85"><path d="${limb(main.map(p => [p[0], p[1] + 3]), mainW)}"/></g>`;
-  const wood = `<g fill="#6B4636"><path d="${limb(main, mainW)}"/>` + twigs.map(([p, w]) => `<path d="${limb(p, w)}"/>`).join('') + `</g>`;
-  const sheen = `<path d="${smooth(main)}" fill="none" stroke="#8A6249" stroke-width="1.1" opacity="0.4" stroke-linecap="round"/>`;
+  const mainB = [[352, 842], [396, 780], [430, 724], [452, 672], [470, 626]], mainBW = [17, 13, 10, 7, 4]; // the branch forks
+  const tb1 = [[430, 724], [456, 700], [474, 678]], tb1W = [6, 4, 2];
+  const fine = [                                                             // fine terminal twiglets, taper to a point
+    [[258, 652], [250, 632], [247, 614]], [[512, 624], [520, 606], [517, 590]],
+    [[714, 562], [727, 548], [733, 533]], [[470, 626], [480, 608], [476, 592]],
+  ];
+  const heavy = [[main, mainW], [mainB, mainBW]];
+  const twigs = [[tw1, tw1W], [tw2, tw2W], [tw3, tw3W], [tw4, tw4W], [tw5, tw5W], [tb1, tb1W], [nub1, nub1W], [nub2, nub2W]]
+    .concat(fine.map(p => [p, [3, 2, 1]]));
+  const all = heavy.concat(twigs);
+  const dark = `<g fill="#3A241B" opacity="0.8">` + heavy.map(([p, w]) => `<path d="${limb(p.map(q => [q[0], q[1] + 3]), w)}"/>`).join('') + `</g>`;
+  const wood = `<g fill="#6B4636">` + all.map(([p, w]) => `<path d="${limb(p, w)}"/>`).join('') + `</g>`;
+  const light = `<g fill="#8A6249" opacity="0.5">` + heavy.map(([p, w]) => `<path d="${limb(p.map(q => [q[0], q[1] - 3]), w.map(x => x * 0.42))}"/>`).join('') + `</g>`;
   const bark = `<g stroke="#3A241B" stroke-width="1.2" opacity="0.5" stroke-linecap="round">`
-    + [[60, 1010, 76, 1001], [150, 956, 168, 949], [330, 843, 348, 842], [470, 762, 486, 753], [610, 682, 628, 673]].map(([x1, y1, x2, y2]) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`).join('')
+    + [[60, 1010, 76, 1001], [150, 956, 168, 949], [330, 843, 348, 842], [470, 762, 486, 753], [610, 682, 628, 673], [400, 780, 414, 772]].map(([x1, y1, x2, y2]) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`).join('')
     + `</g>`;
-  const branches = dark + wood + sheen + bark;
+  const branches = dark + wood + light + bark;
 
   // deterministic scatter so the composition is stable across rebuilds
   let seed = 20240915;
@@ -300,27 +309,37 @@ function coverArt() {
   const back = `<g filter="url(#soft)" opacity="0.6">` + scatter(272, 882, 240, 200, 9, 0.5, 1.0, ['#FDE8EE', '#F2B8C6', '#E7C7D2']) + `</g>`;
 
   const budTones = ['#B03A5E', '#9E2F52', '#C24A6E'];
-  const buds = [[250, 650], [300, 846], [512, 622], [714, 564], [214, 908], [280, 790], [188, 1016], [520, 700], [236, 838], [332, 878]]
+  const buds = [[247, 614], [517, 590], [733, 533], [476, 592], [300, 846], [714, 564], [196, 1044], [280, 790], [520, 700], [236, 838], [332, 878], [452, 672]]
     .map(([x, y]) => {
       const s = (0.55 + rnd() * 0.4).toFixed(2), c = pick(budTones), r = (rnd() * 70 - 35) | 0;
       return `<g transform="translate(${x} ${y}) scale(${s}) rotate(${r})"><path d="M0 6 C -4 2 -4.5 -5 0 -8.5 C 4.5 -5 4 2 0 6 Z" fill="${c}"/><circle r="1.6" cy="5.5" fill="#6B4636"/></g>`;
     }).join('');
 
-  const cluster = scatter(250, 858, 178, 150, 15, 0.75, 1.7)
-    + scatter(232, 834, 82, 72, 5, 1.1, 1.85)
+  const behind = scatter(236, 884, 132, 120, 4, 0.85, 1.35);   // a few blooms the branch overlaps, for depth
+  const cluster = scatter(250, 858, 180, 150, 18, 0.72, 1.7)
+    + scatter(232, 834, 84, 72, 6, 1.1, 1.9)
     + B(250, 650, 1.4, -10, '#F2B8C6', 1, 1) + B(512, 620, 1.05, -8, '#F2B8C6', 1, 0)
     + B(714, 562, 0.9, 12, '#FDE8EE', 1, 1) + B(686, 600, 0.72, -18, '#E79BB0', 0.95, 0)
-    + B(196, 1044, 0.9, 20, '#FDE8EE', 1, 0);
+    + B(196, 1044, 0.9, 20, '#FDE8EE', 1, 0)
+    + B(470, 624, 1.2, -12, '#F2B8C6', 1, 0) + B(450, 672, 0.9, 15, '#FDE8EE', 1, 1) + B(432, 724, 0.78, -22, '#E79BB0', 0.95, 0);
 
   const drift = `<g filter="url(#soft)" opacity="0.5">`
     + [[600, 460, 0.6, 40], [700, 420, 0.5, -30], [520, 540, 0.45, 80]].map(([x, y, s, r]) => `<use href="#pt" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" fill="#F2B8C6"/>`).join('')
     + `</g>`
     + [[470, 940, 0.55, 120, 0.5], [360, 720, 0.5, -60, 0.45], [560, 980, 0.45, 30, 0.4]].map(([x, y, s, r, o]) => `<use href="#pt" transform="translate(${x} ${y}) scale(${s}) rotate(${r})" fill="#F2B8C6" opacity="${o}"/>`).join('');
 
+  // blossoms spaced up and down the whole length of the branch (thinning toward the tip)
+  const along = [
+    [120, 986, 0.72, 20, '#FDE8EE', 0], [176, 952, 0.86, -15, '#F2B8C6', 1], [372, 830, 0.9, 12, '#FDE8EE', 0],
+    [430, 782, 1.02, -10, '#F2B8C6', 1], [476, 742, 0.86, 18, '#FDE8EE', 0], [520, 722, 0.7, -25, '#E79BB0', 1],
+    [560, 694, 0.9, 8, '#F2B8C6', 0], [604, 674, 0.74, -14, '#FDE8EE', 1], [648, 640, 0.84, 20, '#F2B8C6', 1],
+    [700, 624, 0.7, -8, '#E79BB0', 0], [748, 600, 0.78, 12, '#FDE8EE', 0], [800, 576, 0.64, -18, '#F2B8C6', 1], [836, 556, 0.56, 6, '#FDE8EE', 0],
+  ].map(([x, y, s, r, c, v]) => B(x, y, s, r, c, (0.92 + rnd() * 0.08).toFixed(2), v)).join('');
+
   return `<svg viewBox="0 0 850 1100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">`
     + defs
     + `<rect width="850" height="1100" fill="#3D1A3D"/><rect width="850" height="1100" fill="url(#glow)"/><rect width="850" height="1100" fill="url(#glow2)"/>`
-    + bokeh + back + branches + buds + cluster + drift + `</svg>`;
+    + bokeh + back + behind + branches + buds + along + cluster + drift + `</svg>`;
 }
 const COVER_ART = coverArt();
 
