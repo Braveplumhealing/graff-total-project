@@ -40,7 +40,7 @@ May you remain curious about one another. May you keep choosing one another. And
 
 — Johnny Graf
 
-So much of what aches between two people does not really live in either of you. It lives in the quiet space between you—occupied by what you are afraid is true coupled up with what you have assumed is true. Neither of those is knowledge. And neither necessarily has anything to do with the truth of your lover. Often, we write a story about the person we love and quietly park it between us.
+So much of what aches between two people does not really live in either of you. It grows in the untended space between you—where what you fear might be true meets what you assume is true, and together they begin writing a story neither of you imagined. Neither of those is knowledge. And neither necessarily has anything to do with the truth of your lover. Often, we write a story about the person we love and quietly park it between us.
 
 *She expects this of me.*
 
