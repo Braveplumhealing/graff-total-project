@@ -63,6 +63,12 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   Source (`build-proposal.cjs`/.docx) is in scratchpad, NOT committed (client-confidential) — commit to repo
   only if Johnny wants it stored there. Built via the docx skill (needed `npm i docx` in scratchpad; no
   LibreOffice/pandoc locally, so no rendered preview — content verified via the doc XML).
+  **↳ ADDENDUM A DONE 2026-09-15:** built the matching **Staff Retreat Discovery Survey** Word doc
+  (`Addendum-A-Staff-Retreat-Discovery-Survey.docx`) from Johnny's draft, refinements folded in (estimate →
+  ~10–15 min; Q5 frequency scale cleaned; Q11 re-lists its options; Q1/12/13/15 optional; kept his neutral
+  framing + mission/vision language verbatim — Johnny to confirm it matches the Chamber's official wording).
+  Delivered. **OPEN:** the proposal still says the survey is "5–10 min" while the survey now says 10–15 —
+  reconcile (offered to update the proposal). Source in scratchpad, not committed (client-confidential).
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading
