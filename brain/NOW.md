@@ -50,6 +50,19 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   partner PDFs (69pp, US Letter, 3.4MB — painterly cover rasterizes larger), web Artifact republished, and the
   **safety-page trim** folded in. **↳ NEXT:** set a **price for the pair** + a Stripe bundle link. Then:
   global helpline line, translations, optional POD bound edition.
+  **↳ PRINTED 2026-09-15:** Johnny picked up the printed workbook from the printer ("looks amazing") — 2
+  copies (one for him + wife, one for the friend who inspired it). More edits expected down the road.
+- **Kittitas County Chamber of Commerce — staff-retreat discovery proposal** (NEW 2026-09-15). Johnny is
+  proposing a neutral, confidential "discovery" phase (staff survey + a separate confidential leadership
+  reflection with CEO Amy McGuffin) before designing the Chamber's annual retreat. Mr Rogers reviewed his
+  draft and built a **polished, editable Word proposal** (`Chamber-Retreat-Discovery-Proposal.docx`,
+  Brave-Plum-styled) with refinements folded in: warm credibility opener, kept the CEO's personal material
+  OUT of the written doc, added a data-handling/deletion line, small-team-anonymity candor, and a
+  **fixed discovery fee** framing (Johnny to set the $ — money is his call). Delivered to Johnny.
+  **↳ NEXT:** Johnny sets the fee; then optionally draft the confidential survey + invitation message.
+  Source (`build-proposal.cjs`/.docx) is in scratchpad, NOT committed (client-confidential) — commit to repo
+  only if Johnny wants it stored there. Built via the docx skill (needed `npm i docx` in scratchpad; no
+  LibreOffice/pandoc locally, so no rendered preview — content verified via the doc XML).
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading
