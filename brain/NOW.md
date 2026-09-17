@@ -74,9 +74,17 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   retreat separate (half-day ~$3,420; full-day $4,560–$5,700); local so no travel charge; 50/50 terms.
   Awaiting: staff count + which posture. (Johnny paused this to share the client win below.)
 - **Personalized "We Endeavor Forth" coaching companions** (NEW 2026-09-16) — productize the book into
-  per-client 12-week workbooks/courses (see decisions.md). **First pilot:** a returning 12-week coaching
-  client, **Self Worth** theme. Reuses the couples-workbook build pipeline. **NEXT:** Johnny shares the
-  book's structure so Mr Rogers can map the 12-week arc. Client material stays confidential (not committed).
+  per-client 12-week workbooks/courses (see decisions.md). **FIRST DRAFT BUILT overnight 2026-09-16→17:**
+  **"The Eagle Course" — a 12-week self-worth workbook** drawn from the book (Intro→Know→Love→Be→Serve),
+  designed by a 6-agent research+red-team workflow, written in Johnny's voice, built through the workbook
+  pipeline (feather cover, teaching + ruled reflection space + weekly practice + "bring to your session" box
+  each week, coaching-not-therapy care page). **Delivered to Johnny (PDF).** Files kept in the **private
+  vault** (`~/Documents/BravePlum-Vault/eagle-course/`: the-eagle-course.md, build-eagle.mjs, gen-pdf-eagle.mjs,
+  PDF) — NOT in the repo, because the course retells the vaulted book's stories (IP). **MUST-FILL before it
+  ever reaches a client:** the crisis-support line (flagged `[Johnny to fill]` on the care page). **OPEN for
+  Johnny (AM):** (1) confirm the 4-week self-worth heart vs a standalone midpoint pause; (2) make sure the
+  course's 12-week arc lines up with his existing 1:1 program arc; (3) personalize for the client via the
+  session seam, not on the page. Client details stay between Johnny + Mr Rogers (not committed).
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading
