@@ -69,10 +69,15 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   framing + mission/vision language verbatim — Johnny to confirm it matches the Chamber's official wording).
   Delivered. **OPEN:** the proposal still says the survey is "5–10 min" while the survey now says 10–15 —
   reconcile (offered to update the proposal). Source in scratchpad, not committed (client-confidential).
-  **↳ PRICING PARKED (resume 2026-09-17, Johnny's call):** price in day-units off his $2,280 day rate —
-  discovery ~2.5–3 days = **$5,700–$6,840** (lean toward $6,800, or $5,700 crediting the built survey);
-  retreat separate (half-day ~$3,420; full-day $4,560–$5,700); local so no travel charge; 50/50 terms.
-  Awaiting: staff count + which posture. (Johnny paused this to share the client win below.)
+  **↳ RESOLVED 2026-09-17 — Amy's feedback addressed + priced:** Amy sent detailed notes; Mr Rogers revised
+  the **survey to v2** (12 Qs: Q6 un-barreled into candor/follow-through/respect; "integrity" removed; Q13
+  reworded to Amy's exact language; added her "topics for another process" guardrail; leadership reflection now
+  answers the **same core questions** as staff; informal-instrument framing stated). Revised the **proposal to
+  a single BUNDLE: discovery + a half-day retreat, flat $2,280** (no travel charge, 50/50, "confirmed later"
+  ambiguity removed). **Johnny's pricing decision: $2,280 for the bundle, plus a gracious note asking Amy to
+  give him serious consideration for her own leadership-growth support down the road.** Both revised docs +
+  a ready-to-send reply delivered to Johnny. **NEXT:** Johnny sends to Amy; then build **Amy's
+  leadership-reflection survey** (same 12 core Qs, framed for her). Client sources in scratchpad, not committed.
 - **Personalized "We Endeavor Forth" coaching companions** (NEW 2026-09-16) — productize the book into
   per-client 12-week workbooks/courses (see decisions.md). **FIRST DRAFT BUILT overnight 2026-09-16→17:**
   **"The Eagle Course" — a 12-week self-worth workbook** drawn from the book (Intro→Know→Love→Be→Serve),
