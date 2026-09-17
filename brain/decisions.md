@@ -2,6 +2,21 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-17 (eve) — Coaching workbook RESET: drop the eagle; thread "Know / Love / Be / Serve"
+Johnny found the overnight **Eagle Course** draft underwhelming — the eagle/coop motif was **too heavy and
+too consistent**, and the eagle fable is being **CUT from the final book "We Endeavor Forth."** Since his
+coaching is meant to lead clients toward the real book, coaching must **not lean on the eagle** (don't build
+on what won't exist; the eagle may live elsewhere in his work, just not the book). **New spine for ALL
+coaching work = the book's four movements: "Know Thyself, Love Thyself, Be Thyself, Serve."** Each coaching
+instance threads these toward one focus area; **first instance = Self Worth.** **Structure per unit — like
+*The Space Between Us*, adapted for 1:1 coaching:** a **Teaching** → a **private journal entry with questions**
+(reflection) → **To Carry or Talk Over** with journal space (the seed for the coaching conversation) — so there's
+an expected conversation plus talk-over points. Teachings drawn from the book's chapters' OWN material (the
+mirror, the river village, feather-feather-rock-truck, build-the-fence, live-your-gift, Johari/feedback) **minus
+the eagle/coop.** Supersedes the Eagle Course approach (its files stay in the vault, but the direction is
+replaced). **NEXT:** agree the cadence (how many units) + build ONE sample unit for Johnny's reaction before
+building the whole set; rework the cover away from the eagle/feather motif.
+
 ## 2026-09-16 — New product line: personalized "We Endeavor Forth" coaching companions
 Johnny's idea (sparked by a returning 12-week coaching client who committed at full rate): repurpose his book
 **We Endeavor Forth** — its structure and 12-week-ish rhythm — into **per-client, personalized workbooks/
