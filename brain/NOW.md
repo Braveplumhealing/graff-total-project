@@ -69,6 +69,14 @@ Forth"** published. Full plan: `docs/BUSINESS-PLAN-2027.md`.
   framing + mission/vision language verbatim — Johnny to confirm it matches the Chamber's official wording).
   Delivered. **OPEN:** the proposal still says the survey is "5–10 min" while the survey now says 10–15 —
   reconcile (offered to update the proposal). Source in scratchpad, not committed (client-confidential).
+  **↳ PRICING PARKED (resume 2026-09-17, Johnny's call):** price in day-units off his $2,280 day rate —
+  discovery ~2.5–3 days = **$5,700–$6,840** (lean toward $6,800, or $5,700 crediting the built survey);
+  retreat separate (half-day ~$3,420; full-day $4,560–$5,700); local so no travel charge; 50/50 terms.
+  Awaiting: staff count + which posture. (Johnny paused this to share the client win below.)
+- **Personalized "We Endeavor Forth" coaching companions** (NEW 2026-09-16) — productize the book into
+  per-client 12-week workbooks/courses (see decisions.md). **First pilot:** a returning 12-week coaching
+  client, **Self Worth** theme. Reuses the couples-workbook build pipeline. **NEXT:** Johnny shares the
+  book's structure so Mr Rogers can map the 12-week arc. Client material stays confidential (not committed).
 - **Artist Grant** — "The Journey to Self Love" **submitted 2026-08-28** to the City of
   Ellensburg; awaiting response (follow up late September).
 - **Speaking** — all four keynotes written (The Aligned Life · Conflict as Catalyst · Leading

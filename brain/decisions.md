@@ -2,6 +2,18 @@
 
 Append-only. Newest first. Re-opening a decision is fine — silently contradicting one is not.
 
+## 2026-09-16 — New product line: personalized "We Endeavor Forth" coaching companions
+Johnny's idea (sparked by a returning 12-week coaching client who committed at full rate): repurpose his book
+**We Endeavor Forth** — its structure and 12-week-ish rhythm — into **per-client, personalized workbooks/
+courses**, a coaching companion themed to each client's real work. Three delivery modes, chosen per client:
+(a) a full personalized workbook following the book's arc across a 12-week program; (b) specific book elements
+developed week by week; (c) a bespoke course built from the book's concepts. Strong model: repeatable
+structure (scales) + deep personalization (lands), and each client keeps a tangible artifact (raises value,
+seeds referrals). Reuses the proven couples-workbook pipeline (`brain/workshops/build-workbook-page.mjs`).
+**First pilot underway** with a returning 12-week client, theme **"Self Worth."** **NEXT:** Johnny shares the
+book's structure/contents so Mr Rogers can map the 12-week arc. **Client material stays confidential — not
+committed to the repo.**
+
 ## 2026-09-14 (AM) — "The Space Between Us": front-cover blossom artwork ✅
 Johnny: *"I want the front cover to have a bit of artwork with plum blossoms on our purple background."*
 Built a proper **front cover**: a **full-bleed plum (#3D1A3D) page** with a hand-built SVG **plum-blossom
