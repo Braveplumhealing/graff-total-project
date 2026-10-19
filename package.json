@@ -18,6 +18,6 @@
   "homepage": "https://github.com/Braveplumhealing/graff-total-project#readme",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@11ty/eleventy": "^3.1.7"
   }
 }
